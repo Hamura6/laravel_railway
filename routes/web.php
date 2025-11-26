@@ -97,7 +97,7 @@ Route::middleware(['auth','banned'])->group(function () {
     Route::get('procedure', ProcedureComponent::class)->name('procedures');
     Route::get('specialties', SpecialtyComponent::class)->name('specialties');
     Route::get('procedure/details/{ide}', PlanPayment::class)->name('procedures.details');
-    Route::get('affilate-register/{id?}', CreateAffiliate::class)->name('register.affiliate');
+    Route::get('affilate-register/{id?}', App\Livewire\Affiliate\CreateAffiliate::class)->name('register.affiliate');
     Route::get('demands', DemandComponent::class)->name('demands');
     Route::get('demands/details/{ide}', DemandsDetails::class)->name('demands.details');
     Route::get('demands/management/{ide}', DemandsManagement::class)->name('demands.management');
