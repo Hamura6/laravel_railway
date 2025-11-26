@@ -32,18 +32,6 @@ class ViewServiceProvider extends ServiceProvider
             return Institution::first();
         }));
     } */
-   try {
-    // Intentar verificar la tabla solo si la conexión a la base de datos está disponible
-    if (DB::connection()->getDatabaseName() && Schema::hasTable('institutions')) {
-        View::share('institution', cache()->remember('institution', now()->addDay(), function () {
-            return Institution::first();
-        }));
-    } else {
-        View::share('institution', null);
-    }
-} catch (\Exception $e) {
-    // Si hay cualquier error, compartir null
-    View::share('institution', null);
-}
+
     }
 }
