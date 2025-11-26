@@ -160,18 +160,7 @@ Route::middleware(['auth','banned'])->group(function () {
     Route::get('report/contribution/{id}/{from}/{to}', ContributionAffiliate::class)->name('report.contribution.affiliate');
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
     Route::get('settings/profile', Profile::class)->name('settings.profile');
     Route::redirect('settings', 'settings/profile');
 

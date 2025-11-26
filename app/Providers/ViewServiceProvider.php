@@ -26,10 +26,18 @@ class ViewServiceProvider extends ServiceProvider
         $institution = Institution::first();
         $view->with('institution', $institution);
     });  */
+    // Verificar si la tabla existe y tiene datos
     if (Schema::hasTable('institutions')) {
-        View::share('institution', cache()->remember('institution', now()->addDay(), function () {
-            return Institution::first();
-        }));
+        try {
+            View::share('institution', cache()->remember('institution', now()->addDay(), function () {
+                return Institution::first();
+            }));
+        } catch (\Exception $e) {
+            // Si hay algún error, compartir null o un valor por defecto
+            View::share('institution', null);
+        }
+    } else {
+        View::share('institution', null);
     }
     }
 }
