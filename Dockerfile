@@ -39,8 +39,7 @@ COPY . .
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/storage /var/www/html/bootstrap/cache
 
-# Ejecutar optimizaciones de Laravel (opcional pero recomendado)
-RUN php artisan config:cache
+
 RUN php artisan route:cache
 
 EXPOSE 80
