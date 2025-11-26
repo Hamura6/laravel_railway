@@ -270,7 +270,7 @@
                                     <div>
                                         <h5 class="text-warning mb-1">Dirección</h5>
                                         <p class="mb-0 text-light">
-                                            {{$institution->address}}<br>
+                                            {{$institution->address??'ninguno'}}<br>
                                             <strong>{{ $institution->city_label }} - Bolivia</strong>
                                         </p>
                                     </div>
