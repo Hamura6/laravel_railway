@@ -89,7 +89,7 @@ Route::middleware(['auth','banned'])->group(function () {
     Route::get('users', UserComponent::class)->name('users');
     Route::get('roles', RolesComponent::class)->name('roles');
     Route::get('permissions', PermissionComponent::class)->name('permissions');
-    Route::get('affiliates', ViewAffiliate::class)->name('view.affiliate');
+    Route::get('affiliates', App\Livewire\Affiliate\ViewAffiliate::class)->name('view.affiliate');
     Route::get('affiliates/account/statement', ViewComponent::class)->name('affiliate.statement.account');
     Route::get('create-users/{id?}', Create::class)->name('user.create');
     Route::get('fees', FeesComponent::class)->name('fees');
