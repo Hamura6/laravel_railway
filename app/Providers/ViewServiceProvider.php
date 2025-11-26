@@ -3,7 +3,6 @@
 namespace App\Providers;
 
 use App\Models\Institution;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
@@ -32,6 +31,16 @@ class ViewServiceProvider extends ServiceProvider
             return Institution::first();
         }));
     } */
-
+   try {
+    if (Schema::hasTable('institutions') && Institution::count() > 0) {
+        View::share('institution', cache()->remember('institution', now()->addDay(), function () {
+            return Institution::first();
+        }));
+    } else {
+        View::share('institution', null);
+    }
+} catch (\Exception $e) {
+    View::share('institution', null);
+}
     }
 }
