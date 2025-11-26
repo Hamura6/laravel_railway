@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Institution;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
@@ -32,7 +33,8 @@ class ViewServiceProvider extends ServiceProvider
         }));
     } */
    try {
-    if (Schema::hasTable('institutions') && Institution::count() > 0) {
+    // Intentar verificar la tabla solo si la conexión a la base de datos está disponible
+    if (DB::connection()->getDatabaseName() && Schema::hasTable('institutions')) {
         View::share('institution', cache()->remember('institution', now()->addDay(), function () {
             return Institution::first();
         }));
@@ -40,6 +42,7 @@ class ViewServiceProvider extends ServiceProvider
         View::share('institution', null);
     }
 } catch (\Exception $e) {
+    // Si hay cualquier error, compartir null
     View::share('institution', null);
 }
     }
