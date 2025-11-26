@@ -39,7 +39,4 @@ COPY . .
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/storage /var/www/html/bootstrap/cache
 
-
-RUN php artisan route:cache
-
 EXPOSE 80
