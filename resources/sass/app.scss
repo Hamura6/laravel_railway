@@ -1,0 +1,324 @@
+// Import all of Bootstrap’s CSS
+// $primary: #927700;
+
+$blue: #887316 !default;
+// Paleta elegante y moderna
+
+/* $primary: #001c40 !default;
+ */$primary: #001c40 !default;
+$secondary: #3d3d3d !default;
+$success: #0e723b !default;
+$info: #0f517c !default;
+$warning: #e4af1f !default;
+$danger: #a01c0e !default;
+$light: #fafafa !default;
+$purple: #260644 !default;
+/* $dark: #01132b !default; */
+/* $dark: #001c40 !default;
+ */$dark: #1f1f1f !default;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "purple": $purple,
+);
+
+$btn-border-radius: 10px;
+$btn-border-radius-sm: 7px;
+$btn-border-radius-lg: 15px;
+/* $card-cap-padding-y: 0.75rem; // padding vertical
+$card-cap-padding-x: 0rem; */
+
+
+@import "bootstrap-custom";
+
+
+$swal2-success: $success !default;
+$swal2-success-border: rgba($swal2-success, 0.5) !default;
+$swal2-error: $danger !default;
+$swal2-warning: $warning !default;
+$swal2-info: $info !default;
+$swal2-question: $secondary !default;
+
+.swal2-toast {
+  padding-left: 1rem !important;
+  border-width: 5px !important;
+  border-left: 5px solid black !important;
+
+  &.swal2-success {
+    border-color: $swal2-success !important;
+  }
+
+  &.swal2-error {
+    border-color: $swal2-error !important;
+  }
+
+  &.swal2-warning {
+    border-color: $swal2-warning !important;
+  }
+
+  &.swal2-question {
+    border-color: $swal2-question !important;
+  }
+
+  &.swal2-info {
+    border-color: $swal2-info !important;
+  }
+}
+
+
+.pagination .page-link {
+        border-radius: 50% !important;
+    }
+@import "sweetalert2/src/sweetalert2.scss";
+
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
+$main-bg-body: #dadada;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$font-main: "Poppins", sans-serif;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: $font-main !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $main-bg-body;
+  font-size: 12px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+//Creacion de botones redondos
+$crud-colors: (
+  "cc":$success,
+  "rc": $primary,
+  "uc": $info,
+  "dc": $danger
+);
+
+@mixin btn-circle($color, $value) {
+  .btn-#{$color}-circle {
+    background-color: #{$value};
+    color: #fff;
+    text-decoration: none !important;
+    border: none;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition:
+      background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      background-color: darken($value, 5%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba($value, 0.4);
+    }
+
+    &.outlined {
+      border: 2px solid rgba($value, 0.9);
+      background: $light;
+      color: $value;
+
+      &:hover {
+        background-color: darken($value, 5%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        color: $light;
+      }
+
+      &:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba($value, 0.4);
+      }
+    }
+
+  }
+}
+
+@each $color, $value in map-merge($theme-colors, $crud-colors) {
+  @include btn-circle($color, $value );
+}
+
+// ========================================
+// My Card Agrement - Solo variables de color
+// ========================================
+
+// Variables de COLOR (únicas que puedes cambiar)
+$color-bg-card:$info;   // Fondo de la tarjeta
+
+// Componente
+.my-card-agrement {
+  width: 230px;
+  border-radius: 20px;
+  background: $color-bg-card;
+  padding: 5px;
+  overflow: hidden;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .top-section {
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .border {
+      border-bottom-right-radius: 10px;
+      height: 30px;
+      width: 130px;
+      background: $color-bg-card;
+      position: relative;
+      transform: skew(-40deg);
+      box-shadow: -10px -10px 0 0 $color-bg-card;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 0;
+        right: -15px;
+        background: transparent;
+        border-top-left-radius: 10px;
+        box-shadow: -5px -5px 0 2px $color-bg-card;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background: transparent;
+      height: 15px;
+      width: 15px;
+      border-top-left-radius: 15px;
+      box-shadow: -5px -5px 0 2px $color-bg-card;
+    }
+
+    .icons {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px;
+      z-index: 2;
+
+      .logo {
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+
+      .social-media {
+        display: flex;
+        gap: 8px;
+
+        i {
+          font-size: 22px;
+          transition: color 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+
+
+// =========== START VARIABLES LADING =========== //
+
+$color-primary-lading-bg: #1f1f1f;
+$color-primary-lading-text: #f1f1f1;
+
+$color-accent-lading: #927700;
+$color-light-lading: #fdfdfd;
+
+$color-header-lading-bg: darken($color-primary-lading-bg, 5%);
+$color-footer-lading-bg: darken($color-primary-lading-bg, 5%);
+
+// =========== START VARIABLES LADING =========== //
+
+@import "landing";
+
+
+
+// =========== START VARIABLES DASHBOARD =========== //
+/* 
+$color-body-bg: #f5f7fa;
+
+$color-primary-dashboard-bg: #1f1f1f;
+$color-primary-dashboard-text: #f1f1f1;
+
+$color-accent-dashboard: #927700;
+$color-dark-dashboard: #222222; */
+
+$color-body-bg: rgba(lighten($dark, 80%), 0.4);
+
+$color-primary-dashboard-bg: $dark;
+$color-primary-dashboard-text: $light;
+
+$color-accent-dashboard: rgba($color-accent-lading, 0.5);
+$color-dark-dashboard: $color-accent-lading;
+
+$sidebar-width: 260px;
+$topbar-height: 50px;
+
+// =========== END VARIABLES DASHBOARD =========== //
+
+@import "dashboard";

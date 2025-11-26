@@ -1,0 +1,56 @@
+// =========================================================
+// * Corporate UI Dashboard - v1.0.0
+// =========================================================
+//
+// * Product Page: https://www.creative-tim.com/product/corporate-ui-dashboard
+// * Copyright 2022 Creative Tim (https://www.creative-tim.com)
+//
+// Coded by www.creative-tim.com
+//
+// =========================================================
+//
+// * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+// Bootstrap Functions
+@import "corporate-ui-dashboard/bootstrap/_functions";
+/* $primary:       #611df3 !default;
+$secondary:     #64748b !default;
+$info:          #006699 !default;
+$success:       #28a745 !default;
+$warning:       #fad013 !default;
+$danger:        #dc3545 !default;
+$light:         $slate-300 !default;
+$dark:          $slate-800 !default; */
+
+
+/* $theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "white":      $white
+) !default;
+ */
+// Custom Variables
+@import "corporate-ui-dashboard/custom/variables";
+
+// Theme Variables
+@import "corporate-ui-dashboard/variables";
+
+// Bootstrap Core
+@import "corporate-ui-dashboard/bootstrap/bootstrap";
+
+// Theme Core
+@import "corporate-ui-dashboard/theme";
+
+// Custom Variables
+@import "corporate-ui-dashboard/custom/styles";
+// app.scss
+
+// Sobrescribe la variable ANTES de importar Bootstrap
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+

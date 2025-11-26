@@ -1,0 +1,245 @@
+<div wire:ignore.self>
+    <?php if (isset($component)) { $__componentOriginalf8fdb5e325b86ec4fcbd12174b8a2d26 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.card-header','data' => ['title' => 'Consulta de saldos','name' => 'Saldos']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('card-header'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['title' => 'Consulta de saldos','name' => 'Saldos']); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26)): ?>
+<?php $attributes = $__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26; ?>
+<?php unset($__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalf8fdb5e325b86ec4fcbd12174b8a2d26)): ?>
+<?php $component = $__componentOriginalf8fdb5e325b86ec4fcbd12174b8a2d26; ?>
+<?php unset($__componentOriginalf8fdb5e325b86ec4fcbd12174b8a2d26); ?>
+<?php endif; ?>
+    <div class="row g-1">
+        <div class="col-md-12">
+            <?php if (isset($component)) { $__componentOriginal715227d04bfdbc5a76353a8876a0c5ef = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal715227d04bfdbc5a76353a8876a0c5ef = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.card-body','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('card-body'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+                 <?php $__env->slot('header', null, []); ?> 
+                    <h6 class="font-weight-bolder text-secondary">Historial de saldo</h6>
+                 <?php $__env->endSlot(); ?>
+                <style>
+                    @media (max-width: 576px) {
+
+                        .stacked-table td,
+                        .stacked-table th {
+                            display: block;
+                            width: 100%;
+                            white-space: normal;
+                            word-wrap: break-word;
+                            overflow-wrap: break-word;
+                        }
+
+                        .stacked-table tr {
+                            display: block;
+                            margin-bottom: 1rem;
+                            border-bottom: 1px solid #dee2e6;
+                        }
+
+                        .stacked-table td strong {
+                            display: inline-block;
+                            min-width: 120px;
+                            vertical-align: top;
+                        }
+                    }
+                </style>
+                <table class="table  table-bordered border-light table-striped  stacked-table">
+                    <tbody>
+                        <tr>
+                            <th scope="col" class="text-dark text-xs font-weight-bold ">Nombre Completo:</th>
+                            <td class="text-sm text-secondary mb-0"><?php echo e($affiliate->user->name); ?> </td>
+                            <th scope="col" class="text-dark text-xs font-weight-bold ">Matrícula:</th>
+                            <td class="text-sm text-secondary mb-0"><?php echo e($affiliate->id); ?></td>
+                            <th scope="col" class="text-dark text-xs font-weight-bold ">C.I:</th>
+                            <td class="text-sm text-secondary mb-0"><?php echo e($affiliate->user->ci); ?></td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="text-dark text-xs font-weight-bold ">Teléfonos:</th>
+                            <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $affiliate->user->phones; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $phone): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                <td class="text-sm text-secondary mb-0"><?php echo e($phone->number); ?> </td>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
+                            <th scope="col" class="text-dark text-xs font-weight-bold ">Correo electrónico:</th>
+                            <td class="text-sm text-secondary mb-0" colspan="3"><?php echo e($affiliate->user->email); ?>
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th scope="col" class="text-dark text-xs font-weight-bold "> total:</th>
+                            <td class="text-sm text-secondary mb-0">
+                                <?php echo e($affiliate->totalSum); ?> Bs.
+                            </td>
+                            <th scope="col" class="text-dark text-xs font-weight-bold "> Pagado:</th>
+                            <td class="text-sm text-secondary mb-0">
+                                <?php echo e($affiliate->total_pagado + $affiliate->planes); ?> Bs.
+                            </td>
+                            <th scope="col" class="text-dark text-xs font-weight-bold "> Deuda:</th>
+                            <td class="text-sm text-secondary mb-0">
+                                <?php echo e($affiliate->prest - $affiliate->planes); ?> Bs.
+                            </td>
+                        </tr>
+                </table>
+                <hr class="my-0">
+                <div class="row mb-2">
+                    <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                            <input type="number " class="form-control" wire:model="year" id="floatingInput"
+                                placeholder="name@example.com">
+                            <label for="floatingInput">Desde</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <select class="form-select" wire:model="type" id="floatingSelect"
+                                aria-label="Floating label select example">
+                                <option value="">Todos</option>
+                                <option value="Por pagar">Por pagar</option>
+                                <option value="Pagado">Pagado</option>
+                            </select>
+                            <label for="floatingSelect">Seleccione</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-floating">
+                            <select class="form-select" wire:model="concept" id="floatingSelect"
+                                aria-label="Floating label select example">
+                                <option value="">Todos</option>
+                                <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $fees; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $fee): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <option value="<?php echo e($fee->id); ?>"><?php echo e($fee->name); ?></option>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
+                            </select>
+                            <label for="floatingSelect">Seleccione el concepto</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="d-grid gap-1  d-md-flex justify-content-md-end">
+                            <a href="<?php echo e(route('pdf.report.affiliateDebt', [$affiliate->id, $this->year, $this->type, $this->concept])); ?>"
+                                class="btn btn-sm btn-outline-danger mb-1" type="button">
+                                <i class="far fa-file-pdf fs-6"></i>
+                                Descargar PDF
+                            </a>
+                            <button class="btn btn-sm btn-info mb-1 " wire:click.prevent='update()' type="button">
+                                <i class="far fa-question-circle fs-6"></i>
+                                Realizar consulta</button>
+
+                        </div>
+                    </div>
+                </div>
+                <?php if (isset($component)) { $__componentOriginal230577b50e69c5450bcc4895115fe6d2 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal230577b50e69c5450bcc4895115fe6d2 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.table-registers','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('table-registers'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+                     <?php $__env->slot('header', null, []); ?> 
+                        <th>
+                            #
+                        </th>
+                        <th>
+                            Tipo
+                        </th>
+                        <th>
+                            Fecha
+                        </th>
+                        <th>
+                            Fecha de registro
+                        </th>
+                        <th>
+                            Monto
+                        </th>
+                        <th>
+                            Deuda
+                        </th>
+                        <th>
+                            Estado
+                        </th>
+                        <th align="center">
+                            Operación
+                        </th>
+                     <?php $__env->endSlot(); ?>
+                    <tbody>
+                        <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $payments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $payment): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
+                            <tr class="align-middle">
+                                <td><?php echo e($loop->iteration); ?></td>
+                                <td><?php echo e($payment->fee->name); ?></td>
+                                <td class="text-center"><?php echo e($payment->fecha_display); ?></td>
+                                <td><?php echo e($payment->updated_at); ?></td>
+                                <td><?php echo e($payment->amount); ?></td>
+                                <td><?php echo e($payment->debt); ?></td>
+                                <td class="text-center"><span
+                                        class="badge rounded-pill  <?php echo e($payment->status == 'Por pagar' ? 'text-danger  border border-danger ' : 'text-success  border border-success '); ?> border-1"><?php echo e($payment->status); ?></span>
+                                </td>
+                                <td align="center">
+                                    <!--[if BLOCK]><![endif]--><?php if($payment->status == 'Por pagar' && $payment->fee->id != 1): ?>
+                                        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('payments.pays')): ?>
+                                            <button wire:target="check, delete, edit" wire:loading.attr="disabled"
+                                                class="btn-cc-circle outlined"
+                                                onclick="Question(<?php echo e($payment->id); ?>,'Desea realizar el pago completo del tramite?','toPay')"
+                                                data-bs-toggle="tooltip" data-bs-title="Pagar saldo">
+                                                <i class="fas fa-hand-holding-usd fs-6"></i></button>
+                                        <?php endif; ?>
+                                    <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
+                                </td>
+                            </tr>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
+                            <tr class="align-middle" align="center">
+                                <td colspan="7">
+                                    <h5>
+                                        <i class="far fa-sad-tear"></i>
+
+                                        No se encontraron registros...
+                                    </h5>
+                                </td>
+                            </tr>
+                        <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
+                    </tbody>
+
+                 <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal230577b50e69c5450bcc4895115fe6d2)): ?>
+<?php $attributes = $__attributesOriginal230577b50e69c5450bcc4895115fe6d2; ?>
+<?php unset($__attributesOriginal230577b50e69c5450bcc4895115fe6d2); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal230577b50e69c5450bcc4895115fe6d2)): ?>
+<?php $component = $__componentOriginal230577b50e69c5450bcc4895115fe6d2; ?>
+<?php unset($__componentOriginal230577b50e69c5450bcc4895115fe6d2); ?>
+<?php endif; ?>
+                <div class="border-top py-3 px-3 d-flex align-items-center">
+                    <?php echo e($payments->links()); ?>
+
+                </div>
+             <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal715227d04bfdbc5a76353a8876a0c5ef)): ?>
+<?php $attributes = $__attributesOriginal715227d04bfdbc5a76353a8876a0c5ef; ?>
+<?php unset($__attributesOriginal715227d04bfdbc5a76353a8876a0c5ef); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal715227d04bfdbc5a76353a8876a0c5ef)): ?>
+<?php $component = $__componentOriginal715227d04bfdbc5a76353a8876a0c5ef; ?>
+<?php unset($__componentOriginal715227d04bfdbc5a76353a8876a0c5ef); ?>
+<?php endif; ?>
+        </div>
+    </div>
+</div>
+<?php /**PATH D:\ICAPV4\ICAP\resources\views/livewire/finances/debts-details-component.blade.php ENDPATH**/ ?>
