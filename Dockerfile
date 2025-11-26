@@ -11,8 +11,14 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install gd bcmath pdo pdo_mysql
 
-# Habilitar mod_rewrite para Laravel
+# Habilitar mod_rewrite
 RUN a2enmod rewrite
+
+# Evitar advertencia ServerName
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
+# Cambiar DocumentRoot al public
+RUN sed -i 's#/var/www/html#/var/www/html/public#g' /etc/apache2/sites-available/000-default.conf
 
 WORKDIR /var/www/html
 
