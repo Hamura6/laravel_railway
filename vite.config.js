@@ -29,6 +29,18 @@ export default defineConfig({
                 ],
             },
         },
+    },build: {
+        rollupOptions: {
+            output: {
+                assetFileNames: assetInfo => {
+                    // Copiar fuentes al folder /assets
+                    if (/\.(woff2?|ttf|eot|svg)$/.test(assetInfo.name)) {
+                        return 'assets/[name][extname]';
+                    }
+                    return 'assets/[name]-[hash][extname]';
+                },
+            },
+        },
     },
 
 });
