@@ -5,14 +5,11 @@ buildCommand = "composer install --optimize-autoloader --no-dev --no-interaction
 [deploy]
 startCommand = "php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan serve --host=0.0.0.0 --port=$PORT"
 
-[http]
-port = 8080
-
 [php]
 version = "8.2"
 extensions = ["gd", "bcmath", "pdo_mysql", "zip", "mbstring", "xml", "curl"]
 
 [env]
-NODE_ENV = "production"
 APP_ENV = "production"
 APP_DEBUG = "false"
+NODE_ENV = "production"
