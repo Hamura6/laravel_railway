@@ -13,8 +13,8 @@ port = 8080
 port = 8080
 path = "/"
 timeout = 300
-interval = 15s
-initialDelay = 10s
+interval = "15s"
+initialDelay = "10s"
 
 [php]
 version = "8.2"
