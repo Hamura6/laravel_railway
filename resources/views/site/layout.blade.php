@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>{{ $institution->initials }} </title>
+    <title>{{ $institution->initials??'ICAP' }} </title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
@@ -14,18 +14,18 @@
         <div class="header-wrapper" id="start">
             <!-- LOGO -->
             <a class="header-logo" href="{{ route('home') }}">
-                <img alt="Logo ICAP" src="{{ $institution->image }}">
+                <img alt="Logo ICAP" src="{{ $institution->image??'logo' }}">
                 <div class="header-title">
-                    {{ $institution->initials }}
-                    <div class="slogan">{{ $institution->name }}</div>
+                    {{ $institution->initials??'ICAP' }}
+                    <div class="slogan">{{ $institution->name??'ILUSTRE COLEGIO DE ABOGADOS' }}</div>
                 </div>
             </a>
 
             <!-- CONTACTO + LOGIN -->
             <div class="header-info">
                 <div class="header-contacts">
-                    <a href="#"><i class="fas fa-phone"></i> (+591) {{ $institution->phone }}</a>
-                    <a href="#"><i class="fas fa-at"></i> {{ $institution->email }}</a>
+                    <a href="#"><i class="fas fa-phone"></i> (+591) {{ $institution->phone??'0000' }}</a>
+                    <a href="#"><i class="fas fa-at"></i> {{ $institution->email??'icap@gmail.com' }}</a>
                 </div>
 
                 @auth
@@ -152,9 +152,9 @@
                 <div class="footer-contact">
                     <h2 class="footer-title">Contáctanos</h2>
                     <ul class="footer-contact-list">
-                        <li><i class="fa fa-map-marker-alt"></i> {{ $institution->address }}</li>
-                        <li><i class="fa fa-phone-alt"></i> (+591){{ $institution->phone }}</li>
-                        <li><i class="fa fa-envelope"></i> {{ $institution->email }}</li>
+                        <li><i class="fa fa-map-marker-alt"></i> {{ $institution->address??'city' }}</li>
+                        <li><i class="fa fa-phone-alt"></i> (+591){{ $institution->phone??'mercurio' }}</li>
+                        <li><i class="fa fa-envelope"></i> {{ $institution->email??'susano' }}</li>
                     </ul>
 
                     <div class="footer-socials">

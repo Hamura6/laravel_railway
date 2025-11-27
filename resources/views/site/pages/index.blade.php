@@ -271,7 +271,7 @@
                                         <h5 class="text-warning mb-1">Dirección</h5>
                                         <p class="mb-0 text-light">
                                             {{$institution->address??'ninguno'}}<br>
-                                            <strong>{{ $institution->city_label }} - Bolivia</strong>
+                                            <strong>{{ $institution->city_label??'vista' }} - Bolivia</strong>
                                         </p>
                                     </div>
                                 </div>
@@ -287,7 +287,7 @@
                                         <h5 class="text-warning mb-1">Teléfono</h5>
                                         <a href="tel:+59122407713"
                                             class="text-light text-decoration-none hover-text-warning transition">
-                                            <strong>(+591) {{$institution->phone}}</strong>
+                                            <strong>(+591) {{$institution->phone??'0000'}}</strong>
                                         </a>
                                     </div>
                                 </div>
