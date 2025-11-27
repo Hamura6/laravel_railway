@@ -52,9 +52,7 @@ use App\Livewire\SpecialtyComponent;
 use App\Livewire\UniversityComponent;
 use App\Models\University;
 use Faker\Guesser\Name;
-Route::get('/health', function () {
-    return response()->json(['status' => 'ok']);
-});
+
 Route::get('/', function () {
     return view('site.pages.index');
 })->name('home');

@@ -1,20 +1,12 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "composer install --optimize-autoloader --no-dev && npm install && npm run build"
+buildCommand = "composer install --optimize-autoloader --no-dev --no-interaction && npm install && npm run build"
 
 [deploy]
-startCommand = "php artisan migrate --force && php artisan config:cache && php artisan route:cache && php -S 0.0.0.0:$PORT -t public"
-
+startCommand = "php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan serve --host=0.0.0.0 --port=$PORT"
 
 [http]
 port = 8080
-
-[healthcheck]
-port = 8080
-path = "/health" 
-timeout = 300
-interval = "15s"
-initialDelay = "10s"
 
 [php]
 version = "8.2"
