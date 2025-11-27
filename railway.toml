@@ -3,7 +3,7 @@ builder = "NIXPACKS"
 buildCommand = "composer install --optimize-autoloader --no-dev && npm install && npm run build"
 
 [deploy]
-startCommand = "php artisan migrate --force && php artisan config:cache && php artisan route:cache"
+startCommand = "php artisan migrate --force && php artisan config:cache && php artisan route:cache && php -S 0.0.0.0:8080 -t public"
 
 [php]
 version = "8.2"
