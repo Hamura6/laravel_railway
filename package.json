@@ -5,6 +5,9 @@
         "build": "vite build",
         "dev": "vite"
     },
+    "engines": {
+        "node": ">=20.19.0"
+    },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.4",
         "@popperjs/core": "^2.11.8",
