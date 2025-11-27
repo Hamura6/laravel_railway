@@ -86,7 +86,7 @@ Route::middleware(['auth','banned'])->group(function () {
     Route::get('dashboard', DashboardComponent::class)->name('dashboard.index');
 
 
-    Route::get('users', UserComponent::class)->name('users');
+    Route::get('users', App\Livewire\UserComponent::class)->name('users');
     Route::get('roles', RolesComponent::class)->name('roles');
     Route::get('permissions', PermissionComponent::class)->name('permissions');
     Route::get('affiliates', App\Livewire\Affiliate\ViewAffiliate::class)->name('view.affiliate');
