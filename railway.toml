@@ -7,10 +7,10 @@ startCommand = "php artisan migrate --force && php artisan config:cache && php a
 
 
 [http]
-port = $PORT
+port = 8080
 
 [healthcheck]
-port = $PORT
+port = 8080
 path = "/"
 timeout = 300
 interval = 15s
