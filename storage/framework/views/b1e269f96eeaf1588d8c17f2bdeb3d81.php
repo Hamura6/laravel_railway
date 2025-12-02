@@ -249,20 +249,11 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
 
                 <div class="row g-1">
                     <div class="col-md-12">
-                        <div class="d-flex justify-content-center mb-4">
-                            <!--[if BLOCK]><![endif]--><?php if($photoPreview): ?>
-                                <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                    src="<?php echo e($photoPreview); ?>" alt="Vista previa" wire:loading.remove
-                                    wire:target="photo">
-                            <?php elseif($this->image): ?>
-                                <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                    src="<?php echo e($this->image ? $this->image : 'https://i.pinimg.com/originals/bd/2e/0d/bd2e0d56cc9b061d694979158bda4d0b.jpg'); ?>"
-                                    alt="Image placeholder" wire:loading.remove wire:target="photo">
-                            <?php else: ?>
-                                <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                    src="<?php echo e(asset('image/user.png')); ?>" alt="Imagen por defecto" wire:loading.remove
-                                    wire:target="photo">
-                            <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
+                        <div class="d-flex justify-content-center mb-4" wire:ignore>
+                            <!-- Imagen que se actualizará -->
+                            <img id="profileImage" class="border-radius-lg rounded-circle" width="200" height="200"
+                                src="<?php echo e($this->image ? $this->image : 'https://i.pinimg.com/originals/bd/2e/0d/bd2e0d56cc9b061d694979158bda4d0b.jpg'); ?>"
+                                alt="Imagen de perfil" wire:loading.remove wire:target="photo">
 
                             <!-- Spinner de carga -->
                             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" wire:loading
@@ -302,6 +293,34 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                             </div>
                         </div>
                     </div>
+                    <script>
+                        // Vista previa de imagen antes de subir
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const inputFile = document.querySelector('input[type="file"][wire\\:model="photo"]');
+                            const profileImage = document.getElementById('profileImage');
+
+                            if (inputFile) {
+                                inputFile.addEventListener('change', function(e) {
+                                    if (e.target.files && e.target.files[0]) {
+                                        const reader = new FileReader();
+                                        reader.onload = function(event) {
+                                            // Mostrar la vista previa local
+                                            profileImage.src = event.target.result;
+                                        };
+                                        reader.readAsDataURL(e.target.files[0]);
+                                    }
+                                });
+                            }
+
+                            // Escuchar el evento de Livewire cuando la foto se haya actualizado
+                            window.livewire.on('photoUpdated', () => {
+                                // Aquí podríamos recargar la imagen del servidor, pero Livewire ya actualizará la vista
+                                // Sin embargo, si quieres forzar un refresco de la imagen para evitar caché, podrías hacer:
+                                // profileImage.src = profileImage.src + '?t=' + new Date().getTime();
+                                // Pero Livewire ya actualizará la propiedad $this->image, por lo que la imagen se actualizará automáticamente.
+                            });
+                        });
+                    </script>
                     <div class="col-md-12">
                         <div class="form-floating">
                             <input type="email" wire:model="email"
