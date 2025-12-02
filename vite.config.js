@@ -9,12 +9,12 @@ export default defineConfig({
             input: [
                 'resources/js/app.js',
                 'resources/sass/app.scss',
-                // 'resources/js/landing-pages.js'
+                'resources/sass/landing-pages.scss'
             ],
             refresh: true,
         }),
     ],
-    base: process.env.NODE_ENV === 'production' ? process.env.APP_URL + '/' : '/',
+/*     base: process.env.NODE_ENV === 'production' ? process.env.APP_URL + '/' : '/', */
     server: {
         cors: true,
     },
@@ -29,16 +29,7 @@ export default defineConfig({
                 ],
             },
         },
-    }, build: {
-        rollupOptions: {
-            output: {
-                assetFileNames: (assetInfo) => {
-                    if (assetInfo.name && assetInfo.name.endsWith('.woff2')) return 'assets/[name][extname]';
-                    return 'assets/[name][extname]';
-                },
-            },
-        },
-    },
+    }
 
 });
 // build: {

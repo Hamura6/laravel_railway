@@ -8,11 +8,11 @@
         position: absolute;
         top: 10px;
         left: 10px;
-        width: 120px;
+
     }
 
     .logo img {
-        width: 120px;
+        width: 50px;
         height: auto;
     }
 
@@ -119,7 +119,7 @@
 
 <body>
     <div class="logo">
-        <img width="100"  src="{{ public_path('storage/institution/'.$institution->logo) }}" alt="">
+        <img width="50"  src="{{ public_path('storage/institution/'.$institution->logo) }}" alt="">
 
     </div>
     <div align="center" class="header">

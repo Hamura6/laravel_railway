@@ -13,27 +13,27 @@ $scrollIntoViewJsSnippet = ($scrollTo !== false)
 <div>
     <!--[if BLOCK]><![endif]--><?php if($paginator->hasPages()): ?>
         <nav class="d-flex justify-items-center justify-content-end">
-            <div class="d-flex justify-content-end flex-fill d-sm-none">
+            <div class="d-flex  justify-content-end flex-fill d-sm-none">
                 <ul class="pagination">
                     
                     <!--[if BLOCK]><![endif]--><?php if($paginator->onFirstPage()): ?>
                         <li class="page-item disabled" aria-disabled="true">
-                            <span class="page-link" > &laquo; /* <?php echo app('translator')->get('pagination.previous'); ?> */</span>
+                            <span class="page-link" > &laquo; </span>
                         </li>
                     <?php else: ?>
                         <li class="page-item">
-                            <button type="button" dusk="previousPage<?php echo e($paginator->getPageName() == 'page' ? '' : '.' . $paginator->getPageName()); ?>" class="page-link" wire:click="previousPage('<?php echo e($paginator->getPageName()); ?>')" x-on:click="<?php echo e($scrollIntoViewJsSnippet); ?>" wire:loading.attr="disabled" > &laquo;/* <?php echo app('translator')->get('pagination.previous'); ?> */</button>
+                            <button type="button" dusk="previousPage<?php echo e($paginator->getPageName() == 'page' ? '' : '.' . $paginator->getPageName()); ?>" class="page-link" wire:click="previousPage('<?php echo e($paginator->getPageName()); ?>')" x-on:click="<?php echo e($scrollIntoViewJsSnippet); ?>" wire:loading.attr="disabled" > &laquo;</button>
                         </li>
                     <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
 
                     
                     <!--[if BLOCK]><![endif]--><?php if($paginator->hasMorePages()): ?>
                         <li class="page-item">
-                            <button type="button" dusk="nextPage<?php echo e($paginator->getPageName() == 'page' ? '' : '.' . $paginator->getPageName()); ?>" class="page-link" wire:click="nextPage('<?php echo e($paginator->getPageName()); ?>')" x-on:click="<?php echo e($scrollIntoViewJsSnippet); ?>" wire:loading.attr="disabled" > &raquo;/* <?php echo app('translator')->get('pagination.next'); ?> */</button>
+                            <button type="button" dusk="nextPage<?php echo e($paginator->getPageName() == 'page' ? '' : '.' . $paginator->getPageName()); ?>" class="page-link" wire:click="nextPage('<?php echo e($paginator->getPageName()); ?>')" x-on:click="<?php echo e($scrollIntoViewJsSnippet); ?>" wire:loading.attr="disabled" > &raquo;</button>
                         </li>
                     <?php else: ?>
                         <li class="page-item disabled" aria-disabled="true">
-                            <span class="page-link" aria-hidden="true">&raquo;/* <?php echo app('translator')->get('pagination.next'); ?> */</span>
+                            <span class="page-link" aria-hidden="true">&raquo;</span>
                         </li>
                     <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
                 </ul>

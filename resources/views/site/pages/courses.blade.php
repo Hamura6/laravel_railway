@@ -1,7 +1,7 @@
 @extends('site.layout')
 @section('content')
     <div class="banner">
-        <img class="img-banner" src="{{ asset('assets/img/courses1.jpg') }}" alt="Cursos">
+        <img class="img-banner" src="{{ asset('image/courses1.jpg') }}" alt="Cursos">
         <div class="banner-content">
             <h2 class="title-banner">Cursos</h2>
             <p class="desc-banner">Aprende nuevas habilidades con nuestros cursos en línea.</p>

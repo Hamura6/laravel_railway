@@ -1,0 +1,76 @@
+// Import all of Bootstrap’s CSS
+// $primary: #927700;
+
+$blue: #887316 !default;
+// Paleta elegante y moderna
+
+/* $primary: #001c40 !default;
+ */$primary: #887316 !default;
+$secondary: #3d3d3d !default;
+$success: #0e723b !default;
+$info: #0f517c !default;
+$warning: #e4af1f !default;
+$danger: #a01c0e !default;
+$light: #fafafa !default;
+/* $dark: #01132b !default; */
+/* $dark: #001c40 !default;
+ */$dark: #1f1f1f !default;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+$btn-border-radius: 10px;
+$btn-border-radius-sm: 7px;
+$btn-border-radius-lg: 15px;
+/* $card-cap-padding-y: 0.75rem; // padding vertical
+$card-cap-padding-x: 0rem; */
+
+
+@import "bootstrap-custom";
+
+
+.pagination .page-link {
+        border-radius: 50% !important;
+    }
+
+
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
+$main-bg-body: #dadada;
+$font-main: "Poppins", sans-serif;
+
+
+// ========================================
+// My Card Agrement - Solo variables de color
+// ========================================
+
+
+
+// =========== START VARIABLES LADING =========== //
+
+$color-primary-lading-bg: #1f1f1f;
+$color-primary-lading-text: #f1f1f1;
+
+$color-accent-lading: #927700;
+$color-light-lading: #fdfdfd;
+
+$color-header-lading-bg: darken($color-primary-lading-bg, 5%);
+$color-footer-lading-bg: darken($color-primary-lading-bg, 5%);
+
+// =========== START VARIABLES LADING =========== //
+
+@import "landing";
+
+
+
+
+

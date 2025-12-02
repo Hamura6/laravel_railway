@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title><?php echo e($institution->initials); ?> </title>
-    <?php echo app('Illuminate\Foundation\Vite')(['resources/sass/app.scss', 'resources/js/app.js']); ?>
+    <title><?php echo e($institution->initials ?? 'ICAP'); ?> </title>
+    <?php echo app('Illuminate\Foundation\Vite')(['resources/sass/landing-pages.scss', 'resources/js/app.js']); ?>
 </head>
 
 <body>
@@ -14,35 +14,34 @@
         <div class="header-wrapper" id="start">
             <!-- LOGO -->
             <a class="header-logo" href="<?php echo e(route('home')); ?>">
-                <img alt="Logo ICAP" src="<?php echo e($institution->image); ?>">
+                <img alt="Logo ICAP" src="<?php echo e($institution->image ?? 'logo'); ?>">
                 <div class="header-title">
-                    <?php echo e($institution->initials); ?>
+                    <?php echo e($institution->initials ?? 'ICAP'); ?>
 
-                    <div class="slogan"><?php echo e($institution->name); ?></div>
+                    <div class="slogan"><?php echo e($institution->name ?? 'ILUSTRE COLEGIO DE ABOGADOS'); ?></div>
                 </div>
             </a>
 
             <!-- CONTACTO + LOGIN -->
             <div class="header-info">
                 <div class="header-contacts">
-                    <a href="#"><i class="fas fa-phone"></i> (+591) <?php echo e($institution->phone); ?></a>
-                    <a href="#"><i class="fas fa-at"></i> <?php echo e($institution->email); ?></a>
+                    <a href="#"><i class="fas fa-phone"></i> (+591) <?php echo e($institution->phone ?? '0000'); ?></a>
+                    <a href="#"><i class="fas fa-at"></i> <?php echo e($institution->email ?? 'icap@gmail.com'); ?></a>
                 </div>
 
                 <?php if(auth()->guard()->check()): ?>
                     <div class="header-login">
-                        <a class="login-button" href="<?php echo e(route('dashboard.index')); ?>">
-                            Dashboard
+                        <a class="login-button" href="<?php echo e(route('settings.profile')); ?>">
+                            <i class="fas fa-user"></i> Acceder
                         </a>
                     </div>
                 <?php else: ?>
                     <div class="header-login">
                         <?php if(!Route::is('login')): ?>
                             <a class="login-button" href="<?php echo e(route('login')); ?>">
-                                Iniciar sesión
+                                <i class="fas fa-sign-in-alt"></i> Iniciar sesión
                             </a>
                         <?php endif; ?>
-                        
                     </div>
                 <?php endif; ?>
 
@@ -102,10 +101,23 @@
                     href="<?php echo e(route('site.requirement')); ?>">
                     <i class="fa fa-clipboard"></i> Requisitos
                 </a>
-                <a class="my-nav-link <?php echo e(Route::is('site.about') ? 'active' : ''); ?>"
-                    href="<?php echo e(route('site.about')); ?>">
+
+
+
+                <a class="my-nav-link <?php echo e(Route::is('site.about') ? 'active' : ''); ?>" href="<?php echo e(route('site.about')); ?>">
                     <i class="fa fa-info-circle"></i> Acerca de
                 </a>
+                <?php if(auth()->guard()->check()): ?>
+                    <a class="my-nav-link movil_link <?php echo e(Route::is('settings.profile') ? 'active' : ''); ?>"
+                        href="<?php echo e(route('settings.profile')); ?>"> <i class="fas fa-user"></i> Acceder
+                    </a>
+                <?php else: ?>
+                    <?php if(!Route::is('login')): ?>
+                        <a class="my-nav-link movil_link <?php echo e(Route::is('login') ? 'active' : ''); ?>"
+                            href="<?php echo e(route('login')); ?>"> <i class="fas fa-sign-in-alt"></i> Iniciar sesión
+                        </a>
+                    <?php endif; ?>
+                <?php endif; ?>
             </div>
         </div>
     </nav>
@@ -148,9 +160,9 @@
                 <div class="footer-contact">
                     <h2 class="footer-title">Contáctanos</h2>
                     <ul class="footer-contact-list">
-                        <li><i class="fa fa-map-marker-alt"></i> <?php echo e($institution->address); ?></li>
-                        <li><i class="fa fa-phone-alt"></i> (+591)<?php echo e($institution->phone); ?></li>
-                        <li><i class="fa fa-envelope"></i> <?php echo e($institution->email); ?></li>
+                        <li><i class="fa fa-map-marker-alt"></i> <?php echo e($institution->address ?? 'city'); ?></li>
+                        <li><i class="fa fa-phone-alt"></i> (+591)<?php echo e($institution->phone ?? 'mercurio'); ?></li>
+                        <li><i class="fa fa-envelope"></i> <?php echo e($institution->email ?? 'susano'); ?></li>
                     </ul>
 
                     <div class="footer-socials">

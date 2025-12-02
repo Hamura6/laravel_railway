@@ -34,5 +34,5 @@ foreach ($attributes->all() as $__key => $__value) {
 
 unset($__defined_vars, $__key, $__value); ?>
 
-  <h2><?php echo e($title); ?></h2>
+  <h2 class="text-dark" ><?php echo e($title); ?></h2>
 <?php /**PATH D:\ICAPV4\ICAP\resources\views/components/card-header.blade.php ENDPATH**/ ?>

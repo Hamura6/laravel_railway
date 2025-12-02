@@ -7,9 +7,11 @@ use App\Models\Deceased;
 use Illuminate\Support\Facades\DB;
 use Livewire\Attributes\On;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class DeceasedComponent extends Component
 {
+    use WithPagination;
     public $id, $affiliate_id, $date, $description, $mausoleum = 'Elegir',$search='';
     public function mount(){
         $this->authorize('deceaseds.view');

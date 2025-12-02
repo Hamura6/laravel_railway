@@ -12,7 +12,7 @@
                 <div class="col-md-6 p-1">
                     <div class="align-center justify-content-center" align="center">
                             <img class="border-radius-lg " width="110" height="115"
-                                src="{{ $photo ? $photo->temporaryUrl() : ($this->image ?: asset('assets/img/user.png')) }}">
+                                src="{{ $photo ? $photo->temporaryUrl() : ($this->image ?: asset('image/user.png')) }}">
                     </div>
                     <div class="form-group">
                         <label class="form-control-label" for="basic-url">Elija imagen</label>
@@ -170,7 +170,7 @@
             <!-- Universidad -->
             <div class="mb-3" x-data="universityData()">
                 <label for="university" class="form-label">Universidad</label>
-                <input type="text" class="form-control" x-model="universityText" list="university-list"
+                <input type="text" id="university" class="form-control" x-model="universityText" list="university-list"
                     placeholder="Seleccionar o escribir universidad" @change="handleUniversityChange()">
 
                 <datalist id="university-list">

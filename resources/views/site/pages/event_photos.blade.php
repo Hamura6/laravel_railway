@@ -1,7 +1,7 @@
 @extends('site.layout')
 @section('content')
     <div class="banner">
-        <img class="img-banner" src="{{ asset('assets/img/single.jpg') }}" alt="Cursos">
+        <img class="img-banner" src="{{ asset('images/single.jpg') }}" alt="Cursos">
         <div class="banner-content">
             <h2 class="title-banner">Imagenes </h2>
             <p class="desc-banner">Bienvenidos a nuestra galeria de imagenes</p>
@@ -14,7 +14,7 @@
                 <div class="polaroid-card" data-bs-toggle="tooltip" title="{{ $photo->title ?? '' }}">
                     <div class="polaroid">
                         <div class="photo">
-                            <img src="{{ $photo->image }}" class="w-100 h-100 object-fit-cover" alt="Imagen">
+                            <img src="{{ $photo->image }}" class="w-100 h-100 object-fit-cover" alt="Imagen" loading="lazy">
 
                             <!-- Efectos vintage (super ligeros) -->
                             <div class="dust"></div>

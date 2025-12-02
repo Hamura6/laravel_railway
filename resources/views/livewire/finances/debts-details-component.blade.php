@@ -151,7 +151,10 @@
                             <tr class="align-middle">
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $payment->fee->name }}</td>
-                                <td class="text-center">{{ $payment->fecha_display }}</td>
+                                <td class="text-center">{{ $payment->fecha_display }} 
+
+
+                                </td>
                                 <td>{{ $payment->updated_at }}</td>
                                 <td>{{ $payment->amount }}</td>
                                 <td>{{ $payment->debt }}</td>

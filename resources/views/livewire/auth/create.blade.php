@@ -1,5 +1,5 @@
 <div class="col-12">
-    <x-card-header title="{{ $this->id < 0 ? 'Crear' : 'Actualizar' }} | Usuario" name="Usuario" />
+    <x-card-header title="{{ $this->id <= 0 ? 'Registrar' : 'Actualizar' }} | Usuario" name="Usuario" />
     <x-card-body>
         <x-slot name='header'>
             <h4 class="font-weight-bolder mb-0 text-dark">Datos Personales</h4>
@@ -66,7 +66,7 @@
                                         wire:target="photo">
                                 @else
                                     <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                        src="{{ $this->image ? $this->image : asset('assets/img/user.png') }}"
+                                        src="{{ $this->image ? $this->image : asset('image/user.png') }}"
                                         alt="Image placeholder" wire:loading.remove wire:target="photo">
                                 @endif
 

@@ -1,7 +1,7 @@
 @extends('site.layout')
 @section('content')
     <div class="banner">
-        <img class="img-banner" src="{{ asset('assets/img/2.jpg') }}" alt="Cursos">
+        <img class="img-banner" src="{{ asset('image/2.webp') }}" alt="Cursos">
         <div class="banner-content">
             <h2 class="title-banner">Organización</h2>
             <p class="desc-banner">Una buena organización en una empresa es fundamental porque determina cómo funciona.</p>

@@ -4,7 +4,7 @@ window.bootstrap = bootstrap;
 import Swal from 'sweetalert2';
 window.Swal = Swal;
 
-import '../sass/app.scss'
+/* import '../sass/app.scss' */
 
 window.initDashboardUI = function () {
 

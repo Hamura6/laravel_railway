@@ -1,7 +1,7 @@
 @extends('site.layout')
 @section('content')
     <div class="banner">
-        <img class="img-banner" src="{{ asset('assets/img/news.jpg') }}" alt="Cursos">
+        <img class="img-banner" src="{{ asset('image/news.jpg') }}" alt="Cursos">
         <div class="banner-content">
             <h2 class="title-banner">Requisitos de inscripción</h2>
             <p class="desc-banner">Forma parte de nuestra comunidad y accede a cursos, seminarios, diplomados y maestrías que potenciarán tu desarrollo profesional.</p>

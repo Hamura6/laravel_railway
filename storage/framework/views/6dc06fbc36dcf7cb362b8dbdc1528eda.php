@@ -2,7 +2,7 @@
 <?php $__env->startSection('content'); ?>
     
     <div class="banner">
-      <img class="img-banner" src="<?php echo e(asset('assets/img/blog-2.jpg')); ?>" alt="Cursos">
+      <img class="img-banner" src="<?php echo e(asset('image/blog-2.jpg')); ?>" alt="Cursos">
       <div class="banner-content">
         <h2 class="title-banner">Acerca de nosotros</h2>
         <p class="desc-banner">Somos una institución dedicada a la formación continua de profesionales del Derecho, comprometida con la excelencia, la ética y la innovación.</p>
@@ -21,7 +21,7 @@
 
         <div class="row">
           <div class="col-12 col-md-4 col-lg-5">
-            <img class="img-fluid h-100" src="<?php echo e(asset('assets/img/fachada.png')); ?>">
+            <img class="img-fluid h-100" src="<?php echo e(asset('image/fachada.webp')); ?>">
           </div>
           <div class="col-12 col-md-8 col-lg-7">
             <div class="my-title">Historia del Ilustre Colegio de Abogados de Potosí</div>

@@ -56,7 +56,7 @@
                                 <span
                                     class="badge rounded-pill 
         {{ $user->status == 'ENABLED' ? 'text-bg-success' : 'text-bg-danger' }}">
-                                    {{ $user->status }}
+                                    {{ __($user->status) }}
                                 </span>
                                 @can('users.block')
                                     <!-- Botón centrado debajo del badge -->

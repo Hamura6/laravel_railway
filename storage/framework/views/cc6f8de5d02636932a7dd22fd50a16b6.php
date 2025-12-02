@@ -18,7 +18,7 @@
         </a>
 
         <!-- Usuarios + Submenú -->
-        <?php if(auth()->user()->can('user()s.view') ||
+        <?php if(auth()->user()->can('users.view') ||
                 auth()->user()->can('roles.view') ||
                 auth()->user()->can('permissions.assign')): ?>
             <div
@@ -48,15 +48,18 @@
             <?php endif; ?>
         </div>
 
-
-        <div
-            class="menu-item has-submenu toggle-submenu <?php echo e(Route::is(['view.affiliate', 'license.affiliate', 'deceased.affiliate']) ? 'active' : ''); ?>">
-            <div class="menu-label">
-                <i class="fas fa-user-tie"></i> Gestión de Afiliados
+        <?php if(auth()->user()->can('affiliates.view') ||
+                auth()->user()->can('licenses.view') ||
+                auth()->user()->can('directories.view') ||
+                auth()->user()->can('deceaseds.view')): ?>
+            <div
+                class="menu-item has-submenu toggle-submenu <?php echo e(Route::is(['view.affiliate', 'license.affiliate', 'deceased.affiliate', 'directories.list']) ? 'active' : ''); ?>">
+                <div class="menu-label">
+                    <i class="fas fa-user-tie"></i> Gestión de Afiliados
+                </div>
+                <i class="fa fa-chevron-right arrow"></i>
             </div>
-            <i class="fa fa-chevron-right arrow"></i>
-        </div>
-
+        <?php endif; ?>
         <div
             class="sidebar-submenu <?php echo e(Route::is(['view.affiliate', 'license.affiliate', 'deceased.affiliate', 'directories.list']) ? 'show' : ''); ?>">
             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('affiliates.view')): ?>
@@ -86,14 +89,15 @@
         </div>
 
 
-        <div
-            class="menu-item has-submenu toggle-submenu <?php echo e(Route::is(['universities', 'specialties']) ? 'active' : ''); ?>">
-            <div class="menu-label">
-                <i class="fas fa-book"></i> Referencias Académicas
+        <?php if(auth()->user()->can('universities.view') || auth()->user()->can('specialties.view')): ?>
+            <div
+                class="menu-item has-submenu toggle-submenu <?php echo e(Route::is(['universities', 'specialties']) ? 'active' : ''); ?>">
+                <div class="menu-label">
+                    <i class="fas fa-book"></i> Referencias Académicas
+                </div>
+                <i class="fa fa-chevron-right arrow"></i>
             </div>
-            <i class="fa fa-chevron-right arrow"></i>
-        </div>
-
+        <?php endif; ?>
         <div class="sidebar-submenu <?php echo e(Route::is(['universities', 'specialties']) ? 'show' : ''); ?>">
             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('universities.view')): ?>
                 <a class=" <?php echo e(Route::is('universities') ? 'active' : ''); ?>" href="<?php echo e(route('universities')); ?>"
@@ -110,16 +114,20 @@
         </div>
 
 
-
-        <div
-            class="menu-item has-submenu toggle-submenu <?php echo e(Route::is(['finances.debts', 'procedures', 'fees', 'discounts']) ? 'active' : ''); ?>">
-            <div class="menu-label">
-                <i class="fas fa-folder-open"></i> Gestión Económica de Trámites
+        <?php if(auth()->user()->can('payments.view') ||
+                auth()->user()->can('procedures.view') ||
+                auth()->user()->can('fees.view') ||
+                auth()->user()->can('discount.view')): ?>
+            <div
+                class="menu-item has-submenu toggle-submenu <?php echo e(Route::is(['finances.debts', 'procedures', 'fees', 'discounts']) ? 'active' : ''); ?>">
+                <div class="menu-label">
+                    <i class="fas fa-folder-open"></i> Gestión Económica de Trámites
+                </div>
+                <i class="fa fa-chevron-right arrow"></i>
             </div>
-            <i class="fa fa-chevron-right arrow"></i>
-        </div>
-
-        <div class="sidebar-submenu <?php echo e(Route::is(['finances.debts', 'procedures', 'fees', 'discounts']) ? 'show' : ''); ?>">
+        <?php endif; ?>
+        <div
+            class="sidebar-submenu <?php echo e(Route::is(['finances.debts', 'procedures', 'fees', 'discounts']) ? 'show' : ''); ?>">
             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('payments.view')): ?>
                 <a class="<?php echo e(Route::is('finances.debts') ? 'active' : ''); ?>" href="<?php echo e(route('finances.debts')); ?>"
                     wire:navigate>
@@ -142,6 +150,7 @@
                 </a>
             <?php endif; ?>
         </div>
+
         <a class="menu-item <?php echo e(Route::is('recognitions') ? 'active' : ''); ?>" href="<?php echo e(route('recognitions')); ?>"
             wire:navigate>
             <div class="menu-label">
@@ -155,15 +164,20 @@
         </a>
 
 
-
-        <div
-            class="menu-item has-submenu toggle-submenu <?php echo e(Route::is(['news', 'courses', 'articles', 'agreements', 'directories', 'events']) ? 'active' : ''); ?>">
-            <div class="menu-label">
-                <i class="fas fa-globe"></i> Gestión de Contenido Web
+        <?php if(auth()->user()->can('notice.view') ||
+                auth()->user()->can('courses.view') ||
+                auth()->user()->can('articles.view') ||
+                auth()->user()->can('directories.view.organization') ||
+                auth()->user()->can('events.view') ||
+                auth()->user()->can('agreements.view')): ?>
+            <div
+                class="menu-item has-submenu toggle-submenu <?php echo e(Route::is(['news', 'courses', 'articles', 'agreements', 'directories', 'events']) ? 'active' : ''); ?>">
+                <div class="menu-label">
+                    <i class="fas fa-globe"></i> Gestión de Contenido Web
+                </div>
+                <i class="fa fa-chevron-right arrow"></i>
             </div>
-            <i class="fa fa-chevron-right arrow"></i>
-        </div>
-
+        <?php endif; ?>
         <div
             class="sidebar-submenu <?php echo e(Route::is(['news', 'courses', 'articles', 'agreements', 'directories', 'events']) ? 'show' : ''); ?>">
             <a class="<?php echo e(Route::is('news') ? 'active' : ''); ?>" href="<?php echo e(route('news')); ?>" wire:navigate>
@@ -193,24 +207,31 @@
 
 
 
-
-
-
-
-
-
-        <a class="menu-item <?php echo e(Route::is('report.affiliate') ? 'active' : ''); ?>"
-            href="<?php echo e(route('report.affiliate')); ?>" wire:navigate>
-            <div class="menu-label">
-                <i class="fa fa-home"></i> Reportes
+        <?php if(auth()->user()->can('reports')): ?>
+            <div
+                class="menu-item has-submenu toggle-submenu <?php echo e(Route::is(['report.affiliate', 'report.contribution']) ? 'active' : ''); ?>">
+                <div class="menu-label">
+                    <i class="fas fa-globe"></i> Reportes
+                </div>
+                <i class="fa fa-chevron-right arrow"></i>
             </div>
-        </a>
-        <a class="menu-item <?php echo e(Route::is('report.contribution') ? 'active' : ''); ?>"
-            href="<?php echo e(route('report.contribution')); ?>" wire:navigate>
-            <div class="menu-label">
-                <i class="fa fa-home"></i> Reporte de aportes
-            </div>
-        </a>
+        <?php endif; ?>
+        <div class="sidebar-submenu <?php echo e(Route::is(['report.affiliate', 'report.contribution']) ? 'show' : ''); ?>">
+
+            <a class="<?php echo e(Route::is('report.affiliate') ? 'active' : ''); ?>" href="<?php echo e(route('report.affiliate')); ?>"
+                wire:navigate>
+                <i class="fas fa-calendar-alt"></i> Afiliados
+            </a>
+            <a class="<?php echo e(Route::is('report.contribution') ? 'active' : ''); ?>"
+                href="<?php echo e(route('report.contribution')); ?>" wire:navigate>
+                <i class="fas fa-calendar-alt"></i> Aportes
+            </a>
+        </div>
+
+
+
+
+        
 
 
 

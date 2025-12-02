@@ -1,7 +1,7 @@
 @extends('site.layout')
 @section('content')
     <div class="banner">
-        <img class="img-banner" src="{{ asset('assets/img/news.jpg') }}" alt="Cursos">
+        <img class="img-banner" src="{{ asset('image/news.jpg') }}" alt="Cursos">
         <div class="banner-content">
             <h2 class="title-banner">Informate</h2>
             <p class="desc-banner">Informate y ponde al dia acerca de nuestra institución.</p>
@@ -23,7 +23,7 @@
                         <article class="news-card-web h-100 bg-primary-lading-bg shadow-lg border-0 overflow-hidden">
                             <a href="{{ $information->image_view }}" target="_blank" class="news-img-wrapper d-block">
                                 <img src="{{ $information->image_view }}" alt="{{ $information->title }}"
-                                    class="news-img w-100 h-100 object-fit-cover">
+                                    class="news-img w-100 h-100 object-fit-cover" loading="lazy">
                                 <div class="news-img-overlay"></div>
                             </a>
 

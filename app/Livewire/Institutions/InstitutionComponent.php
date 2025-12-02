@@ -34,7 +34,7 @@ class InstitutionComponent extends Component
             'institution.city' => 'required|not_in:Elegir',
             'institution.mission' => 'required|string',
             'institution.vision' => 'required|string',
-            'photo' => $this->image ? 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048'
+            'photo' => $this->image ? 'nullable|image|mimes:jpg,jpeg,png,gif,webp|max:2048'
                 : 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
         ];
     }

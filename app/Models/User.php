@@ -152,12 +152,12 @@ class User extends Authenticatable
             );
         }
     }
-    protected function NameRole(): Attribute
+    /* protected function NameRole(): Attribute
     {
         return Attribute::make(
             get: fn() => $this->roles()->first()->name,
         );
-    }
+    } */
     public function Title(): Attribute
     {
 

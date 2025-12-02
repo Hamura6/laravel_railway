@@ -3,7 +3,7 @@
     'name' => '',
 ])
 
-  <h2>{{ $title }}</h2>
+  <h2 class="text-dark" >{{ $title }}</h2>
 {{-- <div class="card border m-0 py-1 px-2 mb-2 border-dark">
     <div class="d-flex justify-content-between">
         <h3 class="font-weight-bolder mb-0 text-dark"></h3>

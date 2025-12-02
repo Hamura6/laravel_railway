@@ -23,7 +23,10 @@ class Institution extends Model
     protected function Image(): Attribute
     {
         return Attribute::make(
-            get: fn() =>  Storage::disk('public')->url('institution/' . $this->logo)
+            
+            get: fn() => Storage::disk('public')->exists('institution/' . $this->logo)
+    ? Storage::disk('public')->url('institution/' . $this->logo)
+    : asset('image/logo.webp')
         );
     }
     public function cityLabel(): Attribute

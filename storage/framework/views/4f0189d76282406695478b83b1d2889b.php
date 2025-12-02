@@ -12,10 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700"
         rel="stylesheet" />
-    <?php echo app('Illuminate\Foundation\Vite')(['resources/sass/app.scss', 'resources/js/app.js']); ?>
-    <?php echo \Livewire\Mechanisms\FrontendAssets\FrontendAssets::styles(); ?>
+        <?php echo app('Illuminate\Foundation\Vite')(['resources/sass/app.scss', 'resources/js/app.js']); ?>
+        <?php echo \Livewire\Mechanisms\FrontendAssets\FrontendAssets::styles(); ?>
 
-</head>
+    </head>
 
 <body>
     <div class="layout-wrapper">
@@ -75,7 +75,6 @@
 
     
 
-    
 
     <script data-navigate-once>
         document.addEventListener('DOMContentLoaded', function() {

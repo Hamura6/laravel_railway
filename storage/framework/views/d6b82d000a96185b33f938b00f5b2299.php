@@ -3,14 +3,14 @@
 <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="<?php echo e(asset('assets/img/5.jpg')); ?>" class="d-block w-100" alt="Slide 1">
+      <img src="<?php echo e(asset('image/5.webp')); ?>" class="d-block w-100" alt="Slide 1">
       <div class="carousel-caption">
         <h5 class="fw-bold">Servicios Legales Integrales</h5>
         <p>Asesoría especializada para todos sus requerimientos jurídicos</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="<?php echo e(asset('assets/img/6.jpg')); ?>" class="d-block w-100" alt="Slide 2">
+      <img src="<?php echo e(asset('image/6.webp')); ?>" class="d-block w-100" alt="Slide 2">
       <div class="carousel-caption">
         <h5 class="fw-bold">Colegio de Abogados</h5>
         <p>Institución comprometida con la defensa de la justicia, los derechos y la ética profesional.</p>
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="<?php echo e(asset('assets/img/2.jpg')); ?>" class="d-block w-100" alt="Slide 3">
+      <img src="<?php echo e(asset('image/2.webp')); ?>" class="d-block w-100" alt="Slide 3">
       <div class="carousel-caption">
         <h5 class="fw-bold">Experiencia Única</h5>
         <p>Lo que nos hace diferentes</p>
@@ -47,7 +47,7 @@
             <!-- CURSOS -->
             <div class="col-12 col-md-6 col-lg-6">
                 <a href="<?php echo e(route('site.courses')); ?>" class="resource-card d-block h-100 text-decoration-none">
-                    <div class="resource-card-img" style="background-image: url(<?php echo e(asset('assets/img/courses1.jpg')); ?>);"></div>
+                    <div class="resource-card-img" style="background-image: url(<?php echo e(asset('image/courses1.jpg')); ?>);"></div>
                     <div class="resource-card-body">
                         <div class="resource-icon mb-3"></div>
                         <h3 class="resource-title h4 fw-bold">CURSOS</h3>
@@ -61,7 +61,7 @@
             <!-- SEMINARIOS -->
             <div class="col-12 col-md-6 col-lg-6">
                 <a href="<?php echo e(route('site.courses')); ?>" class="resource-card d-block h-100 text-decoration-none">
-                    <div class="resource-card-img" style="background-image: url(<?php echo e(asset('assets/img/courses2.jpg')); ?>);"></div>
+                    <div class="resource-card-img" style="background-image: url(<?php echo e(asset('image/courses2.jpg')); ?>);"></div>
                     <div class="resource-card-body">
                         <div class="resource-icon mb-3"></div>
                         <h3 class="resource-title h4 fw-bold">SEMINARIOS</h3>
@@ -75,7 +75,7 @@
             <!-- DIPLOMADOS -->
             <div class="col-12 col-md-6 col-lg-6">
                 <a href="<?php echo e(route('site.agreements')); ?>" class="resource-card d-block h-100 text-decoration-none">
-                    <div class="resource-card-img" style="background-image: url(<?php echo e(asset('assets/img/aggrement1.jpg')); ?>);"></div>
+                    <div class="resource-card-img" style="background-image: url(<?php echo e(asset('image/aggrement1.jpg')); ?>);"></div>
                     <div class="resource-card-body">
                         <div class="resource-icon mb-3"></div>
                         <h3 class="resource-title h4 fw-bold">CONVENIOS</h3>
@@ -89,7 +89,7 @@
             <!-- MAESTRÍAS -->
             <div class="col-12 col-md-6 col-lg-6">
                 <a href="<?php echo e(route('site.requirement')); ?>" class="resource-card d-block h-100 text-decoration-none">
-                    <div class="resource-card-img" style="background-image: url(<?php echo e(asset('assets/img/requirement1.jpg')); ?>);">
+                    <div class="resource-card-img" style="background-image: url(<?php echo e(asset('image/requirement1.jpg')); ?>);">
                     </div>
                     <div class="resource-card-body">
                         <div class="resource-icon mb-3"></div>
@@ -132,7 +132,7 @@
                 <!-- Columna de la imagen o ilustración -->
                 <div class="col-lg-6">
                     <div class="text-center">
-                        <img src="<?php echo e(asset('assets/img/5.jpg')); ?>" alt="Servicios al ciudadano"
+                        <img src="<?php echo e(asset('image/fachada.webp')); ?>" alt="Servicios al ciudadano"
                             class="img-fluid rounded-4 shadow-lg" style="max-height: 420px; object-fit: cover;">
                         <!-- Si no tienes imagen, puedes usar este SVG decorativo -->
                         <!-- <div class="placeholder-glow">
@@ -160,20 +160,20 @@
                     <div class="hero-slider">
                         <div class="slider-track">
                             <div class="hero-slide">
-                                <img src="<?php echo e(asset('assets/img/5.jpg')); ?>" alt="ICALP - Excelencia institucional"
+                                <img src="<?php echo e(asset('image/fachada.webp')); ?>" alt="ICALP - Excelencia institucional"
                                     class="w-100 h-100 object-fit-cover">
                             </div>
                             <div class="hero-slide">
-                                <img src="<?php echo e(asset('assets/img/1.jpg')); ?>" alt="ICALP - Tradición y modernidad"
+                                <img src="<?php echo e(asset('image/1.webp')); ?>" alt="ICALP - Tradición y modernidad"
                                     class="w-100 h-100 object-fit-cover">
                             </div>
                             <div class="hero-slide">
-                                <img src="<?php echo e(asset('assets/img/2.jpg')); ?>" alt="ICALP - Comunidad jurídica"
+                                <img src="<?php echo e(asset('image/5.webp')); ?>" alt="ICALP - Comunidad jurídica"
                                     class="w-100 h-100 object-fit-cover">
                             </div>
                             <!-- Repetimos para loop infinito -->
                             <div class="hero-slide">
-                                <img src="<?php echo e(asset('assets/img/5.jpg')); ?>" alt="ICALP"
+                                <img src="<?php echo e(asset('image/centro.webp')); ?>" alt="ICALP"
                                     class="w-100 h-100 object-fit-cover">
                             </div>
                         </div>
@@ -269,8 +269,8 @@
                                     <div>
                                         <h5 class="text-warning mb-1">Dirección</h5>
                                         <p class="mb-0 text-light">
-                                            <?php echo e($institution->address); ?><br>
-                                            <strong><?php echo e($institution->city_label); ?> - Bolivia</strong>
+                                            <?php echo e($institution->address??'ninguno'); ?><br>
+                                            <strong><?php echo e($institution->city_label??'vista'); ?> - Bolivia</strong>
                                         </p>
                                     </div>
                                 </div>
@@ -286,7 +286,7 @@
                                         <h5 class="text-warning mb-1">Teléfono</h5>
                                         <a href="tel:+59122407713"
                                             class="text-light text-decoration-none hover-text-warning transition">
-                                            <strong>(+591) <?php echo e($institution->phone); ?></strong>
+                                            <strong>(+591) <?php echo e($institution->phone??'0000'); ?></strong>
                                         </a>
                                     </div>
                                 </div>

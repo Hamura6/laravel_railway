@@ -1,7 +1,7 @@
 @extends('site.layout')
 @section('content')
     <div class="banner">
-        <img class="img-banner" src="{{ asset('assets/img/aggrement1.jpg') }}" alt="Cursos">
+        <img class="img-banner" src="{{ asset('image/aggrement1.jpg') }}" alt="Cursos">
         <div class="banner-content">
             <h2 class="title-banner">Convenios</h2>
             <p class="desc-banner">Los convenios estratégicos fortalecen la colaboración y optimizan las relaciones

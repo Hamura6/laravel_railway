@@ -11,6 +11,35 @@
 // $color-header-lading-bg: darken($color-primary-lading-bg, 5%);
 // $color-footer-lading-bg: darken($color-primary-lading-bg, 5%);
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: $font-main !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $main-bg-body;
+  font-size: 12px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
 .wrapper {
   flex: 1;
 }
@@ -144,6 +173,10 @@
       flex-direction: column;
       gap: 0.5rem;
 
+      .header-login {
+        display: none;
+      }
+
       .header-contacts {
         justify-content: center;
         gap: 0.5rem;
@@ -274,6 +307,15 @@
       }
     }
   }
+
+.my-nav-link.movil_link {
+  display: block; // visible en pantallas pequeñas
+
+  @media (min-width: 960px) {
+    display: none; // oculto en pantallas grandes
+  }
+}
+
 
   /* Dropdown */
   .my-nav-dropdown {
@@ -824,8 +866,8 @@
     a {
       margin: 0 0.8rem;
       font-size: 0.85rem;
-       color: rgba($color-primary-lading-text, 0.6);
-      
+      color: rgba($color-primary-lading-text, 0.6);
+
     }
   }
 
@@ -1133,6 +1175,7 @@
   .resource-card-img {
     height: 180px;
   }
+
   .resource-card-body {
     padding: 1.5rem 1rem;
   }
@@ -1189,6 +1232,7 @@
     .display-5 {
       font-size: 2.5rem;
     }
+
     min-height: auto;
     padding: 4rem 0;
   }
@@ -1197,6 +1241,7 @@
     .display-5 {
       font-size: 2.2rem;
     }
+
     .lead {
       font-size: 1.1rem;
     }
@@ -1211,7 +1256,7 @@
 
 
 .contenedor4 {
-  background: linear-gradient(135deg,$color-footer-lading-bg 0%, $color-light-lading 100%);
+  background: linear-gradient(135deg, $color-footer-lading-bg 0%, $color-light-lading 100%);
 
   .mapa-hover {
     transition: all 0.4s ease;
@@ -1235,6 +1280,7 @@
   // Efecto suave en enlaces y botones
   .hover-text-warning {
     transition: color 0.3s ease;
+
     &:hover {
       color: $color-accent-lading !important;
     }
@@ -1250,6 +1296,7 @@
     .display-5 {
       font-size: 2.3rem;
     }
+
     .lead {
       font-size: 1.1rem;
     }
@@ -1289,7 +1336,8 @@
 
   .slider-track {
     display: flex;
-    width: 400%; /* 4 imágenes */
+    width: 400%;
+    /* 4 imágenes */
     height: 100%;
     animation: slideLoop 20s linear infinite;
   }
@@ -1301,8 +1349,15 @@
 
   // Animación suave e infinita del slider
   @keyframes slideLoop {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-75%); } /* -75% porque hay 4 slides */
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-75%);
+    }
+
+    /* -75% porque hay 4 slides */
   }
 
   .hero-overlay {
@@ -1313,6 +1368,7 @@
   // Botón con efecto lift
   .hover-lift {
     transition: all 0.3s ease;
+
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 15px 30px rgba($color-accent-lading, 0.4) !important;
@@ -1322,8 +1378,8 @@
   // Responsive
   @media (max-width: 992px) {
     min-height: auto;
-    
-    .row > div {
+
+    .row>div {
       min-height: 50vh;
     }
 
@@ -1337,9 +1393,17 @@
   }
 
   @media (max-width: 576px) {
-    .display-3 { font-size: 2.5rem; }
-    .display-4 { font-size: 3rem; }
-    .p-5 { padding: 2.5rem !important; }
+    .display-3 {
+      font-size: 2.5rem;
+    }
+
+    .display-4 {
+      font-size: 3rem;
+    }
+
+    .p-5 {
+      padding: 2.5rem !important;
+    }
   }
 }
 
@@ -1358,8 +1422,8 @@
 
 
 .news-card-web {
-  
-  background:lighten($color-primary-lading-bg, 10%) ;
+
+  background: lighten($color-primary-lading-bg, 10%);
   border-radius: 1.25rem;
   transition: all 0.4s ease;
   height: 100%;
@@ -1455,8 +1519,13 @@
 
 // Responsive
 @media (max-width: 768px) {
-  .news-img-wrapper { height: 180px; }
-  .news-content { padding: 1.5rem !important; }
+  .news-img-wrapper {
+    height: 180px;
+  }
+
+  .news-content {
+    padding: 1.5rem !important;
+  }
 }
 
 
@@ -1487,7 +1556,7 @@
   border-radius: 32px;
   padding: 4px;
   position: relative;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   margin: 0 auto;
@@ -1522,7 +1591,7 @@
     z-index: 2;
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-    box-shadow: inset 0 5px 10px rgba(0,0,0,0.3);
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
   }
 
   .course-content {
@@ -1562,7 +1631,7 @@
       left: 20px;
       border-radius: 50%;
       border: 8px solid $color-accent-lading;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
       z-index: 3;
 
       img {
@@ -1577,8 +1646,9 @@
     background: $color-light-lading;
     color: $color-accent-lading;
     font-weight: 700;
+
     &:hover {
-      background:  lighten($color-accent-lading, 5%) ;
+      background: lighten($color-accent-lading, 5%);
       color: $color-primary-lading-text;
     }
   }
@@ -1586,6 +1656,7 @@
   .btn-outline-warning {
     border-color: $color-primary-lading-text;
     color: $color-primary-lading-text;
+
     &:hover {
       background: $color-light-lading;
       color: $color-accent-lading;
@@ -1597,7 +1668,12 @@
 @media (max-width: 576px) {
   .course-card-web {
     height: 380px;
-    .course-content { padding: 1.5rem 1rem; left: 1.2rem; right: 1.2rem; }
+
+    .course-content {
+      padding: 1.5rem 1rem;
+      left: 1.2rem;
+      right: 1.2rem;
+    }
   }
 }
 
@@ -1630,11 +1706,11 @@
     bottom: 0;
     left: 50%;
     width: 4px;
-    background: linear-gradient(to bottom, 
-                transparent, 
-                $color-accent-lading 30%, 
-                $color-accent-lading 70%, 
-                transparent);
+    background: linear-gradient(to bottom,
+        transparent,
+        $color-accent-lading 30%,
+        $color-accent-lading 70%,
+        transparent);
     transform: translateX(-50%);
     z-index: 1;
   }
@@ -1717,7 +1793,7 @@
 
   &:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
     border-color: $color-accent-lading;
   }
 }
@@ -1783,19 +1859,19 @@
 // app.scss o tu archivo principal de estilos
 
 // Tus colores principales
-$color-primary-bg:     #1f1f1f;
-$color-primary-text:   #f1f1f1;
-$color-accent:         #927700;
-$color-light:          #fdfdfd;
+$color-primary-bg: #1f1f1f;
+$color-primary-text: #f1f1f1;
+$color-accent: #927700;
+$color-light: #fdfdfd;
 
 // Colores derivados para la polaroid
-$polaroid-bg:          $color-light;
-$polaroid-border:      darken(#333, 5%);
-$polaroid-shadow:      rgba(0, 0, 0, 0.5);
+$polaroid-bg: $color-light;
+$polaroid-border: darken(#333, 5%);
+$polaroid-shadow: rgba(0, 0, 0, 0.5);
 $polaroid-shadow-hover: rgba(146, 119, 0, 0.25); // dorado sutil en el hover
 
 // Tamaños
-$polaroid-width:       300px;
+$polaroid-width: 300px;
 $polaroid-photo-height: 260px;
 $polaroid-photo-height-sm: 200px;
 
@@ -1812,11 +1888,25 @@ $polaroid-photo-height-sm: 200px;
   --rotate: -2deg; // valor por defecto
 
   // Rotación aleatoria natural (sin parecer forzada)
-  &:nth-child(5n+1) { --rotate:  2.5deg; }
-  &:nth-child(5n+2) { --rotate: -3deg;   }
-  &:nth-child(5n+3) { --rotate:  1.5deg; }
-  &:nth-child(5n+4) { --rotate: -1deg;   }
-  &:nth-child(5n+5) { --rotate:  2deg;   }
+  &:nth-child(5n+1) {
+    --rotate: 2.5deg;
+  }
+
+  &:nth-child(5n+2) {
+    --rotate: -3deg;
+  }
+
+  &:nth-child(5n+3) {
+    --rotate: 1.5deg;
+  }
+
+  &:nth-child(5n+4) {
+    --rotate: -1deg;
+  }
+
+  &:nth-child(5n+5) {
+    --rotate: 2deg;
+  }
 }
 
 .polaroid {
@@ -1827,14 +1917,14 @@ $polaroid-photo-height-sm: 200px;
   border-radius: 10px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   transform: rotate(var(--rotate));
-  transition: 
-    transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),  // bounce divertido
+  transition:
+    transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), // bounce divertido
     box-shadow 0.45s ease;
-  
+
   // Hover bonito y elegante
   &:hover {
     transform: rotate(0deg) scale(1.06);
-    box-shadow: 
+    box-shadow:
       0 25px 50px $polaroid-shadow,
       0 0 30px $polaroid-shadow-hover;
     z-index: 10;
@@ -1869,21 +1959,19 @@ $polaroid-photo-height-sm: 200px;
   }
 
   .dust {
-    background: 
-      radial-gradient(circle at 25% 35%, rgba(0,0,0,0.04) 1px, transparent 1px),
-      radial-gradient(circle at 75% 65%, rgba(0,0,0,0.04) 1px, transparent 1px);
+    background:
+      radial-gradient(circle at 25% 35%, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+      radial-gradient(circle at 75% 65%, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
     background-size: 90px 90px;
     opacity: 0.35;
   }
 
   .scratches {
-    background: repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 10px,
-      rgba(0,0,0,0.03) 10px,
-      rgba(0,0,0,0.03) 11px
-    );
+    background: repeating-linear-gradient(45deg,
+        transparent,
+        transparent 10px,
+        rgba(0, 0, 0, 0.03) 10px,
+        rgba(0, 0, 0, 0.03) 11px);
     opacity: 0.25;
   }
 }
@@ -1897,7 +1985,7 @@ $polaroid-photo-height-sm: 200px;
   font-size: 0.95rem;
   letter-spacing: 0.8px;
   color: $color-accent;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* ========================================
@@ -1945,13 +2033,13 @@ $polaroid-photo-height-sm: 200px;
   min-height: 48px;
   background-color: rgba($color-primary-lading-text, 0.95);
   backdrop-filter: blur(4px);
-  
+
   &.category {
     justify-content: space-between;
     border-radius: 0.75rem 0.75rem 0 0;
     transition: transform 0.65s cubic-bezier(0.76, 0, 0.24, 1);
   }
-  
+
   &.named {
     justify-content: center;
     border-radius: 0 0 0.75rem 0.75rem;
@@ -1975,7 +2063,7 @@ $polaroid-photo-height-sm: 200px;
   background: linear-gradient(135deg, $color-primary-lading-bg 0%, lighten($color-light-lading, 8%) 100%);
   border-radius: 0; // se cubre con los sub-cards
   isolation: isolate;
-  
+
   .image {
     position: absolute;
     top: 50%;
@@ -1984,14 +2072,14 @@ $polaroid-photo-height-sm: 200px;
     height: 100%;
     object-fit: cover;
     border: 5px solid white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transform: translate(-50%, -50%);
     transition: all 0.6s ease;
     z-index: 2;
   }
 
   // Círculo que crece
- /*  &::before {
+  /*  &::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -2007,7 +2095,7 @@ $polaroid-photo-height-sm: 200px;
   }
  */
   // Texto "Ver más"
-/*   &::after {
+  /*   &::after {
     content: "Ver más";
     position: absolute;
     top: 50%;
@@ -2031,8 +2119,13 @@ $polaroid-photo-height-sm: 200px;
 
 /* HOVER - Todo el efecto mágico */
 .team-card:hover {
-  .sub-card.category { transform: translateY(100%); }
-  .sub-card.named    { transform: translateY(-100%); }
+  .sub-card.category {
+    transform: translateY(100%);
+  }
+
+  .sub-card.named {
+    transform: translateY(-100%);
+  }
 
 
   .card-container {
@@ -2047,9 +2140,19 @@ $polaroid-photo-height-sm: 200px;
 
 /* Responsive */
 @media (max-width: 576px) {
-  .card-container { height: 200px; }
-  .card-container .image { width: 90px; height: 90px; }
-  .team-card:hover .card-container .image { width: 110px; height: 110px; }
+  .card-container {
+    height: 200px;
+  }
+
+  .card-container .image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .team-card:hover .card-container .image {
+    width: 110px;
+    height: 110px;
+  }
 }
 
 
@@ -2085,6 +2188,7 @@ $polaroid-photo-height-sm: 200px;
 
 .ally-logo {
   padding: 0.2rem;
+
   img {
     width: 100%;
     height: 100%;
@@ -2126,7 +2230,7 @@ $polaroid-photo-height-sm: 200px;
   color: #555;
   font-size: 1.3rem;
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 
   &:hover {
     background: #927700;
@@ -2150,13 +2254,43 @@ $polaroid-photo-height-sm: 200px;
   .ally-card {
     padding: 1.2rem 1rem;
   }
+
   .ally-logo {
     width: 100%;
     height: 100%;
   }
+
   .ally-social-btn {
     width: 48px;
     height: 48px;
     font-size: 1.2rem;
   }
+}
+
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px rgba(0,0,0,0.2); // contorno que hace la letra más gruesa
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: "Merriweather", serif;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  color: $color-accent-lading;
+
+  text-shadow:
+    6px 6px 3px rgba(0, 0, 0, 0.2),
+    8px 8px 5px rgba(0, 0, 0, 0.1),
+    10px 10px 10px rgba(0, 0, 0, 0.10);
+
+  background: linear-gradient(
+    90deg,
+    lighten($color-accent-lading, 15%),
+    $color-accent-lading,
+    darken($color-accent-lading, 5%)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

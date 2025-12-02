@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>{{ $institution->initials??'ICAP' }} </title>
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <title>{{ $institution->initials ?? 'ICAP' }} </title>
+    @vite(['resources/sass/landing-pages.scss', 'resources/js/app.js'])
 </head>
 
 <body>
@@ -14,39 +14,33 @@
         <div class="header-wrapper" id="start">
             <!-- LOGO -->
             <a class="header-logo" href="{{ route('home') }}">
-                <img alt="Logo ICAP" src="{{ $institution->image??'logo' }}">
+                <img alt="Logo ICAP" src="{{ $institution->image ?? 'logo' }}">
                 <div class="header-title">
-                    {{ $institution->initials??'ICAP' }}
-                    <div class="slogan">{{ $institution->name??'ILUSTRE COLEGIO DE ABOGADOS' }}</div>
+                    {{ $institution->initials ?? 'ICAP' }}
+                    <div class="slogan">{{ $institution->name ?? 'ILUSTRE COLEGIO DE ABOGADOS' }}</div>
                 </div>
             </a>
 
             <!-- CONTACTO + LOGIN -->
             <div class="header-info">
                 <div class="header-contacts">
-                    <a href="#"><i class="fas fa-phone"></i> (+591) {{ $institution->phone??'0000' }}</a>
-                    <a href="#"><i class="fas fa-at"></i> {{ $institution->email??'icap@gmail.com' }}</a>
+                    <a href="#"><i class="fas fa-phone"></i> (+591) {{ $institution->phone ?? '0000' }}</a>
+                    <a href="#"><i class="fas fa-at"></i> {{ $institution->email ?? 'icap@gmail.com' }}</a>
                 </div>
 
                 @auth
                     <div class="header-login">
                         <a class="login-button" href="{{ route('settings.profile') }}">
-                            Acceder
+                            <i class="fas fa-user"></i> Acceder
                         </a>
                     </div>
                 @else
                     <div class="header-login">
                         @if (!Route::is('login'))
                             <a class="login-button" href="{{ route('login') }}">
-                                Iniciar sesión
+                                <i class="fas fa-sign-in-alt"></i> Iniciar sesión
                             </a>
                         @endif
-                        {{-- @if (Route::has('register'))
-                <a class="login-button"
-                   href="{{ route('regsister') }}">
-                  Register
-                </a>
-              @endif --}}
                     </div>
                 @endauth
 
@@ -106,10 +100,23 @@
                     href="{{ route('site.requirement') }}">
                     <i class="fa fa-clipboard"></i> Requisitos
                 </a>
-                <a class="my-nav-link {{ Route::is('site.about') ? 'active' : '' }}"
-                    href="{{ route('site.about') }}">
+
+
+
+                <a class="my-nav-link {{ Route::is('site.about') ? 'active' : '' }}" href="{{ route('site.about') }}">
                     <i class="fa fa-info-circle"></i> Acerca de
                 </a>
+                @auth
+                    <a class="my-nav-link movil_link {{ Route::is('settings.profile') ? 'active' : '' }}"
+                        href="{{ route('settings.profile') }}"> <i class="fas fa-user"></i> Acceder
+                    </a>
+                @else
+                    @if (!Route::is('login'))
+                        <a class="my-nav-link movil_link {{ Route::is('login') ? 'active' : '' }}"
+                            href="{{ route('login') }}"> <i class="fas fa-sign-in-alt"></i> Iniciar sesión
+                        </a>
+                    @endif
+                @endauth
             </div>
         </div>
     </nav>
@@ -142,19 +149,19 @@
                 <div class="footer-block">
                     <h2 class="footer-title">Páginas útiles</h2>
                     <ul class="footer-list">
-                        <li><a href="{{route('site.about')  }}">Acerca de</a></li>
+                        <li><a href="{{ route('site.about') }}">Acerca de</a></li>
                         <li><a href="{{ route('site.news') }}">Noticias</a></li>
                         <li><a href="{{ route('site.courses') }}">Cursos</a></li>
-                        <li><a href="{{route('site.events')  }}">Eventos</a></li>
+                        <li><a href="{{ route('site.events') }}">Eventos</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-contact">
                     <h2 class="footer-title">Contáctanos</h2>
                     <ul class="footer-contact-list">
-                        <li><i class="fa fa-map-marker-alt"></i> {{ $institution->address??'city' }}</li>
-                        <li><i class="fa fa-phone-alt"></i> (+591){{ $institution->phone??'mercurio' }}</li>
-                        <li><i class="fa fa-envelope"></i> {{ $institution->email??'susano' }}</li>
+                        <li><i class="fa fa-map-marker-alt"></i> {{ $institution->address ?? 'city' }}</li>
+                        <li><i class="fa fa-phone-alt"></i> (+591){{ $institution->phone ?? 'mercurio' }}</li>
+                        <li><i class="fa fa-envelope"></i> {{ $institution->email ?? 'susano' }}</li>
                     </ul>
 
                     <div class="footer-socials">

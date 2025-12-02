@@ -12,9 +12,9 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700"
         rel="stylesheet" />
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    @livewireStyles
-</head>
+        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+        @livewireStyles
+    </head>
 
 <body>
     <div class="layout-wrapper">
@@ -83,24 +83,6 @@
     /* }); */
     </script> --}}
 
-    {{--     <style >
-
-        ::-webkit-scrollbar {
-            width: 1px;
-            height: 7px;
-            cursor: pointer
-        }
-
-        ::-webkit-scrollbar-track {
-            background: white;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #1e293b;
-            border-radius: 8px;
-            cursor: pointer
-        }
-    </style> --}}
 
     <script data-navigate-once>
         document.addEventListener('DOMContentLoaded', function() {

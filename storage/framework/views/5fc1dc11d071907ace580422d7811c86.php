@@ -183,7 +183,10 @@
                             <tr class="align-middle">
                                 <td><?php echo e($loop->iteration); ?></td>
                                 <td><?php echo e($payment->fee->name); ?></td>
-                                <td class="text-center"><?php echo e($payment->fecha_display); ?></td>
+                                <td class="text-center"><?php echo e($payment->fecha_display); ?> 
+
+
+                                </td>
                                 <td><?php echo e($payment->updated_at); ?></td>
                                 <td><?php echo e($payment->amount); ?></td>
                                 <td><?php echo e($payment->debt); ?></td>

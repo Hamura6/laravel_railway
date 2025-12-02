@@ -177,9 +177,10 @@ class Payment extends Model
         /* $date = strtoupper($date); */
         /* $created = strtoupper($created); */
 
-        return $date === $created
+        return
+        $this->fee_id!=1?$date:($date === $created
             ? $date
-            : "$created / $date";
+            : ($this->created_at? "$created / $date ": $date));
     }
      public function updatedAt(): Attribute
     {

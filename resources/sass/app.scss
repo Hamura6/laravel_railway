@@ -1,11 +1,12 @@
 // Import all of Bootstrap’s CSS
 // $primary: #927700;
 
-$blue: #887316 !default;
+/* $blue: #887316 !default; */
 // Paleta elegante y moderna
 
 /* $primary: #001c40 !default;
- */$primary: #001c40 !default;
+ */
+$primary: #001c40 !default;
 $secondary: #3d3d3d !default;
 $success: #0e723b !default;
 $info: #0f517c !default;
@@ -15,7 +16,8 @@ $light: #fafafa !default;
 $purple: #260644 !default;
 /* $dark: #01132b !default; */
 /* $dark: #001c40 !default;
- */$dark: #1f1f1f !default;
+ */
+$dark: #4e0351 !default;
 
 $theme-colors: (
   "primary": $primary,
@@ -74,44 +76,23 @@ $swal2-question: $secondary !default;
 
 
 .pagination .page-link {
-        border-radius: 50% !important;
-    }
+  border-radius: 50% !important;
+}
+.pagination .page-item.active .page-link {
+  background-color: $dark !important;
+  border-color: darken($dark, 10%) !important;
+  color: #fff !important;
+}
+
 @import "sweetalert2/src/sweetalert2.scss";
 
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
 $main-bg-body: #dadada;
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 $font-main: "Poppins", sans-serif;
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-  font-family: $font-main !important;
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: $main-bg-body;
-  font-size: 12px;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-}
 
 //Creacion de botones redondos
 $crud-colors: (
@@ -190,7 +171,7 @@ $crud-colors: (
 // ========================================
 
 // Variables de COLOR (únicas que puedes cambiar)
-$color-bg-card:$info;   // Fondo de la tarjeta
+$color-bg-card: $info; // Fondo de la tarjeta
 
 // Componente
 .my-card-agrement {
@@ -283,42 +264,59 @@ $color-bg-card:$info;   // Fondo de la tarjeta
 
 // =========== START VARIABLES LADING =========== //
 
-$color-primary-lading-bg: #1f1f1f;
+/* $color-primary-lading-bg: #1f1f1f;
 $color-primary-lading-text: #f1f1f1;
 
-$color-accent-lading: #927700;
-$color-light-lading: #fdfdfd;
+
 
 $color-header-lading-bg: darken($color-primary-lading-bg, 5%);
-$color-footer-lading-bg: darken($color-primary-lading-bg, 5%);
+$color-footer-lading-bg: darken($color-primary-lading-bg, 5%); */
 
 // =========== START VARIABLES LADING =========== //
 
-@import "landing";
+/* @import "landing"; */
 
 
 
 // =========== START VARIABLES DASHBOARD =========== //
-/* 
+/* $color-accent-lading: #927700;
+$color-light-lading: #fdfdfd;
 $color-body-bg: #f5f7fa;
 
 $color-primary-dashboard-bg: #1f1f1f;
 $color-primary-dashboard-text: #f1f1f1;
 
 $color-accent-dashboard: #927700;
-$color-dark-dashboard: #222222; */
+$color-dark-dashboard: #222222;  */
 
 $color-body-bg: rgba(lighten($dark, 80%), 0.4);
 
 $color-primary-dashboard-bg: $dark;
 $color-primary-dashboard-text: $light;
 
-$color-accent-dashboard: rgba($color-accent-lading, 0.5);
-$color-dark-dashboard: $color-accent-lading;
+$color-accent-dashboard: rgba($dark, 0.4);
+$color-dark-dashboard: $dark;
 
 $sidebar-width: 260px;
 $topbar-height: 50px;
 
 // =========== END VARIABLES DASHBOARD =========== //
+
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 7px;
+  cursor: pointer
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $dark;
+  border-radius: 8px;
+  cursor: pointer
+}
 
 @import "dashboard";

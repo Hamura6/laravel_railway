@@ -107,7 +107,7 @@
                                 <span
                                     class="badge rounded-pill 
         <?php echo e($user->status == 'ENABLED' ? 'text-bg-success' : 'text-bg-danger'); ?>">
-                                    <?php echo e($user->status); ?>
+                                    <?php echo e(__($user->status)); ?>
 
                                 </span>
                                 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('users.block')): ?>

@@ -1,11 +1,10 @@
 @extends('site.layout')
 @section('content')
     <div class="banner">
-        <img class="img-banner" src="{{ asset('assets/img/single.jpg') }}" alt="Cursos">
+        <img class="img-banner" src="{{ asset('image/single.jpg') }}" alt="Cursos">
         <div class="banner-content">
             <h2 class="title-banner">Eventos</h2>
-            <p class="desc-banner">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ullam ad minima a
-                aliquid aut quia.</p>
+            <p class="desc-banner"> Mantente al día con nuestras actividades, conferencias y eventos destacados pensados para toda la comunidad.</p>
         </div>
     </div>
 
@@ -15,7 +14,7 @@
 
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold text-warning mb-3">
-                    Hitos Institucionales
+                    Eventos Institucionales
                 </h2>
                 <p class="lead text-light opacity-90">
                     Más de 130 años forjando la excelencia jurídica en Bolivia
@@ -24,8 +23,8 @@
 
             <div id="timeline" class="timeline">
 
-                @foreach ($events as $event)
-                    <a href="{{ route('site.events.galery',$event->id)}}">
+                @forelse ($events as $event)
+                    <a href="{{ route('site.events.galery', $event->id) }}">
                         <div class="timeline-item" data-id="112">
                             <div class="timeline-date">
                                 <span class="year text-warning fw-bold">
@@ -44,7 +43,7 @@
                             <div class="timeline-content shadow-lg">
                                 {{--  @if ($post->image_path) --}}
                                 <img src="{{ asset('storage/event_photos/' . $event->firstPhoto->name) }}" alt="1212sd"
-                                    class="timeline-img">
+                                    class="timeline-img" loading="lazy">
                                 {{--  @endif --}}
 
                                 <div class="p-4">
@@ -62,27 +61,34 @@
                             </div>
                         </div>
                     </a>
-                @endforeach
+                    <div id="loading" class="text-center mt-5" style="display:none;">
+                        <div class="spinner-border text-warning" role="status">
+                            <span class="visually-hidden">Cargando...</span>
+                        </div>
+                        <p class="text-light mt-3">Cargando más eventos...</p>
+                    </div>
+
+
+                    <div class="text-center mt-5">
+                        <form action="{{ route('site.events', $total + 5) }}" method="GET">
+                            @csrf
+                            <button id="loadMore" type="submit" class="btn btn-outline-warning btn-lg px-5">
+                                Cargar más
+                            </button>
+                        </form>
+                    </div>
+
+                @empty
+                    <div id="loading" class="text-center mt-5">
+
+                        <p class="text-light mt-3">No se encontraron eventos</p>
+                    </div>
+                @endforelse
+
 
             </div>
 
-            <div id="loading" class="text-center mt-5" style="display:none;">
-                <div class="spinner-border text-warning" role="status">
-                    <span class="visually-hidden">Cargando...</span>
-                </div>
-                <p class="text-light mt-3">Cargando más hitos...</p>
-            </div>
 
-            {{-- @if ($posts->hasMorePages()) --}}
-            <div class="text-center mt-5">
-                <form action="{{route('site.events',$total+5)  }}" method="GET">
-                    @csrf
-                    <button id="loadMore" type="submit" class="btn btn-outline-warning btn-lg px-5">
-                        Cargar más
-                    </button>
-                </form>
-            </div>
-            {{--  @endif --}}
         </div>
     </section>
 @endsection
