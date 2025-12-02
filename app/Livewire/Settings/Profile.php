@@ -10,6 +10,7 @@ use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;
 use Livewire\Component;
 use Livewire\WithFileUploads;
+use Intervention\Image\Laravel\Facades\Image;
 
 class Profile extends Component
 {
@@ -28,6 +29,7 @@ class Profile extends Component
     public string $current_password = '';
     public string $password = '';
     public string $password_confirmation = '';
+    public string $photoPreview='';
     public function mount(): void
     {
         $this->name = Auth::user()->name;
@@ -41,13 +43,20 @@ class Profile extends Component
         $this->image = Auth::user()->image;
         $this->email = Auth::user()->email;
     }
+    public function updatedPhoto()
+{
+
+    // Leer la imagen temporal y convertir a base64 para previsualización
+    $imageContent = $this->photo->get();
+    $this->photoPreview = 'data:image/jpeg;base64,' . base64_encode($imageContent);
+}
     public function render()
     {
         return view('livewire.settings.profile');
     }
     public function saveUser()
     {
-        if ($this->photo) {
+         if ($this->photo) {
             $custome_name = uniqid() . '.' . $this->photo->extension();
             $this->photo->storeAs('users', $custome_name, 'public');
             if (Auth::user()->photo) {
@@ -58,7 +67,33 @@ class Profile extends Component
             $this->photo = $custome_name;
         } else {
             $this->photo = Auth::user()->photo;
-        }
+        } 
+       /* $newPhotoName = '';
+       if ($this->photo instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
+
+            $disk = User::storageDisk();
+            $avatarName = $this->photo->hashName();
+            $avatarPath = $disk->path($avatarName);
+
+            $pass = true;
+            try {
+                Image::read($this->photo)->resize(250, 250)->toJpeg()->save($avatarPath);
+            } catch (\Throwable $th) {
+                $pass = false;
+            }
+
+            if ($pass) {
+                $avatarNameOld = Auth::user()->photo;
+                if (!empty($avatarNameOld) && $disk->exists($avatarNameOld))
+                    $disk->delete($avatarNameOld);
+                $newPhotoName = $avatarName;
+            }else{
+                $newPhotoName = Auth::user()->photo;
+            }
+
+        } else {
+            $newPhotoName = Auth::user()->photo;
+        } */
         Auth::user()->update([
             'photo' => $this->photo,
             'email' => $this->email

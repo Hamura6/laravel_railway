@@ -86,6 +86,12 @@ class User extends Authenticatable
      *
      * @var list<string>
      */
+    const STORAGE_DISK = 'disk-users';
+
+    public static function storageDisk()
+    {
+        return Storage::disk(self::STORAGE_DISK);
+    }
     protected $guarded = [
         'id',
     ];
@@ -138,7 +144,7 @@ class User extends Authenticatable
             get: fn() => $this->birthdate ? Carbon::parse($this->birthdate)->age : null,
         );
     }
-    protected function Image(): Attribute
+     protected function Image(): Attribute
     {
         if ($this->photo) {
             return Attribute::make(
@@ -151,7 +157,20 @@ class User extends Authenticatable
                 get: fn() => Avatar::create($this->full_name)->toBase64(),
             );
         }
-    }
+    } 
+    /* protected function Image(): Attribute
+    {
+        $disk = User::storageDisk();
+        $data = null;
+
+        if (!empty($this->photo) && $disk->exists($this->photo))
+            $data = $disk->url($this->photo);
+        else
+            $data = Avatar::create($this->full_name)->toBase64();
+
+        return Attribute::make(get: fn() => $data);
+    } */
+
     /* protected function NameRole(): Attribute
     {
         return Attribute::make(

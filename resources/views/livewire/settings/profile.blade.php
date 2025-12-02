@@ -145,7 +145,8 @@
                 </div>
                 <div class="card-footer pt-2 m-0 pb-0 mt-2 border-top">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="btn  btn-sm btn-dark me-md-2" type="button" wire:click="savePeople()"> <i class="fas fa-save fs-6"></i> Guardar</button>
+                        <button class="btn  btn-sm btn-dark me-md-2" type="button" wire:click="savePeople()"> <i
+                                class="fas fa-save fs-6"></i> Guardar</button>
                     </div>
                 </div>
             </x-card-body>
@@ -159,23 +160,26 @@
                 </x-slot>
                 <div class="row g-1">
                     <div class="col-md-12">
-                        <div
-                            class="card-header p-0 mx-3 mt-3 position-relative z-index-1 d-flex justify-content-center align-items-center flex-column">
-                            @if ($photo)
+                        <div class="d-flex justify-content-center mb-4">
+                            @if ($photoPreview)
                                 <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                    src="{{ $photo->temporaryUrl() }}" alt="Image placeholder" wire:loading.remove
+                                    src="{{ $photoPreview }}" alt="Vista previa" wire:loading.remove
+                                    wire:target="photo">
+                            @elseif ($this->image)
+                                <img class="border-radius-lg rounded-circle" width="200" height="200"
+                                    src="{{ Storage::url($this->image) }}" alt="Imagen de perfil" wire:loading.remove
                                     wire:target="photo">
                             @else
                                 <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                    src="{{ $this->image ? $this->image : 'https://i.pinimg.com/originals/bd/2e/0d/bd2e0d56cc9b061d694979158bda4d0b.jpg' }}"
-                                    alt="Image placeholder" wire:loading.remove wire:target="photo">
+                                    src="{{ asset('image/user.png') }}" alt="Imagen por defecto" wire:loading.remove
+                                    wire:target="photo">
                             @endif
 
-                            <span class="spinner-grow text-dark" style="width: 3rem; height: 3rem;" wire:loading
+                            <!-- Spinner de carga -->
+                            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" wire:loading
                                 wire:target="photo" role="status">
-                                <span class="visually-hidden">Loading...</span>
-                            </span>
-
+                                <span class="visually-hidden">Cargando...</span>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label class="form-control-label" for="basic-url">Elija imagen</label>
@@ -210,7 +214,8 @@
                 </div>
                 <div class="card-footer pt-2 m-0 pb-0 border-top">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="btn  btn-sm btn-dark me-md-2" type="button"  wire:click="saveUser()"> <i class="fas fa-save fs-6"></i> Guardar</button>
+                        <button class="btn  btn-sm btn-dark me-md-2" type="button" wire:click="saveUser()"> <i
+                                class="fas fa-save fs-6"></i> Guardar</button>
                     </div>
                 </div>
             </x-card-body>
@@ -225,8 +230,10 @@
                 <div class="row g-1">
                     <div class="col-12">
                         <div class="form-floating">
-                            <input type="password" class="form-control @error('current_password') is-invalid @enderror"
-                                name="current_password" id="floatingInputInvalid" placeholder="..." wire:model="current_password">
+                            <input type="password"
+                                class="form-control @error('current_password') is-invalid @enderror"
+                                name="current_password" id="floatingInputInvalid" placeholder="..."
+                                wire:model="current_password">
                             <label for="floatingInputInvalid">
                                 Contraseña actual
                             </label>
@@ -251,7 +258,8 @@
                         <div class="form-floating">
                             <input type="password"
                                 class="form-control @error('password_confirmation') is-invalid @enderror"
-                                name="password_confirmation" id="floatingInputInvalid" placeholder="..." wire:model="password_confirmation">
+                                name="password_confirmation" id="floatingInputInvalid" placeholder="..."
+                                wire:model="password_confirmation">
                             <label for="floatingInputInvalid">
                                 Confirmar contraseña
                             </label>
@@ -263,7 +271,8 @@
                 </div>
                 <div class="card-footer pt-2 m-0 pb-0 border-top">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="btn  btn-sm btn-dark me-md-2" type="button" wire:click="savePassword()"> <i class="fas fa-save fs-6"></i> Guardar</button>
+                        <button class="btn  btn-sm btn-dark me-md-2" type="button" wire:click="savePassword()"> <i
+                                class="fas fa-save fs-6"></i> Guardar</button>
                     </div>
                 </div>
             </x-card-body>

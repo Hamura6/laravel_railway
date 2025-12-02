@@ -214,7 +214,8 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                 </div>
                 <div class="card-footer pt-2 m-0 pb-0 mt-2 border-top">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="btn  btn-sm btn-dark me-md-2" type="button" wire:click="savePeople()"> <i class="fas fa-save fs-6"></i> Guardar</button>
+                        <button class="btn  btn-sm btn-dark me-md-2" type="button" wire:click="savePeople()"> <i
+                                class="fas fa-save fs-6"></i> Guardar</button>
                     </div>
                 </div>
              <?php echo $__env->renderComponent(); ?>
@@ -246,23 +247,26 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                  <?php $__env->endSlot(); ?>
                 <div class="row g-1">
                     <div class="col-md-12">
-                        <div
-                            class="card-header p-0 mx-3 mt-3 position-relative z-index-1 d-flex justify-content-center align-items-center flex-column">
-                            <!--[if BLOCK]><![endif]--><?php if($photo): ?>
+                        <div class="d-flex justify-content-center mb-4">
+                            <!--[if BLOCK]><![endif]--><?php if($photoPreview): ?>
                                 <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                    src="<?php echo e($photo->temporaryUrl()); ?>" alt="Image placeholder" wire:loading.remove
+                                    src="<?php echo e($photoPreview); ?>" alt="Vista previa" wire:loading.remove
+                                    wire:target="photo">
+                            <?php elseif($this->image): ?>
+                                <img class="border-radius-lg rounded-circle" width="200" height="200"
+                                    src="<?php echo e(Storage::url($this->image)); ?>" alt="Imagen de perfil" wire:loading.remove
                                     wire:target="photo">
                             <?php else: ?>
                                 <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                    src="<?php echo e($this->image ? $this->image : 'https://i.pinimg.com/originals/bd/2e/0d/bd2e0d56cc9b061d694979158bda4d0b.jpg'); ?>"
-                                    alt="Image placeholder" wire:loading.remove wire:target="photo">
+                                    src="<?php echo e(asset('image/user.png')); ?>" alt="Imagen por defecto" wire:loading.remove
+                                    wire:target="photo">
                             <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
 
-                            <span class="spinner-grow text-dark" style="width: 3rem; height: 3rem;" wire:loading
+                            <!-- Spinner de carga -->
+                            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" wire:loading
                                 wire:target="photo" role="status">
-                                <span class="visually-hidden">Loading...</span>
-                            </span>
-
+                                <span class="visually-hidden">Cargando...</span>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label class="form-control-label" for="basic-url">Elija imagen</label>
@@ -326,7 +330,8 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                 </div>
                 <div class="card-footer pt-2 m-0 pb-0 border-top">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="btn  btn-sm btn-dark me-md-2" type="button"  wire:click="saveUser()"> <i class="fas fa-save fs-6"></i> Guardar</button>
+                        <button class="btn  btn-sm btn-dark me-md-2" type="button" wire:click="saveUser()"> <i
+                                class="fas fa-save fs-6"></i> Guardar</button>
                     </div>
                 </div>
              <?php echo $__env->renderComponent(); ?>
@@ -359,7 +364,8 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                 <div class="row g-1">
                     <div class="col-12">
                         <div class="form-floating">
-                            <input type="password" class="form-control <?php $__errorArgs = ['current_password'];
+                            <input type="password"
+                                class="form-control <?php $__errorArgs = ['current_password'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
@@ -367,7 +373,8 @@ $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>"
-                                name="current_password" id="floatingInputInvalid" placeholder="..." wire:model="current_password">
+                                name="current_password" id="floatingInputInvalid" placeholder="..."
+                                wire:model="current_password">
                             <label for="floatingInputInvalid">
                                 Contraseña actual
                             </label>
@@ -420,7 +427,8 @@ $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>"
-                                name="password_confirmation" id="floatingInputInvalid" placeholder="..." wire:model="password_confirmation">
+                                name="password_confirmation" id="floatingInputInvalid" placeholder="..."
+                                wire:model="password_confirmation">
                             <label for="floatingInputInvalid">
                                 Confirmar contraseña
                             </label>
@@ -439,7 +447,8 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                 </div>
                 <div class="card-footer pt-2 m-0 pb-0 border-top">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="btn  btn-sm btn-dark me-md-2" type="button" wire:click="savePassword()"> <i class="fas fa-save fs-6"></i> Guardar</button>
+                        <button class="btn  btn-sm btn-dark me-md-2" type="button" wire:click="savePassword()"> <i
+                                class="fas fa-save fs-6"></i> Guardar</button>
                     </div>
                 </div>
              <?php echo $__env->renderComponent(); ?>

@@ -29,7 +29,13 @@ return [
     */
 
     'disks' => [
-
+        'disk-users' => [
+            'driver' => 'local',
+            'root' => storage_path('app/disk-users'),
+            'url' => env('APP_URL') . '/disk-users',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app/private'),
@@ -41,7 +47,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL') . '/storage',
             'visibility' => 'public',
             'throw' => false,
             'report' => false,
@@ -74,6 +80,7 @@ return [
     */
 
     'links' => [
+        public_path('disk-users') => storage_path('app/disk-users'),
         public_path('storage') => storage_path('app/public'),
     ],
 

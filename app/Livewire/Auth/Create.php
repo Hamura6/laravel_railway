@@ -53,16 +53,12 @@ class Create extends Component
     {
        $this->authorize('users.create');
         $this->validate();
-        if ($this->photo) {
-
-            $image = Image::read($this->photo)
-            ->resize(255, 255);
-            
-            $custome_name = uniqid() . '.' . $this->photo->extension();
-            Storage::disk('public')->put(
-            'users/'.$custome_name,
-            (string) $image->toJpeg(80));
-            $this->form->photo = $custome_name;
+        if ($this->photo instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
+            $disk = User::storageDisk();
+            $avatarName = $this->photo->hashName();
+            $avatarPath = $disk->path($avatarName);
+            Image::read($this->photo)->resize(250, 250)->toJpeg()->save($avatarPath);
+            $this->form->photo = $avatarName;
         }
         $user = $this->form->store();
         $user->assignRole($this->rol);
