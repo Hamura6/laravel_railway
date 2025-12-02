@@ -29,7 +29,7 @@ class Profile extends Component
     public string $current_password = '';
     public string $password = '';
     public string $password_confirmation = '';
-    public string $photoPreview='';
+    public string $photoPreview = '';
     public function mount(): void
     {
         $this->name = Auth::user()->name;
@@ -44,19 +44,19 @@ class Profile extends Component
         $this->email = Auth::user()->email;
     }
     public function updatedPhoto()
-{
+    {
 
-    // Leer la imagen temporal y convertir a base64 para previsualización
-    $imageContent = $this->photo->get();
-    $this->photoPreview = 'data:image/jpeg;base64,' . base64_encode($imageContent);
-}
+        // Leer la imagen temporal y convertir a base64 para previsualización
+        $imageContent = $this->photo->get();
+        $this->photoPreview = 'data:image/jpeg;base64,' . base64_encode($imageContent);
+    }
     public function render()
     {
         return view('livewire.settings.profile');
     }
     public function saveUser()
     {
-         if ($this->photo) {
+        /*  if ($this->photo) {
             $custome_name = uniqid() . '.' . $this->photo->extension();
             $this->photo->storeAs('users', $custome_name, 'public');
             if (Auth::user()->photo) {
@@ -67,9 +67,9 @@ class Profile extends Component
             $this->photo = $custome_name;
         } else {
             $this->photo = Auth::user()->photo;
-        } 
-       /* $newPhotoName = '';
-       if ($this->photo instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
+        }  */
+        $newPhotoName = '';
+        if ($this->photo instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
 
             $disk = User::storageDisk();
             $avatarName = $this->photo->hashName();
@@ -87,21 +87,22 @@ class Profile extends Component
                 if (!empty($avatarNameOld) && $disk->exists($avatarNameOld))
                     $disk->delete($avatarNameOld);
                 $newPhotoName = $avatarName;
-            }else{
+            } else {
                 $newPhotoName = Auth::user()->photo;
             }
-
         } else {
             $newPhotoName = Auth::user()->photo;
-        } */
+        }
         Auth::user()->update([
-            'photo' => $this->photo,
+            'photo' => $newPhotoName,
             'email' => $this->email
         ]);
+
         $this->image = Auth::user()->image;
         $this->photo = '';
-/*         dd($this->image);
- */        $this->dispatch('notify', text: 'Los datos de usuario fueron actualizados', title: 'Usuario actualizado', icon: 'success');
+        /*         dd($this->image);
+ */
+        $this->dispatch('notify', text: 'Los datos de usuario fueron actualizados', title: 'Usuario actualizado', icon: 'success');
     }
     public function savePeople()
     {
@@ -132,7 +133,7 @@ class Profile extends Component
             'password' => Hash::make($this->password)
         ]);
         $this->dispatch('notify', text: 'La contraseña fue actualizada', title: 'Contraseña actualizada', icon: 'success');
-        $this->reset(['current_password','password','password_confirmation']);
+        $this->reset(['current_password', 'password', 'password_confirmation']);
     }
 
 

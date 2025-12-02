@@ -158,6 +158,8 @@
                         <h6 class="px-2 my-auto py-0">Datos de usuario</h6>
                     </div>
                 </x-slot>
+
+
                 <div class="row g-1">
                     <div class="col-md-12">
                         <div class="d-flex justify-content-center mb-4">
@@ -167,8 +169,8 @@
                                     wire:target="photo">
                             @elseif ($this->image)
                                 <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                    src="{{ Storage::url($this->image) }}" alt="Imagen de perfil" wire:loading.remove
-                                    wire:target="photo">
+                                    src="{{ $this->image ? $this->image : 'https://i.pinimg.com/originals/bd/2e/0d/bd2e0d56cc9b061d694979158bda4d0b.jpg' }}"
+                                    alt="Image placeholder" wire:loading.remove wire:target="photo">
                             @else
                                 <img class="border-radius-lg rounded-circle" width="200" height="200"
                                     src="{{ asset('image/user.png') }}" alt="Imagen por defecto" wire:loading.remove

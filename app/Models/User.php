@@ -144,7 +144,7 @@ class User extends Authenticatable
             get: fn() => $this->birthdate ? Carbon::parse($this->birthdate)->age : null,
         );
     }
-     protected function Image(): Attribute
+    /*  protected function Image(): Attribute
     {
         if ($this->photo) {
             return Attribute::make(
@@ -157,8 +157,8 @@ class User extends Authenticatable
                 get: fn() => Avatar::create($this->full_name)->toBase64(),
             );
         }
-    } 
-    /* protected function Image(): Attribute
+    }  */
+     protected function Image(): Attribute
     {
         $disk = User::storageDisk();
         $data = null;
@@ -169,7 +169,7 @@ class User extends Authenticatable
             $data = Avatar::create($this->full_name)->toBase64();
 
         return Attribute::make(get: fn() => $data);
-    } */
+    } 
 
     /* protected function NameRole(): Attribute
     {

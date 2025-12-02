@@ -245,6 +245,8 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                         <h6 class="px-2 my-auto py-0">Datos de usuario</h6>
                     </div>
                  <?php $__env->endSlot(); ?>
+
+
                 <div class="row g-1">
                     <div class="col-md-12">
                         <div class="d-flex justify-content-center mb-4">
@@ -254,8 +256,8 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                                     wire:target="photo">
                             <?php elseif($this->image): ?>
                                 <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                    src="<?php echo e(Storage::url($this->image)); ?>" alt="Imagen de perfil" wire:loading.remove
-                                    wire:target="photo">
+                                    src="<?php echo e($this->image ? $this->image : 'https://i.pinimg.com/originals/bd/2e/0d/bd2e0d56cc9b061d694979158bda4d0b.jpg'); ?>"
+                                    alt="Image placeholder" wire:loading.remove wire:target="photo">
                             <?php else: ?>
                                 <img class="border-radius-lg rounded-circle" width="200" height="200"
                                     src="<?php echo e(asset('image/user.png')); ?>" alt="Imagen por defecto" wire:loading.remove
