@@ -39,7 +39,7 @@ class DatabaseSeeder extends Seeder
         $this->call(SeederSpecialty::class);
         $this->call(DeceasedsSeeder::class);
         $this->call(DirectorySeed::class);
-
+        $this->call(PhonesSeeder::class);
         $userMaster = User::create([
             'name' => 'Hamura',
             'last_name' => 'Otsutsuki',
@@ -52,7 +52,7 @@ class DatabaseSeeder extends Seeder
         ]);
         $userMaster->assignRole('Administrador');
         $permissionsAll = Permission::pluck('id')->toArray();
-        $role=Role::find(2);
+        $role = Role::find(2);
         $role->syncPermissions($permissionsAll);
         $userMaster = User::create([
             'name' => 'Madara',
@@ -66,7 +66,32 @@ class DatabaseSeeder extends Seeder
         ]);
         $userMaster->assignRole('Contadora');
 
-         /* $this->call(PaymentSeeder::class); */
+
+        $specialities = [
+            ['affiliate_id' => 2300, 'specialty_id' => 1, 'university_id' => 1],
+            ['affiliate_id' => 2308, 'specialty_id' => 2, 'university_id' => 1],
+            ['affiliate_id' => 2319, 'specialty_id' => 3, 'university_id' => 1],
+            ['affiliate_id' => 2321, 'specialty_id' => 4, 'university_id' => 1],
+            ['affiliate_id' => 2322, 'specialty_id' => 5, 'university_id' => 1],
+            ['affiliate_id' => 2322, 'specialty_id' => 3, 'university_id' => 1],
+            ['affiliate_id' => 2323, 'specialty_id' => 6, 'university_id' => 1],
+            ['affiliate_id' => 2324, 'specialty_id' => 7, 'university_id' => 1],
+            ['affiliate_id' => 2359, 'specialty_id' => 8, 'university_id' => 1],
+            ['affiliate_id' => 2332, 'specialty_id' => 9, 'university_id' => 1],
+            ['affiliate_id' => 2359, 'specialty_id' => 10, 'university_id' => 1],
+            ['affiliate_id' => 2359, 'specialty_id' => 11, 'university_id' => 1],
+            ['affiliate_id' => 2372, 'specialty_id' => 12, 'university_id' => 1],
+            ['affiliate_id' => 2374, 'specialty_id' => 9, 'university_id' => 1],
+            ['affiliate_id' => 2382, 'specialty_id' => 13, 'university_id' => 1],
+            ['affiliate_id' => 2431, 'specialty_id' => 14, 'university_id' => 1],
+            ['affiliate_id' => 2444, 'specialty_id' => 15, 'university_id' => 1],
+            ['affiliate_id' => 2532, 'specialty_id' => 16, 'university_id' => 1]
+        ];
+        Profession::insert($specialities);
+
+
+
+        /* $this->call(PaymentSeeder::class); */
 
         /* $this->generatePayments($userMaster);
  */

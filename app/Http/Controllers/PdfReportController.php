@@ -57,7 +57,7 @@ class PdfReportController extends Controller
         ];
 
         // Logo
-        $pdf->Image(public_path('assets/img/escudo.png'), 10, 6, 30);
+        $pdf->Image(public_path('image/logo.png'), 10, 6, 30);
 
         // Encabezado centralizado
         $pdf->SetFont('Arial', 'B', 16);
@@ -145,7 +145,7 @@ class PdfReportController extends Controller
 
         $pdf = new \FPDF();
         $pdf->AddPage();
-        $pdf->Image(public_path('assets/img/escudo.png'), 10, 6, 30);
+        $pdf->Image(public_path('image/logo.png'), 10, 6, 30);
         $pdf->SetFont('Arial', 'B', 16);
         $pdf->Cell(190, 10, utf8_decode('REPORTE DE AFILIADOS POR ESPECIALIDAD'), 0, 1, 'C');
 
@@ -220,7 +220,7 @@ class PdfReportController extends Controller
         $pdf->AddPage();
 
         // Logo
-        $pdf->Image(public_path('assets/img/escudo.png'), 10, 6, 30);
+        $pdf->Image(public_path('image/logo.png'), 10, 6, 30);
 
         // Título centrado
         $pdf->SetFont('Arial', 'B', 16);
@@ -342,7 +342,7 @@ class PdfReportController extends Controller
         
         function Header() {
             // Logo en header
-            $this->Image(public_path('assets/img/escudo.png'), 10, 6, 30);
+            $this->Image(public_path('image/logo.png'), 10, 6, 30);
             
             // Título principal
             $this->SetFont('Arial', 'B', 16);
@@ -548,7 +548,7 @@ class PdfReportController extends Controller
         $pdf->AddPage();
 
         // Logo
-        $pdf->Image(public_path('assets/img/escudo.png'), 10, 6, 30);
+        $pdf->Image(public_path('image/logo.png'), 10, 6, 30);
 
         // Título
         $pdf->SetFont('Arial', 'B', 16);
@@ -626,7 +626,7 @@ class PdfReportController extends Controller
         $pdf->AddPage();
 
    
-        $pdf->Image(public_path('assets/img/escudo.png'), 10, 6, 30);
+        $pdf->Image(public_path('image/logo.png'), 10, 6, 30);
 
  
         $pdf->SetFont('Arial', 'B', 14);

@@ -1,5 +1,24 @@
 <div>
-    <x-card-header title="Historial de Saldo" name="Afiliados" />
+    <?php if (isset($component)) { $__componentOriginalf8fdb5e325b86ec4fcbd12174b8a2d26 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.card-header','data' => ['title' => 'Historial de Saldo','name' => 'Afiliados']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('card-header'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['title' => 'Historial de Saldo','name' => 'Afiliados']); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26)): ?>
+<?php $attributes = $__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26; ?>
+<?php unset($__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalf8fdb5e325b86ec4fcbd12174b8a2d26)): ?>
+<?php $component = $__componentOriginalf8fdb5e325b86ec4fcbd12174b8a2d26; ?>
+<?php unset($__componentOriginalf8fdb5e325b86ec4fcbd12174b8a2d26); ?>
+<?php endif; ?>
     <div class="row g-1">
         <div class="col-md-12">
             <div class="card border shadow-xs mb-4">
@@ -8,34 +27,35 @@
                         <tbody>
                             <tr>
                                 <th scope="col" class="text-dark text-xs font-weight-bold ">Nombre Completo:</th>
-                                <td class="text-sm text-secondary mb-0">{{ $affiliate->user->name }} </td>
+                                <td class="text-sm text-secondary mb-0"><?php echo e($affiliate->user->name); ?> </td>
                                 <th scope="col" class="text-dark text-xs font-weight-bold ">Matricula:</th>
-                                <td class="text-sm text-secondary mb-0">{{ $affiliate->id }}</td>
+                                <td class="text-sm text-secondary mb-0"><?php echo e($affiliate->id); ?></td>
                                 <th scope="col" class="text-dark text-xs font-weight-bold ">C.I:</th>
-                                <td class="text-sm text-secondary mb-0">{{ $affiliate->user->ci }}</td>
+                                <td class="text-sm text-secondary mb-0"><?php echo e($affiliate->user->ci); ?></td>
                             </tr>
                             <tr>
                                 <th scope="col" class="text-dark text-xs font-weight-bold ">Telefonos:</th>
-                                @foreach ($affiliate->user->phones as $phone)
-                                    <td class="text-sm text-secondary mb-0">{{ $phone->number }} </td>
-                                @endforeach
+                                <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $affiliate->user->phones; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $phone): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <td class="text-sm text-secondary mb-0"><?php echo e($phone->number); ?> </td>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
                                 <th scope="col" class="text-dark text-xs font-weight-bold ">Correo electronico:</th>
-                                <td class="text-sm text-secondary mb-0" colspan="3">{{ $affiliate->user->email }}
+                                <td class="text-sm text-secondary mb-0" colspan="3"><?php echo e($affiliate->user->email); ?>
+
                                 </td>
 
                             </tr>
                             <tr>
                                 <th scope="col" class="text-dark text-xs font-weight-bold "> total:</th>
                                 <td class="text-sm text-secondary mb-0">
-                                    {{ $affiliate->totalSum }} Bs.
+                                    <?php echo e($affiliate->totalSum); ?> Bs.
                                 </td>
                                 <th scope="col" class="text-dark text-xs font-weight-bold "> Pagado:</th>
                                 <td class="text-sm text-secondary mb-0">
-                                    {{ $affiliate->total_pagado + $affiliate->planes }} Bs.
+                                    <?php echo e($affiliate->total_pagado + $affiliate->planes); ?> Bs.
                                 </td>
                                 <th scope="col" class="text-dark text-xs font-weight-bold "> Deuda:</th>
                                 <td class="text-sm text-secondary mb-0">
-                                    {{ $affiliate->prest - $affiliate->planes }} Bs.
+                                    <?php echo e($affiliate->prest - $affiliate->planes); ?> Bs.
                                 </td>
                             </tr>
                     </table>
@@ -48,13 +68,7 @@
                                 <label for="floatingInput">Desde</label>
                             </div>
                         </div>
-                        {{--         <div class="col-md-4">
-            <div class="form-floating mb-3">
-                <input type="date" class="form-control" wire:model="to" id="floatingInput"
-                    placeholder="name@example.com">
-                    <label for="floatingInput">Hasta</label>
-                </div>
-        </div> --}}
+                        
                         <div class="col-md-4">
                             <div class="form-floating">
                                 <select class="form-select" wire:model="type" id="floatingSelect"
@@ -71,16 +85,16 @@
                                 <select class="form-select" wire:model="concept" id="floatingSelect"
                                     aria-label="Floating label select example">
                                     <option value="">Todos</option>
-                                    @foreach ($fees as $fee)
-                                        <option value="{{ $fee->id }}">{{ $fee->name }}</option>
-                                    @endforeach
+                                    <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $fees; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $fee): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                        <option value="<?php echo e($fee->id); ?>"><?php echo e($fee->name); ?></option>
+                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
                                 </select>
                                 <label for="floatingSelect">Seleccione el concepto</label>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="d-grid gap-1  d-md-flex justify-content-md-end">
-                                <a href="{{ route('pdf.report.affiliateDebt', [$affiliate->id, $this->year, $this->type, $this->concept]) }}"
+                                <a href="<?php echo e(route('pdf.report.affiliateDebt', [$affiliate->id, $this->year, $this->type, $this->concept])); ?>"
                                     class="btn btn-sm btn-outline-danger mb-1" type="button">
                                     <i class="far fa-file-pdf fs-6"></i>
                                     Descargar PDF
@@ -110,18 +124,18 @@
                             <tbody>
 
 
-                                @forelse ($payments as $payment)
+                                <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $payments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $payment): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                                     <tr>
-                                        <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $payment->fee->name }}</td>
-                                        <td>{{ $payment->fecha_display }}</td>
-                                        <td>{{ $payment->updated_at }}</td>
-                                        <td>{{ $payment->amount }}</td>
-                                        <td>{{ $payment->debt }}</td>
+                                        <td><?php echo e($loop->iteration); ?></td>
+                                        <td><?php echo e($payment->fee->name); ?></td>
+                                        <td><?php echo e($payment->fecha_display); ?></td>
+                                        <td><?php echo e($payment->updated_at); ?></td>
+                                        <td><?php echo e($payment->amount); ?></td>
+                                        <td><?php echo e($payment->debt); ?></td>
                                         <td><span
-                                        class="badge rounded-pill  {{ $payment->status == 'Por pagar' ? 'text-danger  border border-danger ' : 'text-success  border border-success ' }} border-1">{{ $payment->status }}</span></td>
+                                        class="badge rounded-pill  <?php echo e($payment->status == 'Por pagar' ? 'text-danger  border border-danger ' : 'text-success  border border-success '); ?> border-1"><?php echo e($payment->status); ?></span></td>
                                     </tr>
-                                @empty
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
                                     <tr class="align-middle" align="center">
                                 <td colspan="7">
                                     <h5>
@@ -131,11 +145,12 @@
                                     </h5>
                                 </td>
                             </tr>
-                                @endforelse
+                                <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
                             </tbody>
                         </table>
                         <div class="border-top py-3 px-3 d-flex align-items-center">
-                            {{ $payments->links() }}
+                            <?php echo e($payments->links()); ?>
+
                         </div>
                     </div>
                 </div>
@@ -148,3 +163,4 @@
 
 
 </div>
+<?php /**PATH D:\ICAPV4\ICAP\resources\views/livewire/affiliate/view-component.blade.php ENDPATH**/ ?>

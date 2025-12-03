@@ -15,6 +15,7 @@ class InstitutionComponent extends Component
     public array $institution = [];
     public function mount()
     {
+        $this->authorize('configuration');
         $inst = Institution::find(1);
         $this->image = $inst->image;
         $this->institution = $inst ? $inst->toArray() : [];

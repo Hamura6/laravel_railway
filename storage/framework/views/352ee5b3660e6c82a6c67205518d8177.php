@@ -110,7 +110,7 @@
                                 <?php echo e($pago->user->full_name); ?>
 
                             </td>
-                            <td>
+                            <td class="text-center">
                                 <?php echo e($pago->fecha_display); ?>
 
                             </td>

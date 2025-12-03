@@ -17,12 +17,14 @@ class ViewComponent extends Component
     public $type = '', $concept = '', $affiliateId, $year = '';
     public function mount()
     {
-        $this->year = Carbon::parse(Payment::where('status', 'Por pagar')->orderBy('date', 'asc')->first()->date)->year;
-        if (!$this->year) {
-            $this->year = Carbon::parse(now())->year;
-        }
         $user = Auth::user();
         $this->affiliateId = $user->affiliate->id ?? null;
+        $payment = Affiliate::find($this->affiliateId)
+            ->payments()
+            ->where('status', 'Por pagar')
+            ->orderBy('date', 'asc')
+            ->first();
+        $this->year =  $payment ? Carbon::parse($payment->date)->year : now()->year;
     }
     public function render()
     {
@@ -63,7 +65,7 @@ class ViewComponent extends Component
                 'user.phones:number,id,user_id'
             ])
             ->find($this->affiliateId);
-        $payments = Payment::select('id', 'affiliate_id', 'date', 'status', 'amount', 'fee_id')
+        $payments = Payment::select('id', 'affiliate_id', 'date', 'status', 'amount', 'fee_id', 'updated_at', 'created_at')
             ->whereYear('date', '>=', $this->year)
             ->where('affiliate_id', $this->affiliateId)
             ->when($this->type, fn($q) => $q->where('status', 'like', "%{$this->type}%"))
@@ -82,5 +84,10 @@ class ViewComponent extends Component
             ->paginate(10);
         $fees = Fee::get();
         return view('livewire.affiliate.view-component', compact('payments', 'affiliate', 'fees'));
+    }
+    public function update()
+    {
+        $this->resetPage();
+        $this->dispatch('notify', text: 'La consulta fue realizada exitosamente', title: 'Registros actualizados', icon: 'info');
     }
 }

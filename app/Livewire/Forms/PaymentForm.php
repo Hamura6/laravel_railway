@@ -93,6 +93,14 @@ class PaymentForm extends Form
         /* dd($pendingPayments); */
         $paymentDate = $this->dateFirst($affiliate);
         $this->storeAport($pendingPayments, $paymentDate, $quantity, $affiliate, $discountAmount);
+        $total = $affiliate->payments()
+            ->where('fee_id', 1)
+            ->where('status', 'Por pagar')
+            ->count();
+        if($total<24){
+            $affiliate->status='Activo';
+            $affiliate->save();
+        }
     }
     public function setPayment(Payment $payment)
     {

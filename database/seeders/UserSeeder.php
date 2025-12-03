@@ -16,21 +16,31 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         $users = $this->getData();
-        $password = Hash::make('password');
+        /* $password = Hash::make('password'); */
 
-        $cis = [];
+       /*  
         foreach ($users as $k => $user) {
             $cis[] = $user['ci'];
-            $users[$k]['password'] = $password;
+            $users[$k]['password'] = Hash::make($user['ci']);
+        } */
+        
+
+        $batchSize = 100;
+        $cis = [];
+        foreach (array_chunk($users, $batchSize) as $chunk) {
+            foreach ($chunk as $k => $user) {
+                $cis[] = $user['ci'];
+                $chunk[$k]['password'] = Hash::make($user['ci']);
+            }
+            User::insert($chunk);
         }
 
-        User::insert($users);
+       /*  User::insert($users); */
 
         $role = Role::first();
         $userIds = User::whereIn('ci', $cis)->select('id')->get()->pluck('id');
 
 
-        $phones = [];
         $records = [];
         foreach ($userIds as $id) {
 

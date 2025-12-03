@@ -10,17 +10,24 @@
     </a>
 
     <nav class="sidebar-menu">
-
-        <a class="menu-item <?php echo e(Route::is('dashboard.index') ? '' : ''); ?>" href="<?php echo e(route('dashboard.index')); ?>">
-            <div class="menu-label">
-                <i class="fa fa-home"></i> Inicio
-            </div>
-        </a>
+        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('manager')): ?>
+            <a class="menu-item <?php echo e(Route::is('dashboard.index') ? '' : ''); ?>" href="<?php echo e(route('dashboard.index')); ?>">
+                <div class="menu-label">
+                    <i class="fa fa-home"></i> Inicio
+                </div>
+            </a>
+        <?php endif; ?>
+        <?php if (\Illuminate\Support\Facades\Blade::check('role', 'Afiliado')): ?>
+            <a class="menu-item <?php echo e(Route::is('affiliate.statement.account') ? 'active' : ''); ?>"
+                href="<?php echo e(route('affiliate.statement.account')); ?>">
+                <div class="menu-label">
+                    <i class="fa fa-home"></i> Saldo
+                </div>
+            </a>
+        <?php endif; ?>
 
         <!-- Usuarios + Submenú -->
-        <?php if(auth()->user()->can('users.view') ||
-                auth()->user()->can('roles.view') ||
-                auth()->user()->can('permissions.assign')): ?>
+        <?php if(auth()->user()->can('users.view') || auth()->user()->can('roles.view') || auth()->user()->can('permissions.assign')): ?>
             <div
                 class="menu-item has-submenu toggle-submenu <?php echo e(Route::is(['users', 'roles', 'permissions']) ? 'active' : ''); ?>">
                 <div class="menu-label">
@@ -151,17 +158,21 @@
             <?php endif; ?>
         </div>
 
-        <a class="menu-item <?php echo e(Route::is('recognitions') ? 'active' : ''); ?>" href="<?php echo e(route('recognitions')); ?>"
-            wire:navigate>
-            <div class="menu-label">
-                <i class="fas fa-award"></i> Méritos y Distinciones
-            </div>
-        </a>
-        <a class="menu-item <?php echo e(Route::is('demands') ? 'active' : ''); ?>" href="<?php echo e(route('demands')); ?>" wire:navigate>
-            <div class="menu-label">
-                <i class="fas fa-list-alt"></i> Historial Disciplinario
-            </div>
-        </a>
+        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('recognitions.view')): ?>
+            <a class="menu-item <?php echo e(Route::is('recognitions') ? 'active' : ''); ?>" href="<?php echo e(route('recognitions')); ?>"
+                wire:navigate>
+                <div class="menu-label">
+                    <i class="fas fa-award"></i> Méritos y Distinciones
+                </div>
+            </a>
+        <?php endif; ?>
+        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('demands.view')): ?>
+            <a class="menu-item <?php echo e(Route::is('demands') ? 'active' : ''); ?>" href="<?php echo e(route('demands')); ?>" wire:navigate>
+                <div class="menu-label">
+                    <i class="fas fa-list-alt"></i> Historial Disciplinario
+                </div>
+            </a>
+        <?php endif; ?>
 
 
         <?php if(auth()->user()->can('notice.view') ||
@@ -192,7 +203,8 @@
             <a class="<?php echo e(Route::is('agreements') ? 'active' : ''); ?>" href="<?php echo e(route('agreements')); ?>" wire:navigate>
                 <i class="fas fa-handshake"></i> Convenios Institucionales
             </a>
-            <a class="<?php echo e(Route::is('directories') ? 'active' : ''); ?>" href="<?php echo e(route('directories')); ?>" wire:navigate>
+            <a class="<?php echo e(Route::is('directories') ? 'active' : ''); ?>" href="<?php echo e(route('directories')); ?>"
+                wire:navigate>
                 <i class="fas fa-user-tie"></i> Directorio
             </a>
             <a class="<?php echo e(Route::is('events') ? 'active' : ''); ?>" href="<?php echo e(route('events')); ?>" wire:navigate>
@@ -245,13 +257,14 @@
 
 
         
-
-        <a class="menu-item <?php echo e(Route::is('institution.configuration') ? 'active' : ''); ?>"
-            href="<?php echo e(route('institution.configuration')); ?>">
-            <div class="menu-label">
-                <i class="fas fa-chart-bar"></i> Configuración
-            </div>
-        </a>
+        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('configuration')): ?>
+            <a class="menu-item <?php echo e(Route::is('institution.configuration') ? 'active' : ''); ?>"
+                href="<?php echo e(route('institution.configuration')); ?>">
+                <div class="menu-label">
+                    <i class="fas fa-chart-bar"></i> Configuración
+                </div>
+            </a>
+        <?php endif; ?>
         
     </nav>
 

@@ -9,17 +9,24 @@
     </a>
 
     <nav class="sidebar-menu">
-
-        <a class="menu-item {{ Route::is('dashboard.index') ? '' : '' }}" href="{{ route('dashboard.index') }}">
-            <div class="menu-label">
-                <i class="fa fa-home"></i> Inicio
-            </div>
-        </a>
+        @can('manager')
+            <a class="menu-item {{ Route::is('dashboard.index') ? '' : '' }}" href="{{ route('dashboard.index') }}">
+                <div class="menu-label">
+                    <i class="fa fa-home"></i> Inicio
+                </div>
+            </a>
+        @endcan
+        @role('Afiliado')
+            <a class="menu-item {{ Route::is('affiliate.statement.account') ? 'active' : '' }}"
+                href="{{ route('affiliate.statement.account') }}">
+                <div class="menu-label">
+                    <i class="fa fa-home"></i> Saldo
+                </div>
+            </a>
+        @endrole
 
         <!-- Usuarios + Submenú -->
-        @if (auth()->user()->can('users.view') ||
-                auth()->user()->can('roles.view') ||
-                auth()->user()->can('permissions.assign'))
+        @if (auth()->user()->can('users.view') || auth()->user()->can('roles.view') || auth()->user()->can('permissions.assign'))
             <div
                 class="menu-item has-submenu toggle-submenu {{ Route::is(['users', 'roles', 'permissions']) ? 'active' : '' }}">
                 <div class="menu-label">
@@ -150,17 +157,21 @@
             @endcan
         </div>
 
-        <a class="menu-item {{ Route::is('recognitions') ? 'active' : '' }}" href="{{ route('recognitions') }}"
-            wire:navigate>
-            <div class="menu-label">
-                <i class="fas fa-award"></i> Méritos y Distinciones
-            </div>
-        </a>
-        <a class="menu-item {{ Route::is('demands') ? 'active' : '' }}" href="{{ route('demands') }}" wire:navigate>
-            <div class="menu-label">
-                <i class="fas fa-list-alt"></i> Historial Disciplinario
-            </div>
-        </a>
+        @can('recognitions.view')
+            <a class="menu-item {{ Route::is('recognitions') ? 'active' : '' }}" href="{{ route('recognitions') }}"
+                wire:navigate>
+                <div class="menu-label">
+                    <i class="fas fa-award"></i> Méritos y Distinciones
+                </div>
+            </a>
+        @endcan
+        @can('demands.view')
+            <a class="menu-item {{ Route::is('demands') ? 'active' : '' }}" href="{{ route('demands') }}" wire:navigate>
+                <div class="menu-label">
+                    <i class="fas fa-list-alt"></i> Historial Disciplinario
+                </div>
+            </a>
+        @endcan
 
 
         @if (auth()->user()->can('notice.view') ||
@@ -191,7 +202,8 @@
             <a class="{{ Route::is('agreements') ? 'active' : '' }}" href="{{ route('agreements') }}" wire:navigate>
                 <i class="fas fa-handshake"></i> Convenios Institucionales
             </a>
-            <a class="{{ Route::is('directories') ? 'active' : '' }}" href="{{ route('directories') }}" wire:navigate>
+            <a class="{{ Route::is('directories') ? 'active' : '' }}" href="{{ route('directories') }}"
+                wire:navigate>
                 <i class="fas fa-user-tie"></i> Directorio
             </a>
             <a class="{{ Route::is('events') ? 'active' : '' }}" href="{{ route('events') }}" wire:navigate>
@@ -279,13 +291,14 @@
             <a href="#"><i class="fa fa-dollar-sign"></i> Ingresos</a>
             <a href="#"><i class="fa fa-users-cog"></i> Actividad de Usuarios</a>
         </div> --}}
-
-        <a class="menu-item {{ Route::is('institution.configuration') ? 'active' : '' }}"
-            href="{{ route('institution.configuration') }}">
-            <div class="menu-label">
-                <i class="fas fa-chart-bar"></i> Configuración
-            </div>
-        </a>
+        @can('configuration')
+            <a class="menu-item {{ Route::is('institution.configuration') ? 'active' : '' }}"
+                href="{{ route('institution.configuration') }}">
+                <div class="menu-label">
+                    <i class="fas fa-chart-bar"></i> Configuración
+                </div>
+            </a>
+        @endcan
         {{--  <a class="menu-item" href="#">
             <div class="menu-label">
                 <i class="fa fa-sign-out-alt"></i> Salir

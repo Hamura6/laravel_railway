@@ -52,7 +52,7 @@
                             <td class="text-center">
                                 {{ $pago->user->full_name }}
                             </td>
-                            <td>
+                            <td class="text-center">
                                 {{ $pago->fecha_display }}
                             </td>
                             <td>

@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('professions', function (Blueprint $table) {
             $table->id();
-            $table->string('area',20);
-            $table->date('date');
+            $table->string('area',20)->nullable();
+            $table->date('date')->nullable();
             $table->unsignedBigInteger('affiliate_id');   
             $table->unsignedBigInteger('university_id');
             $table->unsignedBigInteger('specialty_id');         

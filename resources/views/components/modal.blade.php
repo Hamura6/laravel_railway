@@ -6,7 +6,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header d-flex align-items-center py-2">
-                <h5 class="modal-title font-weight-bolder mb-0" id="exampleModalLabel">
+                <h5 class="modal-title font-weight-bolder mb-0 text-dark" id="exampleModalLabel">
                     {{ $this->form->id ?? $this->id ? 'Actualizar' : 'Registrar' }} | {{ $title }}
                 </h5>
                 <div class="spinner-border ms-auto" wire:loading role="status" style="width: 1.5rem; height: 1.5rem;">

@@ -36,7 +36,7 @@ unset($__defined_vars, $__key, $__value); ?>
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header d-flex align-items-center py-2">
-                <h5 class="modal-title font-weight-bolder mb-0" id="exampleModalLabel">
+                <h5 class="modal-title font-weight-bolder mb-0 text-dark" id="exampleModalLabel">
                     <?php echo e($this->form->id ?? $this->id ? 'Actualizar' : 'Registrar'); ?> | <?php echo e($title); ?>
 
                 </h5>

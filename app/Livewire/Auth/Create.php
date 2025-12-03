@@ -27,9 +27,9 @@ class Create extends Component
     }
     public function mount($id = 0)
     {
-        if (! (Auth::user()->can('users.create') || Auth::user()->can('users.edit')) ) {
+        if (! (Auth::user()->can('users.create') || Auth::user()->can('users.edit'))) {
             abort(403, 'No tienes permiso');
-            }
+        }
         if ($id <= 0) {
             $this->phones = [''];
             return;
@@ -51,7 +51,7 @@ class Create extends Component
     }
     public function store()
     {
-       $this->authorize('users.create');
+        $this->authorize('users.create');
         $this->validate();
         if ($this->photo instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
             $disk = User::storageDisk();
@@ -77,25 +77,33 @@ class Create extends Component
         $user->phones()->createMany(
             collect($this->phones)->map(fn($phone) => ['number' => $phone])->toArray()
         );
-        if ($this->photo) {
-            $image = Image::read($this->photo)
-            ->resize(255, 255);
-            
-            $custome_name = uniqid() . '.' . $this->photo->extension();
-            Storage::disk('public')->put(
-            'users/'.$custome_name,
-            (string) $image->toJpeg(80));
+        $newPhotoName = '';
+        if ($this->photo instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
 
-           /*  $custome_name = uniqid() . '.' . $this->photo->extension();
-            $this->photo->storeAs('users', $custome_name, 'public'); */
-            $this->form->photo = $custome_name;
-            
-            if ($user->photo) {
-                if (Storage::disk('public')->exists('users/'.$user->photo)) {
-                    Storage::disk('public')->delete('users/'.$user->photo);
-                }
+            $disk = User::storageDisk();
+            $avatarName = $this->photo->hashName();
+            $avatarPath = $disk->path($avatarName);
+
+            $pass = true;
+            try {
+                Image::read($this->photo)->resize(250, 250)->toJpeg()->save($avatarPath);
+            } catch (\Throwable $th) {
+                $pass = false;
             }
+
+            if ($pass) {
+                $avatarNameOld = $user->photo;
+                if (!empty($avatarNameOld) && $disk->exists($avatarNameOld))
+                    $disk->delete($avatarNameOld);
+                $newPhotoName = $avatarName;
+            } else {
+                $newPhotoName = $user->photo;
+            }
+        } else {
+            $newPhotoName = $user->photo;
         }
+
+        $this->form->photo = $newPhotoName;
         $this->form->update();
         $user->syncRoles($this->rol);
         return $this->redirect('/users');
