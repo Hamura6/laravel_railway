@@ -70,8 +70,8 @@ class LandingPages extends Controller
         return view('prueba.requirement',compact('requirement'));
     }
     public function save(Request $request){
-/*         dd($request);
- */        $request->validate([
+         dd($request->all(), $request->file('photo'));
+        $request->validate([
            'requirement' => 'required|max:65500',
        ]);
         $description = $request->input('requirement');
