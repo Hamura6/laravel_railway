@@ -32,6 +32,7 @@ class Profile extends Component
     public string $photoPreview = '';
     public function mount(): void
     {
+      
         $this->name = Auth::user()->name;
         $this->last_name = Auth::user()->last_name;
         $this->ci = Auth::user()->ci;
@@ -42,13 +43,6 @@ class Profile extends Component
         $this->photo = '';
         $this->image = Auth::user()->image;
         $this->email = Auth::user()->email;
-    }
-    public function updatedPhoto()
-    {
-
-        // Leer la imagen temporal y convertir a base64 para previsualización
-        $imageContent = $this->photo->get();
-        $this->photoPreview = 'data:image/jpeg;base64,' . base64_encode($imageContent);
     }
     public function render()
     {
