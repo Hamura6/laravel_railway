@@ -15,6 +15,10 @@ return Application::configure(basePath: dirname(__DIR__))
          $middleware->alias([
         'banned' => Banned::class
     ]);
+     $middleware->validateCsrfTokens(except: [
+        'livewire/upload-file',
+        'livewire/*',
+    ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
