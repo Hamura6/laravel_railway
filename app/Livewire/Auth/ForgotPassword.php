@@ -19,9 +19,10 @@ class ForgotPassword extends Component
         $this->validate([
             'email' => ['required', 'string', 'email'],
         ]);
-
+        
         Password::sendResetLink($this->only('email'));
-
+        
         session()->flash('status', __('A reset link will be sent if the account exists.'));
+        
     }
 }

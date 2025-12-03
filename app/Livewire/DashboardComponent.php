@@ -22,7 +22,7 @@ class DashboardComponent extends Component
     public function render()
     {
          $currentYear = now()->year;
-        \DB::listen(fn($q) => logger()->debug('SQL ' . make_query_sql($q)));
+/*         \DB::listen(fn($q) => logger()->debug('SQL ' . make_query_sql($q))); */
 
         // $sql = "
         //     SELECT

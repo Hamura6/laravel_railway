@@ -49,114 +49,63 @@
         </div>
     </header>
     <div class="wrapper">
-        <section class=" section section-color-2" style="margin: 0px 0;padding:3rem 0">
+        <section class="section section-color-2" style="margin: 0;padding:3rem 0">
             <div class="section-container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
                 <div class="card shadow-lg" style="width: 100%; max-width: 530px; border-radius: 12px; padding: 15px;">
-
-                    <div align="center" class="row g-1">
-                        <div class="text-center mb-3 col-md-12 mt-3">
-                            <h3 class="login-title"><?php echo e($institution->name ?? 'ILUSTRE COLEGIO DE ABOGADOS'); ?>
-
-                            </h3>
-                            <img src="<?php echo e($institution->image ?? 'logo'); ?>" alt="Logo Colegio" style="height: 150px;">
-                        </div>
-
-                        <div class="section-header text-center col-md-12 mb-2">
-                            <h2 class="section-title fs-4 text-secondary">Iniciar sesión</h2>
-                        </div>
+                    <div class="text-center mb-3">
+                        <h3 class="login-title"><?php echo e($institution->name ?? 'ILUSTRE COLEGIO DE ABOGADOS'); ?></h3>
+                        <img src="<?php echo e($institution->image ?? 'logo'); ?>" alt="Logo Colegio" style="height: 150px;">
                     </div>
-                    <?php if(session('error')): ?>
-                        <div class="alert alert-danger" role="alert">
-                            <?php echo e(session('error')); ?>
+
+                    <div class="section-header text-center mb-3">
+                        <h2 class="section-title fs-4 text-secondary"><?php echo e(__('Forgot password')); ?></h2>
+                        <p><?php echo e(__('Enter your email to receive a password reset link')); ?></p>
+                    </div>
+
+                    <!-- Session Status -->
+                    <?php if(session('status')): ?>
+                        <div class="alert alert-success text-center">
+                            <?php echo e(session('status')); ?>
 
                         </div>
                     <?php endif; ?>
 
-                    <div style="display: flex; justify-content: center;">
-                        <form style="min-width: 100%;" method="POST" action="<?php echo e(route('login')); ?>">
-                            <?php echo csrf_field(); ?>
-                            <div class="row g-3">
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control <?php $__errorArgs = ['email'];
+                    <form method="POST" action="<?php echo e(route('password.request')); ?>">
+                        <?php echo csrf_field(); ?>
+                        <div class="form-floating mb-3">
+                            <input type="email" name="email"
+                                class="form-control <?php $__errorArgs = ['email'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>"
-                                            name="email" id="email" value="<?php echo e(old('email')); ?>"
-                                            required autofocus autocomplete="email">
-                                        <label for="email"><i class="fas fa-envelope"></i> Correo
-                                            electronico</label>
-                                        <?php $__errorArgs = ['email'];
+unset($__errorArgs, $__bag); ?>" id="email"
+                                placeholder="email@example.com" value="<?php echo e(old('email')); ?>" required autofocus>
+                            <label for="email"><?php echo e(__('Email Address')); ?></label>
+                            <?php $__errorArgs = ['email'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?>
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong><?php echo e($message); ?></strong>
-                                            </span>
-                                        <?php unset($message);
+                                <span class="invalid-feedback" role="alert"><?php echo e($message); ?></span>
+                            <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="password"
-                                            class="form-control <?php $__errorArgs = ['password'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" name="password"
-                                            id="password" placeholder="..." autocomplete="current-password">
-                                        <label for="password"> <i class="fas fa-key"></i>
-                                            <?php echo e(__('Password')); ?>
+                        </div>
 
-                                        </label>
-                                        <?php $__errorArgs = ['password'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-                                            <span class="text-danger"><?php echo e($message); ?></span>
-                                        <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-check mb-3 text-start">
-                                        <input class="form-check-input" type="checkbox" name="remember" id="remember"
-                                            <?php echo e(old('remember') ? 'checked' : ''); ?>>
+                        <div class="d-grid gap-2">
+                            <button type="submit"
+                                class="btn btn-primary"><?php echo e(__('Email password reset link')); ?></button>
+                        </div>
+                    </form>
 
-                                        <label class="form-check-label" for="remember">
-                                            <?php echo e(__('Remember Me')); ?>
-
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="d-grid gap-2 col-8 mx-auto">
-                                    <button type="submit" class="btn btn-primary">Ingresar</button>
-                                    <?php if(Route::has('password.request')): ?>
-                                        <a class="btn btn-link mt-3" href="<?php echo e(route('forgot.password')); ?>">
-                                            <?php echo e(__('Forgot Your Password?')); ?>
-
-                                        </a>
-                                    <?php endif; ?>
-                                </div>
-                            </div>
-
-                        </form>
+                    <div class="text-center mt-3 text-sm text-zinc-400">
+                        <span><?php echo e(__('Or, return to')); ?></span>
+                        <a href="<?php echo e(route('login')); ?>"><?php echo e(__('log in')); ?></a>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -232,4 +181,4 @@ unset($__errorArgs, $__bag); ?>
 </body>
 
 </html>
-<?php /**PATH D:\ICAPV4\ICAP\resources\views/auth/login.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\ICAPV4\ICAP\resources\views/auth/forgotPassword.blade.php ENDPATH**/ ?>

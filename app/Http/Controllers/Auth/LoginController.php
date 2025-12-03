@@ -10,6 +10,7 @@ use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Str;
 use Illuminate\Auth\Events\Lockout;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Password;
 
 class LoginController extends Controller
 {
@@ -78,5 +79,18 @@ class LoginController extends Controller
         $request->session()->regenerateToken();
 
         return redirect('/login');
+    }
+    public function forgotPassword(){
+        return view('auth.forgotPassword');
+    }
+    public function resetPassword(Request $request)
+    {
+        $credentials = $request->validate([
+            'email' => ['required', 'email','string'],
+        ]);
+         Password::sendResetLink($request->only('email'));
+
+        session()->flash('status', __('A reset link will be sent if the account exists.'));
+        return redirect()->route('forgot.password');
     }
 }

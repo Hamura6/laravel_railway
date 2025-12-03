@@ -48,81 +48,48 @@
         </div>
     </header>
     <div class="wrapper">
-        <section class=" section section-color-2" style="margin: 0px 0;padding:3rem 0">
+        <section class="section section-color-2" style="margin: 0;padding:3rem 0">
             <div class="section-container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
                 <div class="card shadow-lg" style="width: 100%; max-width: 530px; border-radius: 12px; padding: 15px;">
-
-                    <div align="center" class="row g-1">
-                        <div class="text-center mb-3 col-md-12 mt-3">
-                            <h3 class="login-title">{{ $institution->name ?? 'ILUSTRE COLEGIO DE ABOGADOS' }}
-                            </h3>
-                            <img src="{{ $institution->image ?? 'logo' }}" alt="Logo Colegio" style="height: 150px;">
-                        </div>
-
-                        <div class="section-header text-center col-md-12 mb-2">
-                            <h2 class="section-title fs-4 text-secondary">Iniciar sesión</h2>
-                        </div>
+                    <div class="text-center mb-3">
+                        <h3 class="login-title">{{ $institution->name ?? 'ILUSTRE COLEGIO DE ABOGADOS' }}</h3>
+                        <img src="{{ $institution->image ?? 'logo' }}" alt="Logo Colegio" style="height: 150px;">
                     </div>
-                    @if (session('error'))
-                        <div class="alert alert-danger" role="alert">
-                            {{ session('error') }}
+
+                    <div class="section-header text-center mb-3">
+                        <h2 class="section-title fs-4 text-secondary">{{ __('Forgot password') }}</h2>
+                        <p>{{ __('Enter your email to receive a password reset link') }}</p>
+                    </div>
+
+                    <!-- Session Status -->
+                    @if (session('status'))
+                        <div class="alert alert-success text-center">
+                            {{ session('status') }}
                         </div>
                     @endif
 
-                    <div style="display: flex; justify-content: center;">
-                        <form style="min-width: 100%;" method="POST" action="{{ route('login') }}">
-                            @csrf
-                            <div class="row g-3">
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control @error('email') is-invalid @enderror"
-                                            name="email" id="email" value="{{ old('email') }}"
-                                            required autofocus autocomplete="email">
-                                        <label for="email"><i class="fas fa-envelope"></i> Correo
-                                            electronico</label>
-                                        @error('email')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="password"
-                                            class="form-control @error('password') is-invalid @enderror" name="password"
-                                            id="password" placeholder="..." autocomplete="current-password">
-                                        <label for="password"> <i class="fas fa-key"></i>
-                                            {{ __('Password') }}
-                                        </label>
-                                        @error('password')
-                                            <span class="text-danger">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-check mb-3 text-start">
-                                        <input class="form-check-input" type="checkbox" name="remember" id="remember"
-                                            {{ old('remember') ? 'checked' : '' }}>
+                    <form method="POST" action="{{ route('password.request') }}">
+                        @csrf
+                        <div class="form-floating mb-3">
+                            <input type="email" name="email"
+                                class="form-control @error('email') is-invalid @enderror" id="email"
+                                placeholder="email@example.com" value="{{ old('email') }}" required autofocus>
+                            <label for="email">{{ __('Email Address') }}</label>
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">{{ $message }}</span>
+                            @enderror
+                        </div>
 
-                                        <label class="form-check-label" for="remember">
-                                            {{ __('Remember Me') }}
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="d-grid gap-2 col-8 mx-auto">
-                                    <button type="submit" class="btn btn-primary">Ingresar</button>
-                                    @if (Route::has('password.request'))
-                                        <a class="btn btn-link mt-3" href="{{ route('forgot.password') }}">
-                                            {{ __('Forgot Your Password?') }}
-                                        </a>
-                                    @endif
-                                </div>
-                            </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit"
+                                class="btn btn-primary">{{ __('Email password reset link') }}</button>
+                        </div>
+                    </form>
 
-                        </form>
+                    <div class="text-center mt-3 text-sm text-zinc-400">
+                        <span>{{ __('Or, return to') }}</span>
+                        <a href="{{ route('login') }}">{{ __('log in') }}</a>
                     </div>
-
                 </div>
             </div>
         </section>
