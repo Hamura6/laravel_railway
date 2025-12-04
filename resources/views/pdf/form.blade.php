@@ -6,8 +6,8 @@
 <style>
     .logo {
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 20px;
+        left: 40px;
 
     }
 
@@ -119,7 +119,7 @@
 
 <body>
     <div class="logo">
-      {{--   <img width="50" src="data:image/jpeg;base64,{{ $institutionLogo }}" alt=""> --}}
+        <img width="50" src="data:image/jpeg;base64,{{ $institutionLogo }}" alt="">
 
     </div>
     <div align="center" class="header">
@@ -150,8 +150,8 @@
                     </table>
                 </td>
                 <td>
-                  {{--   <img class="img" width="150" height="150" src="data:image/jpeg;base64,{{ $userPhoto }}"
-                        alt=""> --}}
+                    <img class="img" width="150" height="150" src="{{ $imageUser }}"
+                        alt="">
                 </td>
             </tr>
         </table>

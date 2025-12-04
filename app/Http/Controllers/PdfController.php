@@ -7,7 +7,8 @@ use App\Models\Recognition;
 use Mpdf\Mpdf;
 use Illuminate\Support\Facades\DB;
 use App\Helpers\GlobalPdf;
-use App\Models\Institution;
+use App\Models\User;
+use Intervention\Image\Laravel\Facades\Image;
 
 class PdfController extends Controller
 {
@@ -116,16 +117,43 @@ class PdfController extends Controller
 
     public function form($id)
     {
+        $logoPath = public_path('storage\institution\logo.png');
+        if (file_exists($logoPath)) {
+            try {
+                /* $manager = new ImageManager(new Driver());
+                $image = $manager->read($logoPath)->resize(50, 50);
+                $institutionLogo = base64_encode($image->toJpeg()); */
+                $institutionLogo = Image::read($logoPath)->resize(50, 50)->toJpeg();
+            } catch (\Exception $e) {
+                \Log::error('Error procesando el logo: ' . $e->getMessage());
+            }
+        } else {
+            $logoPath = public_path('image\logo.png');
+            $institutionLogo = Image::read($logoPath)->resize(50, 50)->toJpeg();
+        }
+        $institutionLogo = base64_encode($institutionLogo);
         $affiliate = Affiliate::with([
             'user:id,name,last_name,ci,email,gender,birthdate,status,photo,martial_status',
             'university:id,name,entity',
             'professions.specialty:id,name',
             'professions.university:id,name'
         ])->findOrFail($id);
+        $disk = User::storageDisk();
+        if (!empty($affiliate->user->photo) && $disk->exists($affiliate->user->photo)) {
+            $imagePath = $affiliate->user->image; 
+            $soloRuta = str_replace(url('/') . '/', '', $imagePath);
+            $logoPath = public_path($soloRuta);
+            $imageUser = Image::read($logoPath)->resize(70, 70)->toJpeg();
+            $imageUser = base64_encode($imageUser);
+            $imageUser = "data:image/jpeg;base64," . $imageUser;
+        } else {
+            $logoPath = public_path('image\user.png');
+            $imageUser = Image::read($logoPath)->resize(50, 50)->toJpeg();
+            $imageUser = base64_encode($imageUser);
+            $imageUser = "data:image/jpeg;base64," . $imageUser;
+        }
 
- 
-
-        $html = view('pdf.form', compact('affiliate'))->render();
+        $html = view('pdf.form', compact('affiliate', 'institutionLogo', 'imageUser'))->render();
 
         $mpdf = new \Mpdf\Mpdf([
             'mode' => 'utf-8',

@@ -5,7 +5,6 @@ namespace App\Livewire\Auth;
 use App\Livewire\Forms\UserForm;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Spatie\Permission\Models\Role;
