@@ -117,7 +117,7 @@ class PdfController extends Controller
 
     public function form($id)
     {
-        $logoPath = public_path('storage\institution\logo.png');
+        $logoPath = public_path('storage/institution/logo.png');
         if (file_exists($logoPath)) {
             try {
                 /* $manager = new ImageManager(new Driver());
@@ -128,7 +128,7 @@ class PdfController extends Controller
                 \Log::error('Error procesando el logo: ' . $e->getMessage());
             }
         } else {
-            $logoPath = public_path('image\logo.png');
+            $logoPath = public_path('image/logo.png');
             $institutionLogo = Image::read($logoPath)->resize(50, 50)->toJpeg();
         }
         $institutionLogo = base64_encode($institutionLogo);
@@ -147,7 +147,7 @@ class PdfController extends Controller
             $imageUser = base64_encode($imageUser);
             $imageUser = "data:image/jpeg;base64," . $imageUser;
         } else {
-            $logoPath = public_path('image\user.png');
+            $logoPath = public_path('image/user.png');
             $imageUser = Image::read($logoPath)->resize(50, 50)->toJpeg();
             $imageUser = base64_encode($imageUser);
             $imageUser = "data:image/jpeg;base64," . $imageUser;
