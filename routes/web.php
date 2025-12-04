@@ -57,16 +57,17 @@ Route::get('/', function () {
     return view('site.pages.index');
 })->name('home');
 
-Route::get('/'   ,      [App\Http\Controllers\SitePagesController::class, 'index'  ])  ->name('home');
-Route::get('acerca-de', [App\Http\Controllers\SitePagesController::class, 'about'  ])  ->name('site.about');
-Route::get('cursos'   , [App\Http\Controllers\SitePagesController::class, 'courses' ]) ->name('site.courses');
-Route::get('contacto' , [App\Http\Controllers\SitePagesController::class, 'contact'])  ->name('site.contact');
-Route::get('eventos/{count?}'  , [App\Http\Controllers\SitePagesController::class, 'events'  ]) ->name('site.events');
-Route::get('eventos/{id}/images', [App\Http\Controllers\SitePagesController::class, 'eventsGalery'  ]) ->name('site.events.galery');
-Route::get('noticias' , [App\Http\Controllers\SitePagesController::class, 'news'   ])  ->name('site.news');
-Route::get('directorio' , [App\Http\Controllers\SitePagesController::class, 'directory'   ])  ->name('site.directory');
-Route::get('convenios' , [App\Http\Controllers\SitePagesController::class, 'agreements'   ])  ->name('site.agreements');
-Route::get('requisitos' , [App\Http\Controllers\SitePagesController::class, 'requirement'   ])  ->name('site.requirement');
+Route::get('/',      [App\Http\Controllers\SitePagesController::class, 'index'])->name('home');
+Route::get('acerca-de', [App\Http\Controllers\SitePagesController::class, 'about'])->name('site.about');
+Route::get('cursos', [App\Http\Controllers\SitePagesController::class, 'courses'])->name('site.courses');
+Route::get('contacto', [App\Http\Controllers\SitePagesController::class, 'contact'])->name('site.contact');
+Route::get('eventos/{count?}', [App\Http\Controllers\SitePagesController::class, 'events'])->name('site.events');
+Route::get('eventos/{id}/images', [App\Http\Controllers\SitePagesController::class, 'eventsGalery'])->name('site.events.galery');
+Route::get('noticias', [App\Http\Controllers\SitePagesController::class, 'news'])->name('site.news');
+Route::get('directorio', [App\Http\Controllers\SitePagesController::class, 'directory'])->name('site.directory');
+Route::get('convenios', [App\Http\Controllers\SitePagesController::class, 'agreements'])->name('site.agreements');
+Route::get('requisitos', [App\Http\Controllers\SitePagesController::class, 'requirement'])->name('site.requirement');
+Route::get('facebook-site', [App\Http\Controllers\SitePagesController::class, 'facebookSite'])->name('site.facebook');
 Route::get('loginICAP', [LoginController::class, 'showLoginForm'])->name('site.login');
 Route::post('/login', [LoginController::class, 'login']);
 
@@ -77,12 +78,12 @@ Route::post('/login', [LoginController::class, 'login']);
 //     ->name('dashboard');
 
 // routes/web.php o api.php
-Route::get('/api/universities/search',[LandingPages::class,'universities' ])->name('api.universities.search');
+Route::get('/api/universities/search', [LandingPages::class, 'universities'])->name('api.universities.search');
 
 
 
 
-Route::middleware(['auth','banned'])->group(function () {
+Route::middleware(['auth', 'banned'])->group(function () {
     Route::get('dashboard', DashboardComponent::class)->name('dashboard.index');
 
 
@@ -125,8 +126,8 @@ Route::middleware(['auth','banned'])->group(function () {
     Route::get('Insitution/requirement', RequirementComponent::class)->name('institution.requirement');
 
 
-    Route::get('prueba/requirement',[LandingPages::class,'requirement'])->name('requirement');
-    Route::post('prueba/requirement',[LandingPages::class,'save'])->name('save');
+    Route::get('prueba/requirement', [LandingPages::class, 'requirement'])->name('requirement');
+    Route::post('prueba/requirement', [LandingPages::class, 'save'])->name('save');
 
 
 
@@ -160,7 +161,7 @@ Route::middleware(['auth','banned'])->group(function () {
     Route::get('report/contribution/{id}/{from}/{to}', ContributionAffiliate::class)->name('report.contribution.affiliate');
 
 
-    
+
     Route::get('settings/profile', Profile::class)->name('settings.profile');
     Route::redirect('settings', 'settings/profile');
 

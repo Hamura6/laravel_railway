@@ -61,23 +61,34 @@
                 <a class="my-nav-link {{ Route::is('home') ? 'active' : '' }}" href="{{ route('home') }}">
                     <i class="fas fa-home"></i> Inicio
                 </a>
-                <a class="my-nav-link {{ Route::is('site.news') ? 'active' : '' }}" href="{{ route('site.news') }}">
-                    <i class="fas fa-newspaper"></i> Noticias
-                </a>
-                <a class="my-nav-link {{ Route::is('site.events') ? 'active' : '' }}"
-                    href="{{ route('site.events') }}">
-                    <i class="fas fa-calendar-check"></i> Eventos
-                </a>
                 <a class="my-nav-link {{ Route::is('site.courses') ? 'active' : '' }}"
                     href="{{ route('site.courses') }}">
                     <i class="fa fa-book"></i> Cursos
                 </a>
-                <a class="my-nav-link {{ Route::is('site.agreements') ? 'active' : '' }}"
-                    href="{{ route('site.agreements') }}">
-                    <i class="fa fa-users"></i> Convenios
+                <div class="my-nav-dropdown">
+                    <div class="my-nav-link my-nav-dropdown-toggle">
+                        <i class="fas fa-external-link-alt"></i> Información
+                    </div>
+                    <ul class="my-nav-dropdown-menu">
+                        <li>
+                            <a class="my-nav-dropdown-menu-item" href="{{ route('site.news') }}">
+                                <i class="fas fa-newspaper"></i> Noticias</a>
+                        </li>
+                        <li>
+                            <a class="my-nav-dropdown-menu-item" href="{{ route('site.facebook') }}">
+                            <i class="fab fa-facebook-square"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a class="my-nav-dropdown-menu-item" href="{{ route('site.agreements') }}">
+                            <i class="fas fa-handshake"></i> Convenios</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="my-nav-link {{ Route::is('site.events') ? 'active' : '' }}"
+                    href="{{ route('site.events') }}">
+                    <i class="fas fa-calendar-check"></i> Eventos
                 </a>
 
-                <!-- Dropdown -->
                 <div class="my-nav-dropdown">
                     <div class="my-nav-link my-nav-dropdown-toggle">
                         <i class="fas fa-city"></i> Infraestructura
@@ -166,7 +177,7 @@
 
                     <div class="footer-socials">
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/p/Ilustre-Colegio-de-Abogados-de-Potos%C3%AD-100075585267932/"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>

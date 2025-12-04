@@ -7,8 +7,7 @@ use App\Models\Recognition;
 use Mpdf\Mpdf;
 use Illuminate\Support\Facades\DB;
 use App\Helpers\GlobalPdf;
-
-
+use App\Models\Institution;
 
 class PdfController extends Controller
 {
@@ -117,12 +116,14 @@ class PdfController extends Controller
 
     public function form($id)
     {
-         $affiliate = Affiliate::with([
+        $affiliate = Affiliate::with([
             'user:id,name,last_name,ci,email,gender,birthdate,status,photo,martial_status',
             'university:id,name,entity',
             'professions.specialty:id,name',
             'professions.university:id,name'
         ])->findOrFail($id);
+
+ 
 
         $html = view('pdf.form', compact('affiliate'))->render();
 
@@ -137,7 +138,7 @@ class PdfController extends Controller
 
         $mpdf->WriteHTML($html);
 
-        return $mpdf->Output('formulario_' . $affiliate->id . '.pdf', 'I'); 
+        return $mpdf->Output('formulario_' . $affiliate->id . '.pdf', 'I');
         /*   $affiliate = Affiliate::with([
             'user',
             'university',
@@ -245,7 +246,7 @@ class PdfController extends Controller
         /* return response($pdf->Output("I", "formulario_$id.pdf"))
             ->header("Content-Type", "application/pdf"); */
 
-/* $affiliate = Affiliate::with([
+        /* $affiliate = Affiliate::with([
     'user:id,name,last_name,ci,email,gender,birthdate,status,photo,martial_status',
     'university:id,name,entity',
     'professions.specialty:id,name',
@@ -496,8 +497,6 @@ $pdf->Cell(0,5,'NOTA: POR FAVOR AL FIRMAR NO SOBREPASE LA LINEA',0,1,'C');
 
 // ====== Salida ======
 $pdf->Output('I', 'formulario_'.$affiliate->id.'.pdf'); */
-
-
     }
 
     public function debt($id, $form, $to, $type = '', $fee = '')

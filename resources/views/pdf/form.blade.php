@@ -119,7 +119,7 @@
 
 <body>
     <div class="logo">
-        <img width="50"  src="{{ public_path('storage/institution/'.$institution->logo) }}" alt="">
+      {{--   <img width="50" src="data:image/jpeg;base64,{{ $institutionLogo }}" alt=""> --}}
 
     </div>
     <div align="center" class="header">
@@ -150,8 +150,8 @@
                     </table>
                 </td>
                 <td>
-                    <img class="img" width="150" height="150"
-                        src="{{ public_path('storage/users/' . $affiliate->user->photo) }}" alt="">
+                  {{--   <img class="img" width="150" height="150" src="data:image/jpeg;base64,{{ $userPhoto }}"
+                        alt=""> --}}
                 </td>
             </tr>
         </table>

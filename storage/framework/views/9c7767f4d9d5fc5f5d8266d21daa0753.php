@@ -119,7 +119,7 @@
 
 <body>
     <div class="logo">
-        <img width="50"  src="<?php echo e(public_path('storage/institution/'.$institution->logo)); ?>" alt="">
+      
 
     </div>
     <div align="center" class="header">
@@ -150,8 +150,7 @@
                     </table>
                 </td>
                 <td>
-                    <img class="img" width="150" height="150"
-                        src="<?php echo e(public_path('storage/users/' . $affiliate->user->photo)); ?>" alt="">
+                  
                 </td>
             </tr>
         </table>

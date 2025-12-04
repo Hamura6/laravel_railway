@@ -68,6 +68,9 @@ class SitePagesController extends Controller
     {
         return view('site.pages.contact');
     }
+    public function facebookSite(){
+        return view('site.pages.facebook');
+    }
     public function directory()
     {
         $directory=BoardMember::
