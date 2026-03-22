@@ -54,7 +54,7 @@
 <?php endif; ?>
             </div>
             <div class="col-md-6 order-1 order-md-2 col-ms-12">
-                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('roles.create')): ?>
+                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear roles')): ?>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button type="button" wire:target="search" wire:loading.attr="disabled" class="btn btn-sm btn-success"
                             data-bs-toggle="modal" data-bs-target="#myModal">
@@ -90,7 +90,7 @@
                     </td>
                     <td class="text-center" align="center">
                         <!--[if BLOCK]><![endif]--><?php if($rol->id != 1 && $rol->id != 2): ?>
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('roles.edit')): ?>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar roles')): ?>
                                 <?php if (isset($component)) { $__componentOriginale9f0fcc686d5ab9265b8e88cbb55bbb0 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginale9f0fcc686d5ab9265b8e88cbb55bbb0 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-edit','data' => ['id' => ''.e($rol->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -112,7 +112,7 @@
 <?php unset($__componentOriginale9f0fcc686d5ab9265b8e88cbb55bbb0); ?>
 <?php endif; ?>
                             <?php endif; ?>
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('roles.delete')): ?>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar roles')): ?>
                                 <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($rol->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>

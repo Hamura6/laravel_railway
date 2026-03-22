@@ -2,7 +2,7 @@
     <div class="row mx-1 g-2">
         <div class="col-md-3">
             <a href="#" class="text-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight"> <u> <i class="far fa-question-circle"></i> Filtros de busqueda </u></a>
+                aria-controls="offcanvasRight"> <u> <i class="far fa-question-circle"></i> Filtros de búsqueda </u></a>
         </div>
         <div class="col-md-9">
             <div class="d-grid gap-1  d-md-flex justify-content-md-end">
@@ -17,8 +17,8 @@
     <hr>
     <x-table-report class="table-report table-striped">
         <tr>
-            <td><strong>INSTITUCION:</strong> {{ $institution->name }} </td>
-            <td><strong>GESTION:</strong> {{ now()->year }} </td>
+            <td><strong>INSTITUCIÓN:</strong> {{ $institution->name }} </td>
+            <td><strong>GESTIÓN:</strong> {{ now()->year }} </td>
         </tr>
         <tr>
             <td>

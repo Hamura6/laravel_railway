@@ -43,7 +43,7 @@
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
          <?php $__env->slot('header', null, []); ?> 
-            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('procedures.create')): ?>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear procedimientos')): ?>
                 <div class="col-12 col-md-6 order-1 order-md-2">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button type="button" class="btn btn-sm  btn-success " data-bs-toggle="modal"
@@ -161,7 +161,7 @@
 
                         </div>
                         <div class="card-footer py-1 d-flex gap-1 justify-content-end">
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('procedures.delete')): ?>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar procedimientos')): ?>
                                 <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($procedure->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -183,7 +183,7 @@
 <?php unset($__componentOriginal3fa869ab4147c9277d9fa157f1637985); ?>
 <?php endif; ?>
                             <?php endif; ?>
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('procedures.edit')): ?>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar procedimientos')): ?>
                                 <?php if (isset($component)) { $__componentOriginale9f0fcc686d5ab9265b8e88cbb55bbb0 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginale9f0fcc686d5ab9265b8e88cbb55bbb0 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-edit','data' => ['id' => ''.e($procedure->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -206,7 +206,7 @@
 <?php endif; ?>
                             <?php endif; ?>
                             <!--[if BLOCK]><![endif]--><?php if($procedure->fee->type == 'installments'): ?>
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('procedures.view')): ?>
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Ver procedimientos')): ?>
                                     <a type="button" wire:target="changeStatus, delete"
                                         wire:loading.class="disabled pointer-events-none opacity-50"
                                         href="<?php echo e(route('procedures.details', $procedure->id)); ?>" class="btn-purple-circle"
@@ -216,7 +216,7 @@
                                 <?php endif; ?>
                             <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
                             <!--[if BLOCK]><![endif]--><?php if($procedure->debt > 0): ?>
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('payments.pay')): ?>
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Realizar pago')): ?>
                                     <button wire:target="check, delete, edit" wire:loading.attr="disabled"
                                         class="btn-cc-circle outlined"
                                         onclick="Question(<?php echo e($procedure->id); ?>,'Desea realizar el pago completo del tramite?','check')"

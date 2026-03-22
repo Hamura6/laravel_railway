@@ -131,8 +131,10 @@
             </div>
 
         </div>
-        <?php echo e($permissions->links()); ?>
+        <div class="border-top py-3 px-3 d-flex align-items-center">
+            <?php echo e($permissions->links()); ?>
 
+        </div>
 
      <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>

@@ -10,7 +10,7 @@ use Maatwebsite\Excel\Concerns\WithEvents;
 use Maatwebsite\Excel\Concerns\WithCustomStartCell;
 use Maatwebsite\Excel\Concerns\WithTitle;
 use Maatwebsite\Excel\Events\AfterSheet;
-
+use App\Models\Institution;
 use PhpOffice\PhpSpreadsheet\Style\Alignment;
 use PhpOffice\PhpSpreadsheet\Style\Border;
 use PhpOffice\PhpSpreadsheet\Style\Fill;
@@ -81,16 +81,14 @@ class ContributionExport implements FromCollection, WithHeadings, WithEvents, Wi
                 $lastRow = $sheet->getHighestRow();
                 $lastColumn = $sheet->getHighestColumn();
 
-                // === Título ===
                 $sheet->mergeCells('A1:F1');
                 $sheet->setCellValue('A1', 'REPORTE DE PAGOS');
                 $sheet->getStyle('A1')->getFont()->setBold(true)->setSize(16);
                 $sheet->getStyle('A1')->getAlignment()->setHorizontal(Alignment::HORIZONTAL_CENTER);
 
-                // === Institución y Fechas ===
                 $sheet->mergeCells('A2:C2');
                 $sheet->mergeCells('D2:F2');
-                $sheet->setCellValue('A2', 'INSTITUCIÓN: ' . $this->institution->name);
+                $sheet->setCellValue('A2', 'INSTITUCIÓN: ' .Institution::first()->name);
                 $sheet->setCellValue('D2', 'GESTIÓN: ' . now()->year);
 
                 $sheet->mergeCells('A3:C3');
@@ -103,7 +101,6 @@ class ContributionExport implements FromCollection, WithHeadings, WithEvents, Wi
                 $sheet->setCellValue('A4', 'Cantidad de Afiliados: ' . count($this->affiliates));
                 $sheet->setCellValue('D4', 'Total Aportes: ' . number_format($this->affiliates->sum('payments_sum_amount'), 2) . ' Bs.');
 
-                // === Encabezados de tabla ===
                 $headerRow = 7;
                 $sheet->getStyle("A{$headerRow}:{$lastColumn}{$headerRow}")->applyFromArray([
                     'font' => ['bold' => true],
@@ -112,12 +109,10 @@ class ContributionExport implements FromCollection, WithHeadings, WithEvents, Wi
                     'borders' => ['allBorders' => ['borderStyle' => Border::BORDER_THIN]],
                 ]);
 
-                // === Bordes generales ===
                 $sheet->getStyle("A{$headerRow}:{$lastColumn}{$lastRow}")->applyFromArray([
                     'borders' => ['allBorders' => ['borderStyle' => Border::BORDER_THIN]],
                 ]);
 
-                // Zebra stripes
                 for ($i = $headerRow + 1; $i <= $lastRow; $i++) {
                     if ($i % 2 === 0) {
                         $sheet->getStyle("A{$i}:{$lastColumn}{$i}")->getFill()
@@ -126,7 +121,6 @@ class ContributionExport implements FromCollection, WithHeadings, WithEvents, Wi
                     }
                 }
 
-                // Auto ancho columnas
                 foreach (range('A', $lastColumn) as $col) {
                     $sheet->getColumnDimension($col)->setAutoSize(true);
                 }

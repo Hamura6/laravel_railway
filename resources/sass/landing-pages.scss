@@ -5,7 +5,7 @@ $blue: #887316 !default;
 // Paleta elegante y moderna
 
 /* $primary: #001c40 !default;
- */$primary: #887316 !default;
+ */$primary: #001c40 !default;
 $secondary: #3d3d3d !default;
 $success: #0e723b !default;
 $info: #0f517c !default;
@@ -57,7 +57,9 @@ $font-main: "Poppins", sans-serif;
 
 // =========== START VARIABLES LADING =========== //
 
-$color-primary-lading-bg: #1f1f1f;
+/* $color-primary-lading-bg: #1f1f1f;
+ */
+$color-primary-lading-bg: #001c40;
 $color-primary-lading-text: #f1f1f1;
 
 $color-accent-lading: #927700;

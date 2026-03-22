@@ -22,7 +22,7 @@ class RecognitionComponent extends Component
         ];
     }
     public function mount(){
-       $this->authorize('recognitions.view');
+       $this->authorize('ver reconocimientos');
         $this->search=Carbon::parse(now())->firstOfYear()->year;
     }
     public function render()
@@ -33,7 +33,7 @@ class RecognitionComponent extends Component
         return view('livewire.recognitions.recognition-component',compact('recognitions'));
     }
     public function store(){
-        $this->authorize('recognitions.create');
+        $this->authorize('Crear reconocimientos');
         $this->validate();
         Recognition::create([
             'name'=>$this->name,
@@ -52,7 +52,7 @@ class RecognitionComponent extends Component
         
     }
     public function update(){
-        $this->authorize('recognitions.edit');
+        $this->authorize('Editar reconocimientos');
         $this->validate();
         $recognition=Recognition::find($this->id);
         $recognition->update([
@@ -67,7 +67,7 @@ class RecognitionComponent extends Component
     }
     #[On('delete')]
     public function delete($id){
-        $this->authorize('recognitions.delete');
+        $this->authorize('Eliminar reconocimientos');
         Recognition::find($id)->delete();
         $this->dispatch('notify',text:'Registro eliminado',title:'El registro fue eliminado correctamente',icon:'success');
     }

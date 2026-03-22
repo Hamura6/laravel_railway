@@ -110,7 +110,7 @@
 <?php $component->withAttributes([]); ?>
                  <?php $__env->slot('header', null, []); ?> 
                     <h6 class="text-secondary">Historial de pagos</h6>
-                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('payments.pay')): ?>
+                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Realizar pago')): ?>
                         <button type="button" class="btn btn-sm  btn-success  mb-0 me-2" data-bs-toggle="modal"
                             data-bs-target="#myModal">
                             <i class="far fa-file-alt fs-6"></i> Nuevo
@@ -126,11 +126,13 @@
                                 <?php echo e($plan->created_at->format('d/m/Y H:i')); ?>
 
                             </p>
-                            <button class="btn btn-sm btn-outline-danger rounded-circle position-absolute"
-                                onclick="Confirm(<?php echo e($plan->id); ?>)"
-                                style="top: 8px; right: 8px; width: 24px; height: 24px; padding: 0;">
-                                <i class="fas fa-trash" style="font-size: 0.65rem;"></i>
-                            </button>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Realizar pago')): ?>
+                                <button class="btn btn-sm btn-outline-danger rounded-circle position-absolute"
+                                    onclick="Confirm(<?php echo e($plan->id); ?>)"
+                                    style="top: 8px; right: 8px; width: 24px; height: 24px; padding: 0;">
+                                    <i class="fas fa-trash" style="font-size: 0.65rem;"></i>
+                                </button>
+                            <?php endif; ?>
                         </div>
                     </div>
 

@@ -2,7 +2,7 @@
 
 $__newAttributes = [];
 $__propNames = \Illuminate\View\ComponentAttributeBag::extractPropNames(([
-    'title' => 'rol',
+    'title' => 'Rol',
 ]));
 
 foreach ($attributes->all() as $__key => $__value) {
@@ -19,7 +19,7 @@ unset($__propNames);
 unset($__newAttributes);
 
 foreach (array_filter(([
-    'title' => 'rol',
+    'title' => 'Rol',
 ]), 'is_string', ARRAY_FILTER_USE_KEY) as $__key => $__value) {
     $$__key = $$__key ?? $__value;
 }
@@ -35,17 +35,17 @@ unset($__defined_vars, $__key, $__value); ?>
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-            <div class="modal-header d-flex align-items-center py-2">
-                <h5 class="modal-title font-weight-bolder mb-0 text-dark" id="exampleModalLabel">
+            <div class="modal-header d-flex align-items-center py-2  border-dark bg-dark">
+                <h5 class="modal-title font-weight-bolder mb-0 text-white" id="exampleModalLabel">
                     <?php echo e($this->form->id ?? $this->id ? 'Actualizar' : 'Registrar'); ?> | <?php echo e($title); ?>
 
                 </h5>
-                <div class="spinner-border ms-auto" wire:loading role="status" style="width: 1.5rem; height: 1.5rem;">
+                <div class="spinner-border text-white ms-auto" wire:loading role="status" style="width: 1.5rem; height: 1.5rem;">
                     <span class="visually-hidden">Cargando...</span>
                 </div>
             </div>
             <div class="modal-body">
-                <form action="">
+                <form action="" >
 
                     <div class="row g-1">
                         <?php echo e($slot); ?>
@@ -55,7 +55,7 @@ unset($__defined_vars, $__key, $__value); ?>
                 </form>
             </div>
             <div class="modal-footer py-2">
-                <button type="button" class="btn btn-secondary" wire:loading.attr="disabled" wire:click="clear()"
+                <button type="button" class="btn btn-danger" wire:loading.attr="disabled" wire:click="clear()"
                     data-bs-dismiss="modal"> <span wire:loading.remove>
                         <i class='fas fa-ban fs-6'></i>
                     </span>

@@ -4,13 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="<?php echo e($institution->image); ?> ">
+
+    <title><?php echo e($institution->initials ?? config('app.name')); ?></title>
     
-    <title>
-        Corporate UI by Creative Timsdadsadas
-    </title>
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700"
-        rel="stylesheet" />
     <?php echo app('Illuminate\Foundation\Vite')(['resources/sass/app.scss', 'resources/js/app.js']); ?>
     <?php echo \Livewire\Mechanisms\FrontendAssets\FrontendAssets::styles(); ?>
 
@@ -62,92 +60,6 @@
                     <div class="card-body p-2">
                         <form action="<?php echo e(route('save')); ?>" method="POST" enctype="multipart/form-data">
                             <?php echo csrf_field(); ?>
-                            <div class="col-md-12">
-                                <div class="d-flex justify-content-center mb-4" wire:ignore>
-                                    <!-- Imagen que se actualizará -->
-                                    <img id="profileImage" class="border-radius-lg rounded-circle" width="200"
-                                        height="200"
-                                        src="https://i.pinimg.com/originals/bd/2e/0d/bd2e0d56cc9b061d694979158bda4d0b.jpg"
-                                        alt="Imagen de perfil" wire:loading.remove wire:target="photo">
-
-                                    <!-- Spinner de carga -->
-                                    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;"
-                                        wire:loading wire:target="photo" role="status">
-                                        <span class="visually-hidden">Cargando...</span>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-control-label" for="basic-url">Elija imagen</label>
-                                    <div class="input-group">
-                                        <input type="file" id="photo" name="photo" accept="image/*"    
-                                            class="form-control <?php $__errorArgs = ['photo'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-                                is-invalid
-                            <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>"
-                                            id="basic-url" aria-describedby="basic-addon3">
-                                        <?php $__errorArgs = ['photo'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-                                            <div id="validationServer05Feedback" class="invalid-feedback">
-                                                <?php echo e($message); ?>
-
-                                            </div>
-                                        <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                    </div>
-                                </div>
-                            </div>
-<script>
-    // Vista previa
-    document.getElementById('photo').addEventListener('change', function(e) {
-        if (e.target.files && e.target.files[0]) {
-            const reader = new FileReader();
-            reader.onload = function(event) {
-                document.getElementById('profileImage').src = event.target.result;
-            };
-            reader.readAsDataURL(e.target.files[0]);
-        }
-    });
-
-    // Envío del formulario con AJAX para mejor UX
-    document.getElementById('uploadForm').addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(this);
-        
-        try {
-            const response = await fetch(this.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'X-Requested-With': 'XMLHttpRequest',
-                },
-            });
-            
-            const data = await response.json();
-            
-            if (data.success) {
-                // Actualizar la imagen con la nueva
-                document.getElementById('profileImage').src = data.url + '?t=' + Date.now();
-                alert('Imagen guardada correctamente');
-            } else {
-                alert('Error: ' + data.message);
-            }
-        } catch (error) {
-            alert('Error de conexión');
-        }
-    });
-</script>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">

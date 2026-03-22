@@ -84,7 +84,9 @@
             </div>
 
         </div>
-        {{ $permissions->links() }}
+        <div class="border-top py-3 px-3 d-flex align-items-center">
+            {{ $permissions->links() }}
+        </div>
 
     </x-card-body>
 </div>

@@ -5,11 +5,11 @@
             <div class="col-sm-12 col-md-6 order-2 order-md-1">
                 <x-search />
             </div>
-            @can('licenses.create')
+            @can('Crear licencias')
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button type="button" wire:target="search" wire:loading.attr="disabled"
-                            class="btn btn-sm btn-success  mb-0 me-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <button type="button" wire:target="search" wire:loading.attr="disabled" class="btn btn-sm btn-success"
+                            data-bs-toggle="modal" data-bs-target="#myModal">
                             <i class="far fa-file-alt fs-6"></i> Agregar
                         </button>
                     </div>
@@ -60,10 +60,9 @@
                             {{ $license->date }}
                         </td>
                         <td class="text-center">
-                            @can('licenses.delete')
-                                
-                            <x-btn-delete id="{{ $license->id }}" />
-                                @endcan
+                            @can('Eliminar licencias')
+                                <x-btn-delete id="{{ $license->id }}" />
+                            @endcan
                         </td>
                     </tr>
                 @empty
@@ -80,7 +79,7 @@
 
             </tbody>
         </x-table-registers>
-        <div class="border-top py-2  mt-2 px-3 d-flex align-items-center">
+        <div class="border-top py-3 px-3 d-flex align-items-center">
             {{ $licenses->links() }}
         </div>
     </x-card-body>

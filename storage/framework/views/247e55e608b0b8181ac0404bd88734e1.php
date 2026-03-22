@@ -3,7 +3,7 @@
 
         <div class="col-md-3">
             <a href="#" class="text-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight"> <u> <i class="far fa-question-circle"></i> Filtros de busqueda </u></a>
+                aria-controls="offcanvasRight"> <u> <i class="far fa-question-circle"></i> Filtros de búsqueda </u></a>
         </div>
         <div class="col-md-9">
             <div class="d-grid gap-1  d-md-flex justify-content-md-end">
@@ -18,7 +18,6 @@
         </div>
     </div>
     <hr>
-    <div class="mx-2">
         <?php if (isset($component)) { $__componentOriginal32c4293829977fbd3fb7bfcb6f502967 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal32c4293829977fbd3fb7bfcb6f502967 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.table-report','data' => ['class' => 'table-report table-striped']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -30,8 +29,8 @@
 <?php endif; ?>
 <?php $component->withAttributes(['class' => 'table-report table-striped']); ?>
             <tr>
-                <td colspan="2"><strong>INSTITUCION:</strong> <?php echo e($institution->name); ?> </td>
-                <td><strong>GESTION:
+                <td colspan="2"><strong>INSTITUCIÓN:</strong> <?php echo e($institution->name); ?> </td>
+                <td><strong>GESTIÓN:
                         <?php echo e(now()->year); ?>
 
                     </strong></td>
@@ -45,7 +44,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2"><strong>Rango de edad:</strong> De <?php echo e($this->minor); ?> a <?php echo e($this->max); ?> anos de
+                <td colspan="2"><strong>Rango de edad:</strong> De <?php echo e($this->minor); ?> a <?php echo e($this->max); ?> años de
                     edad
                 </td>
             </tr>
@@ -80,9 +79,9 @@
                     <th class="text-center">#</th>
                     <th class="text-center">Nombres Completo</th>
                     <th class="text-center">Edad</th>
-                    <th class="text-center">Correo Electronico</th>
+                    <th class="text-center">Correo Electrónico</th>
                     <th class="text-center">Genero</th>
-                    <th class="text-center">Telefono</th>
+                    <th class="text-center">Teléfono</th>
                  <?php $__env->endSlot(); ?>
 
                 <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $affiliates; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $affiliate): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
@@ -133,7 +132,6 @@
 <?php unset($__componentOriginal32c4293829977fbd3fb7bfcb6f502967); ?>
 <?php endif; ?>
         </div>
-    </div>
     <?php echo e($affiliates->links()); ?>
 
 

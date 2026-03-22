@@ -21,7 +21,7 @@ class UserPolicy
      */
     public function view(): bool
     {
-        return Auth::user()->can('users.view');
+        return Auth::user()->can('Ver usuarios');
     }
 
     /**
@@ -29,7 +29,7 @@ class UserPolicy
      */
     public function create(User $user): bool
     {
-        return Auth::user()->can('users.create');
+        return Auth::user()->can('Crear usuarios');
     }
 
     /**
@@ -37,7 +37,7 @@ class UserPolicy
      */
     public function update(User $user, User $model): bool
     {
-        return Auth::user()->can('users.edit');
+        return Auth::user()->can('Editar usuarios');
     }
 
     /**
@@ -45,7 +45,7 @@ class UserPolicy
      */
     public function delete(User $user, User $model): bool
     {
-        return Auth::user()->can('users.delete');
+        return Auth::user()->can('Eliminar usuarios');
     }
 
     /**

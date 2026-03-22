@@ -12,7 +12,7 @@ class DirectoryFormComponent extends Component
     use WithPagination;
     public $id,$search='',$name,$is_directory='Elegir',$level;
     public function mount(){
-        $this->authorize('directories.view');
+        $this->authorize('Ver directorio');
     }
     public function rules(){
         return [
@@ -25,15 +25,17 @@ class DirectoryFormComponent extends Component
     {
         $directories=BoardMember::where('name','like',"%$this->search%")
         ->orderBy('is_directory', 'desc')
+        ->orderBy('level', 'asc')      
         ->orderBy('id', 'asc')      
         ->paginate(10);
+
         return view('livewire.direcories.directory-form-component',compact('directories'));
     }
     public function UpdatedSearch(){
         $this->resetPage();
     }
     public function store(){
-        $this->authorize('directories.create');
+        $this->authorize('Crear directorio');
         $this->validate();
         BoardMember::create([
             'name'=>$this->name,
@@ -52,7 +54,7 @@ class DirectoryFormComponent extends Component
         
     }
     public function update(){
-        $this->authorize('directories.edit');
+        $this->authorize('Editar directorio');
         $this->validate();
         $board=BoardMember::find($this->id);
         $board->update([
@@ -65,7 +67,7 @@ class DirectoryFormComponent extends Component
     }
     #[On('delete')]
     public function delete($id){
-        $this->authorize('directories.delete');
+        $this->authorize('Eliminar directorio');
         BoardMember::find($id)->delete();
         $this->dispatch('notify',text:'El rol de '.($this->is_directory?'Directorio':'Tribunal de Honor').' fue eliminado exitosamente',title:'Directorio eliminado',icon:'success');
     }

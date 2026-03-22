@@ -33,7 +33,7 @@
 
             <div class="col-md-3">
                 <a href="#" class="text-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight"> <u> <i class="far fa-question-circle"></i> Filtros de busqueda
+                    aria-controls="offcanvasRight"> <u> <i class="far fa-question-circle"></i> Filtros de búsqueda
                     </u></a>
             </div>
             <div class="col-md-9">
@@ -62,8 +62,8 @@
 <?php endif; ?>
 <?php $component->withAttributes(['class' => 'table-report table-striped']); ?>
                 <tr>
-                    <td><strong>INSTITUCION:</strong> <?php echo e($institution->name); ?> </td>
-                    <td><strong>GESTION:
+                    <td><strong>INSTITUCIÓN:</strong> <?php echo e($institution->name); ?> </td>
+                    <td><strong>GESTIÓN:
                             <?php echo e(now()->year); ?>
 
                         </strong></td>
@@ -166,7 +166,7 @@
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
                             </td>
                             <td class="text-center">
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('reports')): ?>
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Ver reportes')): ?>
                                     <a href="<?php echo e(route('report.contribution.affiliate', [$affiliate->id, $this->from, $this->to])); ?>"
                                         class="btn-purple-circle"> <i class="fas fa-eye"></i> </a>
                                 <?php endif; ?>

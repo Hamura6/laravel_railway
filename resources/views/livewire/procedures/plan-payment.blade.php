@@ -73,7 +73,7 @@
             <x-card-body>
                 <x-slot name="header">
                     <h6 class="text-secondary">Historial de pagos</h6>
-                    @can('payments.pay')
+                    @can('Realizar pago')
                         <button type="button" class="btn btn-sm  btn-success  mb-0 me-2" data-bs-toggle="modal"
                             data-bs-target="#myModal">
                             <i class="far fa-file-alt fs-6"></i> Nuevo
@@ -88,11 +88,13 @@
                             <p class="card-text text-muted mb-0" style="font-size: 0.75rem;">
                                 {{ $plan->created_at->format('d/m/Y H:i') }}
                             </p>
-                            <button class="btn btn-sm btn-outline-danger rounded-circle position-absolute"
-                                onclick="Confirm({{ $plan->id }})"
-                                style="top: 8px; right: 8px; width: 24px; height: 24px; padding: 0;">
-                                <i class="fas fa-trash" style="font-size: 0.65rem;"></i>
-                            </button>
+                            @can('Realizar pago')
+                                <button class="btn btn-sm btn-outline-danger rounded-circle position-absolute"
+                                    onclick="Confirm({{ $plan->id }})"
+                                    style="top: 8px; right: 8px; width: 24px; height: 24px; padding: 0;">
+                                    <i class="fas fa-trash" style="font-size: 0.65rem;"></i>
+                                </button>
+                            @endcan
                         </div>
                     </div>
 

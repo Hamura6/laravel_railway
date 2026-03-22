@@ -20,10 +20,10 @@
         </div>
 
         <div class="row">
-          <div class="col-12 col-md-4 col-lg-5">
+          <div class="col-12 col-md-5 col-lg-5">
             <img class="img-fluid h-100" src="{{asset('image/fachada.webp')}}">
           </div>
-          <div class="col-12 col-md-8 col-lg-7">
+          <div class="col-12 col-md-7 col-lg-7">
             <div class="my-title">Historia del Ilustre Colegio de Abogados de Potosí</div>
             <p class="my-text">
               En 1915, en Potosí, se estableció el Colegio de Abogados siguiendo una circular que recomendaba su

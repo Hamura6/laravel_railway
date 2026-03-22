@@ -6,16 +6,16 @@
     <title>Reporte de Reconocimiento</title>
     <style>
         .logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 120px;
-        }
+        position: absolute;
+        top: 20px;
+        left: 40px;
 
-        .logo img {
-            width: 120px;
-            height: auto;
-        }
+    }
+
+    .logo img {
+        width: 50px;
+        height: auto;
+    }
 
         body {
             font-family: DejaVu Sans, sans-serif;
@@ -59,11 +59,11 @@
 </head>
 
 <body>
-    <div class="logo">
-        <img width="120" src="{{ public_path('assets/img/escudo.png') }}" alt="">
+      <div class="logo">
+        <img width="50" src="data:image/jpeg;base64,{{ $institutionLogo }}" alt="">
 
     </div>
-    <h2> <u>{{ $recognition->type  }}</u></h2>
+    <h2> <u>{{ __($recognition->type)  }}</u></h2>
 
     <table class="info-table">
         <tr>
@@ -71,12 +71,8 @@
             <td>{{ $recognition->date }}</td>
         </tr>
         <tr>
-            <th>Aportes a considerar</th>
-            <td>{{ $recognition->quantity }}</td>
-        </tr>
-        <tr>
             <th>Cantidad de participantes</th>
-            <td>{{ $recognition->participants }}</td>
+            <td>{{ $recognition->affiliates->count()}}</td>
         </tr>
         <tr>
             <th>Tiempo restante</th>
@@ -103,7 +99,7 @@
                     <td>{{ $affiliate->id }}</td>
                     <td>{{$affiliate->user->title  }} {{ $affiliate->user->name }} {{ $affiliate->user->last_name }}</td>
                     <td>{{ $affiliate->antique }}</td>
-                    <td>{{ $affiliate->created_at->format('Y-m-d') }}</td>
+                    <td>{{ $affiliate->created_at}}</td>
                     <td>{{ optional($affiliate->user->phones->first())->number ?? 'N/A' }}</td>
                 </tr>
             @empty

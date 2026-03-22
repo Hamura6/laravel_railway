@@ -11,8 +11,18 @@
             <div class="row my-1 mx-1 g-1">
                 <div class="col-md-6 p-1">
                     <div class="align-center justify-content-center" align="center">
-                            <img class="border-radius-lg " width="110" height="115"
-                                src="{{ $photo ? $photo->temporaryUrl() : ($this->image ?: asset('image/user.png')) }}">
+                        <div class="container">
+                            <div
+                                class=" p-0 mx-3 mt-3 position-relative z-index-1 d-flex justify-content-center align-items-center flex-column">
+                                <img class="border-radius-lg rounded-circle" width="110" height="115" wire:loading.remove
+                                        wire:target="photo"
+                                    src="{{ $photo ? $photo->temporaryUrl() : ($this->image ?: asset('image/user.png')) }}">
+                                <span class="spinner-grow text-dark" style="width: 3rem; height: 3rem;" wire:loading
+                                    wire:target="photo" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label class="form-control-label" for="basic-url">Elija imagen</label>
@@ -170,8 +180,9 @@
             <!-- Universidad -->
             <div class="mb-3" x-data="universityData()">
                 <label for="university" class="form-label">Universidad</label>
-                <input type="text" id="university" class="form-control" x-model="universityText" list="university-list"
-                    placeholder="Seleccionar o escribir universidad" @change="handleUniversityChange()">
+                <input type="text" id="university" class="form-control" x-model="universityText"
+                    list="university-list" placeholder="Seleccionar o escribir universidad"
+                    @change="handleUniversityChange()">
 
                 <datalist id="university-list">
                     @foreach ($universities as $university)
@@ -190,7 +201,7 @@
             </div>
 
             <div class="col-md-12 ">
-                <x-input-label title="Número de Título"  type="number" name='form.number' />
+                <x-input-label title="Número de Título" type="number" name='form.number' />
             </div>
         </x-card-body>
     </div>
@@ -398,345 +409,16 @@
             }
         }
     </script>
-    {{--     <script>
-        function specialtiesComponent() {
-            return {
-                loading: false,
-                specialtiesArray: @json($specialtiesArray),
-                universities: @json($universities),
-                specialties: @json($specialties),
-                errors: {},
-                choicesInstances: new Map(),
-
-                init() {
-                    // Inicializar con datos de Livewire
-                    if (this.specialtiesArray.length === 0) {
-                        this.addSpeciality();
-                    }
-
-                    this.$nextTick(() => {
-                        this.initializeSearchSelects();
-                    });
-
-                    // Observar cambios en el array para sincronizar con Livewire
-                    this.$watch('specialtiesArray', (newValue) => {
-                        this.syncWithLivewire();
-                    }, {
-                        deep: true
-                    });
-                },
-
-                addSpeciality() {
-                    this.specialtiesArray.push({
-                        university_id: '',
-                        specialty_id: '',
-                        area: '',
-                        date: ''
-                    });
-
-                    this.$nextTick(() => {
-                        this.initializeSearchSelects();
-                    });
-                },
-
-                deleteSpeciality() {
-                    if (this.specialtiesArray.length > 0) {
-                        const lastIndex = this.specialtiesArray.length - 1;
-                        this.destroyChoicesInstance(`university-${lastIndex}`);
-                        this.destroyChoicesInstance(`specialty-${lastIndex}`);
-                        this.specialtiesArray.pop();
-                    }
-                },
-
-                deleteSpecificSpeciality(index) {
-                    if (this.specialtiesArray.length > 1) {
-                        this.destroyChoicesInstance(`university-${index}`);
-                        this.destroyChoicesInstance(`specialty-${index}`);
-                        this.specialtiesArray.splice(index, 1);
-
-                        this.$nextTick(() => {
-                            this.initializeSearchSelects();
-                        });
-                    }
-                },
-
-                // Método para sincronizar con Livewire
-                syncWithLivewire() {
-                    if (typeof Livewire !== 'undefined') {
-                        @this.set('specialtiesArray', this.specialtiesArray);
-                    }
-                },
-
-                initializeSearchSelects() {
-                    document.querySelectorAll('.search-select').forEach(select => {
-                        const id = select.id;
-
-                        if (this.choicesInstances.has(id)) {
-                            return;
-                        }
-
-                        try {
-                            const choices = new Choices(select, {
-                                searchEnabled: true,
-                                searchPlaceholderValue: 'Buscar...',
-                                shouldSort: false,
-                                itemSelectText: 'Seleccionar',
-                                position: 'auto',
-                                searchResultLimit: 10,
-                                renderChoiceLimit: 10,
-                                noResultsText: 'No se encontraron resultados',
-                                noChoicesText: 'No hay opciones disponibles',
-                            });
-
-                            this.choicesInstances.set(id, choices);
-
-                            // Sincronizar cuando Choices cambie
-                            select.addEventListener('change', (event) => {
-                                const index = event.target.getAttribute('data-index');
-                                const type = event.target.getAttribute('data-type');
-                                const value = event.target.value;
-
-                                if (index !== null && this.specialtiesArray[index]) {
-                                    if (type === 'university') {
-                                        this.specialtiesArray[index].university_id = value;
-                                    } else if (type === 'specialty') {
-                                        this.specialtiesArray[index].specialty_id = value;
-                                    }
-                                    this.syncWithLivewire();
-                                }
-                            });
-
-                        } catch (error) {
-                            console.error('Error inicializando Choices:', error);
-                        }
-                    });
-                },
-
-                destroyChoicesInstance(id) {
-                    if (this.choicesInstances.has(id)) {
-                        try {
-                            const choices = this.choicesInstances.get(id);
-                            choices.destroy();
-                            this.choicesInstances.delete(id);
-                        } catch (error) {
-                            console.error('Error destruyendo Choices:', error);
-                        }
-                    }
-                },
-
-                hasError(field) {
-                    return this.errors && this.errors[field];
-                },
-
-                getError(field) {
-                    return this.errors && this.errors[field] ? this.errors[field][0] : '';
-                }
-            }
-        }
-    </script>
-    <script>
-        function specialtiesComponent() {
-            return {
-                loading: false,
-                specialtiesArray: [],
-                universities: @json($universities),
-                specialties: @json($specialties),
-                errors: {},
-                choicesInstances: new Map(),
-
-                init() {
-                    if (this.specialtiesArray.length === 0) {
-                        this.addSpeciality();
-                    }
-
-                    this.$nextTick(() => {
-                        this.initializeSearchSelects();
-                    });
-                },
-
-                addSpeciality() {
-                    this.specialtiesArray.push({
-                        university_id: '',
-                        specialty_id: '',
-                        area: '',
-                        date: ''
-                    });
-
-                    this.$nextTick(() => {
-                        this.initializeSearchSelects();
-                    });
-                },
-
-                deleteSpeciality() {
-                    if (this.specialtiesArray.length > 0) {
-                        const lastIndex = this.specialtiesArray.length - 1;
-                        this.destroyChoicesInstance(`university-${lastIndex}`);
-                        this.destroyChoicesInstance(`specialty-${lastIndex}`);
-                        this.specialtiesArray.pop();
-                    }
-                },
-
-                deleteSpecificSpeciality(index) {
-                    if (this.specialtiesArray.length > 1) {
-                        this.destroyChoicesInstance(`university-${index}`);
-                        this.destroyChoicesInstance(`specialty-${index}`);
-                        this.specialtiesArray.splice(index, 1);
-
-                        this.$nextTick(() => {
-                            this.initializeSearchSelects();
-                        });
-                    }
-                },
-
-                initializeSearchSelects() {
-                    document.querySelectorAll('.search-select').forEach(select => {
-                        const id = select.id;
-
-                        if (this.choicesInstances.has(id)) {
-                            return; // Ya está inicializado
-                        }
-
-                        try {
-                            const choices = new Choices(select, {
-                                searchEnabled: true,
-                                searchPlaceholderValue: 'Buscar...',
-                                shouldSort: false,
-                                itemSelectText: 'Seleccionar',
-                                position: 'auto',
-                                searchResultLimit: 10,
-                                renderChoiceLimit: 10,
-                                noResultsText: 'No se encontraron resultados',
-                                noChoicesText: 'No hay opciones disponibles',
-                                loadingText: 'Cargando...',
-                                removeItemButton: true,
-                                classNames: {
-                                    containerInner: 'choices__inner',
-                                    input: 'choices__input',
-                                    list: 'choices__list',
-                                    listSingle: 'choices__list--single',
-                                    listDropdown: 'choices__list--dropdown',
-                                    item: 'choices__item',
-                                    itemSelectable: 'choices__item--selectable',
-                                    itemDisabled: 'choices__item--disabled'
-                                }
-                            });
-
-                            this.choicesInstances.set(id, choices);
-
-                            // Sincronizar con Alpine cuando cambia la selección
-                            select.addEventListener('change', (event) => {
-                                const index = event.target.getAttribute('data-index');
-                                const type = event.target.getAttribute('data-type');
-                                const value = event.target.value;
-
-                                if (index !== null && this.specialtiesArray[index]) {
-                                    if (type === 'university') {
-                                        this.specialtiesArray[index].university_id = value;
-                                    } else if (type === 'specialty') {
-                                        this.specialtiesArray[index].specialty_id = value;
-                                    }
-                                }
-                            });
-
-                        } catch (error) {
-                            console.error('Error inicializando Choices:', error);
-                        }
-                    });
-                },
-
-                destroyChoicesInstance(id) {
-                    if (this.choicesInstances.has(id)) {
-                        try {
-                            const choices = this.choicesInstances.get(id);
-                            choices.destroy();
-                            this.choicesInstances.delete(id);
-                        } catch (error) {
-                            console.error('Error destruyendo Choices instance:', error);
-                        }
-                    }
-                },
-
-                // Método para cuando se actualizan las opciones
-                refreshSelectOptions() {
-                    this.choicesInstances.forEach((choices, id) => {
-                        try {
-                            choices.setChoices([], 'value', 'label', true);
-
-                            // Reconstruir con nuevas opciones
-                            const select = document.getElementById(id);
-                            if (select) {
-                                const type = select.getAttribute('data-type');
-                                const options = type === 'university' ? this.universities : this.specialties;
-
-                                const newOptions = options.map(option => ({
-                                    value: option.value,
-                                    label: option.text
-                                }));
-
-                                choices.setChoices(newOptions, 'value', 'label', true);
-                            }
-                        } catch (error) {
-                            console.error('Error actualizando opciones:', error);
-                        }
-                    });
-                },
-
-                hasError(field) {
-                    return this.errors && this.errors[field];
-                },
-
-                getError(field) {
-                    return this.errors && this.errors[field] ? this.errors[field][0] : '';
-                },
-
-                getData() {
-                    return this.specialtiesArray;
-                },
-
-                validate() {
-                    this.errors = {};
-                    let isValid = true;
-
-                    this.specialtiesArray.forEach((specialty, index) => {
-                        if (!specialty.university_id) {
-                            this.errors[`specialtiesArray.${index}.university_id`] = [
-                            'La universidad es requerida'];
-                            isValid = false;
-                        }
-                        if (!specialty.specialty_id) {
-                            this.errors[`specialtiesArray.${index}.specialty_id`] = [
-                            'La especialidad es requerida'];
-                            isValid = false;
-                        }
-                    });
-
-                    return isValid;
-                },
-
-                // Limpiar todas las instancias
-                destroyAllChoices() {
-                    this.choicesInstances.forEach((choices, id) => {
-                        try {
-                            choices.destroy();
-                        } catch (error) {
-                            console.error('Error destruyendo Choices:', error);
-                        }
-                    });
-                    this.choicesInstances.clear();
-                }
-            }
-        }
-    </script> --}}
-    <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto text-sm-end py-4">
-        <a href="{{ route('report.affiliate') }}" wire:navigate class="btn btn-sm btn-danger"> <i
+    <div class="d-grid gap-1 d-md-flex justify-content-md-end mt-3">
+        <a href="{{ route('report.affiliate') }}" wire:navigate class="btn btn-sm btn-secondary"> <i
                 class="fas fa-ban fs-6"></i> Cancel</a>
         @if ($this->id)
             <button class="btn btn-sm btn-dark" wire:click.prevent="update()" wire:loading.attr="disabled"> <i
-                    class="fas fa-paste fs-6"></i>
+                    class="fas fa-paste fs-6" wire:loading.attr="disabled"></i>
                 Actualizar</button>
         @else
             <button class="btn btn-sm btn-dark" wire:click.prevent="store()" wire:loading.attr="disabled"> <i
-                    class="fas fa-save fs-6"></i> Guardar</button>
+                    class="fas fa-save fs-6" wire:loading.attr="disabled"></i> Guardar</button>
         @endif
     </div>
     @if ($errors->any())
@@ -749,67 +431,4 @@
         </div>
     @endif
 
-
-
-    {{-- <script>
-            document.addEventListener('livewire:initialized', () => {
-                const universities = @js($universities);
-
-                new TomSelect('#university-select', {
-                    options: universities,
-                    valueField: 'value',
-                    labelField: 'text',
-                    searchField: 'text',
-                    placeholder: 'Busca o selecciona una universidad...',
-                    maxOptions: null, 
-                });
-            });
-        </script> --}}
-    {{--   <script>
-        document.addEventListener('livewire:init', function() {
-            if (document.querySelector('#inputCustomer')) {
-                new TomSelect('#inputCustomer', {
-                    valueField: 'id',
-                    labelField: 'name',
-                    searchField: ['name'],
-                    // fetch remote data
-                    load: function(query, callback) {
-
-                        var url = "{{route('api.universities.search')}}"+'?q=' + encodeURIComponent(
-                            query);
-                        fetch(url)
-                            .then(response => response.json())
-                            .then(json => {
-                                callback(json.items);
-                            }).catch(() => {
-                                callback();
-                            });
-
-                    },
-                    onChange:function(value){
-                        var customer=this.options[value]
-                        console.log('customer'+ value);
-                        if(cutomer !== null && typeof customer !=='undefined'){
-                            livewire.dispatch('sale_customer',{cutomer:cutomer})
-                        }
-                    }
-                    // custom rendering functions for options and items
-                    render: {
-                        option: function(item, escape) {
-                            return `<div class="py-2 d-flex">
-							<div>
-								<div class="mb-1">
-									<span class="h4">
-										${ escape(item.name) }
-									</span>
-								</div>
-							</div>
-						</div>`;
-                        },
-                    },
-                });
-
-            }
-        })
-    </script>  --}}
 </div>

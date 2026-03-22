@@ -14,7 +14,7 @@ class LicenseComponent extends Component
     use WithPagination;
     public $id, $date, $affiliate_id, $description, $idTemp, $search = '';
     public function mount(){
-        $this->authorize('licenses.view');
+        $this->authorize('Ver licencias');
     }
     public function rules()
     {
@@ -51,7 +51,7 @@ class LicenseComponent extends Component
     }
     public function store()
     {
-        $this->authorize('licenses.create');
+        $this->authorize('Crear licencias');
         $this->validate();
         License::create([
             'date' => $this->date,
@@ -67,7 +67,7 @@ class LicenseComponent extends Component
     #[On('delete')]
     public function delete($id)
     {
-        $this->authorize('licenses.delete');
+        $this->authorize('Eliminar licencias');
         $license = License::with(['affiliate','affiliate.payments'])->find($id);
         if($license->affiliate->deceased){
             $license->affiliate()->update(['status' => 'Fallecido']);

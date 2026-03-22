@@ -15,7 +15,7 @@ class FormAgreement extends Component
     public $id, $name, $photo, $image, $social = [];
     public function mount($id = 0)
     {
-         if (! (Auth::user()->can('articles.create') || Auth::user()->can('articles.edit')) ) {
+         if (! (Auth::user()->can('Crear convenios') || Auth::user()->can('Editar convenios')) ) {
             abort(403, 'No tienes permiso');
             }
         $this->id = $id;
@@ -49,7 +49,7 @@ class FormAgreement extends Component
     }
     public function store()
     {
-        $this->authorize('articles.create');
+        $this->authorize('Crear convenios');
         $this->validate();
         if ($this->photo) {
             $this->image = uniqid() . '.' . $this->photo->extension();
@@ -66,7 +66,7 @@ class FormAgreement extends Component
     }
     public function update()
     {
-        $this->authorize('articles.edit');
+        $this->authorize('Editar convenios');
         $this->validate();
         $agreement = Agreement::find($this->id);
         if ($this->photo) {

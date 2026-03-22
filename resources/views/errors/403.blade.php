@@ -1,5 +1,5 @@
-@extends('errors::layout')
+@extends('errors.layout')
 
 @section('title', __('Forbidden'))
 @section('code', '403')
-@section('message', __($exception->getMessage() ?: 'Forbidden'))
+@section('message', 'Esta acción no esta autorizada '?: 'Forbidden'))

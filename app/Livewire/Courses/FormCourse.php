@@ -13,7 +13,7 @@ class FormCourse extends Component
     public $id, $title, $description, $image, $photo, $price,$date;
     public function mount($id = 0)
     {
-        if (! (Auth::user()->can('courses.create') || Auth::user()->can('courses.edit')) ) {
+        if (! (Auth::user()->can('Crear cursos') || Auth::user()->can('Editar cursos')) ) {
             abort(403, 'No tienes permiso');
             }
         $this->id = $id;
@@ -47,7 +47,7 @@ class FormCourse extends Component
     }
     public function store()
     {
-        $this->authorize('courses.create');
+        $this->authorize('Crear cursos');
         $this->validate();
         if ($this->photo) {
             $custome_name = uniqid() . '.' . $this->photo->extension();
@@ -66,7 +66,7 @@ class FormCourse extends Component
     }
     public function update()
     {
-        $this->authorize('courses.edit');
+        $this->authorize('Editar cursos');
         $this->validate();
         $new = Course::find($this->id);
         if ($this->photo) {

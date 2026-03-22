@@ -8,7 +8,7 @@ class AffiliatesReport extends Component
 {
     public $tab='status';
     public function mount(){
-        $this->authorize('reports');
+        $this->authorize('Ver reportes');
 
     }
     public function render()

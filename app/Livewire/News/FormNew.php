@@ -21,7 +21,7 @@ class FormNew extends Component
     }
     public function mount($id = 0)
     {
-        if (! (Auth::user()->can('notice.create') || Auth::user()->can('notice.edit')) ) {
+        if (! (Auth::user()->can('Crear noticias') || Auth::user()->can('Editar noticias')) ) {
             abort(403, 'No tienes permiso');
             }
         $this->id = $id;
@@ -42,7 +42,7 @@ class FormNew extends Component
     }
     public function store()
     {
-        $this->authorize('notice.create');
+        $this->authorize('Crear noticias');
         $this->validate();
         if ($this->photo) {
             $custome_name = uniqid() . '.' . $this->photo->extension();
@@ -59,7 +59,7 @@ class FormNew extends Component
     }
     public function update()
     {
-        $this->authorize('notice.edit');
+        $this->authorize('Editar noticias');
         $this->validate();
         $new = Information::find($this->id);
         if ($this->photo) {

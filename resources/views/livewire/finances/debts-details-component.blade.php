@@ -84,25 +84,25 @@
         </div> --}}
                     <div class="col-md-4">
                         <div class="form-floating">
-                            <select class="form-select" wire:model="type" id="floatingSelect"
+                            <select class="form-select" wire:model="type" id="status"
                                 aria-label="Floating label select example">
                                 <option value="">Todos</option>
                                 <option value="Por pagar">Por pagar</option>
                                 <option value="Pagado">Pagado</option>
                             </select>
-                            <label for="floatingSelect">Seleccione</label>
+                            <label for="status">Seleccione estado</label>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-floating">
-                            <select class="form-select" wire:model="concept" id="floatingSelect"
+                            <select class="form-select" wire:model="concept" id="concept"
                                 aria-label="Floating label select example">
                                 <option value="">Todos</option>
                                 @foreach ($fees as $fee)
                                     <option value="{{ $fee->id }}">{{ $fee->name }}</option>
                                 @endforeach
                             </select>
-                            <label for="floatingSelect">Seleccione el concepto</label>
+                            <label for="concept">Seleccione el concepto</label>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -163,7 +163,7 @@
                                 </td>
                                 <td align="center">
                                     @if ($payment->status == 'Por pagar' && $payment->fee->id != 1)
-                                        @can('payments.pays')
+                                        @can('Realizar pago')
                                             <button wire:target="check, delete, edit" wire:loading.attr="disabled"
                                                 class="btn-cc-circle outlined"
                                                 onclick="Question({{ $payment->id }},'Desea realizar el pago completo del tramite?','toPay')"

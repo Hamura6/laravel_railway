@@ -16,7 +16,7 @@ class AffiliateForm extends Form
             'enrollment_conalab' => ['required', 'numeric', Rule::unique('affiliates', 'enrollment_conalab')->ignore($this->id)],
 /*             'enrollment_RPA' => ['required', 'numeric', Rule::unique('affiliates', 'enrollment_RPA')->ignore($this->id)],
  */         'number' => ['required', 'string','min:2','max:15', Rule::unique('affiliates', 'number')->ignore($this->id)],
-            'date' => ['required', 'date', 'before:' . now()->subYears(18)->toDateString(),],
+            'date' => ['required', 'date', 'before_or_equal:today'],
         ];
     }
     public ?Affiliate $affiliate;

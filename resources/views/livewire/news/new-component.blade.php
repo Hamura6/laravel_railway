@@ -5,7 +5,7 @@
             <div class="col-sm-12 col-md-6 order-2 order-md-1">
                 <x-search />
             </div>
-            @can('notice.create')
+            @can('Crear noticias')
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <a href="{{ route('news.form') }}" wire:navigate
@@ -43,10 +43,10 @@
                         </div>
                         <div class="card-footer m-0">
                             <div class="gap-2 d-md-flex justify-content-md-end">
-                                @can('notice.delete')
+                                @can('Eliminar noticias')
                                     <x-btn-delete id="{{ $new->id }}" />
                                 @endcan
-                                @can('notice.edit')
+                                @can('Editar noticias')
                                     <a wire:target="changeStatus, delete"
                                         wire:loading.class="disabled pointer-events-none opacity-50"
                                         href="{{ route('news.form', $new->id) }}" type="button" class="btn-uc-circle"

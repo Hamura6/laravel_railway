@@ -16,6 +16,7 @@ class StatusAffiliate extends Component
     public $status = 'Activo';
     public function mount()
     {
+        $this->authorize('Ver reportes');
         $this->statusTotal['Activo'] = Affiliate::where('status', 'Activo')->count();
     }
     public function refreshData()

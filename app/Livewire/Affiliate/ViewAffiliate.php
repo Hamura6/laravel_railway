@@ -16,7 +16,7 @@ class ViewAffiliate extends Component
     use WithPagination;
     public $search = '';
     public function mount(){
-        $this->authorize('affiliates.view');
+        $this->authorize('Ver afiliados');
         
     }
     public function render()
@@ -48,7 +48,7 @@ class ViewAffiliate extends Component
     #[On('delete')]
     public function delete($id)
     {
-        $this->authorize('affiliates.delete');
+        $this->authorize('Eliminar afiliados');
         User::find($id)->delete();
         $this->dispatch('notify', text: 'El registro se elimino correctamente', title: 'El afiliado fue eliminado', icon: 'success');
     }
@@ -59,7 +59,7 @@ class ViewAffiliate extends Component
     #[On('changeStatus')]
     public function changeStatus($id)
     {
-        $this->authorize('affiliates.block');
+        $this->authorize('Bloquear afiliados');
         $user = User::find($id);
         if ($user->status == 'ENABLED')
             $user->status = 'DISABLED';
@@ -71,7 +71,7 @@ class ViewAffiliate extends Component
     #[On('resetPassword')]
     public function resetPassword($id)
     {
-        $this->authorize('affiliates.reset.password');
+        $this->authorize('Restablecer afiliados.password');
         $user = User::find($id);
         $user->password = Hash::make($user->ci);
         $user->save();

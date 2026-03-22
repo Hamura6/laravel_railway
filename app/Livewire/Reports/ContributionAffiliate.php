@@ -12,7 +12,7 @@ class ContributionAffiliate extends Component
     public $affiliate,$from,$to,$date;
     public function mount($id,$from,$to)
     {
-        $this->authorize('reports');
+        $this->authorize('Ver reportes');
         $this->from=$from;
         $this->to=$to;
         $this->date=Carbon::parse($from)->isoFormat('ddd, D \d\e MMM \d\e\l Y') .' al ' .Carbon::parse($to)->isoFormat('ddd, D \d\e MMM \d\e\l Y');

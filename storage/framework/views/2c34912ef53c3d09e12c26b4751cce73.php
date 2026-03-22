@@ -89,7 +89,7 @@ unset($__errorArgs, $__bag); ?>"
                                             name="email" id="email" value="<?php echo e(old('email')); ?>"
                                             required autofocus autocomplete="email">
                                         <label for="email"><i class="fas fa-envelope"></i> Correo
-                                            electronico</label>
+                                            electronico o C.I.</label>
                                         <?php $__errorArgs = ['email'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :

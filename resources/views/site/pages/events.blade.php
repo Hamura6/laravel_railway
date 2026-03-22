@@ -4,7 +4,8 @@
         <img class="img-banner" src="{{ asset('image/single.jpg') }}" alt="Cursos">
         <div class="banner-content">
             <h2 class="title-banner">Eventos</h2>
-            <p class="desc-banner"> Mantente al día con nuestras actividades, conferencias y eventos destacados pensados para toda la comunidad.</p>
+            <p class="desc-banner"> Mantente al día con nuestras actividades, conferencias y eventos destacados pensados para
+                toda la comunidad.</p>
         </div>
     </div>
 
@@ -69,14 +70,7 @@
                     </div>
 
 
-                    <div class="text-center mt-5">
-                        <form action="{{ route('site.events', $total + 5) }}" method="GET">
-                            @csrf
-                            <button id="loadMore" type="submit" class="btn btn-outline-warning btn-lg px-5">
-                                Cargar más
-                            </button>
-                        </form>
-                    </div>
+
 
                 @empty
                     <div id="loading" class="text-center mt-5">
@@ -85,7 +79,14 @@
                     </div>
                 @endforelse
 
-
+                <div class="text-center mt-5">
+                    <form action="{{ route('site.events', $total + 5) }}" method="GET">
+                        @csrf
+                        <button id="loadMore" type="submit" class="btn btn-outline-warning btn-lg px-5">
+                            Cargar más
+                        </button>
+                    </form>
+                </div>
             </div>
 
 

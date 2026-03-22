@@ -28,14 +28,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>Aportes a conciderar:</th>
-                            <td>{{ $this->recognition->quantity }}
-                            </td>
-                        </tr>
-                        <tr>
                             <th>Cantidad de participantes:
                             </th>
-                            <td>{{ $this->recognition->participants }}</td>
+                            <td>{{ $affiliatesConfirm->count() }}</td>
 
                         </tr>
                         <tr>
@@ -55,7 +50,7 @@
                                     </a>
                                     <a href="{{ route('reporte.listAffiliates-excel', $this->recognition->id) }}"
                                         class="btn btn-sm btn-outline-success mb-1 " type="button">
-                                        <i class="far fa-file-excel fs-6"></i> Exporta a Excel</a>
+                                        <i class="far fa-file-excel fs-6"></i> Exportar a Excel</a>
                                 </div>
                             </td>
 
@@ -83,7 +78,7 @@
                                 <td>{{ $cofirm->created_at }}</td>
                                 <td>{{ $cofirm->user->phones->first()->number ?? 'Ninguno' }}</td>
                                 <td>
-                                    @can('recognitions.edit')
+                                    @can('Editar reconocimientos')
                                         <button class="btn-dc-circle"
                                             onclick="Question({{ $cofirm->id }}, '¿Desear descartar como participante?', 'removeAffiliate')">
                                             <i class="fas fa-times fs-6"></i>
@@ -148,7 +143,7 @@
                                         <strong>Celular:</strong>
                                         {{ optional($affiliate->user->phones->first())->number ?? 'N/A' }}
                                     </div>
-                                    @can('recognitions.edit')
+                                    @can('Editar reconocimientos')
                                         <button class="btn-cc-circle outlined"
                                             onclick="Question({{ $affiliate->id }}, '¿Desea confirmar su participación?', 'AddAffiliate')">
                                             <i class="fas fa-check fs-6"></i>

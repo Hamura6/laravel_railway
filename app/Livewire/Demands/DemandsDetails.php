@@ -16,6 +16,7 @@ class DemandsDetails extends Component
     public Affiliate $affiliate;
     public $id=0;
     public function mount($ide){
+        $this->authorize('Ver denuncias');
         $this->affiliate=Affiliate::
         select('id','user_id','address_home','address_number_home','zone_home','address_office','address_number','zone')
         ->with(['user:name,last_name,id,ci,email','user.phones:number,user_id'])
@@ -29,7 +30,7 @@ class DemandsDetails extends Component
         return view('livewire.demands.demands-details',compact('demands'));
     }
     public function store(){
-        $this->authorize('demands.create');
+        $this->authorize('Crear denuncias');
         $this->form->validate();
         $this->form->store($this->affiliate);
         $this->clear();
@@ -41,14 +42,14 @@ class DemandsDetails extends Component
         $this->dispatch('show-modal');
     }
     public function update(){
-        $this->authorize('demands.edit');
+        $this->authorize('Editar denuncias');
         $this->form->update();
         $this->clear();
         $this->dispatch('notify',text:'El registro fue modificado satisfactoriamente',title:'Registro actualizado',icon:'success');
     }
     #[On('delete')]
     public function delete($id){
-        $this->authorize('demands.delete');
+        $this->authorize('Eliminar denuncias');
         Demand::find($id)->delete();
         $this->dispatch('notify',text:'El registro fue eliminado correctamente',title:'Registro eliminado',icon:'success');
     }

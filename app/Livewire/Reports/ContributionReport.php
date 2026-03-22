@@ -14,7 +14,7 @@ class ContributionReport extends Component
     public $from, $to,$search='';
     public function mount()
     {
-        $this->authorize('reports');
+        $this->authorize('Ver reportes');
         $this->from = Carbon::now()->firstOfYear()->format('Y-m-d');
         $this->to   = Carbon::now()->lastOfYear()->format('Y-m-d');
     }

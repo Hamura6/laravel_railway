@@ -16,7 +16,7 @@ class UserComponent extends Component
     public $search = '';
     public function mount()
     {
-        $this->authorize('users.view');
+        $this->authorize('Ver usuarios');
     }
     public function updatedSearch()
     {
@@ -43,7 +43,7 @@ class UserComponent extends Component
     #[On('changeStatus')]
     public function changeStatus($id)
     {
-        $this->authorize('users.block');
+        $this->authorize('Bloquear usuarios');
         $user = User::find($id);
         if ($user->status == 'ENABLED') {
             $user->status = 'DISABLED';
@@ -57,14 +57,14 @@ class UserComponent extends Component
     #[On('delete')]
     public function delete($id)
     {
-        $this->authorize('users.delete');
+        $this->authorize('Eliminar usuarios');
         User::find($id)->delete();
         $this->dispatch('notify', title: 'Usuario eliminado', icon: 'success', text: 'registro eliminado Correctamente');
     }
     #[On('resetPassword')]
     public function resetPassword($id)
     {
-        $this->authorize('users.reset.password');
+        $this->authorize('Restablecer usuarios.password');
         $user = User::find($id);
         $user->password = Hash::make($user->ci);
         $user->save();

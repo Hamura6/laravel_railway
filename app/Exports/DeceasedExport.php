@@ -58,9 +58,7 @@ class DeceasedExport implements FromCollection, WithHeadings, WithEvents, WithSt
         ];
     }
 
-    /**
-     * Estilo de cabecera
-     */
+
     public function styles(Worksheet $sheet)
     {
         return [
@@ -75,15 +73,13 @@ class DeceasedExport implements FromCollection, WithHeadings, WithEvents, WithSt
                 ],
                 'fill' => [
                     'fillType' => Fill::FILL_SOLID,
-                    'startColor' => ['rgb' => 'D9D9D9'], // plomo suave
+                    'startColor' => ['rgb' => 'D9D9D9'], 
                 ],
             ],
         ];
     }
 
-    /**
-     * Filas intercaladas (zebra) y bordes
-     */
+
     public function registerEvents(): array
     {
         return [
@@ -92,12 +88,10 @@ class DeceasedExport implements FromCollection, WithHeadings, WithEvents, WithSt
                 $sheet = $event->sheet->getDelegate();
                 $lastRow = $sheet->getHighestRow();
 
-                // Autoajustar columnas
                 foreach (range('A', 'G') as $col) {
                     $sheet->getColumnDimension($col)->setAutoSize(true);
                 }
 
-                // Bordes generales
                 $sheet->getStyle("A1:G{$lastRow}")->applyFromArray([
                     'borders' => [
                         'allBorders' => [
@@ -107,14 +101,13 @@ class DeceasedExport implements FromCollection, WithHeadings, WithEvents, WithSt
                     ],
                 ]);
 
-                // Filas intercaladas
                 for ($row = 2; $row <= $lastRow; $row++) {
                     if ($row % 2 == 0) {
                         $sheet->getStyle("A{$row}:G{$row}")
                             ->getFill()
                             ->setFillType(Fill::FILL_SOLID)
                             ->getStartColor()
-                            ->setRGB('F2F2F2'); // gris claro
+                            ->setRGB('F2F2F2');
                     }
                 }
             },

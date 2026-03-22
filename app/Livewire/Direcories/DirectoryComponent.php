@@ -14,7 +14,7 @@ class DirectoryComponent extends Component
     use WithPagination;
     public $id, $name, $rol = 'Elegir', $toSearch, $type = 1;
     public function mount(){
-        $this->authorize('directories.view.organization');
+        $this->authorize('Ver directorio actual de la organización');
     }
     public function rules()
     {
@@ -66,7 +66,7 @@ class DirectoryComponent extends Component
     }
     public function update()
     {
-        $this->authorize('directories.assign');
+        $this->authorize('Asignar cargo en el directorio');
         $this->validate();
         $boardMember = BoardMember::find($this->rol)->affiliate()->associate($this->id);
         $boardMember->save();
@@ -76,7 +76,7 @@ class DirectoryComponent extends Component
     #[On('delete')]
     public function delete($id)
     {
-        $this->authorize('directories.assign');
+        $this->authorize('Asignar cargo en el directorio');
         $boardMember = BoardMember::find($id)->affiliate()->dissociate();
         $boardMember->save();
         $this->dispatch('notify', text: 'Se quito un elemento del directorio', title: 'Un rol fue alterado', icon: 'success');

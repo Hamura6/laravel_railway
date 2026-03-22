@@ -13,7 +13,7 @@ class DiscountComponent extends Component
     use WithPagination;
     public $id,$start_date,$end_date,$selectedFees=[],$amount;
     public function mount(){
-        $this->authorize('discount.view');
+        $this->authorize('Ver descuentos');
     }
      protected function rules()
     {
@@ -27,12 +27,12 @@ class DiscountComponent extends Component
     public function render()
     {
         $fees=Fee::select('name','id')->get();
-        $discounts=Discount::with(['fees:name'])->paginate(9);
+        $discounts=Discount::with(['fees:name'])->orderBy('id','desc')->paginate(9);
         return view('livewire.discounts.discount-component',compact('fees','discounts'));
     }
      public function store()
     {
-        $this->authorize('discount.create');
+        $this->authorize('Crear descuentos');
         $this->validate();
 
         $discount = Discount::create([
@@ -59,7 +59,7 @@ class DiscountComponent extends Component
 
     public function update()
     {
-        $this->authorize('discount.edit');
+        $this->authorize('Editar descuentos');
         $this->validate();
 
         $discount = Discount::findOrFail($this->id);
@@ -88,7 +88,7 @@ class DiscountComponent extends Component
     #[On('delete')]
     public function delete($id)
     {
-        $this->authorize('discount.delete');
+        $this->authorize('Eliminar descuentos');
         $discount = Discount::findOrFail($id);
         $discount->delete();
 

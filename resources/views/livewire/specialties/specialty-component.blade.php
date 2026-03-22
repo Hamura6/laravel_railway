@@ -5,11 +5,10 @@
             <div class="col-sm-12 col-md-6 order-2 order-md-1">
                 <x-search />
             </div>
-            @can('specialties.create')
+            @can('Crear especialidades')
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button type="button" class="btn btn-sm  btn-success  mb-0 me-2" data-bs-toggle="modal"
-                            data-bs-target="#myModal">
+                        <button type="button" class="btn btn-sm  btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
                             <i class="far fa-file-alt fs-6"></i> Nuevo
                         </button>
                     </div>
@@ -32,12 +31,15 @@
                             {{ $specialty->name }}
                         </td>
                         <td class="text-center">
-                            @can('specialties.edit')
-                            <x-btn-edit id="{{ $specialty->id }}" />
-                            @endcan
-                            @can('specialties.delete')
-                            <x-btn-delete id="{{ $specialty->id }}" />
-                            @endcan
+                            <div class="d-flex justify-content-center gap-1">
+
+                                @can('Editar especialidades')
+                                    <x-btn-edit id="{{ $specialty->id }}" />
+                                @endcan
+                                @can('Eliminar especialidades')
+                                    <x-btn-delete id="{{ $specialty->id }}" />
+                                @endcan
+                            </div>
                         </td>
                     </tr>
                 @empty

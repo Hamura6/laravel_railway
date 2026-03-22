@@ -4,50 +4,32 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    {{--   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="{{'assets/img/favicon.png'}} "> --}}
-    <title>
-        {{ $institution->initials }}
-    </title>
-    <link
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="{{ $institution->image }} ">
+
+    <title>{{ $institution->initials ?? config('app.name') }}</title>
+{{--     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700"
-        rel="stylesheet" />
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-        @livewireStyles
-    </head>
+        rel="stylesheet" /> --}}
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @livewireStyles
+</head>
 
 <body>
     <div class="layout-wrapper">
-
-
-
         @include('pages.layouts.app.sidebar')
-
-
-
-
-
-
-
         <div class="overlay-mobile" id="mobileOverlay" id="sidebar-overlay"></div>
-
         <div class="main-container">
 
-            <!-- TOPBAR -->
             @include('pages.layouts.app.header')
-
-
-            <!-- CONTENT -->
             <main class="content">
                 {{ $slot }}
             </main>
-
-            <!-- FOOTER -->
             <footer class="dashboard-footer">
                 <div class="footer-content"></div>
                 <div class="footer-bottom">
                     <p>&copy; <span id="year"></span> ICAP Potosi. Todos los derechos reservados.</p>
-                    <p>Diseño y desarrollo web por <a href="" target="_blank">Hamura</a></p>
+                    <p>Diseño y desarrollo web por <a href="" target="_blank">J. Carlos & J. Edwin</a></p>
                 </div>
             </footer>
 
@@ -69,19 +51,6 @@
             initDashboardUI();
         });
     </script>
-
-    {{-- <style>
-    /* document.addEventListener('DOMContentLoaded', function() { */
-    /* popover(); */
-    /* //   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    //   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
-      //   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-      //   tooltipTriggerList.forEach(function(tooltipTriggerEl) {
-      //     new Bootstrap.Tooltip(tooltipTriggerEl);
-      //   }); */
-    /* }); */
-    </script> --}}
 
 
     <script data-navigate-once>
@@ -121,7 +90,7 @@
         Livewire.on('show-modal', () => {
             const modalEl = document.getElementById('myModal');
             const modal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
-            modal.show(); // abre el modal
+            modal.show(); 
         });
 
 
@@ -208,15 +177,8 @@
                     html: ms.text || ''
                 });
             }
-            /*  Toast.fire({
-                 icon: ms.icon || 'success',
-                 title: ms.title || '',
-                 html: ms.text || ''
-             }); */
         }
-
-
-</script>
+    </script>
 </body>
 
 </html>

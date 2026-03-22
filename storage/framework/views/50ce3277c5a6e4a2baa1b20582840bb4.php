@@ -2,7 +2,7 @@
     <div class="row mx-1 g-2">
         <div class="col-md-3">
             <a href="#" class="text-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight"> <u> <i class="far fa-question-circle"></i> Filtros de busqueda </u></a>
+                aria-controls="offcanvasRight"> <u> <i class="far fa-question-circle"></i> Filtros de búsqueda </u></a>
         </div>
         <div class="col-md-9">
             <div class="d-grid gap-1  d-md-flex justify-content-md-end">
@@ -14,7 +14,7 @@
                 <a class="btn btn-sm btn-outline-success mb-1 "
                     href="<?php echo e(route('reporte.speciality.afiliados-excel', ['specialities' => $specialities])); ?>"
                     type="button">
-                    <i class="far fa-file-excel fs-6"></i> Descargar Excel</a>
+                    <i class="far fa-file-excel fs-6"></i> Exportar a Excel</a>
             </div>
         </div>
     </div>
@@ -30,8 +30,8 @@
 <?php endif; ?>
 <?php $component->withAttributes(['class' => 'table-report table-striped']); ?>
         <tr>
-            <td><strong>INSTITUCION:</strong><?php echo e($institution->name); ?> </td>
-            <td><strong>GESTION:</strong> <?php echo e(now()->year); ?> </td>
+            <td><strong>INSTITUCIÓN:</strong><?php echo e($institution->name); ?> </td>
+            <td><strong>GESTIÓN:</strong> <?php echo e(now()->year); ?> </td>
         </tr>
         <tr>
             <td class="m-0 p-0"> <strong>ESPECIALIDAD:</strong>
@@ -85,6 +85,7 @@
                 <th class="text-center">Matricula</th>
                 <th class="text-center">Affiliado</th>
                 <th class="text-center">Email</th>
+                <th class="text-center">Direc. <br> de Oficina Procesal</th>
                 <th class="text-center">Celular</th>
                 <th class="text-center">Cant. <br> Demandas</th>
                 <th class="text-center">Cant. <br> Especialidades</th>
@@ -94,6 +95,7 @@
                     <td><?php echo e($affiliate->id); ?></td>
                     <td><?php echo e($affiliate->user->full_name); ?></td>
                     <td><?php echo e($affiliate->user->email); ?></td>
+                    <td><?php echo e($affiliate->address_office . ' No ' . $affiliate->address_number . ' / ' . $affiliate->zone); ?></td>
                     <td><?php echo e($affiliate->user->phones[0]->number); ?></td>
                     <td><?php echo e($affiliate->demands->count()); ?></td>
                     <td><?php echo e($affiliate->professions->count()); ?></td>
@@ -127,7 +129,7 @@
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
         <div class="col-md-12">
-            <strong class="text-dark">Seleccion las especialidades</strong>
+            <strong class="text-dark">Seleccion la especialidad</strong>
             <div class="form-floating ">
                 <input type="input" class="form-control" wire:model.live="searchTerm" wire:focus="showDropdown"
                     wire:blur="hideDropdown" id="floatingInput" placeholder="name@example.com">

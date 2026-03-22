@@ -9,16 +9,20 @@ use Livewire\Component;
 class ArticleComponent extends Component
 {
     public $search;
+    public function mount()
+    {
+
+        $this->authorize('Ver artículos');
+    }
     public function render()
     {
-        $this->authorize('articles.view');
         $articles = Article::where('title', 'like', "%$this->search%")->paginate(9);
         return view('livewire.articles.article-component', compact('articles'));
     }
     #[On('delete')]
     public function delete($id)
     {
-        $this->authorize('articles.delete');
+        $this->authorize('Eliminar artículos');
         $article = Article::find($id);
         if ($article->preview) {
             if (file_exists(public_path('storage/articles/images/' . $article->preview))) {

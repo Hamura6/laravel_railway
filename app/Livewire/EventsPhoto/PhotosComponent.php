@@ -29,7 +29,7 @@ class PhotosComponent extends Component
     #[On('delete')]
     public function delete($id)
     {
-        $this->authorize('events.delete');
+        $this->authorize('Eliminar eventos');
         $photo = EventPhoto::find($id);
         if ($photo->name) {
             if (file_exists(public_path('storage/event_photos/' . $photo->name))) {

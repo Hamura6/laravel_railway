@@ -14,7 +14,7 @@
             </div>
 
             <div class="row g-2 g-xl-5 justify-content-center">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-10">
                     {!! $institution->requirement !!}
                 </div>
             </div>

@@ -15,7 +15,7 @@ class PermissionComponent extends Component
     public function mount()
     {
         
-        $this->authorize('permissions.assign');
+        $this->authorize('Asignación de permisos');
         $this->role = 0;
         $this->search = '';
     }
@@ -25,12 +25,12 @@ class PermissionComponent extends Component
     }
     public function render()
     {
-        $permissions = Permission::where('name', 'like', '%' . $this->search . '%')
+        $permissions = Permission::where('name', 'like', '%' .$this->search . '%')
             ->select('name', 'description', 'id', DB::raw('0 as checked'))
             ->orderBy('id', 'asc')
             ->paginate(12);
 
-        $roles = Role::select('name', 'id')/* ->whereNot('name', 'Administrador') */->orderBy('name')->get();
+        $roles = Role::select('name', 'id')->whereNot('name', 'Administrador')->orderBy('name')->get();
 
         if ($this->role) {
             $role = Role::with('permissions:id')->find($this->role);
@@ -46,6 +46,7 @@ class PermissionComponent extends Component
     }
     public function syncPermission($stated, $id)
     {
+        $this->authorize('Asignación de permisos');
         if ($this->role) {
             $roleName = Role::find($this->role);
             if ($stated) {
@@ -61,6 +62,7 @@ class PermissionComponent extends Component
     }
     public function syncAll()
     {
+        $this->authorize('Asignación de permisos');
         if (!$this->role)
             return  $this->dispatch('notify', title: 'Rol invalido', icon: 'error', text: 'Seleccione un rol valido');
         $roleN = Role::find($this->role);
@@ -70,6 +72,7 @@ class PermissionComponent extends Component
     }
     public function revokeAll()
     {
+        $this->authorize('Asignación de permisos');
         if (!$this->role)
             return  $this->dispatch('notify', title: 'Rol invalido ', icon: 'error', text: 'Seleccione un rol valido');
         $roleN = Role::find($this->role);

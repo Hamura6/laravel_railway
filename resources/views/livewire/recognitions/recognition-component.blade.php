@@ -13,7 +13,7 @@
 
 
             </div>
-            @can('recognitions.create')
+            @can('Crear reconocimientos')
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button type="button" wire:target="search" wire:loading.attr="disabled"
@@ -58,7 +58,7 @@
                             </ul>
                         </div>
                         <div class="card-footer py-1 d-flex gap-1 justify-content-center">
-                            @can('recognitions.edit')
+                            @can('Editar reconocimientos')
     <button type="button" wire:target="changeStatus, delete, edit" wire:loading.attr="disabled"
                                         wire:click="edit({{ $recognition->id }})"
                                         class="btn-uc-circle" data-bs-toggle="tooltip"
@@ -66,7 +66,7 @@
                                         <i class="fas fa-edit fs-6"></i>
                                     </button>
 @endcan
-                            @can('recognitions.delete')
+                            @can('Eliminar reconocimientos')
     <button type="button" wire:target="changeStatus, delete, edit" wire:loading.attr="disabled"
                                     onclick="Confirm({{ $recognition->id }})"
                                     class="btn-dc-circle outlined " data-bs-toggle="tooltip"
@@ -74,7 +74,7 @@
                                     <i class="fas fa-trash fs-6"></i>
                                     </button>
 @endcan
-                            @can('recognitions.view')
+                            @can('ver reconocimientos')
     <a type="button" wire:target="changeStatus, delete, edit" wire:loading.attr="disabled"
                                     href="{{ route('recognitions.details', $recognition->id) }}" wire:navigate
                                     class="btn-purple-circle"

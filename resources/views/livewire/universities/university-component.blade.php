@@ -3,9 +3,9 @@
     <x-card-body>
         <x-slot name="header">
             <div class="col-12 col-md-6 order-1 order-md-2">
-                @can('universities.create')
+                @can('Crear universidades')
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button type="button" class="btn btn-sm  btn-success  mb-0 me-2" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-sm  btn-success" data-bs-toggle="modal"
                             data-bs-target="#myModal">
                             <i class="far fa-file-alt fs-6"></i> Nuevo
                         </button>
@@ -13,7 +13,7 @@
                 @endcan
             </div>
             <div class="col-12 col-md-6 order-2  order-md-1">
-                <x-selected-live name='selected' title='Seleccione el tipo de universidad'>
+                <x-selected-live name='selected' title='Tipo de universidad'>
                     <option value="">Todas</option>
                     <option value="Publica">Publica</option>
                     <option value="Privada">Privada</option>
@@ -44,10 +44,10 @@
                             {{ $university->entity }}
                         </td>
                         <td align="center">
-                            @can('universities.edit')
+                            @can('Editar universidades')
                                 <x-btn-edit id="{{ $university->id }}" />
                             @endcan
-                            @can('universities.delete')
+                            @can('Eliminar universidades')
                                 <x-btn-delete id="{{ $university->id }}" />
                             @endcan
                         </td>

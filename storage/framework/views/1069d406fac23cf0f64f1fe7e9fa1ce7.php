@@ -145,13 +145,11 @@
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
                         </td>
                         <td class="text-center">
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('demands.view')): ?>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Ver denuncias')): ?>
                                 <a href="<?php echo e(route('demands.management', $affiliate->id)); ?>" wire:navigate type="button"
                                     class="btn-purple-circle">
                                     <i class="fas fa-eye fs-6"></i>
                                 </a>
-                            <?php endif; ?>
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('demands.view')): ?>
                                 <a href="<?php echo e(route('demands.details', $affiliate->id)); ?>" wire:navigate type="button"
                                     class="btn-uc-circle">
                                     <i class="fas fa-edit fs-6"></i>

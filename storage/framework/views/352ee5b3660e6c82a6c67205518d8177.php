@@ -54,8 +54,8 @@
 <?php endif; ?>
 <?php $component->withAttributes(['class' => 'table-report table-striped']); ?>
                 <tr>
-                    <td colspan="2"><strong>INSTITUCION: </strong><?php echo e($institution->name); ?> </td>
-                    <td><strong>GESTION: <span id="year"></span></strong></td>
+                    <td colspan="2"><strong>INSTITUCIÓN: </strong><?php echo e($institution->name); ?> </td>
+                    <td><strong>GESTIÓN: <span id="year"></span></strong></td>
                 </tr>
                 <tr>
                     <td colspan="2"><strong>Nombre: </strong><?php echo e($this->affiliate->user->full_name); ?> </td>
@@ -116,7 +116,7 @@
                             </td>
                             <td>
 
-                                <?php echo e($pago->type); ?>
+                                <?php echo e(__($pago->type)); ?>
 
                             </td>
                             <td class="text-center">

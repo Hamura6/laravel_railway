@@ -5,7 +5,7 @@
 
             <div class="col-md-3">
                 <a href="#" class="text-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight"> <u> <i class="far fa-question-circle"></i> Filtros de busqueda
+                    aria-controls="offcanvasRight"> <u> <i class="far fa-question-circle"></i> Filtros de búsqueda
                     </u></a>
             </div>
             <div class="col-md-9">
@@ -25,8 +25,8 @@
         <div class="mx-2">
             <x-table-report class="table-report table-striped">
                 <tr>
-                    <td><strong>INSTITUCION:</strong> {{ $institution->name }} </td>
-                    <td><strong>GESTION:
+                    <td><strong>INSTITUCIÓN:</strong> {{ $institution->name }} </td>
+                    <td><strong>GESTIÓN:
                             {{ now()->year }}
                         </strong></td>
 
@@ -86,7 +86,7 @@
                                 @endforeach
                             </td>
                             <td class="text-center">
-                                @can('reports')
+                                @can('Ver reportes')
                                     <a href="{{ route('report.contribution.affiliate', [$affiliate->id, $this->from, $this->to]) }}"
                                         class="btn-purple-circle"> <i class="fas fa-eye"></i> </a>
                                 @endcan

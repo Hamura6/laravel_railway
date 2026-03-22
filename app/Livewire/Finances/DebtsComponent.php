@@ -25,7 +25,7 @@ class DebtsComponent extends Component
         ];
     }
     public function mount()
-    {$this->authorize('payments.view');
+    {$this->authorize('Ver pagos');
         $this->discountAmount = Discount::whereDate('start_date', '<=', now())
             ->whereDate('end_date', '>=', now())
             ->whereHas('fees', fn($q) => $q->where('fees.id', 1))
@@ -107,7 +107,7 @@ class DebtsComponent extends Component
     #[On('toPay')]
     public function toPay($id)
     {
-        $this->authorize('payments.pays');
+        $this->authorize('Realizar pago');
         $affiliate = Affiliate::with(['payments' => fn($q) => $q->where('status', 'Por pagar')])
             ->findOrFail($id);
 
@@ -116,7 +116,7 @@ class DebtsComponent extends Component
         foreach ($affiliate->payments as $payment) {
             $debt = $payment->amount - $payment->plans()->sum('amount');
 
-            if ($debt > 0) {
+            if ($debt > 0 && $payment->fee_id!=1) {
                 $payment->plans()->create([
                     'amount' => $debt,
                     'date' => $now,
@@ -161,7 +161,7 @@ class DebtsComponent extends Component
     }
     public function store()
     {
-        $this->authorize('payments.pay');
+        $this->authorize('Realizar pago');
         $this->form->fee_id = 1;
         $this->form->amount = Fee::find(1)->amount;
         $this->form->affiliate_id = $this->affiliate_id;

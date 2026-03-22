@@ -98,7 +98,7 @@
             <x-slot name="header">
                 <h5 class="py-0">Eventos</h5>
             </x-slot>
-            @can('events.create')
+            @can('Crear eventos')
                 <div class="col-md-12 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button type="button" wire:target="search" wire:loading.attr="disabled"
@@ -126,10 +126,10 @@
                             <h2 class="custom-title">{{ $event->title }}</h2>
                             <p class="custom-caption">{{ $event->description }}</p>
                             <div class="custom-footer d-flex gap-1">
-                                @can('events.delete')
+                                @can('Eliminar eventos')
                                     <x-btn-delete id="{{ $event->id }}" />
                                 @endcan
-                                @can('events.edit')
+                                @can('Editar eventos')
                                     <a href="{{ route('event.photos', $event->id) }}" class="btn-purple-circle"
                                         data-bs-toggle="tooltip" data-bs-title="Photos">
                                         <i class="fas fa-eye"></i>

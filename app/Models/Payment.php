@@ -170,7 +170,7 @@ class Payment extends Model
     } */
     public function getFechaDisplayAttribute()
     {
-        Carbon::setLocale('es'); // aseguramos el idioma
+        Carbon::setLocale('es'); 
 
         $date = Carbon::parse($this->date)->isoFormat('MMM-YYYY');
         $created = Carbon::parse($this->created_at)->isoFormat('MMM-YYYY');

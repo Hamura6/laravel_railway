@@ -52,11 +52,10 @@
 <?php unset($__componentOriginal9b33c063a2222f59546ad2a2a9a94bc6); ?>
 <?php endif; ?>
             </div>
-            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('specialties.create')): ?>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear especialidades')): ?>
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button type="button" class="btn btn-sm  btn-success  mb-0 me-2" data-bs-toggle="modal"
-                            data-bs-target="#myModal">
+                        <button type="button" class="btn btn-sm  btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
                             <i class="far fa-file-alt fs-6"></i> Nuevo
                         </button>
                     </div>
@@ -90,8 +89,10 @@
 
                         </td>
                         <td class="text-center">
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('specialties.edit')): ?>
-                            <?php if (isset($component)) { $__componentOriginale9f0fcc686d5ab9265b8e88cbb55bbb0 = $component; } ?>
+                            <div class="d-flex justify-content-center gap-1">
+
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar especialidades')): ?>
+                                    <?php if (isset($component)) { $__componentOriginale9f0fcc686d5ab9265b8e88cbb55bbb0 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginale9f0fcc686d5ab9265b8e88cbb55bbb0 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-edit','data' => ['id' => ''.e($specialty->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('btn-edit'); ?>
@@ -111,9 +112,9 @@
 <?php $component = $__componentOriginale9f0fcc686d5ab9265b8e88cbb55bbb0; ?>
 <?php unset($__componentOriginale9f0fcc686d5ab9265b8e88cbb55bbb0); ?>
 <?php endif; ?>
-                            <?php endif; ?>
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('specialties.delete')): ?>
-                            <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
+                                <?php endif; ?>
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar especialidades')): ?>
+                                    <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($specialty->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('btn-delete'); ?>
@@ -133,7 +134,8 @@
 <?php $component = $__componentOriginal3fa869ab4147c9277d9fa157f1637985; ?>
 <?php unset($__componentOriginal3fa869ab4147c9277d9fa157f1637985); ?>
 <?php endif; ?>
-                            <?php endif; ?>
+                                <?php endif; ?>
+                            </div>
                         </td>
                     </tr>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>

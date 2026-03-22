@@ -31,9 +31,9 @@
 <?php $component->withAttributes([]); ?>
          <?php $__env->slot('header', null, []); ?> 
             <div class="col-12 col-md-6 order-1 order-md-2">
-                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('universities.create')): ?>
+                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear universidades')): ?>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button type="button" class="btn btn-sm  btn-success  mb-0 me-2" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-sm  btn-success" data-bs-toggle="modal"
                             data-bs-target="#myModal">
                             <i class="far fa-file-alt fs-6"></i> Nuevo
                         </button>
@@ -43,14 +43,14 @@
             <div class="col-12 col-md-6 order-2  order-md-1">
                 <?php if (isset($component)) { $__componentOriginal22b5b970271de63f2ab96f835624c6eb = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal22b5b970271de63f2ab96f835624c6eb = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.selected-live','data' => ['name' => 'selected','title' => 'Seleccione el tipo de universidad']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.selected-live','data' => ['name' => 'selected','title' => 'Tipo de universidad']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('selected-live'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['name' => 'selected','title' => 'Seleccione el tipo de universidad']); ?>
+<?php $component->withAttributes(['name' => 'selected','title' => 'Tipo de universidad']); ?>
                     <option value="">Todas</option>
                     <option value="Publica">Publica</option>
                     <option value="Privada">Privada</option>
@@ -121,7 +121,7 @@
 
                         </td>
                         <td align="center">
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('universities.edit')): ?>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar universidades')): ?>
                                 <?php if (isset($component)) { $__componentOriginale9f0fcc686d5ab9265b8e88cbb55bbb0 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginale9f0fcc686d5ab9265b8e88cbb55bbb0 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-edit','data' => ['id' => ''.e($university->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -143,7 +143,7 @@
 <?php unset($__componentOriginale9f0fcc686d5ab9265b8e88cbb55bbb0); ?>
 <?php endif; ?>
                             <?php endif; ?>
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('universities.delete')): ?>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar universidades')): ?>
                                 <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($university->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>

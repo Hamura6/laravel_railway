@@ -47,7 +47,7 @@
                                                 wire:loading.remove wire:target="photo">
                                         <?php else: ?>
                                             <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                                src="<?php echo e($this->image ? $this->image : 'https://i.pinimg.com/originals/bd/2e/0d/bd2e0d56cc9b061d694979158bda4d0b.jpg'); ?>"
+                                                src="<?php echo e($this->image ? $this->image : asset('image/user.png')); ?>"
                                                 alt="Image placeholder" wire:loading.remove wire:target="photo">
                                         <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
 
@@ -165,14 +165,14 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                         wire:loading.class="disabled pointer-events-none opacity-50" class="btn btn-sm btn-danger m-0">
                         <i class="fas fa-ban fs-6"></i> Cancel</a>
                     <!--[if BLOCK]><![endif]--><?php if($this->id): ?>
-                        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('articles.edit')): ?>
+                        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar convenios')): ?>
                             <button wire:click.prevent="update()" wire:target="add,update,store,photo"
                                 wire:loading.attr="disabled" class="btn btn-sm btn-info m-0"> <i
                                     class="fas fa-paste fs-6"></i>
                                 Actualizar</button>
                         <?php endif; ?>
                     <?php else: ?>
-                        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('articles.create')): ?>
+                        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear convenios')): ?>
                             <button class="btn btn-sm btn-dark m-0" wire:target="add,update,store,photo"
                                 wire:loading.attr="disabled" wire:click.prevent="store()"> <i class="fas fa-save fs-6"></i>
                                 Guardar</button>

@@ -14,7 +14,7 @@ class RecognitionDetails extends Component
     public $recognition, $toSearch = '';
     public function mount($id)
     {
-        $this->authorize('recognitions.view');
+        $this->authorize('ver reconocimientos');
         $this->recognition = Recognition::find($id);
     }
     public function render()
@@ -98,10 +98,11 @@ class RecognitionDetails extends Component
         $query->whereDoesntHave('payments', function ($q) {
             $q->where('fee_id', 1)
                 ->where('status', 'Por pagar')
-                ->whereYear('date', now()->subYear()->year); // Deudas del año pasado
+                // Deudas del año pasado
+                ->whereYear('date', now()->subYear()->year); 
         });
     }, function ($query) {
-        // Para otros tipos: solo afiliados activos o inactivos
+        // Para otros tipos solo afiliados activos o inactivos
         $query->whereIn('status', ['Activo', 'Inactivo'])
             ->whereDoesntHave('recognitions', function ($q) {
                 $q->where('type', $this->recognition->type);
@@ -122,13 +123,13 @@ class RecognitionDetails extends Component
     #[On('AddAffiliate')]
     public function AddAffiliate($id)
     {
-        $this->authorize('recognitions.edit');
+        $this->authorize('Editar reconocimientos');
         $this->recognition->affiliates()->syncWithoutDetaching([$id]);
     }
     #[On('removeAffiliate')]
     public function removeAffiliate($id)
     {
-        $this->authorize('recognitions.edit');
+        $this->authorize('Editar reconocimientos');
         $this->recognition->affiliates()->detach($id);
     }
 }

@@ -6,13 +6,13 @@
 <style>
       .logo {
         position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 120px;
+        top: 20px;
+        left: 40px;
+
     }
 
     .logo img {
-        width: 120px;
+        width: 90px;
         height: auto;
     }
 
@@ -61,7 +61,7 @@
 
 <body>
     <div class="logo">
-        <img width="120" src="{{ public_path('assets/img/escudo.png') }}" alt="">
+        <img width="50" src="data:image/jpeg;base64,{{ $institutionLogo }}" alt="">
 
     </div>
     <div align="center" class="header">

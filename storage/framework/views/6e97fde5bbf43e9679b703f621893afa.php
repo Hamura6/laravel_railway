@@ -52,7 +52,7 @@
 <?php unset($__componentOriginal9b33c063a2222f59546ad2a2a9a94bc6); ?>
 <?php endif; ?>
             </div>
-            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('affiliates.create')): ?>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear Afiliados')): ?>
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <a href="<?php echo e(route('register.affiliate')); ?>" wire:navigate class="btn btn-sm  btn-success">
@@ -149,23 +149,23 @@
                         </td>
                         <td>
                             <div class="d-flex flex-row justify-content-center align-items-center gap-1">
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('affiliates.reset.password')): ?>
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Restablecer afiliados.password')): ?>
                                     <button type="button" wire:target="changeStatus, delete, edit,resetPassword"
-                                        onclick="Question(<?php echo e($affiliate->user->id); ?>,'Desea bloquear al afiliado del sistema?','resetPassword')"
+                                        onclick="Question(<?php echo e($affiliate->user->id); ?>,'Desea restablecer la contraseña?','resetPassword')"
                                         wire:loading.attr="disabled"  class="btn btn-warning-circle"
                                         data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         data-bs-title="Restablecer contrasena">
                                         <i class="fas fa-key fs-6"></i>
                                     </button>
                                 <?php endif; ?>
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('affiliates.edit')): ?>
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar afiliados')): ?>
                                     <a href="<?php echo e(route('register.affiliate', $affiliate->id)); ?>" wire:navigate
                                         type="button" class="btn btn-uc-circle" data-bs-toggle="tooltip"
                                         data-bs-placement="bottom" data-bs-title="Editar afiliado">
                                         <i class="fas fa-edit fs-6"></i>
                                     </a>
                                 <?php endif; ?>
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('affiliates.delete')): ?>
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar afiliados')): ?>
                                     <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($affiliate->user->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>

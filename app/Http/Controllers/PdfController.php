@@ -46,12 +46,7 @@ class PdfController extends Controller
         $pdf->AddPage();
 
         $pdf->SetFont('Arial', '', 10);
-        $pdf->Ln(40); // crea espacio bajo el header
-
-        // -------------------------------------------------------
-        // FILAS SUPERIORES DE INFORMACIÓN
-        // -------------------------------------------------------
-
+        $pdf->Ln(40); 
         $widths = [
             'institucion' => 120,
             'gestion' => 70,
@@ -72,9 +67,6 @@ class PdfController extends Controller
 
         $pdf->Ln(5);
 
-        // -------------------------------------------------------
-        // TABLA
-        // -------------------------------------------------------
 
         $w = [10, 50, 15, 55, 20, 40];
         $header = ['#', 'Nombre Completo', 'Edad', 'Correo', 'Género', 'Teléfonos'];
@@ -167,364 +159,6 @@ class PdfController extends Controller
         $mpdf->WriteHTML($html);
 
         return $mpdf->Output('formulario_' . $affiliate->id . '.pdf', 'I');
-        /*   $affiliate = Affiliate::with([
-            'user',
-            'university',
-            'professions.specialty',
-            'professions.university'
-        ])->findOrFail($id);
-
-
-        $pdf = new GlobalPdf();
-        $pdf->AddPage();
-        $pdf->SetFont('Arial', '', 10); */
-
-        /*
-    =========================================================
-    ============= SECCIÓN 1: FOTO Y TABLA SUPERIOR ==========
-    =========================================================
-    */
-
-        // Foto del usuario
-        /*   $pdf->Image(
-            public_path("storage/users/" . $affiliate->user->photo),
-            150,
-            45,
-            40,
-            40
-        ); */
-
-        // TABLA DE FECHAS
-        /*   $pdf->Ln(15);
-        $pdf->SetFont('Arial', 'B', 10);
-        $pdf->Cell(60, 8, "Fecha de Registro", 1);
-        $pdf->SetFont('Arial', '', 10);
-        $pdf->Cell(60, 8, $affiliate->created_at, 1, 1);
-
-        $pdf->SetFont('Arial', 'B', 10);
-        $pdf->Cell(60, 8, "Matricula ICAP", 1);
-        $pdf->SetFont('Arial', '', 10);
-        $pdf->Cell(60, 8, $affiliate->id, 1, 1);
-
-        $pdf->SetFont('Arial', 'B', 10);
-        $pdf->Cell(60, 8, "Matricula CONALAB", 1);
-        $pdf->SetFont('Arial', '', 10);
-        $pdf->Cell(60, 8, $affiliate->enrollment_conalab, 1, 1);
-
-        $pdf->SetFont('Arial', 'B', 10);
-        $pdf->Cell(60, 8, "Matricula RPA", 1);
-        $pdf->SetFont('Arial', '', 10);
-        $pdf->Cell(60, 8, $affiliate->enrollment_RPA, 1, 1);
-
-        $pdf->Ln(5); */
-
-        /*
-    =========================================================
-    ==================== SECCIÓN 2: DATOS PERSONALES ========
-    =========================================================
-    */
-        /*  $pdf->SetFont('Arial', 'B', 12);
-        $pdf->SetTextColor(2, 27, 65);
-        $pdf->Cell(0, 8, utf8_decode("1. DATOS PERSONALES"), 0, 1);
-        $pdf->SetDrawColor(0, 0, 0);
-        $pdf->Line(10, $pdf->GetY(), 200, $pdf->GetY());
-        $pdf->Ln(4);
-        $pdf->SetTextColor(0, 0, 0); */
-
-        // Apellidos
-        /* $pdf->SetFont('Arial', 'B', 10);
-        $pdf->Cell(35, 8, "Apellidos", 1);
-        $pdf->SetFont('Arial', '', 10);
-        $pdf->Cell(155, 8, utf8_decode($affiliate->user->last_name), 1, 1); */
-
-        // Nombres
-        /*  $pdf->SetFont('Arial', 'B', 10);
-        $pdf->Cell(35, 8, "Nombres", 1);
-        $pdf->SetFont('Arial', '', 10);
-        $pdf->Cell(155, 8, utf8_decode($affiliate->user->name), 1, 1);
- */
-        // Fila con CI - nacimiento - lugar
-        /*  $pdf->SetFont('Arial', 'B', 10);
-        $pdf->Cell(35, 8, "C.I", 1);
-        $pdf->SetFont('Arial', '', 10);
-        $pdf->Cell(30, 8, $affiliate->user->ci, 1);
-
-        $pdf->SetFont('Arial', 'B', 10);
-        $pdf->Cell(45, 8, "Fecha de Nacimiento", 1);
-        $pdf->SetFont('Arial', '', 10);
-        $pdf->Cell(40, 8, $affiliate->user->birthdate, 1);
-
-        $pdf->SetFont('Arial', 'B', 10);
-        $pdf->Cell(20, 8, "Lugar", 1);
-        $pdf->SetFont('Arial', '', 10);
-        $pdf->Cell(20, 8, $affiliate->place, 1, 1); */
-
-        /*
-    =========================================================
-    ==================== SIGUEN LAS DEMÁS SECCIONES =========
-    =========================================================
-    */
-
-        // Puedes seguir así armando las demás tablas:
-        // - Datos del Afiliado
-        // - Datos Profesionales
-        // - Especializaciones (con foreach)
-        // - Firma
-
-        /* return response($pdf->Output("I", "formulario_$id.pdf"))
-            ->header("Content-Type", "application/pdf"); */
-
-        /* $affiliate = Affiliate::with([
-    'user:id,name,last_name,ci,email,gender,birthdate,status,photo,martial_status',
-    'university:id,name,entity',
-    'professions.specialty:id,name',
-    'professions.university:id,name'
-])->findOrFail($id);
-
-$pdf = new GlobalPdf();
-$pdf->AddPage();
-
-// Colores
-$headerColor = [200,200,200];
-$dataColor = [255,255,255];
-
-// ====== Logo ======
-$institutionLogo = public_path('storage/institution/'.$institution->logo);
-$userPhoto = public_path('storage/users/'.$affiliate->user->photo);
-
-if(file_exists($institutionLogo)){
-    $pdf->Image($institutionLogo, 10, 10, 40);
-}
-
-// ====== Título centrado ======
-$pdf->SetFont('Arial','BU',16);
-$pdf->SetXY(0, 20);
-$pdf->Cell(0,10,'FORMULARIO DE INSCRIPCION',0,1,'C');
-$pdf->Ln(15);
-
-// ====== Tabla perfil + foto ======
-$pdf->SetFont('Arial','B',10);
-$pdf->SetFillColor(...$headerColor);
-
-$startX = $pdf->GetX();
-$startY = $pdf->GetY();
-
-$widthCol1 = 120;
-$widthCol2 = 60;
-
-// Primera columna: tabla con datos
-$fields = [
-    'Fecha de Registro' => $affiliate->created_at,
-    'Matrícula ICAP' => $affiliate->id,
-    'Matrícula CONALAB' => $affiliate->enrollment_conalab,
-    'Matrícula RPA' => $affiliate->enrollment_RPA,
-];
-
-foreach($fields as $title => $value){
-    $pdf->SetFont('Arial','B',10);
-    $pdf->Cell($widthCol1,8,$title,1,0,'C',true);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell($widthCol2,8,$value,1,1,'L');
-}
-
-// Segunda columna: foto
-if(file_exists($userPhoto)){
-    $pdf->Image($userPhoto, $startX+$widthCol1+$widthCol2+5, $startY, 35, 35);
-}
-
-$pdf->Ln(40);
-
-// ====== 1. Datos Personales ======
-$pdf->SetFont('Arial','B',12);
-$pdf->Cell(0,8,'1. Datos Personales',0,1);
-$pdf->Ln(2);
-
-// Tabla Datos Personales
-$pdf->SetFont('Arial','B',10);
-$pdf->SetFillColor(...$headerColor);
-
-// Apellidos
-$pdf->Cell(35,8,'Apellidos',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(155,8,$affiliate->user->last_name,1,1,'L');
-
-// Nombres
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(35,8,'Nombres',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(155,8,$affiliate->user->name,1,1,'L');
-
-// C.I, Fecha Nacimiento, Lugar
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(25,8,'C.I',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(45,8,$affiliate->user->ci,1,0,'L');
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(35,8,'Fecha de Nacimiento',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(40,8,$affiliate->user->birthdate,1,0,'L');
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(35,8,'Lugar',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(25,8,$affiliate->place,1,1,'L');
-
-// Sexo, Estado Civil, Deporte
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(35,8,'Sexo',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(35,8,$affiliate->user->gender,1,0,'L');
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(35,8,'Estado Civil',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(35,8,$affiliate->user->martial_status,1,0,'L');
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(35,8,'Deporte',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(35,8,$affiliate->sport,1,1,'L');
-
-// Domicilio
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(35,8,'Domicilio',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(45,8,$affiliate->address_home,1,0,'L');
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(25,8,'No.',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(25,8,$affiliate->address_number_home,1,0,'L');
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(35,8,'Zona',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(35,8,$affiliate->zone_home,1,1,'L');
-
-$pdf->Ln(5);
-
-// ====== 2. Datos de Afiliado ======
-$pdf->SetFont('Arial','B',12);
-$pdf->Cell(0,8,'2. Datos de Afiliado',0,1);
-$pdf->Ln(2);
-
-// Primera fila: Matrículas y Fecha de registro
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(30,8,'Fecha de Registro',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(35,8,$affiliate->created_at,1,0,'L');
-
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(30,8,'Matrícula ICAP',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(35,8,$affiliate->id,1,0,'L');
-
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(30,8,'Matrícula CONALAB',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(35,8,$affiliate->enrollment_conalab,1,0,'L');
-
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(30,8,'Matrícula RPA',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(35,8,$affiliate->enrollment_RPA,1,1,'L');
-
-// Segunda fila: Sede, Ejercicio profesional, Institución
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(25,8,'Sede',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(35,8,$affiliate->sede,1,0,'L');
-
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(50,8,'Ejercicio Profesional',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(60,8,$affiliate->profession.'-'.$affiliate->profession_status,1,0,'L');
-
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(25,8,'Institución',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(60,8,$affiliate->institution,1,1,'L');
-
-// Tercera fila: Domicilio procesal
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(35,8,'Domicilio Procesal',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(70,8,$affiliate->address_office,1,0,'L');
-
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(25,8,'No.',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(25,8,$affiliate->address_number,1,0,'L');
-
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(25,8,'Zona',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(60,8,$affiliate->zone,1,1,'L');
-
-$pdf->Ln(5);
-
-// ====== 3. Datos Profesionales ======
-$pdf->SetFont('Arial','B',12);
-$pdf->Cell(0,8,'3. Datos Profesionales',0,1);
-$pdf->Ln(2);
-
-// Universidad
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(60,8,'Universidad que cursó sus estudios en Derecho',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(130,8,$affiliate->university->name,1,1,'L');
-
-// Entidad, Fecha Título, Número de Título
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(30,8,'Entidad',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(50,8,$affiliate->university->entity,1,0,'L');
-
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(60,8,'Fecha de extensión del Título',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(25,8,$affiliate->date,1,0,'L');
-
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(25,8,'Número de título',1,0,'C',true);
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(40,8,$affiliate->number,1,1,'L');
-
-$pdf->Ln(5);
-
-// ====== 4. Especializaciones ======
-$pdf->SetFont('Arial','B',12);
-$pdf->Cell(0,8,'4. Especializaciones',0,1);
-$pdf->Ln(2);
-
-foreach($affiliate->professions as $profession){
-    $pdf->SetFont('Arial','B',10);
-    $pdf->Cell(35,8,'Especialización',1,0,'C',true);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(65,8,$profession->specialty->name,1,0,'L');
-
-    $pdf->SetFont('Arial','B',10);
-    $pdf->Cell(25,8,'Área',1,0,'C',true);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(65,8,$profession->area,1,1,'L');
-
-    $pdf->SetFont('Arial','B',10);
-    $pdf->Cell(25,8,'Fecha',1,0,'C',true);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(45,8,$profession->date,1,0,'L');
-
-    $pdf->SetFont('Arial','B',10);
-    $pdf->Cell(30,8,'Universidad',1,0,'C',true);
-    $pdf->SetFont('Arial','',10);
-    $pdf->Cell(70,8,$profession->university->name,1,1,'L');
-
-    $pdf->Ln(2);
-}
-
-// ====== Firma ======
-$pdf->Ln(10);
-$pdf->Cell(0,5,'______________________________',0,1,'C');
-$pdf->Cell(0,5,'FIRMA',0,1,'C');
-$pdf->SetFont('Arial','',9);
-$pdf->Cell(0,5,'NOTA: POR FAVOR AL FIRMAR NO SOBREPASE LA LINEA',0,1,'C');
-
-// ====== Salida ======
-$pdf->Output('I', 'formulario_'.$affiliate->id.'.pdf'); */
     }
 
     public function debt($id, $form, $to, $type = '', $fee = '')
@@ -544,16 +178,22 @@ $pdf->Output('I', 'formulario_'.$affiliate->id.'.pdf'); */
     }
     public function demandsDetails($id)
     {
-        /*  $affiliate = Affiliate::select('id', 'user_id', 'address_home', 'address_number_home', 'zone_home', 'address_office', 'address_number', 'zone')
-            ->with(['user:name,last_name,id,ci,email', 'user.phones:number,user_id'])
-            ->find($id);
-        $demands = Demand::where('affiliate_id', $affiliate->id)
-            ->orderBy('id', 'desc')
-            ->get();
-        $data = ['affiliate' => $affiliate, 'demands' => $demands,];
-        $pdf = Pdf::loadView('pdf.demandsDetails', $data);
-        return $pdf->stream(); */
-
+       
+$logoPath = public_path('storage/institution/logo.png');
+        if (file_exists($logoPath)) {
+            try {
+                /* $manager = new ImageManager(new Driver());
+                $image = $manager->read($logoPath)->resize(50, 50);
+                $institutionLogo = base64_encode($image->toJpeg()); */
+                $institutionLogo = Image::read($logoPath)->resize(50, 50)->toJpeg();
+            } catch (\Exception $e) {
+                \Log::error('Error procesando el logo: ' . $e->getMessage());
+            }
+        } else {
+            $logoPath = public_path('image/logo.png');
+            $institutionLogo = Image::read($logoPath)->resize(50, 50)->toJpeg();
+        }
+        $institutionLogo = base64_encode($institutionLogo);
         // Obtener datos
         $affiliate = Affiliate::select('id', 'user_id', 'address_home', 'address_number_home', 'zone_home', 'address_office', 'address_number', 'zone')
             ->with([
@@ -563,7 +203,7 @@ $pdf->Output('I', 'formulario_'.$affiliate->id.'.pdf'); */
             ])
             ->find($id);
 
-        $data = ['affiliate' => $affiliate];
+        $data = ['affiliate' => $affiliate,'institutionLogo'=>$institutionLogo];
 
         $html = view('pdf.demandsDetails', $data)->render();
 
@@ -733,7 +373,7 @@ $pdf->Output('I', 'formulario_'.$affiliate->id.'.pdf'); */
 
     public function exportPDF($minor, $maximun)
     {
-        // Supongamos que este es tu query base
+
         $affiliates = DB::table('affiliates')
             ->join('users', 'users.id', '=', 'affiliates.user_id')
             ->leftJoin('phones', 'phones.user_id', '=', 'users.id')
@@ -760,23 +400,23 @@ $pdf->Output('I', 'formulario_'.$affiliate->id.'.pdf'); */
             ->orderByDesc('affiliates.id')
             ->take(600)
             ->get();
-        // Cuenta géneros directamente de la colección
+ 
         $masculino = $affiliates->where('gender', 'Masculino')->count();
         $femenino = $affiliates->where('gender', 'Femenino')->count();
         $affiliates = $affiliates->map(fn($item) => (array) $item)->toArray();
 
 
-        // Renderiza la vista en HTML
+
         $html = view('pdf.affiliates', compact('affiliates', 'masculino', 'femenino'))->render();
 
-        // Instancia mPDF
+
         ini_set('pcre.backtrack_limit', 10000000);
         $mpdf = new Mpdf([
             'mode' => 'utf-8',
             'format' => 'A4',
             'default_font_size' => 11,
             'default_font' => 'sans',
-            'use_kwt' => true, // usar t
+            'use_kwt' => true, 
         ]);
 
 
@@ -785,8 +425,22 @@ $pdf->Output('I', 'formulario_'.$affiliate->id.'.pdf'); */
     }
     public function listAffiliate($id)
     {
-        // 1️⃣ Cargar el reconocimiento con sus relaciones
-        $recognition = Recognition::select('id', 'date', 'type', 'name', 'quantity')
+         $logoPath = public_path('storage/institution/logo.png');
+        if (file_exists($logoPath)) {
+            try {
+                /* $manager = new ImageManager(new Driver());
+                $image = $manager->read($logoPath)->resize(50, 50);
+                $institutionLogo = base64_encode($image->toJpeg()); */
+                $institutionLogo = Image::read($logoPath)->resize(50, 50)->toJpeg();
+            } catch (\Exception $e) {
+                \Log::error('Error procesando el logo: ' . $e->getMessage());
+            }
+        } else {
+            $logoPath = public_path('image/logo.png');
+            $institutionLogo = Image::read($logoPath)->resize(50, 50)->toJpeg();
+        }
+        $institutionLogo = base64_encode($institutionLogo);
+        $recognition = Recognition::select('id', 'date', 'type', 'name')
             ->with([
                 'affiliates' => function ($query) {
                     $query->select('affiliates.id', 'user_id', 'affiliates.created_at')
@@ -804,13 +458,12 @@ $pdf->Output('I', 'formulario_'.$affiliate->id.'.pdf'); */
             ])
             ->findOrFail($id);
 
-        // 2️⃣ Preparar los datos para la vista
-        $data = compact('recognition');
 
-        // 3️⃣ Renderizar la vista en HTML
+        $data = compact('recognition', 'institutionLogo');
+
         $html = view('pdf.listAffliate', $data)->render();
 
-        // 4️⃣ Crear instancia de mPDF
+
         $mpdf = new Mpdf([
             'format' => 'A4',
             'margin_top' => 15,
@@ -821,10 +474,9 @@ $pdf->Output('I', 'formulario_'.$affiliate->id.'.pdf'); */
             'default_font' => 'dejavusans',
         ]);
 
-        // 5️⃣ Escribir el HTML al PDF
+
         $mpdf->WriteHTML($html);
 
-        // 6️⃣ Descargar o mostrar en navegador
         $fileName = 'reporte_' . $recognition->id . '.pdf';
         return $mpdf->Output($fileName, 'I');
     }

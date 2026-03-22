@@ -26,8 +26,6 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
     <!--[if BLOCK]><![endif]--><?php if($showList && !empty($filteredAffiliates)): ?>
         <ul class="list-group mt-1 position-absolute w-100 p-0 overflow-scroll"
             style="max-height: 225px;  z-index: 1050;">
-
-            <!-- 🔁 Resultados -->
             <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $filteredAffiliates; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $affiliate): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <li class="list-group-item list-group-item-action" style="cursor: pointer"
                     wire:click="selectUniversity(<?php echo e($affiliate->id); ?>)">

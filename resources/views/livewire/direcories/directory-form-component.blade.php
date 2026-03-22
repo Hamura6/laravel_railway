@@ -6,11 +6,11 @@
             <div class="col-sm-12 col-md-6 order-2 order-md-1">
                 <x-search />
             </div>
-            @can('directories.create')
+            @can('Crear directorio')
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button type="button" wire:target="search" wire:loading.attr="disabled"
-                            class="btn btn-sm btn-success  mb-0 me-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <button type="button" wire:target="search" wire:loading.attr="disabled" class="btn btn-sm btn-success"
+                            data-bs-toggle="modal" data-bs-target="#myModal">
                             <i class="far fa-file-alt fs-6"></i> Nuevo
                         </button>
                     </div>
@@ -42,12 +42,15 @@
                             {{ $directory->level }}
                         </td>
                         <td align="center">
-                            @can('directories.delete')
-                                <x-btn-delete id="{{ $directory->id }}" />
-                            @endcan
-                            @can('directories.edit')
-                                <x-btn-edit id="{{ $directory->id }}" />
-                            @endcan
+                            <div class="d-flex justify-content-center gap-1">
+
+                                @can('Eliminar directorio')
+                                    <x-btn-delete id="{{ $directory->id }}" />
+                                @endcan
+                                @can('Editar directorio')
+                                    <x-btn-edit id="{{ $directory->id }}" />
+                                @endcan
+                            </div>
                         </td>
                     </tr>
                 @empty

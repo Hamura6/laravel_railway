@@ -9,7 +9,7 @@
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <a href="{{ route('deceased.affiliate-excel') }}" class="btn btn-sm btn-outline-success"><i
                         class="far fa-file-excel fs-6"></i> Exporta a Excel </a>
-                        @can('deceaseds.create')
+                        @can('Crear fallecidos')
                         <button type="button" wire:target="search" wire:loading.attr="disabled"
                             class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
                             <i class="far fa-file-alt fs-6"></i> Nuevo
@@ -63,7 +63,7 @@
                             {{ $deceased->mausoleum }}
                         </td>
                         <td class="text-center">
-                            @can('deceaseds.delete')
+                            @can('Eliminar fallecidos')
                                 <x-btn-delete id="{{ $deceased->id }}" />
                             @endcan
                         </td>

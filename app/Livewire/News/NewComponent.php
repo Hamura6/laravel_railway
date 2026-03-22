@@ -13,13 +13,13 @@ class NewComponent extends Component
     public string $search='';
     public function render()
     {
-        $this->authorize('notice.view');
+        $this->authorize('Ver noticias');
         $news=Information::where('title','like',"%$this->search%")->orderBy('id','desc')->paginate(9);
         return view('livewire.news.new-component',compact('news'));
     }
     #[On('delete')]
     public function delete($id){
-        $this->authorize('notice.delete');
+        $this->authorize('Eliminar noticias');
         $new=Information::find($id);
         if ($new->image) {
                 if (file_exists(public_path('storage/news/' . $new->image))) {

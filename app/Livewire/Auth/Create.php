@@ -26,7 +26,7 @@ class Create extends Component
     }
     public function mount($id = 0)
     {
-        if (! (Auth::user()->can('users.create') || Auth::user()->can('users.edit'))) {
+        if (! (Auth::user()->can('Crear usuarios') || Auth::user()->can('Editar usuarios'))) {
             abort(403, 'No tienes permiso');
         }
         if ($id <= 0) {
@@ -50,7 +50,7 @@ class Create extends Component
     }
     public function store()
     {
-        $this->authorize('users.create');
+        $this->authorize('Crear usuarios');
         $this->validate();
         if ($this->photo instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
             $disk = User::storageDisk();
@@ -69,7 +69,7 @@ class Create extends Component
     }
     public function update()
     {
-        $this->authorize('users.edit');
+        $this->authorize('Editar usuarios');
         $this->validate();
         $user = User::find($this->id);
         $user->phones()->delete();

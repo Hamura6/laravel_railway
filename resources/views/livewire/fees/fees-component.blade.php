@@ -6,7 +6,7 @@
             <div class="col-sm-12 col-md-6 order-2 order-md-1">
                 <x-search />
             </div>
-            @can('fees.create')
+            @can('Crear tarifas')
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button type="button" wire:target="search" wire:loading.attr="disabled"
@@ -42,10 +42,10 @@
                             {{ __($fee->type) }}
                         </td>
                         <td align="center">
-                            @can('fees.edit')
+                            @can('Editar tarifas')
                                 <x-btn-edit id="{{ $fee->id }}" />
                             @endcan
-                            @can('fees.delete')
+                            @can('Eliminar tarifas')
                                 <x-btn-delete id="{{ $fee->id }}" />
                             @endcan
                         </td>

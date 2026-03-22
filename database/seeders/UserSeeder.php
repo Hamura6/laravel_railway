@@ -27,10 +27,11 @@ class UserSeeder extends Seeder
 
         $batchSize = 100;
         $cis = [];
+        $password=Hash::make('password');
         foreach (array_chunk($users, $batchSize) as $chunk) {
             foreach ($chunk as $k => $user) {
                 $cis[] = $user['ci'];
-                $chunk[$k]['password'] = Hash::make($user['ci']);
+                $chunk[$k]['password'] = $password;
             }
             User::insert($chunk);
         }

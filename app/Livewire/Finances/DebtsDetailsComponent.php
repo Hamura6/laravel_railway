@@ -20,7 +20,7 @@ class DebtsDetailsComponent extends Component
     
     public function mount($id)
     {
-        $this->authorize('payments.view');
+        $this->authorize('Ver pagos realizados');
         $payment = Affiliate::find($id)
         ->payments()
         ->where('status', 'Por pagar')
@@ -76,7 +76,7 @@ class DebtsDetailsComponent extends Component
                     ->whereColumn('plans.payment_id', 'payments.id')
             ])
             ->with(['fee:id,name'])
-            ->orderBy('id', 'desc')
+            ->orderBy('date', 'asc')
             ->paginate(10);
         return view('livewire.finances.debts-details-component', compact('fees', 'affiliate', 'payments'));
     }
@@ -84,7 +84,7 @@ class DebtsDetailsComponent extends Component
     #[On('toPay')]
     public function toPay($id)
     {
-        $this->authorize('payments.pays');
+        $this->authorize('Realizar pago');
         $payment = Payment::find($id);
         $debt = $payment->amount - $payment->plans()->sum('amount');
         $payment->status = 'Pagado';

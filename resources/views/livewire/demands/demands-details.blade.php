@@ -25,7 +25,7 @@
         }
     </style>
     <div class="row g-2">
-        <x-card-header title="Historial de Denuncias" name="Denuncia" />
+        <x-card-header title="Control de Denuncias" name="Denuncia" />
         <div class="col-md-12">
 
             <x-card-body>
@@ -72,7 +72,7 @@
                         class="btn btn-outline-danger btn-sm px-2" type="button">
                         <i class="fas fa-file-pdf fs-6"></i> Descargar PDF
                     </a>
-                    @can('demands.create')
+                    @can('Crear denuncias')
                         <button class="btn btn-dark btn-sm px-2" data-bs-toggle="modal" data-bs-target="#myModal"
                             type="button">
                             <i class="far fa-file-alt fs-6"></i> Agregar Nueva Denuncia
@@ -122,14 +122,14 @@
                         <span class=" text-info">{{ $demand->description }}</span>
                     </div>
                     <div class="card-footer bg-transparent border-0 d-flex justify-content-center d-grid gap-1">
-                        @can('demands.edit')
+                        @can('Editar denuncias')
                             <button type="button" wire:target="changeStatus, delete, edit" wire:loading.attr="disabled"
                                 wire:click="edit({{ $demand->id }})" class="btn btn-sm mb-0 btn-outline-info w-100 p-2 "
                                 data-bs-toggle="tooltip" data-bs-title="Editar" wire:loading.attr="disabled">
                                 <i class="fas fa-edit fs-6"></i> Editar
                             </button>
                         @endcan
-                        @can('demands.delete')
+                        @can('Eliminar denuncias')
                             <button type="button" wire:target="changeStatus, delete, edit" wire:loading.attr="disabled"
                                 onclick="Confirm({{ $demand->id }})"
                                 class="btn btn-sm btn-outline-danger mb-0 p-2  w-100" data-bs-toggle="tooltip"

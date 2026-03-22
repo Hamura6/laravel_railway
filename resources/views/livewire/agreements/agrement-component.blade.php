@@ -5,7 +5,7 @@
             <div class="col-sm-12 col-md-6 order-2 order-md-1">
                 <x-search />
             </div>
-            @can('agreements.create')
+            @can('Crear convenios')
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <a href="{{ route('agreement.form') }}" wire:navigate
@@ -143,10 +143,10 @@
                         </div>
                         <div class="card-footer ">
                             <div class=" gap-2 d-md-flex justify-content-md-end">
-                                @can('agreements.delete')
+                                @can('Eliminar convenios')
                                     <x-btn-delete id="{{ $agreement->id }}" />
                                 @endcan
-                                @can('agreements.edit')
+                                @can('Editar convenios')
                                     <a wire:target="changeStatus, delete"
                                         wire:loading.class="disabled pointer-events-none opacity-50"
                                         href="{{ route('agreement.form', $agreement->id) }}" type="button"

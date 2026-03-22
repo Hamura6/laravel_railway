@@ -16,7 +16,7 @@ class FeesComponent extends Component
     public FeeForm $form;
     public $search;
     public function mount(){
-        $this->authorize('fees.view');
+        $this->authorize('Ver tarifas');
     }
     public function updatedSearch()
     {
@@ -30,7 +30,7 @@ class FeesComponent extends Component
         return view('livewire.fees.fees-component',compact('fees'));
     }
     public function store(){
-        $this->authorize('fees.create');
+        $this->authorize('Crear tarifas');
         $this->validate();
         $this->form->store();
         $this->clear();
@@ -42,7 +42,7 @@ class FeesComponent extends Component
         
     }
     public function update(){
-        $this->authorize('fees.edit');
+        $this->authorize('Editar tarifas');
         $this->validate();
         $this->form->update();
         $this->clear();
@@ -50,7 +50,7 @@ class FeesComponent extends Component
     }
     #[On('delete')]
     public function delete($id){
-        $this->authorize('fees.delete');
+        $this->authorize('Eliminar tarifas');
         $fee=Fee::find($id);
         if($fee->payments->count()){
             $this->dispatch('notify',text:'La tarifa asociada',icon:'error',title:'La tarifa se encuentra vinculada');

@@ -2,11 +2,9 @@
     <x-card-header title="Descuentos Aplicables" name="Descuentos" />
     <x-card-body>
         <x-slot name="header">
-            <div class="col-sm-12 col-md-6 order-2 order-md-1 ">
-                <x-search />
-            </div>
-            @can('discount.create')
-                <div class="col-md-4 col-ms-12 order-1 order-md-2 offset-md-2">
+
+            @can('Crear descuentos')
+                <div class="col-md-4 col-ms-12 offset-md-8">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button type="button" wire:target="search" wire:loading.attr="disabled" class="btn btn-sm btn-success"
                             data-bs-toggle="modal" data-bs-target="#myModal">
@@ -53,10 +51,10 @@
 
                         </div>
                         <div class=" card-footer py-1 d-flex gap-1 justify-content-end">
-                            @can('discount.edit')
+                            @can('Editar descuentos')
                                 <x-btn-edit id="{{ $discount->id }}" />
                             @endcan
-                            @can('discount.delete')
+                            @can('Eliminar descuentos')
                                 <x-btn-delete id="{{ $discount->id }}" />
                             @endcan
                         </div>

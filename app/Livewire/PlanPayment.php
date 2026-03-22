@@ -21,8 +21,8 @@ class PlanPayment extends Component
     }
     public function mount($ide)
     {
-        $this->authorize('procedures.view');
-         $this->loadPayment($ide);
+        $this->authorize('Ver procedimientos');
+        $this->loadPayment($ide);
     }
     protected function loadPayment($id)
     {
@@ -49,7 +49,7 @@ class PlanPayment extends Component
     }
     public function store()
     {
-        $this->authorize('payments.pay');
+        $this->authorize('Realizar pago');
         $this->validate();
         $this->payment->plans()->create([
             'amount' => $this->amount,
@@ -64,6 +64,7 @@ class PlanPayment extends Component
     #[On('delete')]
     public function delete($id)
     {
+        $this->authorize('Realizar pago');
         $plan=Plan::find($id)->delete();
         $this->payment->status='Por pagar';
         $this->payment->save();

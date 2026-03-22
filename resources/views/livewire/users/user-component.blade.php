@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        @can('users.create')
+                        @can('Crear usuarios')
                             <a href="{{ route('user.create') }}" wire:navigate
                                 wire:loading.class="disabled pointer-events-none opacity-50" type="button"
                                 class="btn btn-sm  btn-success">
@@ -58,7 +58,7 @@
         {{ $user->status == 'ENABLED' ? 'text-bg-success' : 'text-bg-danger' }}">
                                     {{ __($user->status) }}
                                 </span>
-                                @can('users.block')
+                                @can('Bloquear usuarios')
                                     <!-- Botón centrado debajo del badge -->
                                     <button
                                         class="btn p-0 m-2 border-0 rounded-fill 
@@ -84,20 +84,20 @@
 
                             <td>
                                 <div class="d-flex flex-row justify-content-center align-items-center gap-1">
-                                    @can('users.edit')
+                                    @can('Editar usuarios')
                                         <a class="btn-rc-circle" wire:target="changeStatus, delete"
                                             wire:loading.class="disabled pointer-events-none opacity-50"
                                             href="{{ route('user.create', $user->id) }}"><i class="fas fa-edit"
                                                 data-bs-toggle="tooltip" data-bs-placement="bottom"
                                                 data-bs-title="Editar"></i></a>
                                     @endcan
-                                    @can('users.delete')
+                                    @can('Eliminar usuarios')
                                         <x-btn-delete id="{{ $user->id }}" />
                                     @endcan
 
-                                    @can('users.reset.password')
+                                    @can('Restablecer usuarios.password')
                                         <button type="button" wire:target="changeStatus, delete, edit,resetPassword"
-                                            onclick="Question({{ $user->id }},'Desea bloquear al usuario del sistema?','resetPassword')"
+                                            onclick="Question({{ $user->id }},'Desea restablecer la contraseña por defecto?','resetPassword')"
                                             wire:loading.attr="disabled" {{-- wire:click="resetPassword({{ $user->id }})" --}} class="btn-warning-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom"
                                             data-bs-title="Restablecer contrasena">

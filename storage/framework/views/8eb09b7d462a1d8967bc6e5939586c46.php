@@ -52,7 +52,7 @@
 <?php unset($__componentOriginal9b33c063a2222f59546ad2a2a9a94bc6); ?>
 <?php endif; ?>
             </div>
-            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('agreements.create')): ?>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear convenios')): ?>
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <a href="<?php echo e(route('agreement.form')); ?>" wire:navigate
@@ -96,7 +96,7 @@
                         </div>
                         <div class="card-footer ">
                             <div class=" gap-2 d-md-flex justify-content-md-end">
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('agreements.delete')): ?>
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar convenios')): ?>
                                     <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($agreement->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -118,7 +118,7 @@
 <?php unset($__componentOriginal3fa869ab4147c9277d9fa157f1637985); ?>
 <?php endif; ?>
                                 <?php endif; ?>
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('agreements.edit')): ?>
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar convenios')): ?>
                                     <a wire:target="changeStatus, delete"
                                         wire:loading.class="disabled pointer-events-none opacity-50"
                                         href="<?php echo e(route('agreement.form', $agreement->id)); ?>" type="button"

@@ -16,7 +16,7 @@ class DemandsManagement extends Component
 
     public function mount($ide)
     {
-        $this->authorize('demands.view');
+        $this->authorize('Ver denuncias');
         $this->year = date('Y');
         $this->affiliate = Affiliate::select('id', 'user_id', 'address_home', 'address_number_home', 'zone_home', 'address_office', 'address_number', 'zone')
             ->with(['user:name,last_name,id,ci,email', 'user.phones:number,user_id'])

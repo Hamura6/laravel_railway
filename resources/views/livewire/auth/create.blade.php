@@ -57,7 +57,7 @@
                     <div class="card align-center shadow-none justify-content-center h-100" align="center">
                         <div class="container">
                             <div
-                                class="card-header p-0 mx-3 mt-3 position-relative z-index-1 d-flex justify-content-center align-items-center flex-column">
+                                class=" p-0 mx-3 mt-3 position-relative z-index-1 d-flex justify-content-center align-items-center flex-column">
 
                                 {{-- Imagen --}}
                                 @if ($photo)
@@ -146,7 +146,7 @@
                 <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3 text-sm-end">
                     <a href="{{ route('users') }}" wire:target="add,update,store"
                         wire:loading.class="disabled pointer-events-none opacity-50" class="btn btn-sm btn-danger">
-                        <i class="fas fa-ban fs-6"></i> Cancel</a>
+                        <i class="fas fa-ban fs-6"></i> Cancelar</a>
                     @if ($this->id)
                         <button wire:click.prevent="update()" wire:target="add,update,store,photo"
                             wire:loading.attr="disabled" class="btn btn-sm btn-info"> <i

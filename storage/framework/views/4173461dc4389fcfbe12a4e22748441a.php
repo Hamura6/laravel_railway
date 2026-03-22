@@ -55,7 +55,7 @@
                 </div>
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('users.create')): ?>
+                        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear usuarios')): ?>
                             <a href="<?php echo e(route('user.create')); ?>" wire:navigate
                                 wire:loading.class="disabled pointer-events-none opacity-50" type="button"
                                 class="btn btn-sm  btn-success">
@@ -110,7 +110,7 @@
                                     <?php echo e(__($user->status)); ?>
 
                                 </span>
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('users.block')): ?>
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Bloquear usuarios')): ?>
                                     <!-- Botón centrado debajo del badge -->
                                     <button
                                         class="btn p-0 m-2 border-0 rounded-fill 
@@ -136,14 +136,14 @@
 
                             <td>
                                 <div class="d-flex flex-row justify-content-center align-items-center gap-1">
-                                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('users.edit')): ?>
+                                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar usuarios')): ?>
                                         <a class="btn-rc-circle" wire:target="changeStatus, delete"
                                             wire:loading.class="disabled pointer-events-none opacity-50"
                                             href="<?php echo e(route('user.create', $user->id)); ?>"><i class="fas fa-edit"
                                                 data-bs-toggle="tooltip" data-bs-placement="bottom"
                                                 data-bs-title="Editar"></i></a>
                                     <?php endif; ?>
-                                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('users.delete')): ?>
+                                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar usuarios')): ?>
                                         <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($user->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -166,9 +166,9 @@
 <?php endif; ?>
                                     <?php endif; ?>
 
-                                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('users.reset.password')): ?>
+                                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Restablecer usuarios.password')): ?>
                                         <button type="button" wire:target="changeStatus, delete, edit,resetPassword"
-                                            onclick="Question(<?php echo e($user->id); ?>,'Desea bloquear al usuario del sistema?','resetPassword')"
+                                            onclick="Question(<?php echo e($user->id); ?>,'Desea restablecer la contraseña por defecto?','resetPassword')"
                                             wire:loading.attr="disabled"  class="btn-warning-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom"
                                             data-bs-title="Restablecer contrasena">

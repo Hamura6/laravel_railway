@@ -29,7 +29,7 @@ class CreateAffiliate extends Component
 
     public function mount($id = 0)
     {
-        if (! (Auth::user()->can('affiliates.create') || Auth::user()->can('affiliates.edit'))) {
+        if (! (Auth::user()->can('Crear Afiliados') || Auth::user()->can('Editar afiliados'))) {
             abort(403, 'No tienes permiso');
         }
         if ($id) {
@@ -75,29 +75,22 @@ class CreateAffiliate extends Component
 
     public function store()
     {
-        $this->authorize('affiliates.create');
+        $this->authorize('Crear Afiliados');
         DB::transaction(function () {
             $this->validate();
             if ($this->photo instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
                 $disk = User::storageDisk();
-                $$custome_name = $this->photo->hashName();
-                $avatarPath = $disk->path($$custome_name);
+                $custome_name = $this->photo->hashName();
+                $avatarPath = $disk->path($custome_name);
                 Image::read($this->photo)->resize(250, 250)->toJpeg()->save($avatarPath);
                 $this->userForm->photo = $custome_name;
-                /*    $custome_name = uniqid() . '.' . $this->photo->extension();
-                $this->photo->storeAs('users', $custome_name, 'public');
-                $this->userForm->photo = $custome_name; */
             }
             $user = $this->userForm->store();
             $this->form->store($user);
             $user->assignRole('Afiliado');
-
-            // Crear teléfonos
             $user->phones()->createMany(
                 collect($this->phones)->map(fn($phone) => ['number' => $phone])->toArray()
             );
-
-            // Crear especialidades/profesiones
             foreach ($this->specialtiesArray as $specialty) {
                 $firstOrCreate = Specialty::firstOrCreate(
                     ['name' => $specialty['specialty_id']],
@@ -111,9 +104,7 @@ class CreateAffiliate extends Component
                     'specialty_id' => $firstOrCreate->id
                 ]);
             }
-
-            // Crear pagos
-            $fees = [2, 1]; // IDs de los fees
+            $fees = [2, 1];
             foreach ($fees as $fee_id) {
                 $user->affiliate->payments()->create([
                     'fee_id' => $fee_id,
@@ -122,25 +113,13 @@ class CreateAffiliate extends Component
                     'status' => 'Por pagar'
                 ]);
             }
-
-            // Redirigir al final de la transacción
             return redirect()->route('form.affiliate', $user->affiliate->id);
         });
     }
     public function update()
     {
-        $this->authorize('affiliates.edit');
+        $this->authorize('Editar afiliados');
         $this->validate();
-       /*  if ($this->photo instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
-            $disk = User::storageDisk();
-            $custome_name = $this->photo->hashName();
-            $avatarPath = $disk->path($custome_name);
-            Image::read($this->photo)->resize(250, 250)->toJpeg()->save($avatarPath);
-            $this->userForm->photo = $custome_name;
-               $custome_name = uniqid() . '.' . $this->photo->extension();
-                $this->photo->storeAs('users', $custome_name, 'public');
-                $this->userForm->photo = $custome_name; 
-        } */
         if ($this->photo instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
             $disk = User::storageDisk();
             $custome_name = $this->photo->hashName();
@@ -158,18 +137,7 @@ class CreateAffiliate extends Component
             } else {
                 $newPhotoName = $this->userForm->photo;
             }
-            /*  $custome_name = uniqid() . '.' . $this->photo->extension();
-            $this->photo->storeAs('users', $custome_name, 'public'); */
-            
             $this->userForm->photo = $newPhotoName;
-            /* $custome_name = uniqid() . '.' . $this->photo->extension();
-            $this->photo->storeAs('users', $custome_name, 'public');
-            if ($this->userForm->photo) {
-                if (file_exists(public_path('storage/users/' . $this->userForm->photo))) {
-                    unlink(public_path('storage/users/' . $this->userForm->photo));
-                }
-            }
-            $this->userForm->photo = $custome_name; */
         }
         $this->userForm->update();
         $affiliate = $this->form->update();
@@ -179,7 +147,6 @@ class CreateAffiliate extends Component
                 ['name' => $specialty['specialty_id']],
                 ['name' => $specialty['specialty_id']]
             );
-
             $affiliate->professions()->create([
                 'area' => $specialty['area'],
                 'date' => $specialty['date'],
@@ -187,19 +154,6 @@ class CreateAffiliate extends Component
                 'specialty_id' => $firstOrCreate->id
             ]);
         }
-        /*  foreach ($this->specialtiesArray as $specialty) {
-            if (!Specialty::find($specialty['specialty_id'])) {
-                $firstOrCreate = Specialty::firstOrCreate(['name' => $specialty['specialty_id']], ['name' => $specialty['specialty_id']]);
-            } else {
-                $firstOrCreate = Specialty::find($specialty['specialty_id']);
-            }
-            $affiliate->professions()->create([
-                'area' => $specialty['area'],
-                'date' => $specialty['date'],
-                'university_id' => $specialty['university_id'],
-                'specialty_id' => $firstOrCreate->id
-            ]);
-        } */
         $affiliate->user->phones()->delete();
         $affiliate->user->phones()->createMany(
             collect($this->phones)->map(fn($phone) => ['number' => $phone])->toArray()
@@ -209,7 +163,6 @@ class CreateAffiliate extends Component
 
     public function rules()
     {
-        $fechaMaxima = now()->subYears(18)->toDateString();
         return [
             'photo' => $this->photoName ? 'nullable|image|mimes:jpg,jpeg,png' : 'required|image|mimes:jpg,jpeg,png',
             'phones' => 'required|array|min:1',
@@ -222,7 +175,7 @@ class CreateAffiliate extends Component
             'specialtiesArray.*.date' => [
                 'required',
                 'date',
-                'before_or_equal:' . $fechaMaxima
+                'before_or_equal:today' 
             ],
         ];
     }

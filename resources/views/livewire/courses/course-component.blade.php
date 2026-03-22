@@ -5,7 +5,7 @@
             <div class="col-sm-12 col-md-6 order-2 order-md-1">
                 <x-search />
             </div>
-            @can('courses.create')
+            @can('Crear cursos')
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <a href="{{ route('courses.form') }}" wire:navigate
@@ -106,10 +106,10 @@
                         <!-- Footer con botones -->
                         <div class="card-footer bg-dark border-0 py-2 px-2">
                             <div class="d-flex gap-2 justify-content-end">
-                                @can('courses.delete')
+                                @can('Eliminar cursos')
                                     <x-btn-delete id="{{ $course->id }}" class="btn btn-sm btn-outline-danger" />
                                 @endcan
-                                @can('courses.edit')
+                                @can('Editar cursos')
                                     <a href="{{ route('courses.form', $course->id) }}" wire:target="changeStatus, delete"
                                         wire:loading.class="disabled pointer-events-none opacity-50"
                                         class="btn btn-sm btn-outline-primary btn-uc-circle d-flex align-items-center justify-content-center"

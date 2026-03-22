@@ -12,8 +12,6 @@
     @if ($showList && !empty($filteredAffiliates))
         <ul class="list-group mt-1 position-absolute w-100 p-0 overflow-scroll"
             style="max-height: 225px;  z-index: 1050;">
-
-            <!-- 🔁 Resultados -->
             @foreach ($filteredAffiliates as $affiliate)
                 <li class="list-group-item list-group-item-action" style="cursor: pointer"
                     wire:click="selectUniversity({{ $affiliate->id }})">

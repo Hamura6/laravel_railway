@@ -5,7 +5,7 @@
             <div class="col-sm-12 col-md-6 order-2 order-md-1">
                 <x-search />
             </div>
-            @can('articles.create')
+            @can('Crear artículos')
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <a href="{{ route('article.form') }}" wire:navigate
@@ -44,10 +44,10 @@
                             {{ $article->description }}
                         </td>
                         <td class="text-center" align="center">
-                            @can('articles.delete')
+                            @can('Eliminar artículos')
                                 <x-btn-delete id="{{ $article->id }}" />
                             @endcan
-                            @can('articles.edit')
+                            @can('Editar artículos')
                                 <a wire:target="delete" wire:loading.class="disabled pointer-events-none opacity-50"
                                     href="{{ route('article.form', $article->id) }}" type="button" class="btn-uc-circle"
                                     data-bs-toggle="tooltip" data-bs-title="Editar">

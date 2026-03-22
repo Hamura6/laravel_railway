@@ -1,9 +1,9 @@
-<x-modal title="Tarifa">
+<x-modal title="Tramite">
     <div class="col-md-12">
-        <x-input-label name='form.name' title="Nombre de Pago" />
+        <x-input-label name='form.name' title="Nombre de Tramite" />
     </div>
     <div class="col-md-6">
-        <x-input-label name='form.amount' title="Costo de Pago" />
+        <x-input-label name='form.amount' title="Costo de Tramite" />
     </div>
     <div class="col-md-6">
         <x-select name='form.type' title="Tipo de pago">

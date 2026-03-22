@@ -14,7 +14,7 @@ class DeceasedComponent extends Component
     use WithPagination;
     public $id, $affiliate_id, $date, $description, $mausoleum = 'Elegir',$search='';
     public function mount(){
-        $this->authorize('deceaseds.view');
+        $this->authorize('Ver fallecidos');
     }
     public function rules()
     {
@@ -37,9 +37,7 @@ class DeceasedComponent extends Component
                     $q->where('id', 'like', "%{$search}%")
                         ->orWhereHas('user', function ($u) use ($search) {
                             $u->where(DB::raw("CONCAT(name, ' ', last_name)"), 'like', "%{$search}%")
-                                ->orWhere('ci', 'like', "%{$search}%")
-                                ->orWhere('name', 'like', "%{$search}%")
-                                ->orWhere('last_name', 'like', "%{$search}%");
+                                ->orWhere('ci', 'like', "%{$search}%");
                         });
                 });
             })
@@ -48,7 +46,7 @@ class DeceasedComponent extends Component
     }
     public function store()
     {
-        $this->authorize('deceaseds.create');
+        $this->authorize('Crear fallecidos');
         $this->validate();
         Deceased::create([
             'affiliate_id' => $this->affiliate_id,
@@ -66,7 +64,7 @@ class DeceasedComponent extends Component
     #[On('delete')]
     public function delete($id)
     {
-        $this->authorize('deceaseds.delete');
+        $this->authorize('Eliminar fallecidos');
         $deceased = Deceased::with(['affiliate','affiliate.payments'])->find($id);
         if($deceased->affiliate->license){
             $deceased->affiliate()->update(['status' => 'Licencia']);

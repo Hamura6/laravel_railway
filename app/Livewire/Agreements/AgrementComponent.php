@@ -10,7 +10,7 @@ class AgrementComponent extends Component
 {
     public $search;
     public function mount(){
-        $this->authorize('agreements.view');
+        $this->authorize('Ver convenios');
     }
     public function render()
     {
@@ -21,7 +21,7 @@ class AgrementComponent extends Component
     #[On('delete')]
     public function delete($id)
     {
-        $this->authorize('agreements.view');
+        $this->authorize('Eliminar convenios');
         $agreement = Agreement::find($id);
         if ($agreement->images) {
             if (file_exists(public_path('storage/agreements/' . $agreement->images))) {

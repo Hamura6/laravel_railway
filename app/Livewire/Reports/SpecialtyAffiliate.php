@@ -16,6 +16,7 @@ class SpecialtyAffiliate extends Component
     public $showList = false;
     public function mount()
     {
+        $this->authorize('Ver reportes');
         $this->specialities = Specialty::orderBy('id', 'asc')->limit(3)->pluck('name')->toArray();
     }
 
@@ -31,7 +32,7 @@ class SpecialtyAffiliate extends Component
                 'demands:id,affiliate_id',
                 'professions',
             ])
-            ->select('id', 'status', 'user_id')
+            ->select('id', 'status', 'user_id','address_office','address_number','zone')
             ->paginate(20);
         return view('livewire.reports.specialty-affiliate', compact('affiliates'));
     }

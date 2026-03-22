@@ -17,15 +17,14 @@
     <style>
         :root {
             --bg: #f8fafc;
-            --text: #1e293b;
-            --primary: #4f46e5;
-            --primary-dark: #4338ca;
+            --primary: #001c40 ;
+            --primary-dark: #0a2b57;
             --gray: #64748b;
         }
 
         @media (prefers-color-scheme: dark) {
             :root {
-                --bg: #0f172a;
+                --bg: #d5dce4;
                 --text: #e2e8f0;
                 --gray: #94a3b8;
             }
@@ -36,7 +35,7 @@
             padding: 0;
             font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
             background: var(--bg);
-            color: var(--text);
+            color: var(--primary);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -66,7 +65,7 @@
         .error-code {
             font-size: 9rem;
             font-weight: 800;
-            background: linear-gradient(135deg, var(--primary), #8b5cf6);
+            background: var(--primary);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -79,12 +78,12 @@
             font-size: 2.5rem;
             font-weight: 700;
             margin: 1rem 0;
-            color: var(--text);
+            color: var(--primary);
         }
 
         .message {
             font-size: 1.25rem;
-            color: var(--gray);
+            color: var(--primary);
             margin-bottom: 2rem;
             max-width: 90%;
             margin-left: auto;
@@ -119,23 +118,24 @@
         .btn-primary:hover {
             background: var(--primary-dark);
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+            box-shadow: 0 10px 25px rgba(8, 29, 83, 0.3);
         }
 
         .btn-secondary {
             background: transparent;
-            color: var(--text);
-            border: 2px solid var(--gray);
+            color: var(--primary);
+            border: 2px solid var(--primary);
         }
 
         .btn-secondary:hover {
             background: rgba(100, 116, 139, 0.1);
-            border-color: var(--text);
+            color:white;
+            background:var(--primary)
         }
 
         .icon {
             font-size: 4rem;
-            color: #e11d48;
+            color: #860823;
             margin-bottom: 1rem;
             animation: pulse 2s infinite;
         }

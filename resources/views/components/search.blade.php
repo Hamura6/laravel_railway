@@ -2,5 +2,5 @@
      <span class="input-group-text text-body">
         <i class="fas fa-search"></i>
      </span>
-     <input type="text" wire:model.live.debounce.1000ms="search" class="form-control form-control-sm" placeholder="Buscar">
+     <input type="text" wire:model.live.debounce.1000ms="search" id="search" class="form-control form-control-sm" placeholder="Buscar">
  </div>

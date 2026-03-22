@@ -116,7 +116,7 @@
 
                     <td class="text-center">
                         <div class="d-flex flex-row justify-content-center align-items-center gap-1">
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('payments.pay')): ?>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Realizar pago')): ?>
                                 <button class="btn-uc-circle" wire:loading.attr="disabled" data-bs-toggle="tooltip"
                                     data-bs-title="Pagar Aporte"
                                     wire:click="edit(<?php echo e($affiliate->id); ?>,<?php echo e($affiliate->aportes_cant ? $affiliate->aportes_cant : 0); ?>,<?php echo e($affiliate->aportes ? $affiliate->aportes : 0); ?>)">
@@ -124,12 +124,14 @@
 
                                 </button>
                             <?php endif; ?>
-                            <a href="<?php echo e(route('finances.details', $affiliate->id)); ?>" class="btn-purple-circle"
-                                data-bs-toggle="tooltip" data-bs-title="Detalle">
-                                <i class="fs-6 fas fa-eye"></i>
-                            </a>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Ver pagos realizados')): ?>
+                                <a href="<?php echo e(route('finances.details', $affiliate->id)); ?>" class="btn-purple-circle"
+                                    data-bs-toggle="tooltip" data-bs-title="Detalle">
+                                    <i class="fs-6 fas fa-eye"></i>
+                                </a>
+                            <?php endif; ?>
                             <!--[if BLOCK]><![endif]--><?php if($affiliate->prest - $affiliate->planes > 0): ?>
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('payments.pays')): ?>
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Realizar pago')): ?>
                                     <button wire:target="check, delete, edit" wire:loading.attr="disabled"
                                         class="btn-cc-circle outlined"
                                         onclick="Question(<?php echo e($affiliate->id); ?>,'Desea realizar el pagos de todas las deudas?','toPay')"

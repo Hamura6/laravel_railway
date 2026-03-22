@@ -13,7 +13,7 @@ class RolesComponent extends Component
     public $name = '', $search = '', $id;
     public function  mount()
     {
-        $this->authorize('roles.view');
+        $this->authorize('Ver roles');
         $this->id = 0;
         $this->name = '';
     }
@@ -32,7 +32,7 @@ class RolesComponent extends Component
     }
     public function store()
     {
-        $this->authorize('roles.create');
+        $this->authorize('Crear roles');
         $this->validate();
         Role::Create(
             $this->only(['name'])
@@ -48,7 +48,7 @@ class RolesComponent extends Component
     }
     public function update()
     {
-        $this->authorize('roles.edit');
+        $this->authorize('Editar roles');
         $this->validate();
         Role::where('id', $this->id)->Update(
             [
@@ -68,7 +68,7 @@ class RolesComponent extends Component
     #[On('delete')]
     public function delete($id)
     {
-        $this->authorize('roles.delete');
+        $this->authorize('Eliminar roles');
         $rol=Role::find($id);
         if($rol->users->count())     
             $this->dispatch('notify', title: 'Rol Asociado', icon: 'error', text: 'El rol se encuentra asociado con 1 o mas usuarios');

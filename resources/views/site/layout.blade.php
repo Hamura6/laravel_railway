@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="icon" type="image/png" href="{{ $institution->image }} ">
+
     <title>{{ $institution->initials ?? 'ICAP' }} </title>
     @vite(['resources/sass/landing-pages.scss', 'resources/js/app.js'])
 </head>
@@ -30,7 +32,7 @@
 
                 @auth
                     <div class="header-login">
-                        <a class="login-button" href="{{ route('settings.profile') }}">
+                        <a class="login-button" href="{{ route('home.index') }}">
                             <i class="fas fa-user"></i> Acceder
                         </a>
                     </div>
@@ -76,11 +78,11 @@
                         </li>
                         <li>
                             <a class="my-nav-dropdown-menu-item" href="{{ route('site.facebook') }}">
-                            <i class="fab fa-facebook-square"></i> Facebook</a>
+                                <i class="fab fa-facebook-square"></i> Facebook</a>
                         </li>
                         <li>
                             <a class="my-nav-dropdown-menu-item" href="{{ route('site.agreements') }}">
-                            <i class="fas fa-handshake"></i> Convenios</a>
+                                <i class="fas fa-handshake"></i> Convenios</a>
                         </li>
                     </ul>
                 </div>
@@ -177,7 +179,9 @@
 
                     <div class="footer-socials">
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/p/Ilustre-Colegio-de-Abogados-de-Potos%C3%AD-100075585267932/"><i class="fab fa-facebook-f"></i></a>
+                        <a
+                            href="https://www.facebook.com/p/Ilustre-Colegio-de-Abogados-de-Potos%C3%AD-100075585267932/"><i
+                                class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>

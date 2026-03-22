@@ -13,7 +13,7 @@ class FormArticle extends Component
     public $id, $title, $description, $image, $photo, $file, $filePreview;
     public function mount($id = 0)
     {   
-        if (! (Auth::user()->can('notice.create') || Auth::user()->can('notice.edit')) ) {
+        if (! (Auth::user()->can('Crear artículos') || Auth::user()->can('Editar artículos')) ) {
             abort(403, 'No tienes permiso');
             }
         $this->id = $id;
@@ -46,7 +46,7 @@ class FormArticle extends Component
     }
     public function store()
     {
-        $this->authorize('articles.create');
+        $this->authorize('Crear artículos');
         $this->validate();
         if ($this->photo) {
             $this->image = uniqid() . '.' . $this->photo->extension();
@@ -66,7 +66,7 @@ class FormArticle extends Component
     }
     public function update()
     {
-        $this->authorize('articles.create');
+        $this->authorize('Crear artículos');
         $this->validate();
         $article = Article::find($this->id);
         if ($this->photo) {

@@ -18,9 +18,9 @@ $message = $__bag->first($__errorArgs[0]); ?>
             is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" wire:model="name"
-                id="floatingInput" placeholder="name" >
-            <label for="floatingInput">Nombre de Cargo</label>
+unset($__errorArgs, $__bag); ?>" wire:model="name" name="name" autocomplete="name"
+                id="name" placeholder="name" >
+            <label for="name">Nombre de Cargo</label>
         </div>
         <!--[if BLOCK]><![endif]--><?php $__errorArgs = ['name'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -42,13 +42,13 @@ if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?> " wire:model="is_directory" id="floatingSelect"
+unset($__errorArgs, $__bag); ?> " wire:model="is_directory" id="is_directory"
                 aria-label="Floating label select">
                 <option value="Elegir" disabled>Seleccione el tipo</option>
                 <option value='1'>Directorio</option>
                 <option value='0'>Tribunal de Honor</option>
             </select>
-            <label for="floatingSelect">Seleccione una opcion</label>
+            <label for="is_directory">Seleccione una opcion</label>
         </div>
         <!--[if BLOCK]><![endif]--><?php $__errorArgs = ['is_directory'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -75,8 +75,8 @@ $message = $__bag->first($__errorArgs[0]); ?>
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" wire:model="level"
-                id="floatingInput" placeholder="level" >
-            <label for="floatingInput">Nivel del Cargo</label>
+                id="level" placeholder="level" >
+            <label for="level">Nivel del Cargo</label>
         </div>
         <!--[if BLOCK]><![endif]--><?php $__errorArgs = ['level'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');

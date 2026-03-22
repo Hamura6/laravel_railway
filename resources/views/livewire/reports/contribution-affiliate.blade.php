@@ -17,8 +17,8 @@
         <div class="mx-2">
             <x-table-report class="table-report table-striped">
                 <tr>
-                    <td colspan="2"><strong>INSTITUCION: </strong>{{ $institution->name }} </td>
-                    <td><strong>GESTION: <span id="year"></span></strong></td>
+                    <td colspan="2"><strong>INSTITUCIÓN: </strong>{{ $institution->name }} </td>
+                    <td><strong>GESTIÓN: <span id="year"></span></strong></td>
                 </tr>
                 <tr>
                     <td colspan="2"><strong>Nombre: </strong>{{ $this->affiliate->user->full_name }} </td>
@@ -57,7 +57,7 @@
                             </td>
                             <td>
 
-                                {{ $pago->type }}
+                                {{ __($pago->type) }}
                             </td>
                             <td class="text-center">
 

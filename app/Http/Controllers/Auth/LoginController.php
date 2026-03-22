@@ -16,22 +16,18 @@ class LoginController extends Controller
 {
     public function showLoginForm()
     {
-        return view('auth.login'); // tu vista de login
+        return view('auth.login');
     }
 
     public function login(Request $request)
     {
-        // 1. Validación
         $credentials = $request->validate([
-            'email' => ['required', 'email'],
+            'email' => ['required'],
             'password' => ['required', 'string'],
         ]);
-
-        // 2. Verificar rate limiting
         $this->ensureIsNotRateLimited($request);
 
-        // 3. Intentar login
-        if (! Auth::attempt(
+        /*         if (! Auth::attempt(
             ['email' => $credentials['email'], 'password' => $credentials['password']],
             $request->boolean('remember')
         )) {
@@ -40,13 +36,28 @@ class LoginController extends Controller
             throw ValidationException::withMessages([
                 'email' => __('auth.failed'),
             ]);
-        }
+        } */
+        $login = $credentials['email'];
+        $field = filter_var($login, FILTER_VALIDATE_EMAIL)
+            ? 'email'
+            : 'ci';
 
-        // 4. Login exitoso
+        if (! Auth::attempt(
+            [
+                $field => $login,
+                'password' => $credentials['password'],
+            ],
+            $request->boolean('remember')
+        )) {
+            RateLimiter::hit($this->throttleKey($request));
+
+            throw ValidationException::withMessages([
+                'email' => __('auth.failed'),
+            ]);
+        }
         RateLimiter::clear($this->throttleKey($request));
         $request->session()->regenerate();
-
-        return redirect()->intended('/settings/profile'); // ruta destino
+        return redirect()->route('home.index') /* ->intended('/settings/profile') */; 
     }
 
     protected function ensureIsNotRateLimited(Request $request)
@@ -80,15 +91,16 @@ class LoginController extends Controller
 
         return redirect('/login');
     }
-    public function forgotPassword(){
+    public function forgotPassword()
+    {
         return view('auth.forgotPassword');
     }
     public function resetPassword(Request $request)
     {
         $credentials = $request->validate([
-            'email' => ['required', 'email','string'],
+            'email' => ['required', 'email', 'string'],
         ]);
-         Password::sendResetLink($request->only('email'));
+        Password::sendResetLink($request->only('email'));
 
         session()->flash('status', __('A reset link will be sent if the account exists.'));
         return redirect()->route('forgot.password');

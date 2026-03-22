@@ -12,7 +12,7 @@ class SpecialtyComponent extends Component
     use WithPagination;
     public $id='',$search,$name='';
     public function mount(){
-        $this->authorize('specialties.view');
+        $this->authorize('Ver especialidades');
     }
     public function rules(){
         return [
@@ -31,7 +31,7 @@ class SpecialtyComponent extends Component
         return view('livewire.specialties.specialty-component',compact('specialties'));
     }
     public function store(){
-        $this->authorize('specialties.create');
+        $this->authorize('Crear especialidades');
         $this->validate();
         Specialty::create([
             'name'=>$this->name
@@ -46,7 +46,7 @@ class SpecialtyComponent extends Component
         $this->dispatch('show-modal');
     }
     public function update(){
-        $this->authorize('specialties.edit');
+        $this->authorize('Editar especialidades');
         $this->validate();
         $specialty=Specialty::find($this->id);
         $specialty->name=$this->name;
@@ -61,7 +61,7 @@ class SpecialtyComponent extends Component
     }
     #[On('delete')]
     public function delete($id){
-        $this->authorize('specialties.delete');
+        $this->authorize('Eliminar especialidades');
         $specialty=Specialty::find($id);
         if($specialty->professions->count()){
             $this->dispatch('notify', title: 'Especialidad asociada', icon: 'error', text: 'La especialidad se encuentra asociada a 1 o mas affiliados');

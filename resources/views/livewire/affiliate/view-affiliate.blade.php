@@ -5,7 +5,7 @@
             <div class="col-sm-12 col-md-6 order-2 order-md-1">
                 <x-search />
             </div>
-            @can('affiliates.create')
+            @can('Crear Afiliados')
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <a href="{{ route('register.affiliate') }}" wire:navigate class="btn btn-sm  btn-success">
@@ -84,23 +84,23 @@
                         </td>
                         <td>
                             <div class="d-flex flex-row justify-content-center align-items-center gap-1">
-                                @can('affiliates.reset.password')
+                                @can('Restablecer afiliados.password')
                                     <button type="button" wire:target="changeStatus, delete, edit,resetPassword"
-                                        onclick="Question({{ $affiliate->user->id }},'Desea bloquear al afiliado del sistema?','resetPassword')"
+                                        onclick="Question({{ $affiliate->user->id }},'Desea restablecer la contraseña?','resetPassword')"
                                         wire:loading.attr="disabled" {{-- wire:click="resetPassword({{ $user->id }})" --}} class="btn btn-warning-circle"
                                         data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         data-bs-title="Restablecer contrasena">
                                         <i class="fas fa-key fs-6"></i>
                                     </button>
                                 @endcan
-                                @can('affiliates.edit')
+                                @can('Editar afiliados')
                                     <a href="{{ route('register.affiliate', $affiliate->id) }}" wire:navigate
                                         type="button" class="btn btn-uc-circle" data-bs-toggle="tooltip"
                                         data-bs-placement="bottom" data-bs-title="Editar afiliado">
                                         <i class="fas fa-edit fs-6"></i>
                                     </a>
                                 @endcan
-                                @can('affiliates.delete')
+                                @can('Eliminar afiliados')
                                     <x-btn-delete id="{{ $affiliate->user->id }}" />
                                 @endcan
                                 <a type="button" href="{{ route('form.affiliate', $affiliate->id) }}"

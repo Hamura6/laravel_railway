@@ -13,6 +13,7 @@ class AgeAffiliate extends Component
     use WithPagination;
     public  $minor, $max,$status;
     public function mount(){
+        $this->authorize('Ver reportes');
         $this->minor=18;
         $this->max=40;
         $this->status='';

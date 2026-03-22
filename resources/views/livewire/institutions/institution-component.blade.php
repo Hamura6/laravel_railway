@@ -3,9 +3,9 @@
     <div class="card border m-0  border-dark h-100">
         <div class="card-header p-2 border-bottom">
             <div class="row g-1 ustify-content-between">
-                <h4>Configuracion</h4>
+                <h4>Configuración</h4>
                 <div class="d-flex justify-content-start">
-                    <a href="{{ route('institution.requirement') }}" class="btn btn-sm btn-success"> <i class="fas fa-clipboard-list"></i> Requisitos</a>
+                    <a href="{{ route('institution.requirement') }}" class="btn btn-sm btn-success"> <i class="fas fa-clipboard-list"></i> Requisitos de inscripción</a>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
                                     wire:target="photo">
                             @else
                                 <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                    src="{{ $this->image ? $this->image : 'https://i.pinimg.com/originals/bd/2e/0d/bd2e0d56cc9b061d694979158bda4d0b.jpg' }}"
+                                    src="{{ $this->image ? $this->image :asset('image/user.png') }}"
                                     alt="Image placeholder" wire:loading.remove wire:target="photo">
                             @endif
 
@@ -53,7 +53,7 @@
                             <input type="text"
                                 class="form-control @error('institution.initials') is-invalid @enderror"
                                 wire:model="institution.initials" id="floatingInput" placeholder="Fecha">
-                            <label for="floatingInput">Nombre abreviado de la institucion </label>
+                            <label for="floatingInput">Nombre abreviado de la institución </label>
                             @error('institution.initials')
                                 <span class="text-danger"> {{ $message }}</span>
                             @enderror
@@ -72,8 +72,8 @@
                     <div class="col-md-6">
                         <div class="form-floating">
                             <textarea style="height: 150px" class="form-control @error('institution.mission') is-invalid @enderror"
-                                wire:model="institution.mission" id="floatingInput" placeholder="Descripcion" cols="30" rows="20"></textarea>
-                            <label for="floatingInput">Mision</label>
+                                wire:model="institution.mission" id="floatingInput" placeholder="Descripción" cols="30" rows="20"></textarea>
+                            <label for="floatingInput">Misión</label>
                             @error('institution.mission')
                                 <span class="text-danger"> {{ $message }}</span>
                             @enderror
@@ -82,8 +82,8 @@
                     <div class="col-md-6">
                         <div class="form-floating">
                             <textarea style="height: 150px" class="form-control @error('institution.vision') is-invalid @enderror"
-                                wire:model="institution.vision" id="floatingInput" placeholder="Descripcion" cols="30" rows="20"></textarea>
-                            <label for="floatingInput">Vision</label>
+                                wire:model="institution.vision" id="floatingInput" placeholder="Descripción" cols="30" rows="20"></textarea>
+                            <label for="floatingInput">Visión</label>
                             @error('institution.vision')
                                 <span class="text-danger"> {{ $message }}</span>
                             @enderror
@@ -114,7 +114,7 @@
                             <input type="text"
                                 class="form-control @error('institution.address') is-invalid @enderror"
                                 wire:model="institution.address" id="floatingInput" placeholder="Fecha">
-                            <label for="floatingInput">Direccion</label>
+                            <label for="floatingInput">Dirección</label>
                             @error('institution.address')
                                 <span class="text-danger"> {{ $message }}</span>
                             @enderror
@@ -125,7 +125,7 @@
                             <select class="form-select @error('institution.city') is-invalid @enderror "
                                 wire:model="institution.city" id="floatingSelect"
                                 aria-label="Floating label select example">
-                                <option value="Elegir" disabled>Seleccion</option>
+                                <option value="Elegir" disabled>Selección</option>
                                 <option value="LP">La Paz</option>
                                 <option value="PT">Potosi</option>
                                 <option value="OR">Oruro</option>
@@ -148,7 +148,7 @@
         <div class="card-footer d-flex justify-content-end">
             <button class="btn btn-sm  btn-info" wire:click="update()"
                 wire:loading.class="disabled pointer-events-none opacity-50"><i class="fas fa-edit"></i> Actualizar
-                Informacion</button>
+                Información</button>
         </div>
     </div>
 </div>

@@ -7,16 +7,18 @@ use App\Models\Fee;
 use App\Models\Payment;
 use Illuminate\Support\Facades\DB;
 use Livewire\Component;
+use Carbon\Carbon;
 
 class DashboardComponent extends Component
 {
     public string $title = '';
-    public $date=2025;
+    public $date;
 
     public function mount()
     {
+        $this->date=now()->format('Y');
         $this->title = 'Dashboard';
-        $this->authorize('manager');
+        $this->authorize('Acceso al panel administrativo');
     }
 
     public function render()

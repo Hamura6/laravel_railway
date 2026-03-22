@@ -79,7 +79,7 @@
                                             name="email" id="email" value="{{ old('email') }}"
                                             required autofocus autocomplete="email">
                                         <label for="email"><i class="fas fa-envelope"></i> Correo
-                                            electronico</label>
+                                            electronico o C.I.</label>
                                         @error('email')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>

@@ -66,23 +66,21 @@ class listAffiliatesExport implements  FromCollection, WithHeadings, WithMapping
 
     public function startCell(): string
     {
-        return 'A4'; // Dejamos espacio para título e info general
+        return 'A4'; 
     }
 
     public function styles(Worksheet $sheet)
     {
-        // Fila 1: título principal
         $sheet->mergeCells('A1:E1');
-        $sheet->setCellValue('A1', 'REPORTE DE ' . strtoupper($this->recognition->type));
+        $sheet->setCellValue('A1', 'REPORTE DE ' .strtoupper( trans($this->recognition->type)));
         $sheet->getStyle('A1')->applyFromArray([
             'font' => ['bold' => true, 'size' => 16, 'color' => ['argb' => 'FFFFFFFF']],
             'fill' => ['fillType' => 'solid', 'startColor' => ['argb' => 'FF2196F3']],
             'alignment' => ['horizontal' => 'center', 'vertical' => 'center'],
         ]);
 
-        // Fila 2: información general
         $sheet->setCellValue('A2', 'Fecha: ' . $this->recognition->date);
-        $sheet->setCellValue('B2', 'Tipo / Deuda: ' . $this->recognition->type);
+        $sheet->setCellValue('B2', 'Tipo: ' .utf8_decode( trans($this->recognition->type)));
         $sheet->setCellValue('C2', 'Nombre: ' . $this->recognition->name);
         $sheet->setCellValue('D2', 'Cantidad de participantes: ' . $this->recognition->affiliates->count());
         $sheet->setCellValue('E2', 'Tiempo restante: ' . $this->recognition->remaining_days);
@@ -92,14 +90,12 @@ class listAffiliatesExport implements  FromCollection, WithHeadings, WithMapping
             'fill' => ['fillType' => 'solid', 'startColor' => ['argb' => 'FFF5F5F5']],
         ]);
 
-        // Cabeceras de la tabla (fila 4)
         $sheet->getStyle('A4:E4')->applyFromArray([
             'font' => ['bold' => true, 'color' => ['argb' => 'FFFFFFFF']],
             'fill' => ['fillType' => 'solid', 'startColor' => ['argb' => 'FF4CAF50']],
             'alignment' => ['horizontal' => 'center'],
         ]);
 
-        // Ajuste de ancho de columnas
         foreach (range('A', 'E') as $col) {
             $sheet->getColumnDimension($col)->setAutoSize(true);
         }

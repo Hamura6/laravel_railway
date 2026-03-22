@@ -277,7 +277,7 @@
     <div class="col-md-12">
       <div class="card border-dark h-100 border">
         <div class="card-body p-2">
-          <h3 class="text-dark" >Aportes por mes del 2025</h3>
+          <h3 class="text-dark" >Aportes por mes del {{$this->date}}</h3>
           <div id="chartFeesLine"></div>
         </div>
       </div>

@@ -9,7 +9,7 @@
     </a>
 
     <nav class="sidebar-menu">
-        @can('manager')
+        @can('Acceso al panel administrativo')
             <a class="menu-item {{ Route::is('dashboard.index') ? '' : '' }}" href="{{ route('dashboard.index') }}">
                 <div class="menu-label">
                     <i class="fa fa-home"></i> Inicio
@@ -26,7 +26,7 @@
         @endrole
 
         <!-- Usuarios + Submenú -->
-        @if (auth()->user()->can('users.view') || auth()->user()->can('roles.view') || auth()->user()->can('permissions.assign'))
+        @if (auth()->user()->can('Ver usuarios') || auth()->user()->can('Ver roles') || auth()->user()->can('Asignación de permisos'))
             <div
                 class="menu-item has-submenu toggle-submenu {{ Route::is(['users', 'roles', 'permissions']) ? 'active' : '' }}">
                 <div class="menu-label">
@@ -37,27 +37,27 @@
         @endif
 
         <div class="sidebar-submenu {{ Route::is(['users', 'roles', 'permissions']) ? 'show' : '' }}">
-            @can('users.view')
+            @can('Ver usuarios')
                 <a class="{{ Route::is('users') ? 'active' : '' }}" href="{{ route('users') }}" wire:navigate>
                     <i class="fa fa-list"></i> Gestión de usuarios
                 </a>
             @endcan
-            @can('roles.view')
+            @can('Ver roles')
                 <a class="{{ Route::is('roles') ? 'active' : '' }}" href="{{ route('roles') }}" wire:navigate>
                     <i class="fa fa-user-plus"></i> Gestión de roles
                 </a>
             @endcan
-            @can('permissions.assign')
+            @can('Asignación de permisos')
                 <a class="{{ Route::is('permissions') ? 'active' : '' }}" href="{{ route('permissions') }}" wire:navigate>
                     <i class="fa fa-user-shield"></i> Gestión de permisos
                 </a>
             @endcan
         </div>
 
-        @if (auth()->user()->can('affiliates.view') ||
-                auth()->user()->can('licenses.view') ||
-                auth()->user()->can('directories.view') ||
-                auth()->user()->can('deceaseds.view'))
+        @if (auth()->user()->can('Ver afiliados') ||
+                auth()->user()->can('Ver licencias') ||
+                auth()->user()->can('Ver directorio') ||
+                auth()->user()->can('Ver fallecidos'))
             <div
                 class="menu-item has-submenu toggle-submenu {{ Route::is(['view.affiliate', 'license.affiliate', 'deceased.affiliate', 'directories.list']) ? 'active' : '' }}">
                 <div class="menu-label">
@@ -68,25 +68,25 @@
         @endif
         <div
             class="sidebar-submenu {{ Route::is(['view.affiliate', 'license.affiliate', 'deceased.affiliate', 'directories.list']) ? 'show' : '' }}">
-            @can('affiliates.view')
+            @can('Ver afiliados')
                 <a class="{{ Route::is('view.affiliate') ? 'active' : '' }}" href="{{ route('view.affiliate') }}"
                     wire:navigate>
                     <i class="fa fa-list"></i> Afiliados
                 </a>
             @endcan
-            @can('licenses.view')
+            @can('Ver licencias')
                 <a class="{{ Route::is('license.affiliate') ? 'active' : '' }}" href="{{ route('license.affiliate') }}"
                     wire:navigate>
                     <i class="fas fa-street-view"></i> Licencias
                 </a>
             @endcan
-            @can('deceaseds.view')
+            @can('Ver fallecidos')
                 <a class="{{ Route::is('deceased.affiliate') ? 'active' : '' }}" href="{{ route('deceased.affiliate') }}"
                     wire:navigate>
                     <i class="fas fa-user-slash"></i> Fallecidos
                 </a>
             @endcan
-            @can('directories.view')
+            @can('Ver directorio')
                 <a class="{{ Route::is('directories.list') ? 'active' : '' }}" href="{{ route('directories.list') }}"
                     wire:navigate>
                     <i class="fas fa-list"></i> Directorio
@@ -95,7 +95,7 @@
         </div>
 
 
-        @if (auth()->user()->can('universities.view') || auth()->user()->can('specialties.view'))
+        @if (auth()->user()->can('Ver universidades') || auth()->user()->can('Ver especialidades'))
             <div
                 class="menu-item has-submenu toggle-submenu {{ Route::is(['universities', 'specialties']) ? 'active' : '' }}">
                 <div class="menu-label">
@@ -105,13 +105,13 @@
             </div>
         @endif
         <div class="sidebar-submenu {{ Route::is(['universities', 'specialties']) ? 'show' : '' }}">
-            @can('universities.view')
+            @can('Ver universidades')
                 <a class=" {{ Route::is('universities') ? 'active' : '' }}" href="{{ route('universities') }}"
                     wire:navigate>
                     <i class="fas fa-university"></i> Universidades
                 </a>
             @endcan
-            @can('specialties.view')
+            @can('Ver especialidades')
                 <a class=" {{ Route::is('specialties') ? 'active' : '' }}" href="{{ route('specialties') }}"
                     wire:navigate>
                     <i class="fas fa-microscope"></i> Especialidades
@@ -120,10 +120,10 @@
         </div>
 
 
-        @if (auth()->user()->can('payments.view') ||
-                auth()->user()->can('procedures.view') ||
-                auth()->user()->can('fees.view') ||
-                auth()->user()->can('discount.view'))
+        @if (auth()->user()->can('Ver pagos') ||
+                auth()->user()->can('Ver procedimientos') ||
+                auth()->user()->can('Ver tarifas') ||
+                auth()->user()->can('Ver descuentos'))
             <div
                 class="menu-item has-submenu toggle-submenu {{ Route::is(['finances.debts', 'procedures', 'fees', 'discounts']) ? 'active' : '' }}">
                 <div class="menu-label">
@@ -134,30 +134,30 @@
         @endif
         <div
             class="sidebar-submenu {{ Route::is(['finances.debts', 'procedures', 'fees', 'discounts']) ? 'show' : '' }}">
-            @can('payments.view')
+            @can('Ver pagos')
                 <a class="{{ Route::is('finances.debts') ? 'active' : '' }}" href="{{ route('finances.debts') }}"
                     wire:navigate>
                     <i class="fas fa-file-invoice-dollar"></i> Gestión de Pagos
                 </a>
             @endcan
-            @can('procedures.view')
+            @can('Ver procedimientos')
                 <a class="{{ Route::is('procedures') ? 'active' : '' }}" href="{{ route('procedures') }}" wire:navigate>
                     <i class="fas fa-calculator"></i> Gestión de Trámites
                 </a>
             @endcan
-            @can('fees.view')
+            @can('Ver tarifas')
                 <a class="{{ Route::is('fees') ? 'active' : '' }}" href="{{ route('fees') }}" wire:navigate>
                     <i class="fas fa-tags"></i> Costos de Trámites
                 </a>
             @endcan
-            @can('discount.view')
+            @can('Ver descuentos')
                 <a class="{{ Route::is('discounts') ? 'active' : '' }}" href="{{ route('discounts') }}" wire:navigate>
                     <i class="fas fa-percent"></i> Descuentos Aplicables
                 </a>
             @endcan
         </div>
 
-        @can('recognitions.view')
+        @can('ver reconocimientos')
             <a class="menu-item {{ Route::is('recognitions') ? 'active' : '' }}" href="{{ route('recognitions') }}"
                 wire:navigate>
                 <div class="menu-label">
@@ -165,7 +165,7 @@
                 </div>
             </a>
         @endcan
-        @can('demands.view')
+        @can('Ver denuncias')
             <a class="menu-item {{ Route::is('demands') ? 'active' : '' }}" href="{{ route('demands') }}" wire:navigate>
                 <div class="menu-label">
                     <i class="fas fa-list-alt"></i> Historial Disciplinario
@@ -174,12 +174,12 @@
         @endcan
 
 
-        @if (auth()->user()->can('notice.view') ||
-                auth()->user()->can('courses.view') ||
-                auth()->user()->can('articles.view') ||
-                auth()->user()->can('directories.view.organization') ||
-                auth()->user()->can('events.view') ||
-                auth()->user()->can('agreements.view'))
+        @if (auth()->user()->can('Ver noticias') ||
+                auth()->user()->can('Ver cursos') ||
+                auth()->user()->can('Ver artículos') ||
+                auth()->user()->can('Ver directorio actual de la organización') ||
+                auth()->user()->can('Ver eventos') ||
+                auth()->user()->can('Ver convenios'))
             <div
                 class="menu-item has-submenu toggle-submenu {{ Route::is(['news', 'courses', 'articles', 'agreements', 'directories', 'events']) ? 'active' : '' }}">
                 <div class="menu-label">
@@ -218,11 +218,11 @@
 
 
 
-        @if (auth()->user()->can('reports'))
+        @if (auth()->user()->can('Ver reportes'))
             <div
                 class="menu-item has-submenu toggle-submenu {{ Route::is(['report.affiliate', 'report.contribution']) ? 'active' : '' }}">
                 <div class="menu-label">
-                    <i class="fas fa-globe"></i> Reportes
+                    <i class="fas fa-chart-line"></i> Reportes
                 </div>
                 <i class="fa fa-chevron-right arrow"></i>
             </div>
@@ -231,11 +231,11 @@
 
             <a class="{{ Route::is('report.affiliate') ? 'active' : '' }}" href="{{ route('report.affiliate') }}"
                 wire:navigate>
-                <i class="fas fa-calendar-alt"></i> Afiliados
+                <i class="fas fa-user-check "></i> Afiliados
             </a>
             <a class="{{ Route::is('report.contribution') ? 'active' : '' }}"
                 href="{{ route('report.contribution') }}" wire:navigate>
-                <i class="fas fa-calendar-alt"></i> Aportes
+                <i class="fas fa-dollar-sign"></i> Aportes
             </a>
         </div>
 
@@ -291,7 +291,7 @@
             <a href="#"><i class="fa fa-dollar-sign"></i> Ingresos</a>
             <a href="#"><i class="fa fa-users-cog"></i> Actividad de Usuarios</a>
         </div> --}}
-        @can('configuration')
+        @can('Configuración de la institución')
             <a class="menu-item {{ Route::is('institution.configuration') ? 'active' : '' }}"
                 href="{{ route('institution.configuration') }}">
                 <div class="menu-label">

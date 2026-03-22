@@ -56,7 +56,7 @@
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <a href="<?php echo e(route('deceased.affiliate-excel')); ?>" class="btn btn-sm btn-outline-success"><i
                         class="far fa-file-excel fs-6"></i> Exporta a Excel </a>
-                        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('deceaseds.create')): ?>
+                        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear fallecidos')): ?>
                         <button type="button" wire:target="search" wire:loading.attr="disabled"
                             class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
                             <i class="far fa-file-alt fs-6"></i> Nuevo
@@ -119,7 +119,7 @@
 
                         </td>
                         <td class="text-center">
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('deceaseds.delete')): ?>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar fallecidos')): ?>
                                 <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($deceased->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>

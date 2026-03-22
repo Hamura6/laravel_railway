@@ -3,12 +3,9 @@
 namespace App\Livewire;
 
 use App\Livewire\Forms\PaymentForm;
-use App\Models\Affiliate;
 use App\Models\Discount;
 use App\Models\Fee;
 use App\Models\Payment;
-use Illuminate\Support\Benchmark;
-use Illuminate\Support\Facades\DB;
 use Livewire\Attributes\On;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -20,7 +17,7 @@ class ProcedureComponent extends Component
     public $discounts, $search = '', $type = 'single_payment', $pay = 0, $selected, $discountAmount=0;
     public function mount()
     {
-        $this->authorize('procedures.view');
+        $this->authorize('Ver procedimientos');
         $this->discounts = Discount::select('id', 'discount_value', 'start_date', 'end_date')
             ->WhereDate('start_date', '<=', now())
             ->whereDate('end_date', '>=', now())
@@ -67,84 +64,12 @@ class ProcedureComponent extends Component
             ->orderByDesc('id')
             ->paginate(9);
             $procedures->getCollection()->transform(function ($payment) { $payment->debt = $payment->status === 'Por pagar' ? ($payment->amount - ($payment->pay ?? 0)) : 0; return $payment; });
-
-        /* Benchmark::dd([
-            'Scenario 1' => function () use ($selected, $search) {
-                $procedures = Payment::query()
-    ->select([
-        'payments.id',
-        'payments.amount',
-        'payments.status',
-        'payments.fee_id',
-        'payments.affiliate_id',
-        'payments.created_at',
-        'payments.updated_at',
-    ])
-    ->leftJoin('plans', 'plans.payment_id', '=', 'payments.id')
-    ->selectRaw('SUM(plans.amount) as pay')
-    ->with([
-        'fee:id,name,type',
-        'affiliate.user:id,name,last_name,ci',
-        'affiliate.user.phones:id,user_id,number'
-    ])
-    ->where('payments.fee_id', '!=', 1)
-    ->when($selected, fn($query) => $query->whereIn('payments.fee_id', (array)$selected))
-    ->when($search, function ($query, $search) {
-        $query->whereHas('affiliate.user', fn($q) =>
-            $q->where('name', 'like', "%{$search}%")
-              ->orWhere('last_name', 'like', "%{$search}%")
-              ->orWhere('ci', 'like', "%{$search}%")
-        )->orWhereHas('affiliate', fn($q) =>
-            $q->where('id', 'like', "%{$search}%")
-        );
-    })
-    ->groupBy('payments.id', 'payments.amount', 'payments.status', 'payments.fee_id', 'payments.affiliate_id', 'payments.created_at', 'payments.updated_at')
-    ->orderByDesc('payments.id')
-    ->paginate(9);
-
-// Calcular deuda en PHP solo si es estrictamente necesario
-$procedures->getCollection()->transform(function ($payment) {
-    $payment->debt = $payment->status === 'Por pagar' 
-        ? ($payment->amount - ($payment->pay ?? 0))
-        : 0;
-    return $payment;
-});
-
-            },
-            'Scenario 2' => function () use ($selected, $search) {
-                $procedures = Payment::with([
-        'fee:id,name,type',
-        'affiliate.user:id,name,last_name,ci',
-        'affiliate.user.phones:id,user_id,number'
-    ])
-    ->withSum('plans as pay', 'amount')
-    ->where('fee_id', '!=', 1)
-    ->when($selected, fn($query) => $query->whereIn('fee_id', (array)$selected))
-    ->when($search, function ($query, $search) {
-        $query->whereHas('affiliate.user', fn($q) =>
-            $q->where('name', 'like', "%{$search}%")
-              ->orWhere('last_name', 'like', "%{$search}%")
-              ->orWhere('ci', 'like', "%{$search}%")
-        )->orWhereHas('affiliate', fn($q) =>
-            $q->where('id', 'like', "%{$search}%")
-        );
-    })
-    ->orderByDesc('id')
-    ->paginate(9);
-    $procedures->getCollection()->transform(function ($payment) {
-    $payment->debt = $payment->status === 'Por pagar' 
-        ? ($payment->amount - ($payment->pay ?? 0))
-        : 0;
-    return $payment;
-});
-            },
-        ], 1); */
         $fees = Fee::select('name', 'id')->whereNotIn('name', ['Aportes'])->get();
         return view('livewire.procedures.procedure-component', compact('procedures', 'fees'));
     }
     public function store()
     {
-        $this->authorize('procedures.create');
+        $this->authorize('Crear procedimientos');
         $this->validate();
         $this->form->storeFees($this->pay, $this->discountAmount);
         $this->clear();
@@ -160,7 +85,7 @@ $procedures->getCollection()->transform(function ($payment) {
     }
     public function update()
     {
-        $this->authorize('procedures.edit');
+        $this->authorize('Editar procedimientos');
         $this->validate();
         $this->form->updateFees($this->pay, $this->discountAmount);
         $this->clear();
@@ -169,7 +94,7 @@ $procedures->getCollection()->transform(function ($payment) {
     #[On('delete')]
     public function delete($id)
     {
-        $this->authorize('procedures.delete');
+        $this->authorize('Eliminar procedimientos');
         Payment::find($id)->delete();
         $this->dispatch('notify', text: 'El registro fue eliminado correctamente', title: 'Tramite eliminado', icon: 'success');
     }
@@ -185,7 +110,7 @@ $procedures->getCollection()->transform(function ($payment) {
     #[On('check')]
     public function check($id)
     {
-        $this->authorize('payments.pay');
+        $this->authorize('Realizar pago');
         $payment = Payment::with(['fee', 'plans'])
             ->withSum('plans', 'amount')
             ->findOrFail($id);

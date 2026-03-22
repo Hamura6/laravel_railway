@@ -14,7 +14,7 @@ class UniversityComponent extends Component
     public UniversityForm $form;
     public $search,$selected='';
     public function  mount(){
-        $this->authorize('universities.view');
+        $this->authorize('Ver universidades');
     }
     public function render()
     {
@@ -29,7 +29,7 @@ class UniversityComponent extends Component
 
     }
     public function store(){
-        $this->authorize('universities.create');
+        $this->authorize('Crear universidades');
         $this->form->store();
         $this->clear();
         $this->dispatch('notify',title:'Universidad registrada',icon:'success',text:'El registro se guardo correctamente');
@@ -37,7 +37,7 @@ class UniversityComponent extends Component
     }
     #[On('delete')]
     public function delete($id){
-        $this->authorize('universities.delete');
+        $this->authorize('Eliminar universidades');
         $university=University::find($id);
         if($university->professions()->count()){
             $this->dispatch('notify',title:'Registro asociado',icon:'error',text:'El registro se encuentra asociado a 1 o mas affiliados');
@@ -49,7 +49,7 @@ class UniversityComponent extends Component
         }
     }
     public function update(){
-        $this->authorize('universities.edit');
+        $this->authorize('Editar universidades');
         $this->form->update();
         $this->clear();
         $this->dispatch('notify',title:'Registro actualizado',icon:'success',text:'El registro se modifico correctamente');

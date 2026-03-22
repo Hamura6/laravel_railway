@@ -13,7 +13,7 @@ class DemandComponent extends Component
     public $search = '';
     public $select = '';
     public function mount(){
-        $this->authorize('demands.view');
+        $this->authorize('Ver denuncias');
     }
     public function render()
     {
@@ -33,6 +33,7 @@ class DemandComponent extends Component
                     });
             })
             ->with('user:name,id,last_name,ci,gender,birthdate', 'user.phones:number,user_id')
+            ->with('demands')
             ->orderBy('id', 'desc')
             ->paginate(10);
 

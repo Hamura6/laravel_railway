@@ -13,14 +13,14 @@ class CourseComponent extends Component
     public $search;
     public function render()
     {
-        $this->authorize('courses.view');
+        $this->authorize('Ver cursos');
         $courses = Course::where('title', 'like', "%$this->search%")->paginate(10);
         return view('livewire.courses.course-component', compact('courses'));
     }
     #[On('delete')]
     public function delete($id)
     {
-        $this->authorize('courses.delete');
+        $this->authorize('Eliminar cursos');
         $new = Course::find($id);
         if ($new->image) {
             if (file_exists(public_path('storage/courses/' . $new->image))) {

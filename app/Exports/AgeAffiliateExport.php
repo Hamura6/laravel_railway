@@ -48,7 +48,6 @@ class AgeAffiliateExport implements FromCollection, WithHeadings, WithTitle, Wit
 
     public function headings(): array
     {
-        // Solo encabezados de tabla, los demás datos los insertaremos con AfterSheet
         return [
             ['#', 'Nombre Completo', 'Edad', 'Correo', 'Género', 'Teléfonos'],
         ];
@@ -65,37 +64,29 @@ class AgeAffiliateExport implements FromCollection, WithHeadings, WithTitle, Wit
             AfterSheet::class => function (AfterSheet $event) {
                 $sheet = $event->sheet->getDelegate();
 
-                // Insertar filas antes de la tabla para la cabecera general
                 $sheet->insertNewRowBefore(1, 6);
 
-                // === Título ===
                 $sheet->mergeCells('A1:F1');
                 $sheet->setCellValue('A1', 'REPORTE DE AFILIADOS POR EDAD');
                 $sheet->getStyle('A1')->getFont()->setBold(true)->setSize(16);
                 $sheet->getStyle('A1')->getAlignment()->setHorizontal(Alignment::HORIZONTAL_CENTER);
 
-                // === Institución y gestión ===
                 $sheet->mergeCells('A2:D2');
                 $sheet->mergeCells('E2:F2');
                 $sheet->setCellValue('A2', 'INSTITUCIÓN: Ilustre Colegio de Abogados');
                 $sheet->setCellValue('E2', 'GESTIÓN: ' . now()->year);
 
-                // === Totales por género ===
                 $sheet->mergeCells('A3:C3');
                 $sheet->setCellValue('A3', 'Masculino: ' . $this->masculino . ' | Femenino: ' . $this->femenino . ' | Total: ' . ($this->masculino + $this->femenino));
 
-                // === Rango de edad ===
                 $sheet->mergeCells('A4:F4');
                 $sheet->setCellValue('A4', 'RANGO DE EDAD: De ' . $this->minor . ' a ' . $this->maximum . ' años');
 
-                // === Estado ===
                 $sheet->mergeCells('A5:F5');
                 $sheet->setCellValue('A5', 'ESTADO: ' . $this->status);
 
-                // === Espacio ===
                 $sheet->setCellValue('A6', ''); // fila vacía
 
-                // === Encabezado de tabla ===
                 $headerRow = 7;
                 $lastRow = $sheet->getHighestRow();
                 $lastColumn = $sheet->getHighestColumn();
@@ -115,7 +106,6 @@ class AgeAffiliateExport implements FromCollection, WithHeadings, WithTitle, Wit
                     ],
                 ]);
 
-                // === Bordes generales ===
                 $sheet->getStyle("A{$headerRow}:{$lastColumn}{$lastRow}")->applyFromArray([
                     'borders' => [
                         'allBorders' => [
@@ -125,7 +115,6 @@ class AgeAffiliateExport implements FromCollection, WithHeadings, WithTitle, Wit
                     ],
                 ]);
 
-                // === Zebra stripes ===
                 for ($i = $headerRow + 1; $i <= $lastRow; $i++) {
                     if ($i % 2 === 0) {
                         $sheet->getStyle("A{$i}:{$lastColumn}{$i}")->applyFromArray([
@@ -137,7 +126,6 @@ class AgeAffiliateExport implements FromCollection, WithHeadings, WithTitle, Wit
                     }
                 }
 
-                // === Ajuste automático de columnas ===
                 foreach (range('A', $lastColumn) as $col) {
                     $sheet->getColumnDimension($col)->setAutoSize(true);
                 }

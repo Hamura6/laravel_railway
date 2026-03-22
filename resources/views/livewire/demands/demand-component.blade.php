@@ -64,13 +64,11 @@
                             @endforeach
                         </td>
                         <td class="text-center">
-                            @can('demands.view')
+                            @can('Ver denuncias')
                                 <a href="{{ route('demands.management', $affiliate->id) }}" wire:navigate type="button"
                                     class="btn-purple-circle">
                                     <i class="fas fa-eye fs-6"></i>
                                 </a>
-                            @endcan
-                            @can('demands.view')
                                 <a href="{{ route('demands.details', $affiliate->id) }}" wire:navigate type="button"
                                     class="btn-uc-circle">
                                     <i class="fas fa-edit fs-6"></i>

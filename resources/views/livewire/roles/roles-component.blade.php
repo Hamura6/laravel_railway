@@ -7,7 +7,7 @@
                 <x-search />
             </div>
             <div class="col-md-6 order-1 order-md-2 col-ms-12">
-                @can('roles.create')
+                @can('Crear roles')
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button type="button" wire:target="search" wire:loading.attr="disabled" class="btn btn-sm btn-success"
                             data-bs-toggle="modal" data-bs-target="#myModal">
@@ -34,10 +34,10 @@
                     </td>
                     <td class="text-center" align="center">
                         @if ($rol->id != 1 && $rol->id != 2)
-                            @can('roles.edit')
+                            @can('Editar roles')
                                 <x-btn-edit id="{{ $rol->id }}" />
                             @endcan
-                            @can('roles.delete')
+                            @can('Eliminar roles')
                                 <x-btn-delete id="{{ $rol->id }}" />
                             @endcan
                         @endif

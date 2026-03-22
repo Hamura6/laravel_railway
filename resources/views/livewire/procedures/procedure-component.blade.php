@@ -15,7 +15,7 @@
 
     <x-card-body>
         <x-slot name="header">
-            @can('procedures.create')
+            @can('Crear procedimientos')
                 <div class="col-12 col-md-6 order-1 order-md-2">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button type="button" class="btn btn-sm  btn-success " data-bs-toggle="modal"
@@ -97,14 +97,14 @@
 
                         </div>
                         <div class="card-footer py-1 d-flex gap-1 justify-content-end">
-                            @can('procedures.delete')
+                            @can('Eliminar procedimientos')
                                 <x-btn-delete id="{{ $procedure->id }}" />
                             @endcan
-                            @can('procedures.edit')
+                            @can('Editar procedimientos')
                                 <x-btn-edit id="{{ $procedure->id }}" />
                             @endcan
                             @if ($procedure->fee->type == 'installments')
-                                @can('procedures.view')
+                                @can('Ver procedimientos')
                                     <a type="button" wire:target="changeStatus, delete"
                                         wire:loading.class="disabled pointer-events-none opacity-50"
                                         href="{{ route('procedures.details', $procedure->id) }}" class="btn-purple-circle"
@@ -114,7 +114,7 @@
                                 @endcan
                             @endif
                             @if ($procedure->debt > 0)
-                                @can('payments.pay')
+                                @can('Realizar pago')
                                     <button wire:target="check, delete, edit" wire:loading.attr="disabled"
                                         class="btn-cc-circle outlined"
                                         onclick="Question({{ $procedure->id }},'Desea realizar el pago completo del tramite?','check')"

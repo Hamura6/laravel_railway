@@ -97,7 +97,7 @@ class PaymentForm extends Form
             ->where('fee_id', 1)
             ->where('status', 'Por pagar')
             ->count();
-        if($total<24){
+        if($total<24 && $affiliate->status!='Fallecido'){
             $affiliate->status='Activo';
             $affiliate->save();
         }

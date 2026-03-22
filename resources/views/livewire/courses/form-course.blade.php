@@ -69,7 +69,7 @@
                                         wire:target="photo">
                                 @else
                                     <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                        src="{{ $this->image ? $this->image : 'https://i.pinimg.com/originals/bd/2e/0d/bd2e0d56cc9b061d694979158bda4d0b.jpg' }}"
+                                        src="{{ $this->image ? $this->image :  asset('image/user.png') }}"
                                         alt="Image placeholder" wire:loading.remove wire:target="photo">
                                 @endif
 
@@ -102,14 +102,14 @@
                         wire:loading.class="disabled pointer-events-none opacity-50" class="btn btn-sm btn-danger m-0">
                         <i class="fas fa-ban fs-6"></i> Cancel</a>
                     @if ($this->id)
-                        @can('courses.edit')
+                        @can('Editar cursos')
                             <button wire:click.prevent="update()" wire:target="add,update,store,photo"
                                 wire:loading.attr="disabled" class="btn btn-sm btn-info m-0"> <i
                                     class="fas fa-paste fs-6"></i>
                                 Actualizar</button>
                         @endcan
                     @else
-                        @can('courses.create')
+                        @can('Crear cursos')
                             <button class="btn btn-sm btn-dark m-0" wire:target="add,update,store,photo"
                                 wire:loading.attr="disabled" wire:click.prevent="store()"> <i class="fas fa-save fs-6"></i>
                                 Guardar</button>

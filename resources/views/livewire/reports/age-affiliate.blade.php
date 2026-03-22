@@ -3,7 +3,7 @@
 
         <div class="col-md-3">
             <a href="#" class="text-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight"> <u> <i class="far fa-question-circle"></i> Filtros de busqueda </u></a>
+                aria-controls="offcanvasRight"> <u> <i class="far fa-question-circle"></i> Filtros de búsqueda </u></a>
         </div>
         <div class="col-md-9">
             <div class="d-grid gap-1  d-md-flex justify-content-md-end">
@@ -18,11 +18,10 @@
         </div>
     </div>
     <hr>
-    <div class="mx-2">
         <x-table-report class="table-report table-striped">
             <tr>
-                <td colspan="2"><strong>INSTITUCION:</strong> {{ $institution->name }} </td>
-                <td><strong>GESTION:
+                <td colspan="2"><strong>INSTITUCIÓN:</strong> {{ $institution->name }} </td>
+                <td><strong>GESTIÓN:
                         {{ now()->year }}
                     </strong></td>
 
@@ -35,7 +34,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2"><strong>Rango de edad:</strong> De {{ $this->minor }} a {{ $this->max }} anos de
+                <td colspan="2"><strong>Rango de edad:</strong> De {{ $this->minor }} a {{ $this->max }} años de
                     edad
                 </td>
             </tr>
@@ -51,9 +50,9 @@
                     <th class="text-center">#</th>
                     <th class="text-center">Nombres Completo</th>
                     <th class="text-center">Edad</th>
-                    <th class="text-center">Correo Electronico</th>
+                    <th class="text-center">Correo Electrónico</th>
                     <th class="text-center">Genero</th>
-                    <th class="text-center">Telefono</th>
+                    <th class="text-center">Teléfono</th>
                 </x-slot>
 
                 @forelse ($affiliates as $affiliate)
@@ -89,7 +88,6 @@
 
             </x-table-report>
         </div>
-    </div>
     {{ $affiliates->links() }}
 
     <x-question-offcanvas>

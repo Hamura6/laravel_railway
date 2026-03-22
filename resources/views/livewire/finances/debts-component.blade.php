@@ -57,7 +57,7 @@
 
                     <td class="text-center">
                         <div class="d-flex flex-row justify-content-center align-items-center gap-1">
-                            @can('payments.pay')
+                            @can('Realizar pago')
                                 <button class="btn-uc-circle" wire:loading.attr="disabled" data-bs-toggle="tooltip"
                                     data-bs-title="Pagar Aporte"
                                     wire:click="edit({{ $affiliate->id }},{{ $affiliate->aportes_cant ? $affiliate->aportes_cant : 0 }},{{ $affiliate->aportes ? $affiliate->aportes : 0 }})">
@@ -65,12 +65,14 @@
 
                                 </button>
                             @endcan
-                            <a href="{{ route('finances.details', $affiliate->id) }}" class="btn-purple-circle"
-                                data-bs-toggle="tooltip" data-bs-title="Detalle">
-                                <i class="fs-6 fas fa-eye"></i>
-                            </a>
+                            @can('Ver pagos realizados')
+                                <a href="{{ route('finances.details', $affiliate->id) }}" class="btn-purple-circle"
+                                    data-bs-toggle="tooltip" data-bs-title="Detalle">
+                                    <i class="fs-6 fas fa-eye"></i>
+                                </a>
+                            @endcan
                             @if ($affiliate->prest - $affiliate->planes > 0)
-                                @can('payments.pays')
+                                @can('Realizar pago')
                                     <button wire:target="check, delete, edit" wire:loading.attr="disabled"
                                         class="btn-cc-circle outlined"
                                         onclick="Question({{ $affiliate->id }},'Desea realizar el pagos de todas las deudas?','toPay')"

@@ -37,7 +37,7 @@ foreach ($attributes->all() as $__key => $__value) {
 unset($__defined_vars, $__key, $__value); ?>
 <label for="<?php echo e($name); ?>"><?php echo e($title); ?></label>
 <div class="input-group ">
-    <input type="<?php echo e($type); ?>" wire:model="<?php echo e($name); ?>" id=<?php echo e($name); ?> class="form-control <?php $__errorArgs = [$name];
+    <input type="<?php echo e($type); ?>" wire:model="<?php echo e($name); ?>" id="<?php echo e($name); ?>" class="form-control <?php $__errorArgs = [$name];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }

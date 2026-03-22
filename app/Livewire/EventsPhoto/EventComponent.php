@@ -14,7 +14,7 @@ class EventComponent extends Component
     use WithFileUploads, WithPagination;
     public $id, $title, $description, $photos = [], $date;
     public function mount(){
-        $this->authorize('events.view');
+        $this->authorize('Ver eventos');
     }
     public function rules()
     {
@@ -34,7 +34,7 @@ class EventComponent extends Component
     }
     public function store()
     {
-        $this->authorize('events.create');
+        $this->authorize('Crear eventos');
         $this->validate();
         $event = Event::create([
             'title' => $this->title,
@@ -54,7 +54,7 @@ class EventComponent extends Component
     #[On('delete')]
     public function delete($id)
     {
-        $this->authorize('events.delete');
+        $this->authorize('Eliminar eventos');
         $event = Event::with(['photos'])->find($id);
         foreach ($event->photos as $photo) {
             if ($photo->name) {

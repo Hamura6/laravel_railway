@@ -41,7 +41,7 @@
 
 
             </div>
-            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('recognitions.create')): ?>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear reconocimientos')): ?>
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button type="button" wire:target="search" wire:loading.attr="disabled"
@@ -86,7 +86,7 @@
                             </ul>
                         </div>
                         <div class="card-footer py-1 d-flex gap-1 justify-content-center">
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('recognitions.edit')): ?>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar reconocimientos')): ?>
     <button type="button" wire:target="changeStatus, delete, edit" wire:loading.attr="disabled"
                                         wire:click="edit(<?php echo e($recognition->id); ?>)"
                                         class="btn-uc-circle" data-bs-toggle="tooltip"
@@ -94,7 +94,7 @@
                                         <i class="fas fa-edit fs-6"></i>
                                     </button>
 <?php endif; ?>
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('recognitions.delete')): ?>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar reconocimientos')): ?>
     <button type="button" wire:target="changeStatus, delete, edit" wire:loading.attr="disabled"
                                     onclick="Confirm(<?php echo e($recognition->id); ?>)"
                                     class="btn-dc-circle outlined " data-bs-toggle="tooltip"
@@ -102,7 +102,7 @@
                                     <i class="fas fa-trash fs-6"></i>
                                     </button>
 <?php endif; ?>
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('recognitions.view')): ?>
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('ver reconocimientos')): ?>
     <a type="button" wire:target="changeStatus, delete, edit" wire:loading.attr="disabled"
                                     href="<?php echo e(route('recognitions.details', $recognition->id)); ?>" wire:navigate
                                     class="btn-purple-circle"
