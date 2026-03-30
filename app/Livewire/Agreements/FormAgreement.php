@@ -6,6 +6,7 @@ use App\Models\Agreement;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Livewire\WithFileUploads;
+use Intervention\Image\Laravel\Facades\Image;
 
 use function Laravel\Prompts\text;
 
@@ -15,9 +16,9 @@ class FormAgreement extends Component
     public $id, $name, $photo, $image, $social = [];
     public function mount($id = 0)
     {
-         if (! (Auth::user()->can('Crear convenios') || Auth::user()->can('Editar convenios')) ) {
+        if (! (Auth::user()->can('Crear convenios') || Auth::user()->can('Editar convenios'))) {
             abort(403, 'No tienes permiso');
-            }
+        }
         $this->id = $id;
 
         if ($id <= 0) {
@@ -40,8 +41,8 @@ class FormAgreement extends Component
     {
         return [
             'name' => 'required|string|max:100',
-            'photo' => $this->id ? 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048'
-                : 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
+            'photo' => $this->id ? 'nullable|image|mimes:jpg,jpeg,png|max:2048'
+                : 'required|image|mimes:jpg,jpeg,png|max:2048',
             'social' => 'array',
             'social.*.type' => 'required|string',
             'social.*.url' => 'required|url',
@@ -52,8 +53,15 @@ class FormAgreement extends Component
         $this->authorize('Crear convenios');
         $this->validate();
         if ($this->photo) {
-            $this->image = uniqid() . '.' . $this->photo->extension();
-            $this->photo->storeAs('agreements', $this->image, 'public');
+            $this->image = uniqid() . '.webp' ;
+            $storagePath  = storage_path('app/public/agreements/' . $this->image);
+            if (!file_exists(dirname($storagePath))) {
+                mkdir(dirname($storagePath), 0755, true);
+            }
+            Image::read($this->photo->getRealPath())
+                ->toWebp(quality: 60)
+                ->save($storagePath);
+            //$this->photo->storeAs('agreements', $this->image, 'public');
         }
         $agreement = Agreement::create([
             'name' => $this->name,
@@ -70,8 +78,12 @@ class FormAgreement extends Component
         $this->validate();
         $agreement = Agreement::find($this->id);
         if ($this->photo) {
-            $custome_name = uniqid() . '.' . $this->photo->extension();
-            $this->photo->storeAs('agreements', $custome_name, 'public');
+            $custome_name = uniqid() . '.webp';
+            $storagePath  = storage_path('app/public/agreements/' . $custome_name);
+            Image::read($this->photo->getRealPath())
+                ->toWebp(quality: 60)
+                ->save($storagePath);
+            //$this->photo->storeAs('agreements', $custome_name, 'public');
             if ($agreement->images) {
                 if (file_exists(public_path('storage/agreements/' . $agreement->images))) {
                     unlink(public_path('storage/agreements/' . $agreement->images));

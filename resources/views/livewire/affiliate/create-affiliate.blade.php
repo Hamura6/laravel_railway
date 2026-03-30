@@ -177,7 +177,6 @@
                 <h4 class="px-2 my-auto py-0">3. Datos Profesionales</h4>
             </x-slot>
 
-            <!-- Universidad -->
             <div class="mb-3" x-data="universityData()">
                 <label for="university" class="form-label">Universidad</label>
                 <input type="text" id="university" class="form-control" x-model="universityText"
@@ -211,7 +210,6 @@
                 universityText: '',
                 universities: @json($universities),
                 init() {
-                    // Si ya hay una universidad seleccionada, establecer el texto
                     const currentUniversityId = @this.get('form.university_id');
                     if (currentUniversityId && currentUniversityId !== 'Elegir') {
                         const university = this.universities.find(u => u.value == currentUniversityId);
@@ -258,7 +256,6 @@
                 <template x-for="(specialty, index) in specialtiesArray" :key="index">
                     <div class="col-md-12">
                         <div class="row">
-                            <!-- Universidad -->
                             <div class="col-md-12 mb-2">
                                 <label class="form-label">Universidad</label>
                                 <input type="text" class="form-control" x-model="specialty.university_text"
@@ -268,37 +265,17 @@
 
                                 <datalist :id="`universities-list-${index}`">
                                     <template x-for="university in universities" :key="university.value">
-                                        <!-- Mostrar el texto pero el value contiene ambos datos -->
                                         <option :value="university.text" :data-id="university.value"></option>
                                     </template>
                                 </datalist>
 
-                                <!-- Campo oculto para el ID real -->
+
                                 <input type="hidden" x-model="specialty.university_id">
 
                                 <span x-show="hasError(`specialtiesArray.${index}.university_id`)" class="text-danger"
                                     x-text="getError(`specialtiesArray.${index}.university_id`)">
                                 </span>
                             </div>
-
-                            {{-- <div class="col-md-6 mb-2">
-                                <label class="form-label">Especialidad</label>
-                                <select class="form-select search-select" x-model="specialty.specialty_id"
-                                    :id="`specialty-${index}`" :data-index="index" data-type="specialty">
-                                    <option value="">Seleccionar especialidad</option>
-                                    <template x-for="speciality in specialties" :key="speciality.value">
-                                        <option :value="speciality.value" x-text="speciality.text"></option>
-                                    </template>
-                                </select>
-                                <div x-show="specialty.custom_specialty && !specialty.specialty_id" class="mt-1">
-                                    <small class="text-muted">Especialidad personalizada:
-                                        <span x-text="specialty.custom_specialty"></span>
-                                    </small>
-                                </div>
-                                <span x-show="hasError(`specialtiesArray.${index}.specialty_id`)" class="text-danger"
-                                    x-text="getError(`specialtiesArray.${index}.specialty_id`)">
-                                </span>
-                            </div> --}}
                             <div class="col-md-6 mb-2">
                                 <label class="form-label">Especialidad</label>
                                 <input type="text" class="form-control" x-model="specialty.specialty_id"
@@ -328,7 +305,6 @@
                                 <input type="date" class="form-control" x-model="specialty.date">
                             </div>
 
-                            <!-- Botón para eliminar esta especialidad específica -->
                             <div class="col-md-12 text-end mb-3">
                                 <button @click="deleteSpecificSpeciality(index)" class="btn btn-outline-danger btn-sm"
                                     type="button" x-show="specialtiesArray.length > 1">
@@ -345,7 +321,6 @@
 
 
 
-    <!-- Incluir Choices.js desde CDN más reciente -->
     <script>
         function specialtiesComponent() {
             return {
@@ -362,8 +337,8 @@
 
                 addSpeciality() {
                     this.specialtiesArray.push({
-                        university_id: '', // Aquí irá el VALUE (ID numérico)
-                        university_text: '', // Aquí irá el TEXT (nombre visible)
+                        university_id: '', 
+                        university_text: '', 
                         specialty_id: '',
                         area: '',
                         date: ''

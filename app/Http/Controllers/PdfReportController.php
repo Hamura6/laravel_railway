@@ -8,14 +8,16 @@ use App\Models\Institution;
 use App\Models\Plan;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Intervention\Image\Laravel\Facades\Image;
 use Illuminate\Support\Facades\DB;
 
 class PdfReportController extends Controller
 {
     public $institution;
-    public function __construct(){
-        $this->institution=Institution::first(); 
-    } 
+    public function __construct()
+    {
+        $this->institution = Institution::first();
+    }
     public function ageAffiliate($minor, $maximun, $status = '')
     {
         $affiliates = DB::table('affiliates')
@@ -60,7 +62,17 @@ class PdfReportController extends Controller
             'status' => $totalWidth,
         ];
 
-        $pdf->Image(public_path('image/logo.png'), 10, 6, 10);
+        $logoPath = public_path('storage/institution/logo.png');
+        if (file_exists($logoPath)) {
+            try {
+                $pdf->Image(public_path('storage/institution/logo.png'), 10, 6, 15, 15);
+            } catch (\Exception $e) {
+                \Log::error('Error procesando el logo: ' . $e->getMessage());
+            }
+        } else {
+            $pdf->Image(public_path('image/logo.png'), 10, 6, 15, 15);
+        }
+
         $pdf->SetFont('Arial', 'B', 16);
         $pdf->SetXY(0, 15);
         $pdf->Cell(0, 10, utf8_decode('REPORTE DE AFILIADOS POR EDAD'), 0, 1, 'C');
@@ -138,29 +150,38 @@ class PdfReportController extends Controller
                 'demands',
                 'professions',
             ])
-            ->select('id', 'status', 'user_id','address_office','address_number','zone')
+            ->select('id', 'status', 'user_id', 'address_office', 'address_number', 'zone')
             ->get();
 
         $total = $affiliates->count();
 
         $pdf = new \FPDF();
         $pdf->AddPage();
-        $pdf->Image(public_path('image/logo.png'), 10, 6, 10);
+        $logoPath = public_path('storage/institution/logo.png');
+        if (file_exists($logoPath)) {
+            try {
+                $pdf->Image(public_path('storage/institution/logo.png'), 10, 6, 15, 15);
+            } catch (\Exception $e) {
+                \Log::error('Error procesando el logo: ' . $e->getMessage());
+            }
+        } else {
+            $pdf->Image(public_path('image/logo.png'), 10, 6, 15, 15);
+        }
         $pdf->SetFont('Arial', 'B', 16);
         $pdf->Cell(190, 10, utf8_decode('REPORTE DE AFILIADOS POR ESPECIALIDAD'), 0, 1, 'C');
 
         $pdf->SetFont('Arial', '', 10);
         $pdf->Ln(5);
 
-       $pdf->Cell(120, 7, utf8_decode('INSTITUCIÓN: Ilustre colegio de abogados'), 1);
+        $pdf->Cell(120, 7, utf8_decode('INSTITUCIÓN: Ilustre colegio de abogados'), 1);
         $pdf->Cell(70, 7, utf8_decode('GESTIÓN: 2025'), 1);
         $pdf->Ln();
 
-        $pdf->SetFont('Arial','',10); // Ajusta la fuente si es necesario
-$pdf->MultiCell(190, 7, utf8_decode('ESPECIALIDADES: ' . implode(', ', $specialities)), 1);
-$pdf->Ln();
+        $pdf->SetFont('Arial', '', 10); // Ajusta la fuente si es necesario
+        $pdf->MultiCell(190, 7, utf8_decode('ESPECIALIDADES: ' . implode(', ', $specialities)), 1);
+        $pdf->Ln();
 
-       $pdf->Cell(190, 7, "TOTAL DE AFILIADOS: $total", 1);
+        $pdf->Cell(190, 7, "TOTAL DE AFILIADOS: $total", 1);
         $pdf->Ln(10);
 
         $pdf->SetFont('Arial', 'B', 8);
@@ -217,7 +238,16 @@ $pdf->Ln();
         $pdf->AddPage();
 
 
-        $pdf->Image(public_path('image/logo.png'), 10, 6, 10);
+        $logoPath = public_path('storage/institution/logo.png');
+        if (file_exists($logoPath)) {
+            try {
+                $pdf->Image(public_path('storage/institution/logo.png'), 10, 6, 15, 15);
+            } catch (\Exception $e) {
+                \Log::error('Error procesando el logo: ' . $e->getMessage());
+            }
+        } else {
+            $pdf->Image(public_path('image/logo.png'), 10, 6, 15, 15);
+        }
 
 
         $pdf->SetFont('Arial', 'B', 16);
@@ -280,173 +310,182 @@ $pdf->Ln();
             ->header('Content-Type', 'application/pdf');
     }
     public function affiliateDebt($affiliateId, $year = null, $type = null, $concept = null)
-{
-    $year ??= date('Y');
+    {
+        $year ??= date('Y');
 
-    $affiliate = Affiliate::select('id', 'user_id')
-        ->withSum(['payments as totalSum' => function ($query) use ($year, $type, $concept) {
-            $query->whereYear('date', '>=', $year)
-                ->when($type, fn($q) => $q->where('status', 'like', "%{$type}%"))
-                ->when($concept, fn($q) => $q->where('fee_id', $concept));
-        }], 'amount')
-        ->withSum(['payments as prest' => function ($query) use ($year, $type, $concept) {
-            $query->where('status', 'Por pagar')->whereYear('date', '>=', $year)
-                ->when($type, fn($q) => $q->where('status', 'like', "%{$type}%"))
-                ->when($concept, fn($q) => $q->where('fee_id', $concept));
-        }], 'amount')
-        ->withSum(['plans as planes' => function ($query) use ($year, $type, $concept) {
-            $query->whereHas('payment', fn($q) => $q->where('status', 'Por pagar'))
-                ->whereYear('date', '>=', $year)
-                ->when($type, fn($q) => $q->where('status', 'like', "%{$type}%"))
-                ->when($concept, fn($q) => $q->where('fee_id', $concept));
-        }], 'amount')
-        ->withSum(['payments as total_pagado' => function ($query) use ($year, $type, $concept) {
-            $query->where('status', 'pagado')->whereYear('date', '>=', $year)
-                ->when($type, fn($q) => $q->where('status', 'like', "%{$type}%"))
-                ->when($concept, fn($q) => $q->where('fee_id', $concept));
-        }], 'amount')
-        ->with([
-            'user:name,last_name,ci,id,email',
-            'user.phones:number,id,user_id'
-        ])
-        ->find($affiliateId);
+        $affiliate = Affiliate::select('id', 'user_id')
+            ->withSum(['payments as totalSum' => function ($query) use ($year, $type, $concept) {
+                $query->whereYear('date', '>=', $year)
+                    ->when($type, fn($q) => $q->where('status', 'like', "%{$type}%"))
+                    ->when($concept, fn($q) => $q->where('fee_id', $concept));
+            }], 'amount')
+            ->withSum(['payments as prest' => function ($query) use ($year, $type, $concept) {
+                $query->where('status', 'Por pagar')->whereYear('date', '>=', $year)
+                    ->when($type, fn($q) => $q->where('status', 'like', "%{$type}%"))
+                    ->when($concept, fn($q) => $q->where('fee_id', $concept));
+            }], 'amount')
+            ->withSum(['plans as planes' => function ($query) use ($year, $type, $concept) {
+                $query->whereHas('payment', fn($q) => $q->where('status', 'Por pagar'))
+                    ->whereYear('date', '>=', $year)
+                    ->when($type, fn($q) => $q->where('status', 'like', "%{$type}%"))
+                    ->when($concept, fn($q) => $q->where('fee_id', $concept));
+            }], 'amount')
+            ->withSum(['payments as total_pagado' => function ($query) use ($year, $type, $concept) {
+                $query->where('status', 'pagado')->whereYear('date', '>=', $year)
+                    ->when($type, fn($q) => $q->where('status', 'like', "%{$type}%"))
+                    ->when($concept, fn($q) => $q->where('fee_id', $concept));
+            }], 'amount')
+            ->with([
+                'user:name,last_name,ci,id,email',
+                'user.phones:number,id,user_id'
+            ])
+            ->find($affiliateId);
 
-    $payments = Payment::select('id', 'affiliate_id', 'date', 'status', 'amount', 'fee_id','updated_at','created_at')
-        ->whereYear('date', '>=', $year)
-        ->where('affiliate_id', $affiliateId)
-        ->when($type, fn($q) => $q->where('status', 'like', "%{$type}%"))
-        ->when($concept, fn($q) => $q->where('fee_id', $concept))
-        ->addSelect([
-            'debt' => Plan::selectRaw("
+        $payments = Payment::select('id', 'affiliate_id', 'date', 'status', 'amount', 'fee_id', 'updated_at', 'created_at')
+            ->whereYear('date', '>=', $year)
+            ->where('affiliate_id', $affiliateId)
+            ->when($type, fn($q) => $q->where('status', 'like', "%{$type}%"))
+            ->when($concept, fn($q) => $q->where('fee_id', $concept))
+            ->addSelect([
+                'debt' => Plan::selectRaw("
             CASE 
                 WHEN payments.status = 'Pagado' THEN 0
                 WHEN COUNT(plans.id) = 0 THEN payments.amount
                 ELSE COALESCE(payments.amount-SUM(plans.amount), 0)
             END
         ")->whereColumn('plans.payment_id', 'payments.id')
-        ])
-        ->with(['fee:id,name'])
-        ->orderBy('date', 'asc')
-        ->get();
+            ])
+            ->with(['fee:id,name'])
+            ->orderBy('date', 'asc')
+            ->get();
 
-    $pdf = new \FPDF('P', 'mm', 'A4');
-       $pdf->AddPage();
-       $pdf->Image(public_path('image/logo.png'), 15, 6, 15);
-      $pdf->SetFont('Arial', 'B', 16);
+        $pdf = new \FPDF('P', 'mm', 'A4');
+        $pdf->AddPage();
+        $logoPath = public_path('storage/institution/logo.png');
+        if (file_exists($logoPath)) {
+            try {
+                $pdf->Image(public_path('storage/institution/logo.png'), 10, 6, 15, 15);
+            } catch (\Exception $e) {
+                \Log::error('Error procesando el logo: ' . $e->getMessage());
+            }
+        } else {
+            $pdf->Image(public_path('image/logo.png'), 10, 6, 15, 15);
+        }
+        $pdf->SetFont('Arial', 'B', 16);
         $pdf->Cell(190, 20, utf8_decode('DETALLE DE SALDO'), 0, 1, 'C');
         $pdf->SetFont('Arial', '', 10);
         $pdf->Ln(5);
-    $pdf->SetFont('Arial', '', 10);
-    
-
-    $pdf->Cell(115, 7, 'Nombre Completo: '.utf8_decode($affiliate->user->name . ' ' . $affiliate->user->last_name), 1, 0, 'L');
-    $pdf->Cell(75, 7, utf8_decode('Matrícula: ').$affiliate->id, 1, 1, 'L');
+        $pdf->SetFont('Arial', '', 10);
 
 
-    $pdf->Cell(115, 7, 'C.I: '.$affiliate->user->ci, 1, 0, 'L');
-    $phones = $affiliate->user->phones->pluck('number')->implode(', ');
-    $pdf->Cell(75, 7, utf8_decode('Teléfonos: ').$phones, 1, 1, 'L');
+        $pdf->Cell(115, 7, 'Nombre Completo: ' . utf8_decode($affiliate->user->name . ' ' . $affiliate->user->last_name), 1, 0, 'L');
+        $pdf->Cell(75, 7, utf8_decode('Matrícula: ') . $affiliate->id, 1, 1, 'L');
 
-    $pdf->Cell(190, 7, 'Correo: '.utf8_decode($affiliate->user->email), 1, 1, 'L');
-    $pdf->Ln(8);
 
-    $pdf->SetFont('Arial', 'B', 12);
-    $pdf->SetFillColor(240, 240, 240);
-    $pdf->Cell(0, 8, utf8_decode('RESUMEN FINANCIERO'), 0, 1, 'C', true);
-    $pdf->Ln(2);
+        $pdf->Cell(115, 7, 'C.I: ' . $affiliate->user->ci, 1, 0, 'L');
+        $phones = $affiliate->user->phones->pluck('number')->implode(', ');
+        $pdf->Cell(75, 7, utf8_decode('Teléfonos: ') . $phones, 1, 1, 'L');
 
-    $pdf->SetFont('Arial', 'B', 10);
-    $pdf->SetFillColor(230, 230, 230);
+        $pdf->Cell(190, 7, 'Correo: ' . utf8_decode($affiliate->user->email), 1, 1, 'L');
+        $pdf->Ln(8);
 
-    $totalWidth = 63.3;
-    
-    $pdf->Cell($totalWidth, 8, 'TOTAL GENERAL', 1, 0, 'C', true);
-    $pdf->SetFont('Arial', 'B', 11);
-    $pdf->Cell($totalWidth, 8, 'TOTAL PAGADO', 1, 0, 'C', true);
-    
-    $pdf->SetFont('Arial', 'B', 10);
-    $pdf->Cell($totalWidth, 8, 'DEUDA ACTUAL', 1, 1, 'C', true);
-    
-    $pdf->SetFont('Arial', 'B', 10);
-    $pdf->Cell($totalWidth, 8, number_format($affiliate->totalSum, 2) . ' Bs.', 1, 0, 'C');
-    $pdf->SetFont('Arial', 'B', 10);
-    $pdf->Cell($totalWidth, 8, number_format($affiliate->total_pagado + $affiliate->planes, 2) . ' Bs.', 1, 0, 'C');
-    $pdf->SetFont('Arial', 'B', 10);
-    
-    $deuda = $affiliate->prest - $affiliate->planes;
-    if ($deuda > 0) {
-        $pdf->SetTextColor(220, 53, 69);
-    } else {
-        $pdf->SetTextColor(40, 167, 69); 
-    }
-    $pdf->Cell($totalWidth, 8, number_format($deuda, 2) . ' Bs.', 1, 1, 'C');
-    $pdf->SetTextColor(0, 0, 0); 
+        $pdf->SetFont('Arial', 'B', 12);
+        $pdf->SetFillColor(240, 240, 240);
+        $pdf->Cell(0, 8, utf8_decode('RESUMEN FINANCIERO'), 0, 1, 'C', true);
+        $pdf->Ln(2);
 
-    $pdf->Ln(10);
+        $pdf->SetFont('Arial', 'B', 10);
+        $pdf->SetFillColor(230, 230, 230);
 
-    $pdf->SetFont('Arial', 'B', 12);
-    $pdf->SetFillColor(240, 240, 240);
-    $pdf->Cell(0, 8, utf8_decode('DETALLE DE PAGOS'), 0, 1, 'C', true);
-    $pdf->Ln(2);
+        $totalWidth = 63.3;
 
-    $pdf->SetFont('Arial', 'B', 9);
-    $pdf->SetFillColor(200, 200, 200);
-    $headers = ['#', 'Tipo', 'Fecha', 'Fecha Registro', 'Monto', 'Deuda', 'Estado'];
-    $widths = [10, 35, 30, 30, 30, 30, 25];
-                
-    foreach ($headers as $i => $header) {
-        $pdf->Cell($widths[$i], 7, utf8_decode($header), 1, 0, 'C', true);
-    }
-    $pdf->Ln();
-    
-    $pdf->SetFont('Arial', '', 9);
-    $fill = false;
-    $totalRegistros = 0;
-    
-    foreach ($payments as $index => $payment) {
-        if ($pdf->GetY() > 250) {
-            $pdf->AddPage();
-        }
-        
-        $pdf->SetFillColor($fill ? 245 : 255, $fill ? 245 : 255, $fill ? 245 : 255);
-        
-        $pdf->Cell($widths[0], 6, $index + 1, 1, 0, 'C', $fill);
-        
-        $pdf->Cell($widths[1], 6, utf8_decode($payment->fee->name), 1, 0, 'L', $fill);
-        
-        $pdf->Cell($widths[2], 6, $payment->fecha_display, 1, 0, 'C', $fill);
-        
-        $fechaRegistro = $payment->updated_at instanceof \Carbon\Carbon 
-            ? $payment->updated_at->format('d/m/Y')
-            : ($payment->updated_at ?? 'N/A');
-        $pdf->Cell($widths[3], 6, $fechaRegistro, 1, 0, 'C', $fill);
-        
-        $pdf->Cell($widths[4], 6, number_format($payment->amount, 2).' Bs.', 1, 0, 'R', $fill);
-        
-        $pdf->Cell($widths[5], 6, number_format($payment->debt, 2) .' Bs.', 1, 0, 'R', $fill);
-        
-        if ($payment->status === 'Pagado') {
-            $pdf->SetTextColor(40, 167, 69); 
+        $pdf->Cell($totalWidth, 8, 'TOTAL GENERAL', 1, 0, 'C', true);
+        $pdf->SetFont('Arial', 'B', 11);
+        $pdf->Cell($totalWidth, 8, 'TOTAL PAGADO', 1, 0, 'C', true);
+
+        $pdf->SetFont('Arial', 'B', 10);
+        $pdf->Cell($totalWidth, 8, 'DEUDA ACTUAL', 1, 1, 'C', true);
+
+        $pdf->SetFont('Arial', 'B', 10);
+        $pdf->Cell($totalWidth, 8, number_format($affiliate->totalSum, 2) . ' Bs.', 1, 0, 'C');
+        $pdf->SetFont('Arial', 'B', 10);
+        $pdf->Cell($totalWidth, 8, number_format($affiliate->total_pagado + $affiliate->planes, 2) . ' Bs.', 1, 0, 'C');
+        $pdf->SetFont('Arial', 'B', 10);
+
+        $deuda = $affiliate->prest - $affiliate->planes;
+        if ($deuda > 0) {
+            $pdf->SetTextColor(220, 53, 69);
         } else {
-            $pdf->SetTextColor(220, 53, 69); 
+            $pdf->SetTextColor(40, 167, 69);
         }
-        $pdf->Cell($widths[6], 6, $payment->status, 1, 0, 'C', $fill);
+        $pdf->Cell($totalWidth, 8, number_format($deuda, 2) . ' Bs.', 1, 1, 'C');
         $pdf->SetTextColor(0, 0, 0);
-        
+
+        $pdf->Ln(10);
+
+        $pdf->SetFont('Arial', 'B', 12);
+        $pdf->SetFillColor(240, 240, 240);
+        $pdf->Cell(0, 8, utf8_decode('DETALLE DE PAGOS'), 0, 1, 'C', true);
+        $pdf->Ln(2);
+
+        $pdf->SetFont('Arial', 'B', 9);
+        $pdf->SetFillColor(200, 200, 200);
+        $headers = ['#', 'Tipo', 'Fecha', 'Fecha Registro', 'Monto', 'Deuda', 'Estado'];
+        $widths = [10, 35, 30, 30, 30, 30, 25];
+
+        foreach ($headers as $i => $header) {
+            $pdf->Cell($widths[$i], 7, utf8_decode($header), 1, 0, 'C', true);
+        }
         $pdf->Ln();
-        $fill = !$fill;
-        $totalRegistros++;
+
+        $pdf->SetFont('Arial', '', 9);
+        $fill = false;
+        $totalRegistros = 0;
+
+        foreach ($payments as $index => $payment) {
+            if ($pdf->GetY() > 250) {
+                $pdf->AddPage();
+            }
+
+            $pdf->SetFillColor($fill ? 245 : 255, $fill ? 245 : 255, $fill ? 245 : 255);
+
+            $pdf->Cell($widths[0], 6, $index + 1, 1, 0, 'C', $fill);
+
+            $pdf->Cell($widths[1], 6, utf8_decode($payment->fee->name), 1, 0, 'L', $fill);
+
+            $pdf->Cell($widths[2], 6, $payment->fecha_display, 1, 0, 'C', $fill);
+
+            $fechaRegistro = $payment->updated_at instanceof \Carbon\Carbon
+                ? $payment->updated_at->format('d/m/Y')
+                : ($payment->updated_at ?? 'N/A');
+            $pdf->Cell($widths[3], 6, $fechaRegistro, 1, 0, 'C', $fill);
+
+            $pdf->Cell($widths[4], 6, number_format($payment->amount, 2) . ' Bs.', 1, 0, 'R', $fill);
+
+            $pdf->Cell($widths[5], 6, number_format($payment->debt, 2) . ' Bs.', 1, 0, 'R', $fill);
+
+            if ($payment->status === 'Pagado') {
+                $pdf->SetTextColor(40, 167, 69);
+            } else {
+                $pdf->SetTextColor(220, 53, 69);
+            }
+            $pdf->Cell($widths[6], 6, $payment->status, 1, 0, 'C', $fill);
+            $pdf->SetTextColor(0, 0, 0);
+
+            $pdf->Ln();
+            $fill = !$fill;
+            $totalRegistros++;
+        }
+
+        $pdf->Ln(5);
+        $pdf->SetFont('Arial', 'I', 9);
+        $pdf->Cell(0, 6, utf8_decode("Total de registros mostrados: {$totalRegistros}"), 0, 1, 'R');
+
+        $pdf->Output('D', 'Historial_Pagos_Afiliado_' . $affiliate->id . '_' . date('Y-m-d') . '.pdf');
     }
-
-    $pdf->Ln(5);
-    $pdf->SetFont('Arial', 'I', 9);
-    $pdf->Cell(0, 6, utf8_decode("Total de registros mostrados: {$totalRegistros}"), 0, 1, 'R');
-
-    $pdf->Output('D', 'Historial_Pagos_Afiliado_' . $affiliate->id . '_' . date('Y-m-d') . '.pdf');
-}
     public function contribution($from, $to)
     {
-        
+
         $from = Carbon::parse($from)->startOfDay();
         $to   = Carbon::parse($to)->endOfDay();
 
@@ -464,7 +503,16 @@ $pdf->Ln();
         $pdf = new \FPDF('P', 'mm', 'A4');
         $pdf->AddPage();
 
-        $pdf->Image(public_path('image/logo.png'), 10, 6, 10);
+        $logoPath = public_path('storage/institution/logo.png');
+        if (file_exists($logoPath)) {
+            try {
+                $pdf->Image(public_path('storage/institution/logo.png'), 10, 6, 15, 15);
+            } catch (\Exception $e) {
+                \Log::error('Error procesando el logo: ' . $e->getMessage());
+            }
+        } else {
+            $pdf->Image(public_path('image/logo.png'), 10, 6, 15, 15);
+        }
 
         $pdf->SetFont('Arial', 'B', 16);
         $pdf->Cell(190, 10, utf8_decode('REPORTE DE PAGOS'), 0, 1, 'C');
@@ -473,7 +521,7 @@ $pdf->Ln();
 
         $pdf->SetFont('Arial', '', 10);
         $pdf->Cell(50, 7, utf8_decode('Institución:'), 1);
-        $pdf->Cell(140, 7, utf8_decode($this->institution->name ), 1);
+        $pdf->Cell(140, 7, utf8_decode($this->institution->name), 1);
         $pdf->Ln();
         $pdf->Cell(30, 7, utf8_decode('Gestión:'), 1);
         $pdf->Cell(20, 7, date('Y'), 1);
@@ -518,7 +566,7 @@ $pdf->Ln();
     }
     public function contributionAffiliate($id, $from, $to)
     {
-        
+
 
         $fromCarbon = Carbon::parse($from)->startOfDay();
         $toCarbon   = Carbon::parse($to)->endOfDay();
@@ -536,15 +584,24 @@ $pdf->Ln();
         $pdf = new \FPDF('P', 'mm', 'A4');
         $pdf->AddPage();
 
-   
-        $pdf->Image(public_path('image/logo.png'), 10, 6, 10);
 
- 
+        $logoPath = public_path('storage/institution/logo.png');
+        if (file_exists($logoPath)) {
+            try {
+                $pdf->Image(public_path('storage/institution/logo.png'), 10, 6, 15, 15);
+            } catch (\Exception $e) {
+                \Log::error('Error procesando el logo: ' . $e->getMessage());
+            }
+        } else {
+            $pdf->Image(public_path('image/logo.png'), 10, 6, 15, 15);
+        }
+
+
         $pdf->SetFont('Arial', 'B', 14);
         $pdf->Cell(190, 10, utf8_decode('REPORTE DE PAGOS POR AFILIADO'), 0, 1, 'C');
         $pdf->Ln(3);
 
-   
+
 
 
         $pdf->SetFont('Arial', '', 10);

@@ -45,6 +45,9 @@ class UserComponent extends Component
     {
         $this->authorize('Bloquear usuarios');
         $user = User::find($id);
+        if ($user->name_role === 'Administrador') {
+            return $this->dispatch('notify', title: 'Error de acceso', icon: 'error', text: 'Acción no autorizada');
+        }
         if ($user->status == 'ENABLED') {
             $user->status = 'DISABLED';
         } else {
@@ -58,7 +61,11 @@ class UserComponent extends Component
     public function delete($id)
     {
         $this->authorize('Eliminar usuarios');
-        User::find($id)->delete();
+        $user=User::find($id);
+         if ($user->name_role === 'Administrador') {
+            return $this->dispatch('notify', title: 'Error de acceso', icon: 'error', text: 'Acción no autorizada');
+        }
+        $user->delete();
         $this->dispatch('notify', title: 'Usuario eliminado', icon: 'success', text: 'registro eliminado Correctamente');
     }
     #[On('resetPassword')]
@@ -66,6 +73,9 @@ class UserComponent extends Component
     {
         $this->authorize('Restablecer usuarios.password');
         $user = User::find($id);
+        if ($user->name_role === 'Administrador') {
+           return $this->dispatch('notify', title: 'Error de acceso', icon: 'error', text: 'Acción no autorizada');
+        }
         $user->password = Hash::make($user->ci);
         $user->save();
         $this->dispatch('notify', title: 'Contrasena restablecida', icon: 'success', text: 'La contrasena se restablecio correctamente');

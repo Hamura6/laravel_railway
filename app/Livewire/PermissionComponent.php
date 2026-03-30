@@ -46,6 +46,9 @@ class PermissionComponent extends Component
     }
     public function syncPermission($stated, $id)
     {
+        if($this->role==2){
+            return  $this->dispatch('notify', title: 'Error de acceso', icon: 'error', text: 'Acción no autorizada');
+        }
         $this->authorize('Asignación de permisos');
         if ($this->role) {
             $roleName = Role::find($this->role);
@@ -62,6 +65,9 @@ class PermissionComponent extends Component
     }
     public function syncAll()
     {
+        if($this->role==2){
+            return  $this->dispatch('notify', title: 'Error de acceso', icon: 'error', text: 'Acción no autorizada');
+        }
         $this->authorize('Asignación de permisos');
         if (!$this->role)
             return  $this->dispatch('notify', title: 'Rol invalido', icon: 'error', text: 'Seleccione un rol valido');
@@ -72,6 +78,9 @@ class PermissionComponent extends Component
     }
     public function revokeAll()
     {
+        if($this->role==2){
+            return  $this->dispatch('notify', title: 'Error de acceso', icon: 'error', text: 'Acción no autorizada');
+        }
         $this->authorize('Asignación de permisos');
         if (!$this->role)
             return  $this->dispatch('notify', title: 'Rol invalido ', icon: 'error', text: 'Seleccione un rol valido');
@@ -79,4 +88,5 @@ class PermissionComponent extends Component
         $roleN->syncPermissions([0]);
         $this->dispatch('notify', title: 'Permisos revocados', icon: 'success', text: 'Los permisos fueron revocados ');
     }
+
 }

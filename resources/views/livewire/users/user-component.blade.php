@@ -17,15 +17,6 @@
                         @endcan
                     </div>
                 </div>
-                {{--                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button onclick="hola()" type="button" class="btn btn-sm  btn-success  mb-0">
-                            <i class="fa-solid fa-circle-plus fs-6"></i> Nueasdfasdvo
-                        </button>
-
-                    </div>
-                </div> --}}
-
             </x-slot>
             <x-table-registers>
                 <x-slot name="header">
@@ -52,14 +43,13 @@
                             </td>
 
                             <td class="text-center d-flex flex-column justify-content-center align-items-center">
-                                <!-- Badge de estado -->
                                 <span
                                     class="badge rounded-pill 
-        {{ $user->status == 'ENABLED' ? 'text-bg-success' : 'text-bg-danger' }}">
+                                        {{ $user->status == 'ENABLED' ? 'text-bg-success' : 'text-bg-danger' }}">
                                     {{ __($user->status) }}
                                 </span>
+                                @if ($user->name_role != 'Administrador')
                                 @can('Bloquear usuarios')
-                                    <!-- Botón centrado debajo del badge -->
                                     <button
                                         class="btn p-0 m-2 border-0 rounded-fill 
                                 d-flex align-items-center justify-content-center
@@ -71,6 +61,7 @@
                                         <i class="fas {{ $user->status == 'ENABLED' ? 'fa-check' : 'fa-circle' }}"></i>
                                     </button>
                                 @endcan
+                                @endif
                             </td>
 
                             <td class="text-center">
@@ -84,26 +75,28 @@
 
                             <td>
                                 <div class="d-flex flex-row justify-content-center align-items-center gap-1">
-                                    @can('Editar usuarios')
-                                        <a class="btn-rc-circle" wire:target="changeStatus, delete"
-                                            wire:loading.class="disabled pointer-events-none opacity-50"
-                                            href="{{ route('user.create', $user->id) }}"><i class="fas fa-edit"
-                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                data-bs-title="Editar"></i></a>
-                                    @endcan
-                                    @can('Eliminar usuarios')
-                                        <x-btn-delete id="{{ $user->id }}" />
-                                    @endcan
+                                    @if ($user->name_role != 'Administrador')
+                                        @can('Editar usuarios')
+                                            <a class="btn-rc-circle" wire:target="changeStatus, delete"
+                                                wire:loading.class="disabled pointer-events-none opacity-50"
+                                                href="{{ route('user.create', $user->id) }}"><i class="fas fa-edit"
+                                                    data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                    data-bs-title="Editar"></i></a>
+                                        @endcan
+                                        @can('Eliminar usuarios')
+                                            <x-btn-delete id="{{ $user->id }}" />
+                                        @endcan
 
-                                    @can('Restablecer usuarios.password')
-                                        <button type="button" wire:target="changeStatus, delete, edit,resetPassword"
-                                            onclick="Question({{ $user->id }},'Desea restablecer la contraseña por defecto?','resetPassword')"
-                                            wire:loading.attr="disabled" {{-- wire:click="resetPassword({{ $user->id }})" --}} class="btn-warning-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            data-bs-title="Restablecer contrasena">
-                                            <i class="fas fa-key "></i>
-                                        </button>
-                                    @endcan
+                                        @can('Restablecer usuarios.password')
+                                            <button type="button" wire:target="changeStatus, delete, edit,resetPassword"
+                                                onclick="Question({{ $user->id }},'Desea restablecer la contraseña por defecto?','resetPassword')"
+                                                wire:loading.attr="disabled" {{-- wire:click="resetPassword({{ $user->id }})" --}}
+                                                class="btn-warning-circle" data-bs-toggle="tooltip"
+                                                data-bs-placement="bottom" data-bs-title="Restablecer contrasena">
+                                                <i class="fas fa-key "></i>
+                                            </button>
+                                        @endcan
+                                    @endif
                                 </div>
 
                             </td>

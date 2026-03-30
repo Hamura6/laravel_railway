@@ -21,6 +21,10 @@ class SitePagesController extends Controller
     {
         return view('site.pages.about');
     }
+    public function privacy()
+    {
+        return view('site.pages.privacy');
+    }
 
     public function courses()
     {

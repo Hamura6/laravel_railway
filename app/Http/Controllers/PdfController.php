@@ -46,7 +46,7 @@ class PdfController extends Controller
         $pdf->AddPage();
 
         $pdf->SetFont('Arial', '', 10);
-        $pdf->Ln(40); 
+        $pdf->Ln(40);
         $widths = [
             'institucion' => 120,
             'gestion' => 70,
@@ -132,7 +132,7 @@ class PdfController extends Controller
         ])->findOrFail($id);
         $disk = User::storageDisk();
         if (!empty($affiliate->user->photo) && $disk->exists($affiliate->user->photo)) {
-            $imagePath = $affiliate->user->image; 
+            $imagePath = $affiliate->user->image;
             $soloRuta = str_replace(url('/') . '/', '', $imagePath);
             $logoPath = public_path($soloRuta);
             $imageUser = Image::read($logoPath)->resize(70, 70)->toJpeg();
@@ -178,8 +178,8 @@ class PdfController extends Controller
     }
     public function demandsDetails($id)
     {
-       
-$logoPath = public_path('storage/institution/logo.png');
+
+        $logoPath = public_path('storage/institution/logo.png');
         if (file_exists($logoPath)) {
             try {
                 /* $manager = new ImageManager(new Driver());
@@ -203,7 +203,7 @@ $logoPath = public_path('storage/institution/logo.png');
             ])
             ->find($id);
 
-        $data = ['affiliate' => $affiliate,'institutionLogo'=>$institutionLogo];
+        $data = ['affiliate' => $affiliate, 'institutionLogo' => $institutionLogo];
 
         $html = view('pdf.demandsDetails', $data)->render();
 
@@ -400,7 +400,7 @@ $logoPath = public_path('storage/institution/logo.png');
             ->orderByDesc('affiliates.id')
             ->take(600)
             ->get();
- 
+
         $masculino = $affiliates->where('gender', 'Masculino')->count();
         $femenino = $affiliates->where('gender', 'Femenino')->count();
         $affiliates = $affiliates->map(fn($item) => (array) $item)->toArray();
@@ -416,7 +416,7 @@ $logoPath = public_path('storage/institution/logo.png');
             'format' => 'A4',
             'default_font_size' => 11,
             'default_font' => 'sans',
-            'use_kwt' => true, 
+            'use_kwt' => true,
         ]);
 
 
@@ -425,7 +425,7 @@ $logoPath = public_path('storage/institution/logo.png');
     }
     public function listAffiliate($id)
     {
-         $logoPath = public_path('storage/institution/logo.png');
+        $logoPath = public_path('storage/institution/logo.png');
         if (file_exists($logoPath)) {
             try {
                 /* $manager = new ImageManager(new Driver());

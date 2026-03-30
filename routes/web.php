@@ -66,6 +66,7 @@ Route::get('eventos/{id}/images', [App\Http\Controllers\SitePagesController::cla
 Route::get('noticias', [App\Http\Controllers\SitePagesController::class, 'news'])->name('site.news');
 Route::get('directorio', [App\Http\Controllers\SitePagesController::class, 'directory'])->name('site.directory');
 Route::get('convenios', [App\Http\Controllers\SitePagesController::class, 'agreements'])->name('site.agreements');
+Route::get('privacidad', [App\Http\Controllers\SitePagesController::class, 'privacy'])->name('site.privacy');
 Route::get('requisitos', [App\Http\Controllers\SitePagesController::class, 'requirement'])->name('site.requirement');
 Route::get('facebook-site', [App\Http\Controllers\SitePagesController::class, 'facebookSite'])->name('site.facebook');
 Route::get('loginICAP', [LoginController::class, 'showLoginForm'])->name('site.login');

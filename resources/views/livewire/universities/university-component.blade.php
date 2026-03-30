@@ -43,7 +43,7 @@
                         <td>
                             {{ $university->entity }}
                         </td>
-                        <td align="center">
+                        <td class="d-flex flex-row justify-content-center align-items-center gap-1">
                             @can('Editar universidades')
                                 <x-btn-edit id="{{ $university->id }}" />
                             @endcan

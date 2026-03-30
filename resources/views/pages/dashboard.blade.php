@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="{{ $institution->image }} ">
 
     <title>{{ $institution->initials ?? config('app.name') }}</title>
-{{--     <link
+    {{--     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700"
         rel="stylesheet" /> --}}
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -29,7 +29,8 @@
                 <div class="footer-content"></div>
                 <div class="footer-bottom">
                     <p>&copy; <span id="year"></span> ICAP Potosi. Todos los derechos reservados.</p>
-                    <p>Diseño y desarrollo web por <a href="" target="_blank">J. Carlos & J. Edwin</a></p>
+                    {{--                     <p>Diseño y desarrollo web por <a href="" target="_blank">J. Carlos & J. Edwin</a></p>
+ --}}
                 </div>
             </footer>
 
@@ -90,7 +91,7 @@
         Livewire.on('show-modal', () => {
             const modalEl = document.getElementById('myModal');
             const modal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
-            modal.show(); 
+            modal.show();
         });
 
 

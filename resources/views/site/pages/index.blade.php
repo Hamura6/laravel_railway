@@ -61,11 +61,11 @@
 
             <!-- SEMINARIOS -->
             <div class="col-12 col-md-6 col-lg-6">
-                <a href="{{ route('site.courses') }}" class="resource-card d-block h-100 text-decoration-none">
+                <a href="{{ route('site.news') }}" class="resource-card d-block h-100 text-decoration-none">
                     <div class="resource-card-img" style="background-image: url({{ asset('image/courses2.jpg') }});"></div>
                     <div class="resource-card-body">
                         <div class="resource-icon mb-3"></div>
-                        <h3 class="resource-title h4 fw-bold">SEMINARIOS</h3>
+                        <h3 class="resource-title h4 fw-bold">NOTICIAS</h3>
                         <span class="resource-link text-warning fw-semibold">
                             Ver más <i class="fas fa-arrow-right ms-2"></i>
                         </span>

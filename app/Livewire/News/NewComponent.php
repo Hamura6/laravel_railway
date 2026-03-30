@@ -22,8 +22,9 @@ class NewComponent extends Component
         $this->authorize('Eliminar noticias');
         $new=Information::find($id);
         if ($new->image) {
-                if (file_exists(public_path('storage/news/' . $new->image))) {
-                    unlink(public_path('storage/news/' . $new->image));
+                if (file_exists(public_path('storage/news/' . $new->image.'.webp'))) {
+                    unlink(public_path('storage/news/' .$new->image.'.webp' ));
+                    unlink(public_path('storage/news/' . $new->image.'.jpg'));
                 }
             }
         $new->delete();

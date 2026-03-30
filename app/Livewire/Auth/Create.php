@@ -41,6 +41,9 @@ class Create extends Component
         $this->image = $user->image;
 
         $this->rol = $user->roles->first()?->name ?? null;
+        if($this->rol==='Administrador'){
+            return redirect()->route('users');
+        }
         $this->phones = $user->phones->pluck('number')->toArray();
     }
     public function render()

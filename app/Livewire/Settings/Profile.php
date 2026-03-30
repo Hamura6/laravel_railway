@@ -50,18 +50,7 @@ class Profile extends Component
     }
     public function saveUser()
     {
-        /*  if ($this->photo) {
-            $custome_name = uniqid() . '.' . $this->photo->extension();
-            $this->photo->storeAs('users', $custome_name, 'public');
-            if (Auth::user()->photo) {
-                if (file_exists(public_path('storage/users/' . Auth::user()->photo))) {
-                    unlink(public_path('storage/users/' . Auth::user()->photo));
-                }
-            }
-            $this->photo = $custome_name;
-        } else {
-            $this->photo = Auth::user()->photo;
-        }  */
+      
         $newPhotoName = '';
         if ($this->photo instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
 
@@ -94,12 +83,12 @@ class Profile extends Component
 
         $this->image = Auth::user()->image;
         $this->photo = '';
-        /*         dd($this->image);
- */
+
         $this->dispatch('notify', text: 'Los datos de usuario fueron actualizados', title: 'Usuario actualizado', icon: 'success');
     }
     public function savePeople()
     {
+
         Auth::user()->update([
             'name' => $this->name,
             'last_name' => $this->last_name,

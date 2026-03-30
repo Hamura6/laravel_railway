@@ -117,13 +117,10 @@
 
                 <div class="row g-1">
                     <div class="col-md-12">
-                        <div class="d-flex justify-content-center mb-4" wire:ignore>
-                            <!-- Imagen que se actualizará -->
+                        <div class="d-flex justify-content-center mb-4">
                             <img id="profileImage" class="border-radius-lg rounded-circle" width="200" height="200"
-                                src="{{ $this->image ? $this->image : 'https://i.pinimg.com/originals/bd/2e/0d/bd2e0d56cc9b061d694979158bda4d0b.jpg' }}"
+                                src="{{ $this->photo ? $this->photo->temporaryUrl():($this->image ? $this->image : 'image/user.png') }}"
                                 alt="Imagen de perfil" wire:loading.remove wire:target="photo">
-
-                            <!-- Spinner de carga -->
                             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" wire:loading
                                 wire:target="photo" role="status">
                                 <span class="visually-hidden">Cargando...</span>
@@ -132,7 +129,7 @@
                         <div class="form-group">
                             <label class="form-control-label" for="basic-url">Elija imagen</label>
                             <div class="input-group">
-                                <input type="file" wire:model="photo" wire:target="photo"
+                                <input type="file" wire:model.lazy="photo" wire:target="photo"
                                     wire:loading.attr="disabled"
                                     class="form-control @error('photo')
                                 is-invalid
@@ -146,34 +143,7 @@
                             </div>
                         </div>
                     </div>
-                    <script>
-                        // Vista previa de imagen antes de subir
-                        document.addEventListener('DOMContentLoaded', function() {
-                            const inputFile = document.querySelector('input[type="file"][wire\\:model="photo"]');
-                            const profileImage = document.getElementById('profileImage');
-
-                            if (inputFile) {
-                                inputFile.addEventListener('change', function(e) {
-                                    if (e.target.files && e.target.files[0]) {
-                                        const reader = new FileReader();
-                                        reader.onload = function(event) {
-                                            // Mostrar la vista previa local
-                                            profileImage.src = event.target.result;
-                                        };
-                                        reader.readAsDataURL(e.target.files[0]);
-                                    }
-                                });
-                            }
-
-                            // Escuchar el evento de Livewire cuando la foto se haya actualizado
-                            window.livewire.on('photoUpdated', () => {
-                                // Aquí podríamos recargar la imagen del servidor, pero Livewire ya actualizará la vista
-                                // Sin embargo, si quieres forzar un refresco de la imagen para evitar caché, podrías hacer:
-                                // profileImage.src = profileImage.src + '?t=' + new Date().getTime();
-                                // Pero Livewire ya actualizará la propiedad $this->image, por lo que la imagen se actualizará automáticamente.
-                            });
-                        });
-                    </script>
+                    
                     <div class="col-md-12">
                         <div class="form-floating">
                             <input type="email" wire:model="email"

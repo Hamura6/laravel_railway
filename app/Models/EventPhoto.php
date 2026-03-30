@@ -18,8 +18,15 @@ class EventPhoto extends Model
     protected function Image(): Attribute
     {
         return Attribute::make(
-            get: fn() =>  Storage::disk('public')->exists('event_photos/' . $this->name)
-                ? Storage::disk('public')->url('event_photos/' . $this->name):Storage::disk('public')->url('event_photos/photo.png')
+            get: fn() =>  Storage::disk('public')->exists('event_photos/' . $this->name.'.webp')
+                ? Storage::disk('public')->url('event_photos/' . $this->name.'.webp'):Storage::disk('public')->url('event_photos/photo.png')
+        );
+    }
+    protected function ImageDownload(): Attribute
+    {
+        return Attribute::make(
+            get: fn() =>  Storage::disk('public')->exists('event_photos/' . $this->name.'.jpg')
+                ? Storage::disk('public')->url('event_photos/' . $this->name.'.jpg'):Storage::disk('public')->url('event_photos/photo.png')
         );
     }
 }

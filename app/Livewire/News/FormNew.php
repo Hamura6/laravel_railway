@@ -6,6 +6,7 @@ use App\Models\Information;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Livewire\WithFileUploads;
+use Intervention\Image\Laravel\Facades\Image;
 
 class FormNew extends Component
 {
@@ -15,8 +16,8 @@ class FormNew extends Component
         return [
             'title'=>'required|string|min:5|max:100',
             'description'=>'required|string|min:10|max:255',
-            'photo'=>$this->id ? 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048'
-                              : 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
+            'photo'=>$this->id ? 'nullable|image|mimes:jpg,jpeg,png|max:2048'
+                              : 'required|image|mimes:jpg,jpeg,png|max:2048',
         ];
     }
     public function mount($id = 0)
@@ -43,12 +44,18 @@ class FormNew extends Component
     public function store()
     {
         $this->authorize('Crear noticias');
-        $this->validate();
+        $this->validate(); 
+       
         if ($this->photo) {
-            $custome_name = uniqid() . '.' . $this->photo->extension();
+            $custome_name = uniqid() . '.jpg' ;
             $this->photo->storeAs('news', $custome_name, 'public');
+            $custome_name_view=explode('.',$custome_name)[0].'.webp';
+            $storagePath  = storage_path('app/public/news/' . $custome_name_view);
+            Image::read($this->photo->getRealPath())
+            ->toWebp(quality:60)
+            ->save($storagePath);
 
-            $this->image = $custome_name;
+            $this->image = explode('.',$custome_name)[0];
         }
         Information::create([
             'title' => $this->title,
@@ -63,14 +70,20 @@ class FormNew extends Component
         $this->validate();
         $new = Information::find($this->id);
         if ($this->photo) {
-            $custome_name = uniqid() . '.' . $this->photo->extension();
+             $custome_name = uniqid() . '.jpg';
             $this->photo->storeAs('news', $custome_name, 'public');
+            $custome_name_view=explode('.',$custome_name)[0].'.webp';
+            $storagePath  = storage_path('app/public/news/' . $custome_name_view);
+            Image::read($this->photo->getRealPath())
+            ->toWebp(quality:60)
+            ->save($storagePath); 
             if ($new->image) {
-                if (file_exists(public_path('storage/news/' . $new->image))) {
-                    unlink(public_path('storage/news/' . $new->image));
+                if (file_exists(public_path('storage/news/' . $new->image.'.webp'))) {
+                    unlink(public_path('storage/news/' . $new->image.'.jpg'));
+                    unlink(public_path('storage/news/' . $new->image.'.webp'));
                 }
             }
-            $this->image = $custome_name;
+             $this->image = explode('.',$custome_name)[0]; 
         }else{
             $this->image=$new->image;
         }

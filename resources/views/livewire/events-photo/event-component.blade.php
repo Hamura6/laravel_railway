@@ -115,7 +115,7 @@
                     <div class="custom-card">
                         <div class="custom-imgbox">
                             <img class="custom-img"
-                                src="{{ asset('storage/event_photos/' . ($event->firstPhoto->name ?? '69194dd33f84e.png')) }}"
+                                src="{{ asset('storage/event_photos/' . ($event->firstPhoto->name.'.webp' ?? '69194dd33f84e.png')) }}"
                                 alt="">
                             <div
                                 class="badge bg-info text-white fw-bold position-absolute top-0 end-0 mt-3 me-3 px-3 py-2 rounded-pill shadow-sm price-badge">

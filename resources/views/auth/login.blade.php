@@ -3,10 +3,32 @@
 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>{{ $institution->initials ?? 'ICAP' }} </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        {{ $institution->initials ? $institution->initials . ' | '.  $institution->name : 'ICAP | Ilustre Colegio de Abogados' }}
+    </title>
+
+    <meta name="description" content=" {{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    <meta property="og:title" content="{{ $institution->initials ?? 'ICAP' }}">
+    <meta property="og:description" content="{{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
+    <meta property="og:image" content="{{ $institution->image }} ">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $institution->initials ?? 'ICAP' }}">
+    <meta name="twitter:description" content="{{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
+    <meta name="twitter:image" content="{{ $institution->image }}">
+
+    <link rel="icon" type="image/png" href="{{ $institution->image }}">
+
     @vite(['resources/sass/landing-pages.scss', 'resources/js/app.js'])
 </head>
+
 
 <body>
 
@@ -187,7 +209,6 @@
 
         <div class="footer-credits">
             <p>&copy; <span id="year"></span> ICAP Potosi. Todos los derechos reservados.</p>
-            <p>Diseño y desarrollo web por <a href="#" target="_blank">Hamura Código</a></p>
         </div>
     </footer>
 

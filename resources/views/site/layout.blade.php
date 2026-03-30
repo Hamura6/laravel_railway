@@ -3,10 +3,29 @@
 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link rel="icon" type="image/png" href="{{ $institution->image }} ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ $institution->initials ?? 'ICAP' }} </title>
+    <title>
+        {{ $institution->initials ? $institution->initials . ' | ' . $institution->name : 'ICAP | Ilustre Colegio de Abogados' }}
+    </title>
+
+    <meta name="description" content=" {{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    <meta property="og:title" content="{{ $institution->initials ?? 'ICAP' }}">
+    <meta property="og:description" content="{{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
+    <meta property="og:image" content="{{ $institution->image }} ">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $institution->initials ?? 'ICAP' }}">
+    <meta name="twitter:description" content="{{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
+    <meta name="twitter:image" content="{{ $institution->image }}">
+
+    <link rel="icon" type="image/png" href="{{ $institution->image }}">
+
     @vite(['resources/sass/landing-pages.scss', 'resources/js/app.js'])
 </head>
 
@@ -60,13 +79,26 @@
             </div>
 
             <div class="nav-menu" id="mainNav">
-                <a class="my-nav-link {{ Route::is('home') ? 'active' : '' }}" href="{{ route('home') }}">
-                    <i class="fas fa-home"></i> Inicio
-                </a>
-                <a class="my-nav-link {{ Route::is('site.courses') ? 'active' : '' }}"
-                    href="{{ route('site.courses') }}">
-                    <i class="fa fa-book"></i> Cursos
-                </a>
+                <div class="my-nav-dropdown">
+                    <div class="my-nav-link my-nav-dropdown-toggle">
+                        <i class="fas fa-home"></i> {{ $institution->initials }}
+                    </div>
+                    <ul class="my-nav-dropdown-menu">
+
+                        <li>
+                            <a class="my-nav-dropdown-menu-item" href="{{ route('site.about') }}">
+                                <i class="fa fa-info-circle"></i> Acerca de Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="my-nav-dropdown-menu-item" href="{{ route('site.directory') }}">
+                                <i class="fas fa-users"></i> Organización</a>
+                        </li>
+                        <li>
+                            <a class="my-nav-dropdown-menu-item" href="{{ route('site.privacy') }}">
+                                <i class="fas fa-lock"></i> Politicas de Privacidad</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="my-nav-dropdown">
                     <div class="my-nav-link my-nav-dropdown-toggle">
                         <i class="fas fa-external-link-alt"></i> Información
@@ -86,39 +118,27 @@
                         </li>
                     </ul>
                 </div>
+                <a class="my-nav-link {{ Route::is('site.courses') ? 'active' : '' }}"
+                    href="{{ route('site.courses') }}">
+                    <i class="fa fa-book"></i> Cursos
+                </a>
+
                 <a class="my-nav-link {{ Route::is('site.events') ? 'active' : '' }}"
                     href="{{ route('site.events') }}">
                     <i class="fas fa-calendar-check"></i> Eventos
                 </a>
-
-                <div class="my-nav-dropdown">
-                    <div class="my-nav-link my-nav-dropdown-toggle">
-                        <i class="fas fa-city"></i> Infraestructura
-                    </div>
-                    <ul class="my-nav-dropdown-menu">
-                        <li>
-                            <a class="my-nav-dropdown-menu-item" href="{{ route('site.directory') }}"><i
-                                    class="fas fa-users"></i>
-                                Organizacion</a>
-                        </li>
-                        <li>
-                            <a class="my-nav-dropdown-menu-item"
-                                href="https://kuula.co/share/collection/7cMDT?logo=1&info=1&fs=1&vr=0&zoom=1&autorotate=0.24&autopalt=1&thumbs=1&margin=15&inst=es"><i
-                                    class="fas fa-hospital"></i>
-                                Establecimiento</a>
-                        </li>
-                    </ul>
-                </div>
+                <a class="my-nav-link"
+                    href="https://kuula.co/share/collection/7cMDT?logo=1&info=1&fs=1&vr=0&zoom=1&autorotate=0.24&autopalt=1&thumbs=1&margin=15&inst=es"><i
+                        class="fas fa-hospital"></i>
+                    Establecimiento
+                </a>
                 <a class="my-nav-link {{ Route::is('site.requirement') ? 'active' : '' }}"
                     href="{{ route('site.requirement') }}">
-                    <i class="fa fa-clipboard"></i> Requisitos
+                    <i class="fa fa-clipboard"></i> Requisitos de Admisión
                 </a>
 
 
 
-                <a class="my-nav-link {{ Route::is('site.about') ? 'active' : '' }}" href="{{ route('site.about') }}">
-                    <i class="fa fa-info-circle"></i> Acerca de
-                </a>
                 @auth
                     <a class="my-nav-link movil_link {{ Route::is('settings.profile') ? 'active' : '' }}"
                         href="{{ route('settings.profile') }}"> <i class="fas fa-user"></i> Acceder
@@ -174,7 +194,7 @@
                     <ul class="footer-contact-list">
                         <li><i class="fa fa-map-marker-alt"></i> {{ $institution->address ?? 'city' }}</li>
                         <li><i class="fa fa-phone-alt"></i> (+591){{ $institution->phone ?? 'mercurio' }}</li>
-                        <li><i class="fa fa-envelope"></i> {{ $institution->email ?? 'susano' }}</li>
+                        <li><i class="fa fa-envelope"></i> {{ $institution->email }}</li>
                     </ul>
 
                     <div class="footer-socials">
@@ -191,22 +211,38 @@
         </div>
 
         <nav class="footer-nav">
-            <a href="#">Términos de uso</a>
-            <a href="#">Política de privacidad</a>
+            <a href="{{ route('site.privacy') }}">Política de privacidad</a>
             <a href="#">Cookies</a>
             <a href="#">Ayuda</a>
         </nav>
 
         <div class="footer-credits">
             <p>&copy; <span id="year"></span> ICAP Potosi. Todos los derechos reservados.</p>
-            <p>Diseño y desarrollo web por <a href="#" target="_blank">Hamura Código</a></p>
+            {{--             <p>Diseño y desarrollo web por <a href="#" target="_blank">Hamura Código</a></p>
+ --}}
         </div>
     </footer>
 
     <a class="back-to-top" href="#start">
         <i class="fa fa-chevron-up"></i>
     </a>
+    <div id="cookie-banner"
+        style="position:fixed;bottom:0;background:#222;color:#fff;padding:10px;width:100%;text-align:center;">
+        Usamos cookies para mejorar tu experiencia.
+        <button onclick="aceptarCookies()">Aceptar</button>
+    </div>
 
+    <script>
+        function aceptarCookies() {
+            document.getElementById("cookie-banner").style.display = "none";
+            document.cookie = "cookies_aceptadas=true; path=/";
+        }
+    </script>
+    <script>
+        if (document.cookie.includes("cookies_aceptadas=true")) {
+            document.getElementById("cookie-banner").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>

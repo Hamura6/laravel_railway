@@ -31,7 +31,7 @@ class Information extends Model
     protected function ImageView(): Attribute
     {
         return Attribute::make(
-            get: fn() =>   Storage::disk('public')->url('news/' . $this->image)
+            get: fn() =>   Storage::disk('public')->url('news/' . $this->image.'.webp')
         );
     }
 }

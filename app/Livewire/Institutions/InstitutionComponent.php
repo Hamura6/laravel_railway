@@ -5,7 +5,7 @@ namespace App\Livewire\Institutions;
 use App\Models\Institution;
 use Livewire\Component;
 use Livewire\WithFileUploads;
-
+use Intervention\Image\Laravel\Facades\Image;
 use function Laravel\Prompts\text;
 
 class InstitutionComponent extends Component
@@ -46,16 +46,27 @@ class InstitutionComponent extends Component
 
         $inst = Institution::find(1);
         if ($inst) {
-/*             dd($this->photo);   
- */            if ($this->photo) {
-/*     dd("dsd");
- */                $custome_name = uniqid() . '.' . $this->photo->extension();
-                $this->photo->storeAs('institution', $custome_name, 'public');
+            /*             dd($this->photo);   
+ */
+            if ($this->photo) {
+                /*     dd("dsd");
+ */
                 if ($inst->logo) {
                     if (file_exists(public_path('storage/institution/' . $inst->logo))) {
                         unlink(public_path('storage/institution/' . $inst->logo));
                     }
                 }
+                $custome_name = 'logo' . '.png';
+                //$this->photo->storeAs('institution', $custome_name, 'public');
+                $storagePath  = storage_path('app/public/institution/' . $custome_name);
+                if (!file_exists(dirname($storagePath))) {
+                    mkdir(dirname($storagePath), 0755, true);
+                }
+                Image::read($this->photo->getRealPath())
+                    ->resize(250, 250)
+                    ->toPng()
+                    ->save($storagePath);
+
                 $this->image = $custome_name;
             } else {
                 $this->image = $inst->logo;
@@ -77,7 +88,7 @@ class InstitutionComponent extends Component
         } else {
             $this->dispatch('notify', text: 'No se pudo encontrar el registro que desea modificar', title: 'Registro invalido', icon: 'error');
         }
-        $this->photo=null;
+        $this->photo = null;
         $this->image = $inst->image;
     }
 }

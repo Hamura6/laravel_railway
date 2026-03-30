@@ -10,23 +10,23 @@ class Institution extends Model
 {
     protected $guarded = ['id'];
     protected $label = [
-    'LP' => 'La paz',
-    'PT' => 'Potosí',
-    'OR' => 'Oruro',
-    'CB' => 'Cochabamba',
-    'SC' => 'Santa Cruz',
-    'TJ' => 'Tarija',
-    'CH' => 'Cochabamba',
-    'BN' => 'Beni',
-    'PD' => 'Pando'
-];
+        'LP' => 'La paz',
+        'PT' => 'Potosí',
+        'OR' => 'Oruro',
+        'CB' => 'Cochabamba',
+        'SC' => 'Santa Cruz',
+        'TJ' => 'Tarija',
+        'CH' => 'Cochabamba',
+        'BN' => 'Beni',
+        'PD' => 'Pando'
+    ];
     protected function Image(): Attribute
     {
         return Attribute::make(
-            
+
             get: fn() => Storage::disk('public')->exists('institution/' . $this->logo)
-    ? Storage::disk('public')->url('institution/' . $this->logo)
-    : asset('image/logo.webp')
+                ? Storage::disk('public')->url('institution/' . $this->logo)
+                : asset('image/logo.webp')
         );
     }
     public function cityLabel(): Attribute

@@ -292,12 +292,12 @@
     <x-card-header title="Administracion de fotografias" name="Fotografias" />
 
     <x-card-body>
-        <x-slot name="header">
-            <h4><strong>{{ $this->title }} | {{ $this->date }}</strong></h4>
-        </x-slot>
-        <div class="row g-2">
-            @forelse ($photos as $photo)
-                <div class="col-md-4">
+      <x-slot name="header">
+        <h4><strong>{{ $this->title }} | {{ $this->date }}</strong></h4>
+      </x-slot>
+      <div class="row g-2">
+        @forelse ($photos as $photo)
+        <div class="col-md-4">
                     <div class="my-card w-100 position-relative">
                         <img src="{{ $photo->image }}" alt="">
                         <div class="content-my">
@@ -309,7 +309,7 @@
                                     <i class="fas fa-trash "></i>
                                 </button>
 
-                                <a class="btn-success-circle outlined" href="{{ $photo->image }}" download>
+                                <a class="btn-success-circle outlined" href="{{ $photo->image_download }}" download>
                                     <i class="fas fa-download"></i>
                                 </a>
                             </div>

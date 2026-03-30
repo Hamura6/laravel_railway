@@ -32,8 +32,9 @@ class PhotosComponent extends Component
         $this->authorize('Eliminar eventos');
         $photo = EventPhoto::find($id);
         if ($photo->name) {
-            if (file_exists(public_path('storage/event_photos/' . $photo->name))) {
-                unlink(public_path('storage/event_photos/' . $photo->name));
+            if (file_exists(public_path('storage/event_photos/' . $photo->name.'.webp'))) {
+                unlink(public_path('storage/event_photos/' . $photo->name.'.webp'));
+                unlink(public_path('storage/event_photos/' . $photo->name.'.jpg'));
             }
         }
         $photo->delete();

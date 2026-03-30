@@ -63,7 +63,7 @@
                                 {{ $phone->number }} <br>
                             @endforeach
                         </td>
-                        <td class="text-center">
+                        <td class="d-flex flex-row justify-content-center align-items-center gap-1">
                             @can('Ver denuncias')
                                 <a href="{{ route('demands.management', $affiliate->id) }}" wire:navigate type="button"
                                     class="btn-purple-circle">

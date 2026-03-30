@@ -7,7 +7,7 @@ use Livewire\Attributes\On;
 use Livewire\Component;
 use Livewire\Features\SupportFileUploads\WithFileUploads;
 use Livewire\WithPagination;
-
+use Intervention\Image\Laravel\Facades\Image;
 
 class EventComponent extends Component
 {
@@ -42,8 +42,12 @@ class EventComponent extends Component
             'date' => $this->date,
         ]);
         foreach ($this->photos as $photo) {
-            $filename = uniqid() . '.' . $photo->extension();
-            $photo->storeAs('event_photos', $filename, 'public');
+            $filename = uniqid();
+            $photo->storeAs('event_photos', $filename.'.jpg', 'public');
+            $storagePath  = storage_path('app/public/event_photos/' . $filename.'.webp');
+            Image::read($photo->getRealPath())
+                ->toWebp(quality: 60)
+                ->save($storagePath);
             $event->photos()->create([
                 'name' => $filename,
             ]);
@@ -58,8 +62,9 @@ class EventComponent extends Component
         $event = Event::with(['photos'])->find($id);
         foreach ($event->photos as $photo) {
             if ($photo->name) {
-                if (file_exists(public_path('storage/event_photos/' . $photo->name))) {
-                    unlink(public_path('storage/event_photos/' . $photo->name));
+                if (file_exists(public_path('storage/event_photos/' . $photo->name.'.web'))) {
+                    unlink(public_path('storage/event_photos/' . $photo->name.'.web'));
+                    unlink(public_path('storage/event_photos/' . $photo->name.'jpg'));
                 }
             }
         }

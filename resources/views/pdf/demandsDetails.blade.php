@@ -65,7 +65,7 @@
 
     </div>
     <div align="center" class="header">
-        <h1><u> Detalle de Demandas</u></h1>
+        <h1><u> Detalle de Denuncias</u></h1>
 
     </div>
     <table class="table ">

@@ -64,7 +64,17 @@ class UserForm extends Form
     public function update()
     {
         $this->user->update(
-            $this->all()
+            [
+                'name'=>$this->name,
+                'last_name'=>$this->last_name,
+                'birthdate'=>$this->birthdate,
+                'gender'=>$this->gender,
+                'martial_status'=>$this->martial_status,
+                'ci'=>$this->ci,
+                'email'=>$this->email,
+                'photo'=>$this->photo,
+                'status'=>$this->status
+            ]
         );
     }
 }

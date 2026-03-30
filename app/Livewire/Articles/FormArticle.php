@@ -6,16 +6,17 @@ use App\Models\Article;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Livewire\WithFileUploads;
+use Intervention\Image\Laravel\Facades\Image;
 
 class FormArticle extends Component
 {
     use WithFileUploads;
     public $id, $title, $description, $image, $photo, $file, $filePreview;
     public function mount($id = 0)
-    {   
-        if (! (Auth::user()->can('Crear artículos') || Auth::user()->can('Editar artículos')) ) {
+    {
+        if (! (Auth::user()->can('Crear artículos') || Auth::user()->can('Editar artículos'))) {
             abort(403, 'No tienes permiso');
-            }
+        }
         $this->id = $id;
 
         if ($id <= 0) {
@@ -34,10 +35,10 @@ class FormArticle extends Component
         return [
             'title' => 'required|string|min:5|max:100',
             'description' => 'required|string|min:10|max:255',
-            'photo' => $this->id ? 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048'
-                : 'required|image|mimes:jpg,jpeg,png,gif|max:2048',
-            'file' => $this->id ?'nullable|file|mimes:pdf,doc,docx|max:512'
-            :'required|file|mimes:pdf,doc,docx|max:512',
+            'photo' => $this->id ? 'nullable|image|mimes:jpg,jpeg,png|max:2048'
+                : 'required|image|mimes:jpg,jpeg,png|max:2048',
+            'file' => $this->id ? 'nullable|file|mimes:pdf,doc,docx'
+                : 'required|file|mimes:pdf,doc,docx',
         ];
     }
     public function render()
@@ -49,8 +50,15 @@ class FormArticle extends Component
         $this->authorize('Crear artículos');
         $this->validate();
         if ($this->photo) {
-            $this->image = uniqid() . '.' . $this->photo->extension();
-            $this->photo->storeAs('articles/images', $this->image, 'public');
+            $this->image = uniqid() . '.webp';
+            //$this->photo->storeAs('articles/images', $this->image, 'public');
+            $storagePath  = storage_path('app/public/articles/images/' . $this->image);
+            if (!file_exists(dirname($storagePath))) {
+                mkdir(dirname($storagePath), 0755, true);
+            }
+            Image::read($this->photo->getRealPath())
+                ->toWebp(quality: 60)
+                ->save($storagePath);
         }
         if ($this->file) {
             $this->filePreview = uniqid() . '.' . $this->file->extension();
@@ -71,7 +79,11 @@ class FormArticle extends Component
         $article = Article::find($this->id);
         if ($this->photo) {
             $custome_name = uniqid() . '.' . $this->photo->extension();
-            $this->photo->storeAs('articles/images', $custome_name, 'public');
+            $storagePath  = storage_path('app/public/articles/images/' . $custome_name);
+            Image::read($this->photo->getRealPath())
+                ->toWebp(quality: 60)
+                ->save($storagePath);
+            //$this->photo->storeAs('articles/images', $custome_name, 'public');
             if ($article->preview) {
                 if (file_exists(public_path('storage/articles/images/' . $article->preview))) {
                     unlink(public_path('storage/articles/images/' . $article->preview));

@@ -21,8 +21,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Paginator::useBootstrap();
-        /* if (config('app.env') === 'production') {
-        URL::forceScheme('https');} */
+        if (config('app.env') === 'production') {
+        URL::forceScheme('https');} 
         /*  Request::macro('hasValidSignature', function ($absolute = true, array $ignoreQuery = []) {
             $https = clone $this;
             $https->server->set('HTTPS', 'on');

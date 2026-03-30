@@ -44,10 +44,17 @@ class RolesComponent extends Component
     {
         $this->id = $rol->id;
         $this->name = $rol->name;
+        if ($this->name === 'Administrador') {
+            $this->id=0;
+           return  $this->dispatch('notify', title: 'Error de acceso', icon: 'error', text: 'Acción no autorizada');
+        }
         $this->dispatch('show-modal');
     }
     public function update()
     {
+        if ($this->name === 'Administrador') {
+           return  $this->dispatch('notify', title: 'Error de acceso', icon: 'error', text: 'Acción no autorizada');
+        }
         $this->authorize('Editar roles');
         $this->validate();
         Role::where('id', $this->id)->Update(
@@ -70,6 +77,9 @@ class RolesComponent extends Component
     {
         $this->authorize('Eliminar roles');
         $rol=Role::find($id);
+        if ($rol->name_role === 'Administrador') {
+           return  $this->dispatch('notify', title: 'Error de acceso', icon: 'error', text: 'Acción no autorizada');
+        }
         if($rol->users->count())     
             $this->dispatch('notify', title: 'Rol Asociado', icon: 'error', text: 'El rol se encuentra asociado con 1 o mas usuarios');
         else {

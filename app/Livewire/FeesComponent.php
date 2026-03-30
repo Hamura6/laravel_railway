@@ -52,7 +52,7 @@ class FeesComponent extends Component
     public function delete($id){
         $this->authorize('Eliminar tarifas');
         $fee=Fee::find($id);
-        if($fee->payments->count()){
+        if($fee->payments()->count()){
             $this->dispatch('notify',text:'La tarifa asociada',icon:'error',title:'La tarifa se encuentra vinculada');
             
         }else
