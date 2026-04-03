@@ -136,7 +136,7 @@ class PdfReportController extends Controller
             $fill = !$fill;
         }
 
-        return response($pdf->Output('I', 'reporte_afiliados.pdf'))
+        return response($pdf->Output('I', 'reporte_afiliados_edad.pdf'))
             ->header('Content-Type', 'application/pdf');
     }
     public function specialityAffiliate(Request $request)
@@ -651,7 +651,7 @@ class PdfReportController extends Controller
             $fill = !$fill;
         }
 
-        return response($pdf->Output('S'), 200)
+        return response($pdf->Output('pagos_afiliados'), 200)
             ->header('Content-Type', 'application/pdf');
     }
 }

@@ -1,9 +1,9 @@
 <html>
 
 <head>
-    <title>Formulario</title>
+    <title>Detalle de demandas</title>
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="{{ $institution->image }} ">
+    <link rel="icon" type="image/png" href="<?php echo e($institution->image); ?> ">
 </head>
 <style>
     .logo {
@@ -121,7 +121,7 @@
 
 <body>
     <div class="logo">
-        <img width="50" src="data:image/jpeg;base64,{{ $institutionLogo }}" alt="">
+        <img width="50" src="data:image/jpeg;base64,<?php echo e($institutionLogo); ?>" alt="">
 
     </div>
     <div align="center" class="header">
@@ -135,24 +135,24 @@
                     <table border="1" class="table-profile">
                         <tr>
                             <th>Fecha de Registro</th>
-                            <td>{{ $affiliate->created_at }} </td>
+                            <td><?php echo e($affiliate->created_at); ?> </td>
                         </tr>
                         <tr>
                             <th>Matricula ICAP</th>
-                            <td> <strong> {{ $affiliate->id }}</strong> </td>
+                            <td> <strong> <?php echo e($affiliate->id); ?></strong> </td>
                         </tr>
                         <tr>
                             <th>Matricula CONALAB</th>
-                            <td>{{ $affiliate->enrollment_conalab }} </td>
+                            <td><?php echo e($affiliate->enrollment_conalab); ?> </td>
                         </tr>
                         <tr>
                             <th>Matricula RPA</th>
-                            <td>{{ $affiliate->enrollment_RPA }} </td>
+                            <td><?php echo e($affiliate->enrollment_RPA); ?> </td>
                         </tr>
                     </table>
                 </td>
                 <td>
-                    <img class="img" width="150" height="150" src="{{ $imageUser }}"
+                    <img class="img" width="150" height="150" src="<?php echo e($imageUser); ?>"
                         alt="">
                 </td>
             </tr>
@@ -165,35 +165,35 @@
         <table class="table">
             <tr>
                 <th>Apellidos</th>
-                <td colspan="5">{{ $affiliate->user->last_name }}</td>
+                <td colspan="5"><?php echo e($affiliate->user->last_name); ?></td>
             </tr>
             <tr>
                 <th>Nombres</th>
-                <td colspan="5">{{ $affiliate->user->name }}</td>
+                <td colspan="5"><?php echo e($affiliate->user->name); ?></td>
             </tr>
             <tr>
                 <th>C.I</th>
-                <td>{{ $affiliate->user->ci }}</td>
+                <td><?php echo e($affiliate->user->ci); ?></td>
                 <th>Fecha de Nacimiento</th>
-                <td>{{ $affiliate->user->birthdate }}</td>
+                <td><?php echo e($affiliate->user->birthdate); ?></td>
                 <th>Lugar</th>
-                <td>{{ $affiliate->place }}</td>
+                <td><?php echo e($affiliate->place); ?></td>
             </tr>
             <tr>
                 <th>Sexo</th>
-                <td>{{ $affiliate->user->gender }}</td>
+                <td><?php echo e($affiliate->user->gender); ?></td>
                 <th>Estado civil</th>
-                <td>{{ $affiliate->user->martial_status }}</td>
+                <td><?php echo e($affiliate->user->martial_status); ?></td>
                 <th>Deporte que practica</th>
-                <td>{{ $affiliate->sport }}</td>
+                <td><?php echo e($affiliate->sport); ?></td>
             </tr>
             <tr>
                 <th>Domicilio</th>
-                <td>{{ $affiliate->address_home }}</td>
+                <td><?php echo e($affiliate->address_home); ?></td>
                 <th>No.</th>
-                <td>{{ $affiliate->address_number_home }}</td>
+                <td><?php echo e($affiliate->address_number_home); ?></td>
                 <th>Zona</th>
-                <td>{{ $affiliate->zone_home }}</td>
+                <td><?php echo e($affiliate->zone_home); ?></td>
             </tr>
         </table>
     </div>
@@ -203,29 +203,29 @@
         <table class="table">
             <tr>
                 <th>Fecha de registro</th>
-                <td>{{ $affiliate->created_at }}</td>
+                <td><?php echo e($affiliate->created_at); ?></td>
                 <th>Matricula ICAP:</th>
-                <td>{{ $affiliate->id }}</td>
+                <td><?php echo e($affiliate->id); ?></td>
                 <th>Matricula CONALAP</th>
-                <td>{{ $affiliate->enrollment_conalab }}</td>
+                <td><?php echo e($affiliate->enrollment_conalab); ?></td>
                 <th>Matricula RPA</th>
-                <td>{{ $affiliate->enrollment_RPA }}</td>
+                <td><?php echo e($affiliate->enrollment_RPA); ?></td>
             </tr>
             <tr>
                 <th>Sede</th>
-                <td>{{ $affiliate->sede }}</td>
+                <td><?php echo e($affiliate->sede); ?></td>
                 <th>Ejercicio profesional</th>
-                <td colspan="2">{{ $affiliate->profession }}-{{ $affiliate->profession_status }} </td>
+                <td colspan="2"><?php echo e($affiliate->profession); ?>-<?php echo e($affiliate->profession_status); ?> </td>
                 <th>Institucion</th>
-                <td colspan="2">{{ $affiliate->institution }}</td>
+                <td colspan="2"><?php echo e($affiliate->institution); ?></td>
             </tr>
             <tr>
                 <th>Domicilio procesal</th>
-                <td colspan="2">{{ $affiliate->address_office }}</td>
+                <td colspan="2"><?php echo e($affiliate->address_office); ?></td>
                 <th>No.</th>
-                <td>{{ $affiliate->address_number }}</td>
+                <td><?php echo e($affiliate->address_number); ?></td>
                 <th>Zona</th>
-                <td colspan="2">{{ $affiliate->zone }}</td>
+                <td colspan="2"><?php echo e($affiliate->zone); ?></td>
             </tr>
         </table>
     </div>
@@ -235,37 +235,37 @@
         <table class="table">
             <tr>
                 <th colspan="2">Universidad que cursó sus estudios en Derecho</th>
-                <td colspan="4">{{ $affiliate->university->name }}</td>
+                <td colspan="4"><?php echo e($affiliate->university->name); ?></td>
             </tr>
             <tr>
                 <th>Entidad</th>
-                <td>{{ $affiliate->university->entity }}</td>
+                <td><?php echo e($affiliate->university->entity); ?></td>
                 <th>Fecha de extensión del Título en Provisión Nacional</th>
-                <td>{{ $affiliate->date }}</td>
+                <td><?php echo e($affiliate->date); ?></td>
                 <th>Número de título</th>
-                <td>{{ $affiliate->number }}</td>
+                <td><?php echo e($affiliate->number); ?></td>
             </tr>
 
         </table>
     </div>
     <div>
         <h2>4. Especializaciones</h2>
-        @foreach ($affiliate->professions as $profession)
+        <?php $__currentLoopData = $affiliate->professions; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $profession): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <table class="table">
                 <tr>
                     <th>Especialización</th>
-                    <td colspan="2">{{ $profession->specialty->name }}</td>
+                    <td colspan="2"><?php echo e($profession->specialty->name); ?></td>
                     <th>Área</th>
-                    <td colspan="2">{{ $profession->area }}</td>
+                    <td colspan="2"><?php echo e($profession->area); ?></td>
                 </tr>
                 <tr>
                     <th>Fecha</th>
-                    <td>{{ $profession->date }}</td>
+                    <td><?php echo e($profession->date); ?></td>
                     <th>Universidad</th>
-                    <td colspan="3">{{ $profession->university->name }}</td>
+                    <td colspan="3"><?php echo e($profession->university->name); ?></td>
                 </tr>
             </table>
-        @endforeach
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </div>
     <div class="firma">
         <hr style="width: 150px;">
@@ -275,3 +275,4 @@
 </body>
 
 </html>
+<?php /**PATH D:\ICAPV4\ICAP\resources\views/pdf/form.blade.php ENDPATH**/ ?>

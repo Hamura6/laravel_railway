@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Reporte de Afiliados</title>
 </head>
 <body style="font-family: sans-serif; font-size: 11px;">
     <h2>Reporte de Afiliados</h2>

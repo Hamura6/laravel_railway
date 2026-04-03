@@ -1,7 +1,7 @@
 <html>
 
 <head>
-
+<title>Detalle de demandas</title>
 </head>
 <style>
       .logo {

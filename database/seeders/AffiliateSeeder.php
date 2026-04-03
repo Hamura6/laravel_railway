@@ -18,7 +18,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '0JAN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30,7 +30,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Ninguno',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1977-04-02 00:00:00',
         'user_id' => '1',
@@ -40,7 +40,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1211682VCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -84,7 +84,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1190925JHR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -106,7 +106,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1157033CCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -128,7 +128,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1310785EAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -150,7 +150,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1156433LPM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -172,7 +172,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1180137AUM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -194,7 +194,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1207584ART',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -216,7 +216,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1221249VBV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -238,7 +238,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1234035GRS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -260,7 +260,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1194321GRV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -282,7 +282,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1255345JMB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -304,7 +304,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1212159JTA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -326,7 +326,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1212159-2CNM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -338,7 +338,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1978-10-27 00:00:00',
         'user_id' => '15',
@@ -348,7 +348,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1212157-3GNZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -360,7 +360,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1978-10-27 00:00:00',
         'user_id' => '16',
@@ -392,7 +392,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1207629-0JSZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -414,7 +414,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1204257LPH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -436,7 +436,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1215057DVD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -458,7 +458,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1156500JSV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -502,7 +502,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1172085ITS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -524,7 +524,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1187425ERM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -536,7 +536,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1977-05-12 00:00:00',
         'user_id' => '24',
@@ -546,7 +546,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1212105WTZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -568,7 +568,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1156576JLF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -590,7 +590,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1233301LRC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -612,7 +612,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1213175AVA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -634,7 +634,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1229345OJC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -656,7 +656,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1226792WBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -678,7 +678,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1187366AVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -700,7 +700,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12020051-kRLM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -722,7 +722,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1212297LPA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -744,7 +744,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1156307RCN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -766,7 +766,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1249769FRG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -788,7 +788,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1231805WRG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -810,7 +810,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '131235GGG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -832,7 +832,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1031817HPN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -854,7 +854,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1242974RMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -876,7 +876,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1152007WMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -898,7 +898,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1190749HMH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -910,7 +910,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1977-05-14 00:00:00',
         'user_id' => '41',
@@ -920,7 +920,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1229299JCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -942,7 +942,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1215976API',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -954,7 +954,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1977-05-16 00:00:00',
         'user_id' => '43',
@@ -964,7 +964,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1031078JBA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -986,7 +986,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1227949SRG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -998,7 +998,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1977-05-17 00:00:00',
         'user_id' => '45',
@@ -1008,7 +1008,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1227449-1ANF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1020,7 +1020,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1977-05-17 00:00:00',
         'user_id' => '46',
@@ -1030,7 +1030,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1248893FVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1052,7 +1052,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1229233VLA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1074,7 +1074,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1011616CAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1096,7 +1096,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1190811MLA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1118,7 +1118,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1218587CMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1140,7 +1140,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1197820RCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1162,7 +1162,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1156590MHI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1184,7 +1184,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1218130FMB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1206,7 +1206,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1261463HMP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1228,7 +1228,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1154341AMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1250,7 +1250,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1252323JMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1272,7 +1272,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1234012VBL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1294,7 +1294,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1016038ANM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1316,7 +1316,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '940840WGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1338,7 +1338,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1231721DRF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1360,7 +1360,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1156113PFR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1382,7 +1382,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1156113-1HAU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1394,7 +1394,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1977-10-20 00:00:00',
         'user_id' => '63',
@@ -1404,7 +1404,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12129775TLL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1426,7 +1426,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1155448JGS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1448,7 +1448,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1245137LLR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1470,7 +1470,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1199456AGV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1482,7 +1482,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1978-05-24 00:00:00',
         'user_id' => '67',
@@ -1492,7 +1492,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1190746IMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1514,7 +1514,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1237174AFR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1536,7 +1536,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1268271HBT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1558,7 +1558,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1244280MVB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1580,7 +1580,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1194857CEC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1602,7 +1602,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1190602OAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1624,7 +1624,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1233381MCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1646,7 +1646,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1221371VMB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1668,7 +1668,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1213563DCE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1690,7 +1690,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1187926JRR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1712,7 +1712,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1207629JSZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1734,7 +1734,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1194186AMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1756,7 +1756,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1296650BGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1778,7 +1778,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1156553JOO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1800,7 +1800,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1157991JEC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1822,7 +1822,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1242793GOA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1844,7 +1844,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1315168FTT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1866,7 +1866,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1191225LVA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1888,7 +1888,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1206442FLS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1910,7 +1910,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1231245FHC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1932,7 +1932,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1231595FCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1954,7 +1954,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1191270HQA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1976,7 +1976,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1215679GTS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -1998,7 +1998,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1150983FBG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2020,7 +2020,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1155685DPM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2042,7 +2042,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1233587HEN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2064,7 +2064,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1018880VMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2086,7 +2086,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1155403JVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2108,7 +2108,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1233470JGD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2152,7 +2152,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1187086NLP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2174,7 +2174,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1231731VGU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2196,7 +2196,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1199803FSS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2218,7 +2218,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1227073HAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2230,7 +2230,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1979-10-31 00:00:00',
         'user_id' => '101',
@@ -2240,7 +2240,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1179693CJO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2262,7 +2262,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '533084LAP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2284,7 +2284,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1150299RTS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2306,7 +2306,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10330400MFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2328,7 +2328,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1213705TPM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2350,7 +2350,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1152831EAQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2372,7 +2372,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1016314EBA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2394,7 +2394,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1251762HRM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2416,7 +2416,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1154845RCB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2428,7 +2428,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1979-11-30 00:00:00',
         'user_id' => '110',
@@ -2438,7 +2438,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1151654EUU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2460,7 +2460,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1262312DOG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2482,7 +2482,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1190802JUR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2504,7 +2504,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1231994ENT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2526,7 +2526,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1242274ERV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2548,7 +2548,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1233879AVD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2570,7 +2570,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '591970ACS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2592,7 +2592,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1239497RAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2614,7 +2614,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1442189EMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2636,7 +2636,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1176957ALI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2658,7 +2658,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1227345TGE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2680,7 +2680,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1247546JFB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2702,7 +2702,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1242674GLP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2724,7 +2724,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1253709JLM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2746,7 +2746,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '322443WZR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2758,7 +2758,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1980-11-17 00:00:00',
         'user_id' => '125',
@@ -2768,7 +2768,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1240526JOF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2790,7 +2790,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1247275FFI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2812,7 +2812,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1190847RQA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2834,7 +2834,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1234959CMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2856,7 +2856,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1156566RBP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2878,7 +2878,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1154908MBZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2900,7 +2900,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1032758SJN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2922,7 +2922,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1247448ASP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2944,7 +2944,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1240585CAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2966,7 +2966,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1003374MVD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -2988,7 +2988,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1262433RCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3010,7 +3010,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1447756HRY',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3032,7 +3032,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1151738RSR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3054,7 +3054,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1204348MGN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3076,7 +3076,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1152133JUR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3098,7 +3098,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1158802RGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3120,7 +3120,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1199466FMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3142,7 +3142,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1261017MPL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3164,7 +3164,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1442557GAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3186,7 +3186,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1253415JCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3208,7 +3208,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1220711AGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3230,7 +3230,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1231251ACG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3252,7 +3252,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1207528JAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3274,7 +3274,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1380943MAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3296,7 +3296,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1256573GAL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3318,7 +3318,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1233124DSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3340,7 +3340,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1215439LTM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3362,7 +3362,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1448604WAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3384,7 +3384,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1199446MGB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3406,7 +3406,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1157947JVS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3428,7 +3428,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1215356PGO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3450,7 +3450,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1190695FZS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3472,7 +3472,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '19/09/1945AFD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3494,7 +3494,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1245081HRB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3516,7 +3516,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1187793GPC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3538,7 +3538,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1176544IOA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3560,7 +3560,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1023694WTA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3582,7 +3582,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1153150BOM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3604,7 +3604,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1269107TSS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3626,7 +3626,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1156878JNT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3648,7 +3648,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1154813VRV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3670,7 +3670,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '577808JQS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3692,7 +3692,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '615919PYM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3714,7 +3714,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1251441DTS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3736,7 +3736,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1221903JJN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3758,7 +3758,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1227366ERC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3780,7 +3780,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1291302SIM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3802,7 +3802,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1273893FCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3824,7 +3824,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1227634RDJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3846,7 +3846,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1156231LDR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3868,7 +3868,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1233432EBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3890,7 +3890,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1228097EAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3912,7 +3912,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1205161HJT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3956,7 +3956,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1660511JAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -3978,7 +3978,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '586794GUA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4000,7 +4000,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1198833AEG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4022,7 +4022,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '625552MLA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4044,7 +4044,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1191643LLR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4066,7 +4066,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1305727CAE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4110,7 +4110,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '128661JNT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4132,7 +4132,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1275698BSV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4154,7 +4154,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1281417WPC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4176,7 +4176,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1191602GLB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4188,7 +4188,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1984-03-15 00:00:00',
         'user_id' => '190',
@@ -4198,7 +4198,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1272781FCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4220,7 +4220,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1151783MCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4232,7 +4232,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1984-03-15 00:00:00',
         'user_id' => '192',
@@ -4242,7 +4242,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1218017JMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4259,12 +4259,12 @@ class AffiliateSeeder extends Seeder
         'created_at' => '1984-03-20 00:00:00',
         'user_id' => '193',
         'university_id' => '1',
-        'status' => 'Exento'
+        'status' => 'Fallecido'
     ],
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1280895LFF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4286,7 +4286,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1256137OAN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4308,7 +4308,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1213120JLM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4330,7 +4330,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1661019JRR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4352,7 +4352,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1285313OOG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4396,7 +4396,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1280963BGE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4418,7 +4418,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1152634JVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4440,7 +4440,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1243020MBN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4462,7 +4462,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1233446HNF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4484,7 +4484,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1305802MMI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4506,7 +4506,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1250326CLM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4528,7 +4528,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1156741JSS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4550,7 +4550,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1212351JFA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4572,7 +4572,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1324675ABO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4586,7 +4586,7 @@ class AffiliateSeeder extends Seeder
         'place' => 'Potosi',
         'date' => '1981-02-01 00:00:00',
         'number' => 'ninguno',
-        'created_at' => '1987-03-04 00:00:00',
+        'created_at' => '1947-03-04 00:00:00',
         'user_id' => '208',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -4594,7 +4594,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1656444LCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4638,7 +4638,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1251419MVB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4660,7 +4660,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '856789BCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4682,7 +4682,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1206769JAJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4726,7 +4726,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1262957DCI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4748,7 +4748,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1269243AMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4770,7 +4770,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1359436MJC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4792,7 +4792,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '231931MRA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4836,7 +4836,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1325960PGR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4858,7 +4858,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2733714ERS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4880,7 +4880,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1054078MVH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4902,7 +4902,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1100306HBG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4924,7 +4924,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1156302JAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4946,7 +4946,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1657231JVS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4968,7 +4968,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1307100HAT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -4990,7 +4990,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1233327LRA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5012,7 +5012,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1233658LPG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5034,7 +5034,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1271460CDS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5056,7 +5056,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1237246ARL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5078,7 +5078,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1240440MTC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5100,7 +5100,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1305545MUO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5122,7 +5122,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1280896RST',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5166,7 +5166,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1382826ORG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5188,7 +5188,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1266259FLD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5210,7 +5210,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1247795GEN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5232,7 +5232,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1250312FID',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5254,7 +5254,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1273902JCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5276,7 +5276,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1253887FOR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5298,7 +5298,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1187587ARO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5320,7 +5320,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1191195JMU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5342,7 +5342,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1254751DOL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5364,7 +5364,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1824952FBJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5386,7 +5386,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1187783JAZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5408,7 +5408,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '581134CTL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5430,7 +5430,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1276957JBR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5452,7 +5452,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1287271DGM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5474,7 +5474,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1289999GDS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5496,7 +5496,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1285078OAU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5518,7 +5518,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1150266FCI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5540,7 +5540,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1230464JCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5584,7 +5584,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '553013EAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5606,7 +5606,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1326530ECS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5628,7 +5628,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1283730FLM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5650,7 +5650,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1393362RCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5672,7 +5672,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1374894PSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5694,7 +5694,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1260340MLD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5716,7 +5716,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1319230DCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5738,7 +5738,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1267848FDC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5760,7 +5760,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1392960ETZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5782,7 +5782,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1227413ELI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5804,7 +5804,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1247487RRU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5826,7 +5826,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1394645IDF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5848,7 +5848,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1254091FTO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5870,7 +5870,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1384923PMQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5892,7 +5892,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '656882JBB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5914,7 +5914,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1271681SAO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5936,7 +5936,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1305218JOL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5948,7 +5948,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1989-03-19 00:00:00',
         'user_id' => '270',
@@ -5958,7 +5958,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1335431GCU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -5980,7 +5980,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1329456EDR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6002,7 +6002,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1197725HDA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6024,7 +6024,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1227623MVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6068,7 +6068,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1272883VOG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6090,7 +6090,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1320055TTC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6112,7 +6112,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ELIMINAR',
         'enrollment_RPA' => 'nanNNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6124,9 +6124,9 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => '',
         'place' => 'Eliminar',
-        'date' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'number' => '',
-        'created_at' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'user_id' => '278',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -6134,7 +6134,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1215431ECL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6156,7 +6156,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1393681CCI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6200,7 +6200,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1255471JAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6222,7 +6222,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1379542SSG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6244,7 +6244,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1338413MMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6288,7 +6288,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1305472DFE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6305,12 +6305,12 @@ class AffiliateSeeder extends Seeder
         'created_at' => '1990-02-28 00:00:00',
         'user_id' => '286',
         'university_id' => '1',
-        'status' => 'Inactivo'
+        'status' => 'Fallecido'
     ],
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1268656FMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6332,7 +6332,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1422205MZM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6354,7 +6354,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1285759AMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6376,7 +6376,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1255351GRG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6398,7 +6398,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1047701FES',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6420,7 +6420,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1329492MCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6442,7 +6442,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1221960WRA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6464,7 +6464,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1254595FSG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6486,7 +6486,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1263237JCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6508,7 +6508,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1322499RVP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6530,7 +6530,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1385156ICA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6552,7 +6552,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1027082RAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6574,7 +6574,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1391776RZG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6596,7 +6596,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1205636MPY',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6618,7 +6618,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2778858JCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6640,7 +6640,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '14255153HZF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6662,7 +6662,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1385093ECN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6684,7 +6684,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1259232LCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6727,8 +6727,8 @@ class AffiliateSeeder extends Seeder
     ],
     [
         'enrollment_conalab' => 'ninguno',
-        'enrollment_RPA' => '1262 439SCH',
-        'sede' => 'Potosí',
+        'enrollment_RPA' => '1262439SCH',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6750,7 +6750,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1252741HEL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6772,7 +6772,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1266257GVY',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6794,7 +6794,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1265182MPM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6816,7 +6816,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1393386GSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6860,7 +6860,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1326736WMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6882,7 +6882,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1183130PCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6904,7 +6904,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ELIMINAR',
         'enrollment_RPA' => 'nanNNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6916,9 +6916,9 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => '',
         'place' => 'Eliminar',
-        'date' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'number' => '',
-        'created_at' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'user_id' => '314',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -6926,7 +6926,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1194982PRG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6948,7 +6948,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1218107NZW',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6970,7 +6970,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ELIMINAR',
         'enrollment_RPA' => 'nanNNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -6982,9 +6982,9 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => '',
         'place' => 'Eliminar',
-        'date' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'number' => '',
-        'created_at' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'user_id' => '317',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -6992,7 +6992,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1201808PLT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7014,7 +7014,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1204202FCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7036,7 +7036,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12351072MLL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7058,7 +7058,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1254656AJV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7080,7 +7080,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1180333NTL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7102,7 +7102,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ELIMINAR',
         'enrollment_RPA' => 'nanNNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7114,9 +7114,9 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => '',
         'place' => 'Eliminar',
-        'date' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'number' => '',
-        'created_at' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'user_id' => '323',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -7124,7 +7124,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1178309CAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7146,7 +7146,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1320151MCU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7168,7 +7168,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1391417JOT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7190,7 +7190,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '188032JGB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7212,7 +7212,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1234508HAP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7234,7 +7234,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1291167MVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7256,7 +7256,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1335410MBP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7278,7 +7278,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1387273JBA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7300,7 +7300,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1369761JCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7322,7 +7322,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1255410TRA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7366,7 +7366,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1072792MGT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7388,7 +7388,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1056408MVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7410,7 +7410,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1330094RVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7432,7 +7432,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3566575HTB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7454,7 +7454,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1215600LPE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7498,7 +7498,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3078526AVT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7520,7 +7520,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1324475JRR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7542,7 +7542,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1054200GVA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7564,7 +7564,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '623126GAL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7586,7 +7586,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1432550GCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7608,7 +7608,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '565793LMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7630,7 +7630,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1316462BGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7652,7 +7652,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '670686DEG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7708,7 +7708,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'La Paz',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1993-11-24 00:00:00',
         'user_id' => '350',
@@ -7718,7 +7718,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1178078JCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7740,7 +7740,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1434925RIZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7762,7 +7762,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '11409158PCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7776,7 +7776,7 @@ class AffiliateSeeder extends Seeder
         'place' => 'Potosi',
         'date' => '1993-08-25 00:00:00',
         'number' => 'ninguno',
-        'created_at' => '1995-08-06 00:00:00',
+        'created_at' => '1965-08-06 00:00:00',
         'user_id' => '353',
         'university_id' => '2',
         'status' => 'Inactivo'
@@ -7784,7 +7784,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3663663NMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7806,7 +7806,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1250417IBL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7828,7 +7828,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1318980LYC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7850,7 +7850,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1026108EGE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7872,7 +7872,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3689636HMT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7916,7 +7916,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1303643OBB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7938,7 +7938,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1281328DVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -7960,7 +7960,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1394941AOC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8026,7 +8026,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1434817NTA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8048,7 +8048,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1310239BVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8070,7 +8070,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1295407ARC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8114,7 +8114,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3664669FEC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8136,7 +8136,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1248999RSF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8158,7 +8158,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694746TPU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8180,7 +8180,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1389943BVF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8202,7 +8202,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1335573LAN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8224,7 +8224,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1316703EAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8246,7 +8246,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1182688VVQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8312,7 +8312,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1285150EPM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8334,7 +8334,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1247882MMF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8356,7 +8356,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1432463JNM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8400,7 +8400,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1247326DMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8422,7 +8422,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1432321AML',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8444,7 +8444,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1194047NRC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8466,7 +8466,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3968019SCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8488,7 +8488,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1187511AUC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8510,7 +8510,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1345510LEG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8576,7 +8576,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3674486NCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8598,7 +8598,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3682922IVA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8620,7 +8620,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1270410EJN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8642,7 +8642,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3684324JLB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8686,7 +8686,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1382737ALM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8708,7 +8708,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '127262 4FTC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8730,7 +8730,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1281288NGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8752,7 +8752,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1325141FVB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8774,7 +8774,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1285370MGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8818,7 +8818,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3676774FSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8840,7 +8840,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1289302PYC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8862,7 +8862,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1305685HIG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8884,7 +8884,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698290MIA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8906,7 +8906,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698290-0RMG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8928,7 +8928,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '536660EBO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8950,7 +8950,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3041324RAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8972,7 +8972,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1324249JLO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -8994,7 +8994,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1180273GVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9016,7 +9016,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2760532TRA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9060,7 +9060,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1054038CRA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9082,7 +9082,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1069801JAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9104,7 +9104,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3677984JCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9126,7 +9126,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3327707DLS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9148,7 +9148,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3668999FSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9170,7 +9170,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3690420JMT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9192,7 +9192,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3674170KPB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9214,7 +9214,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3674466WAJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9236,7 +9236,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1349914SUC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9258,7 +9258,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1036626NEA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9280,7 +9280,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3662 257ERV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9368,7 +9368,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1043045RIF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9390,7 +9390,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1268175FHM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9544,7 +9544,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1024023RPB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9566,7 +9566,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1384988FQV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9588,7 +9588,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1004867PMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9610,7 +9610,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1421965PRQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9632,7 +9632,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1194212SBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9654,7 +9654,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '13700814RTC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9676,7 +9676,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1107261JFF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9698,7 +9698,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3690154XPB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9710,7 +9710,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '1997-09-10 00:00:00',
         'user_id' => '441',
@@ -9720,7 +9720,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2785526APF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9742,7 +9742,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3187924MFM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9764,7 +9764,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3681988FCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9786,7 +9786,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1330635JVL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9808,7 +9808,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3097317ESM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9830,7 +9830,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1327790TMP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9852,7 +9852,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1325405ESD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9896,7 +9896,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3669212LRL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9918,7 +9918,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1373799JVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9940,7 +9940,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1050315VBB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -9984,7 +9984,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1386947MHA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10006,7 +10006,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3707986MOR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10028,7 +10028,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1305198BCQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10050,7 +10050,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1422194VBV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10072,7 +10072,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694761OCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10138,7 +10138,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1246055MLM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10160,7 +10160,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1433011SCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10204,7 +10204,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3152835DJM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10226,7 +10226,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1381973TRN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10248,7 +10248,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1274648MMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10270,7 +10270,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3422808ACF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10314,7 +10314,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3669770ERN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10380,7 +10380,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3693742SGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10402,7 +10402,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1432241CAS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10424,7 +10424,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5089715GAP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10446,7 +10446,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1031778CLR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10468,7 +10468,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703682VMT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10490,7 +10490,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3711188RZV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10512,7 +10512,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3682406REC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10534,7 +10534,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2785372RLL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10556,7 +10556,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1306002MCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10578,7 +10578,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1368332JLW',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10600,7 +10600,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3693995RBJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10644,7 +10644,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3704666ACC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10666,7 +10666,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1332149IMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10688,7 +10688,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1008261CCQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10710,7 +10710,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694819XMB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10732,7 +10732,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1436699CCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10776,7 +10776,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3682744BMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10798,7 +10798,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1429010RMH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10820,7 +10820,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3693249EMI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10842,7 +10842,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698569JOF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10864,7 +10864,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694507GRC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10886,7 +10886,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3701005GAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10908,7 +10908,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6663715JPM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10930,7 +10930,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1415992AMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10952,7 +10952,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1270369LFJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -10974,7 +10974,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3962 266MAY',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11018,7 +11018,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3980255MSA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11040,7 +11040,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1338471MGS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11084,7 +11084,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3103528LCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11128,7 +11128,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3701976VMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11150,7 +11150,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1474769JCT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11172,7 +11172,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1097023HLB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11194,7 +11194,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1271365ECM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11282,7 +11282,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1233363OCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11304,7 +11304,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3682354MBM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11326,7 +11326,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3700863RPS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11348,7 +11348,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1417614ALM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11370,7 +11370,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3693649MRT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11392,7 +11392,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1119381MCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11414,7 +11414,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1368125ATR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11436,7 +11436,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698991FCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11458,7 +11458,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698105RMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11480,7 +11480,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3689206FCF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11502,7 +11502,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1434672VRT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11524,7 +11524,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1405172HTA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11546,7 +11546,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1292099JAZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11568,7 +11568,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710270SFM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11590,7 +11590,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1385173MHA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11612,7 +11612,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1304348RAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11678,7 +11678,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3711275FCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11722,7 +11722,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1372696DRA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11766,7 +11766,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3053230NPC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11788,7 +11788,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1213483JVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11810,7 +11810,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3663665OEM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11854,7 +11854,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3346959JAP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11876,7 +11876,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1315042HCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11898,7 +11898,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1237981JBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11920,7 +11920,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1320330JLA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11942,7 +11942,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1334972EVF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11964,7 +11964,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3664730LVE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -11986,7 +11986,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3112528VLF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12008,7 +12008,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1374250JCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12030,7 +12030,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703242FRV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12052,7 +12052,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698706ECM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12074,7 +12074,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3717086RMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12096,7 +12096,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710893ALR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12118,7 +12118,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1432580DLB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12140,7 +12140,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703356MMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12162,7 +12162,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698533RBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12184,7 +12184,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3719223HMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12206,7 +12206,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712516JPA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12228,7 +12228,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3696375RLL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12250,7 +12250,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712763VBB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12272,7 +12272,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1373950IVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12294,7 +12294,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3067091JAG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12316,7 +12316,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3269871JLZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12360,7 +12360,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3662631SCO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12382,7 +12382,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3664561JCU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12404,7 +12404,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3053305AJR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12426,7 +12426,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1236230MVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12448,7 +12448,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1435711SSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12470,7 +12470,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1437475SMF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12492,7 +12492,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3688692MVN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12514,7 +12514,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1379799MBS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12536,7 +12536,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977539WRB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12558,7 +12558,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703703VOV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12580,7 +12580,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1144595CRA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12602,7 +12602,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1287668MGG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12646,7 +12646,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716659IVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12668,7 +12668,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3715536CZM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12690,7 +12690,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712347GDM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12734,7 +12734,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1332704ARS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12756,7 +12756,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3715913JCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12778,7 +12778,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3964166DTM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12800,7 +12800,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1289492JVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12822,7 +12822,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3690404OFN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12844,7 +12844,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712651PAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12866,7 +12866,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3687421GCB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12888,7 +12888,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1249479ATA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12910,7 +12910,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3717801RBF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12932,7 +12932,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3963686JRF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12954,7 +12954,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1355022DTB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12976,7 +12976,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3963265JCB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -12998,7 +12998,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1379633LAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13020,7 +13020,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3678413MSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13042,7 +13042,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3988798JSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13064,7 +13064,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1409889OSV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13086,7 +13086,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710764EGA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13108,7 +13108,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712134EAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13130,7 +13130,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1416664NCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13152,7 +13152,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1318702MCB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13196,7 +13196,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3715311ANB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13218,7 +13218,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1299946VVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13262,7 +13262,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716496MMG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13284,7 +13284,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3685644BCQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13306,7 +13306,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '250666GFM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13328,7 +13328,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1324574ACG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13350,7 +13350,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3962910MAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13372,7 +13372,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3962913OJV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13394,7 +13394,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6703166EJV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13416,7 +13416,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702648JTA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13438,7 +13438,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1373874MAQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13460,7 +13460,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3970969ECN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13504,7 +13504,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3709874XGQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13526,7 +13526,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1874250GCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13548,7 +13548,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1069812ICG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13570,7 +13570,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1271671JNM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13592,7 +13592,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1143367SIS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13614,7 +13614,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3719460RGA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13636,7 +13636,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1215311MRD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13658,7 +13658,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694470RMQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13680,7 +13680,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3988715SPS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13702,7 +13702,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2757063AFB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13724,7 +13724,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3681315ARM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13746,7 +13746,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1410791MAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13768,7 +13768,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3668363AMI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13790,7 +13790,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3682975GGV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13812,7 +13812,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3706422DCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13834,7 +13834,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1427457SBV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13856,7 +13856,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3687439CEP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13878,7 +13878,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1254729HMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13900,7 +13900,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2726555EPB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13922,7 +13922,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1331628VFE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13944,7 +13944,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2760529MGV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13966,7 +13966,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3711679RSR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -13988,7 +13988,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1328616MLR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14032,7 +14032,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1204129FCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14054,7 +14054,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3664610NBE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14076,7 +14076,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3674681AAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14098,7 +14098,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1413634RCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14120,7 +14120,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1243012EBF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14164,7 +14164,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703088GMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14186,7 +14186,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1285633RBV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14208,7 +14208,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1258548JRT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14230,7 +14230,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1373724CAN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14251,8 +14251,8 @@ class AffiliateSeeder extends Seeder
     ],
     [
         'enrollment_conalab' => 'ninguno',
-        'enrollment_RPA' => '3686106IMQ',
-        'sede' => 'Potosí',
+        'enrollment_RPA' => '3686106-1GIMQ',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14274,7 +14274,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3704342GDM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14296,7 +14296,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1046830JPD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14318,7 +14318,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3787335NAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14340,7 +14340,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1321721AGS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14384,7 +14384,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3963526JDR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14406,7 +14406,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1335274CMO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14428,7 +14428,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3070375JFA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14450,7 +14450,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1390878FCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14472,7 +14472,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1284754SCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14494,7 +14494,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3680539SSN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14516,7 +14516,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1333441LMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14538,7 +14538,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1319560ESC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14560,7 +14560,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3968510JCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14582,7 +14582,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1432973VVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14604,7 +14604,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3689023LFB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14626,7 +14626,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1285901BCN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14670,7 +14670,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3662623LFS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14692,7 +14692,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3666079HMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14714,7 +14714,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1273771MOM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14736,7 +14736,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3674465HGE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14758,7 +14758,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3685841RMF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14780,7 +14780,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3711101KDC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14802,7 +14802,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3683280VGB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14824,7 +14824,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3714714FHA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14846,7 +14846,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1385018JCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14868,7 +14868,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1856707MAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14890,7 +14890,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694582EEA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14934,7 +14934,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3695510LMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14956,7 +14956,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3675045JOD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -14978,7 +14978,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1275956TTJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15000,7 +15000,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3666592MAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15022,7 +15022,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1273840JAZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15044,7 +15044,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1422776JEB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15066,7 +15066,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1408613MCI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15088,7 +15088,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3665472EMQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15110,7 +15110,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3711749VCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15132,7 +15132,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1392899EAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15154,7 +15154,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1333764VSZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15176,7 +15176,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3719219JJO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15198,7 +15198,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1332146HAB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15220,7 +15220,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1432658FBL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15242,7 +15242,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2748939HVS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15264,7 +15264,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3674596DBM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15286,7 +15286,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3962728JES',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15308,7 +15308,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3706378MCB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15330,7 +15330,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1424893WCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15352,7 +15352,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '236406HCB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15374,7 +15374,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1393454FCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15396,7 +15396,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1250136JCF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15418,7 +15418,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3987632SMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15440,7 +15440,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1243681TRE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15462,7 +15462,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3663069RSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15484,7 +15484,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702581EMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15506,7 +15506,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1308383AEP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15528,7 +15528,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1280184RMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15550,7 +15550,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '959302MMI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15594,7 +15594,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3045080RAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15616,7 +15616,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3711868JAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15638,7 +15638,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703710FDC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15660,7 +15660,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1259129AMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15682,7 +15682,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703074CIC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15704,7 +15704,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1285638VHP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15726,7 +15726,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3989092RCB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15748,7 +15748,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1285539RVB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15770,7 +15770,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710315VAG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15792,7 +15792,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1328018LAL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15814,7 +15814,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1246741AVA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15836,7 +15836,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1391448JVP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15858,7 +15858,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3706548ALW',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15880,7 +15880,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3104173ASV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15902,7 +15902,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3707356CCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15924,7 +15924,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3965246JVL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15946,7 +15946,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702068DPC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15968,7 +15968,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3682214ABT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -15990,7 +15990,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712748ARP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16012,7 +16012,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3714900CCO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16034,7 +16034,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1335124EPC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16056,7 +16056,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3679705AMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16078,7 +16078,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3661831ACC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16100,7 +16100,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3690368MCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16122,7 +16122,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3674057JOM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16144,7 +16144,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3687093GAN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16166,7 +16166,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1349623JBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16188,7 +16188,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1326733LMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16210,7 +16210,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1277487JEF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16232,7 +16232,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3700993JTD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16254,7 +16254,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3661805JGA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16276,7 +16276,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1319027AGH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16298,7 +16298,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1335769JAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16320,7 +16320,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1329971EVD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16342,7 +16342,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3681028WSS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16364,7 +16364,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3695891ISB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16386,7 +16386,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1242572DPF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16408,7 +16408,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '612135EFH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16430,7 +16430,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1422728CMB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16452,7 +16452,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3714343NMT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16474,7 +16474,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1368930EMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16496,7 +16496,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1432428JLN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16518,7 +16518,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1393752TAN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16540,7 +16540,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3968527CFR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16562,7 +16562,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1291313AQC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16606,7 +16606,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1187443PLR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16628,7 +16628,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3715775ETS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16650,7 +16650,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3696122DVW',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16672,7 +16672,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710847VFF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16694,7 +16694,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712314MEE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16716,7 +16716,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '519061ZMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16760,7 +16760,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710699MVB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16782,7 +16782,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3662547JPC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16804,7 +16804,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1285428MLR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16826,7 +16826,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3706455PAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16848,7 +16848,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ELIMINAR',
         'enrollment_RPA' => 'nanNNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16860,9 +16860,9 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => '',
         'place' => 'Eliminar',
-        'date' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'number' => '',
-        'created_at' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'user_id' => '766',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -16870,7 +16870,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ELIMINAR',
         'enrollment_RPA' => 'nanNNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16882,9 +16882,9 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => '',
         'place' => 'Eliminar',
-        'date' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'number' => '',
-        'created_at' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'user_id' => '767',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -16892,7 +16892,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ELIMINAR',
         'enrollment_RPA' => 'nanNNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16904,9 +16904,9 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => '',
         'place' => 'Eliminar',
-        'date' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'number' => '',
-        'created_at' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'user_id' => '768',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -16914,7 +16914,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ELIMINAR',
         'enrollment_RPA' => 'nanNNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16926,9 +16926,9 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => '',
         'place' => 'Eliminar',
-        'date' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'number' => '',
-        'created_at' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'user_id' => '769',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -16936,7 +16936,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3986776MVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16958,7 +16958,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3674069LMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -16980,7 +16980,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1386548JUN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17002,7 +17002,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ELIMINAR',
         'enrollment_RPA' => 'nanNNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17014,9 +17014,9 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => '',
         'place' => 'Eliminar',
-        'date' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'number' => '',
-        'created_at' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'user_id' => '773',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -17024,7 +17024,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1321012JSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17046,7 +17046,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3690056CCF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17068,7 +17068,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1250373MEL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17090,7 +17090,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3689493CAB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17134,7 +17134,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1249961FSE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17156,7 +17156,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1378454VDS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17178,7 +17178,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1384702RMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17200,7 +17200,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3680583JRP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17222,7 +17222,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3665217AVL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17244,7 +17244,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3676204PFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17266,7 +17266,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1427253RRN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17288,7 +17288,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1249913INS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17332,7 +17332,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3699340ACC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17354,7 +17354,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1081921FPY',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17376,7 +17376,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2520791RFA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17398,7 +17398,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3089565RMP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17420,7 +17420,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1146672FAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17442,7 +17442,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1204214WGF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17464,7 +17464,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703863SPB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17486,7 +17486,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1408456DCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17508,7 +17508,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1432387VCP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17530,7 +17530,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1218176EML',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17552,7 +17552,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '656940ZCP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17596,7 +17596,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1275627JLM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17618,7 +17618,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1273073GGT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17640,7 +17640,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '334339VVD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17662,7 +17662,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3695476JRJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17684,7 +17684,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1338921LVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17706,7 +17706,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4005558LVD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17728,7 +17728,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3684318MRS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17750,7 +17750,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009328OBV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17772,7 +17772,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3989064JBV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17794,7 +17794,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1326540MKD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17816,7 +17816,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1340322LNJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17860,7 +17860,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3700822VVO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17882,7 +17882,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3690329MCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17904,7 +17904,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1384957JBA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17926,7 +17926,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1259168MTA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17948,7 +17948,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '685969VLP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17970,7 +17970,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1275682CRA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -17992,7 +17992,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1393762DVF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18014,7 +18014,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3699174LCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18036,7 +18036,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2200167LCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18058,7 +18058,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4007339MOZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18075,12 +18075,12 @@ class AffiliateSeeder extends Seeder
         'created_at' => '2001-07-13 00:00:00',
         'user_id' => '821',
         'university_id' => '1',
-        'status' => 'Inactivo'
+        'status' => 'Activo'
     ],
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1323617EUC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18102,7 +18102,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3965747JAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18124,7 +18124,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3309894ALG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18146,7 +18146,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4005482AMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18168,7 +18168,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3967332PMG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18190,7 +18190,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1409609ACE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18212,7 +18212,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1252085CFN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18234,7 +18234,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4007282ETA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18256,7 +18256,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3676810JRL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18278,7 +18278,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1373823LAB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18300,7 +18300,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3715694MAN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18322,7 +18322,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3683104RSL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18344,7 +18344,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3676778DMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18358,7 +18358,7 @@ class AffiliateSeeder extends Seeder
         'place' => 'Potosi',
         'date' => '2001-07-18 00:00:00',
         'number' => 'ninguno',
-        'created_at' => '2006-09-12 00:00:00',
+        'created_at' => '1966-09-12 00:00:00',
         'user_id' => '834',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -18366,7 +18366,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703960VMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18388,7 +18388,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698325CMH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18410,7 +18410,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3975193JCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18432,7 +18432,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3682419SLB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18454,7 +18454,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1343037LFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18476,7 +18476,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1424914FGV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18498,7 +18498,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3672967BFV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18520,7 +18520,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1285661MDF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18542,7 +18542,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1408557HMB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18564,7 +18564,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1293622GTA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18586,7 +18586,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3693090JOA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18608,7 +18608,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3675155GSL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18630,7 +18630,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1272326BTB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18652,7 +18652,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009452OSO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18674,7 +18674,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703781JMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18696,7 +18696,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3968598NBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18718,7 +18718,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1254728AMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18740,7 +18740,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4380689JMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18762,7 +18762,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1215492MCU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18784,7 +18784,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3706508JAD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18806,7 +18806,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4006905CCJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18828,7 +18828,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3683043RMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18850,7 +18850,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1266840DER',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18872,7 +18872,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4007772MAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18894,7 +18894,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1318531NRH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18916,7 +18916,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1324453IAP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18938,7 +18938,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977204MVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18960,7 +18960,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1233655JLP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -18982,7 +18982,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3707016ATS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19004,7 +19004,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3993695MCO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19026,7 +19026,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3673488GCQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19048,7 +19048,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3690676JBL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19070,7 +19070,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3960331RCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19092,7 +19092,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3970560JVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19114,7 +19114,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3742881OSP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19136,7 +19136,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3971559MCU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19180,7 +19180,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008536BSE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19202,7 +19202,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1349890RML',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19224,7 +19224,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1379821MVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19246,7 +19246,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1259161RRT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19268,7 +19268,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3664571WVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19290,7 +19290,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3679245SCO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19312,7 +19312,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1368193MCZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19334,7 +19334,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3519470EVS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19356,7 +19356,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009466SAL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19400,7 +19400,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1117185SLS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19444,7 +19444,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1327645MAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19466,7 +19466,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1396889ZRP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19488,7 +19488,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4012304ECA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19510,7 +19510,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3103975RBG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19532,7 +19532,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1302246WML',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19554,7 +19554,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716341CNR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19576,7 +19576,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '692002CYP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19598,7 +19598,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1268048EJE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19620,7 +19620,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3457597RVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19642,7 +19642,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3688473BGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19664,7 +19664,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3978174JTT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19686,7 +19686,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3686001TCT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19708,7 +19708,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5072477HEV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19730,7 +19730,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3696081AJV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19752,7 +19752,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3675518FRM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19774,7 +19774,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3480139JHH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19796,7 +19796,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009637DAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19818,7 +19818,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1338746ACC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19840,7 +19840,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3699775CAT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19862,7 +19862,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1247442JSG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19884,7 +19884,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3965727LMZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19906,7 +19906,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3704878MVB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19928,7 +19928,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3695829VFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19950,7 +19950,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3715999MVN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19972,7 +19972,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3611192DLC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -19994,7 +19994,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702472ECV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20016,7 +20016,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703348VTM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20038,7 +20038,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1320542MEV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20060,7 +20060,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1387686EVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20082,7 +20082,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1432635JGG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20104,7 +20104,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3680902FSL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20126,7 +20126,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698191RCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20148,7 +20148,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3971439LSB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20170,7 +20170,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3682770FMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20192,7 +20192,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3965182PPH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20214,7 +20214,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710461JAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20258,7 +20258,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1147432MHE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20302,7 +20302,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3443842VIT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20324,7 +20324,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3681831GRT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20346,7 +20346,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3695761SGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20368,7 +20368,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3672161FAY',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20390,7 +20390,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1428026SCZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20412,7 +20412,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009381SIL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20434,7 +20434,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3704890HBR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20456,7 +20456,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3682635ECC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20478,7 +20478,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1425490NSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20500,7 +20500,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694547CUM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20522,7 +20522,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5571501ECG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20544,7 +20544,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1432622SRV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20566,7 +20566,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3675003YFB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20588,7 +20588,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1424898ROC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20610,7 +20610,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3689093JJV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20654,7 +20654,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1324143RAE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20676,7 +20676,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698684SPY',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20698,7 +20698,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698408FVF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20720,7 +20720,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977450LZC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20742,7 +20742,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3669724ELZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20764,7 +20764,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3971590LRZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20786,7 +20786,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3719023HMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20808,7 +20808,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1328375RNL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20830,7 +20830,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3965245DSV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20852,7 +20852,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3341072JCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20874,7 +20874,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1409364RLA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20896,7 +20896,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710657RPV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20918,7 +20918,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1389231LCP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20940,7 +20940,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3700814WVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20962,7 +20962,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3665231BGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -20984,7 +20984,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710805RDG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21006,7 +21006,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3695064EOZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21028,7 +21028,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3662553MMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21050,7 +21050,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1373744RAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21072,7 +21072,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716035EFD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21094,7 +21094,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1438170VHL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21116,7 +21116,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008385IOB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21138,7 +21138,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2016019MLA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21160,7 +21160,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1310689WVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21182,7 +21182,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3681967RCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21204,7 +21204,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1392783JQM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21226,7 +21226,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1251282JCO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21292,7 +21292,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710659JAT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21314,7 +21314,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3705861ASO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21336,7 +21336,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3715876WMB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21358,7 +21358,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710974DOA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21380,7 +21380,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712493RVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21402,7 +21402,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1422833AOZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21424,7 +21424,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3055536ANR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21446,7 +21446,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3715354JPL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21490,7 +21490,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1382562APM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21534,7 +21534,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1112053SBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21556,7 +21556,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1215817JTP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21578,7 +21578,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3589262MTR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21600,7 +21600,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3965646JCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21622,7 +21622,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3689273JQC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21644,7 +21644,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3686381MVS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21666,7 +21666,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4012104NVT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21688,7 +21688,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712782YAO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21710,7 +21710,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712939PCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21732,7 +21732,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5076852BRF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21754,7 +21754,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4010656JMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21776,7 +21776,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3675538GSF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21798,7 +21798,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1427927MCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21820,7 +21820,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3706880MDC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21842,7 +21842,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3971680PPF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21864,7 +21864,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1432325OGL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21886,7 +21886,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009771JFB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21908,7 +21908,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1373947EAB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21930,7 +21930,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1424608ALG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21952,7 +21952,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3661139EAS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21974,7 +21974,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1427621MBV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -21986,7 +21986,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2002-06-20 00:00:00',
+        'date' => '2002-06-20',
         'number' => 'ninguno',
         'created_at' => '2002-06-20 00:00:00',
         'user_id' => '999',
@@ -21996,7 +21996,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1305544MGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22018,7 +22018,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1334932RGA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22040,7 +22040,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1254458OSR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22062,7 +22062,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3970800YVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22084,7 +22084,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1263748RFV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22106,7 +22106,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702564MMP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22128,7 +22128,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1243624GVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22150,7 +22150,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3695560EZQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22172,7 +22172,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3966098RBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22194,7 +22194,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3693984AMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22216,7 +22216,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3700973JBD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22238,7 +22238,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1227414FCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22260,7 +22260,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3691764ECC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22282,7 +22282,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1390635RAH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22304,7 +22304,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3662692ECH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22326,7 +22326,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070882SRS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22348,7 +22348,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3968651SG ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22370,7 +22370,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1311595WGV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22392,7 +22392,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3699544KFV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22414,7 +22414,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3663499MZM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22436,7 +22436,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1425307BCI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22458,7 +22458,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3704862MCT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22502,7 +22502,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1432335HTN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22524,7 +22524,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1332693RTL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22546,7 +22546,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1319131EMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22568,7 +22568,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3666487JTC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22590,7 +22590,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1386915CGN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22612,7 +22612,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3970679SRH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22634,7 +22634,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716536RVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22656,7 +22656,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716950CVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22678,7 +22678,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712504WEA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22700,7 +22700,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694748ARM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22722,7 +22722,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1213339RHC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22744,7 +22744,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4007389SVA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22766,7 +22766,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017313OVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22788,7 +22788,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6034222OOC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22810,7 +22810,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3719033JTM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22854,7 +22854,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3683194RVL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22898,7 +22898,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1390836MFL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22920,7 +22920,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1213468JPS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22942,7 +22942,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698106GEF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22964,7 +22964,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3689194MSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -22986,7 +22986,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698559ERM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23052,7 +23052,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1334952HNC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23074,7 +23074,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3664786VCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23096,7 +23096,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3662579NRM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23140,7 +23140,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1270795JBM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23162,7 +23162,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698759JBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23184,7 +23184,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702789HRO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23206,7 +23206,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1417881ACH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23228,7 +23228,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710420RCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23250,7 +23250,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1854643RAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23262,7 +23262,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2002-11-06 00:00:00',
         'user_id' => '1057',
@@ -23272,7 +23272,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1374851GSS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23294,7 +23294,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1415737MLV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23316,7 +23316,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3682995MAP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23338,7 +23338,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3671775FRV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23360,7 +23360,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3504069SAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23382,7 +23382,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4015803GCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23404,7 +23404,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017498JVS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23426,7 +23426,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3665491RDC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23448,7 +23448,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1427895LBE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23470,7 +23470,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716592GMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23492,7 +23492,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017311LCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23514,7 +23514,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1379843RDS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23536,7 +23536,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1392990JUP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23558,7 +23558,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3701799TCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23602,7 +23602,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3989306MVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23646,7 +23646,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702910JYO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23668,7 +23668,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1288891CBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23690,7 +23690,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3693891EAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23712,7 +23712,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710717JRM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23734,7 +23734,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3972220ADP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23756,7 +23756,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070052MRC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23778,7 +23778,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009416LRR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23800,7 +23800,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3683887JGS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23822,7 +23822,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3682691LRZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23844,7 +23844,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3111111MVZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23866,7 +23866,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703223FFM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23888,7 +23888,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3121662HFS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23910,7 +23910,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1310442CTD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23932,7 +23932,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6579775WSV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23976,7 +23976,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1319398EDC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -23998,7 +23998,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3966557RLL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24020,7 +24020,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3665396EJC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24042,7 +24042,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5073049MPC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24064,7 +24064,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1201803MEA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24086,7 +24086,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1861898WGV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24108,7 +24108,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1274207MGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24130,7 +24130,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017527GHM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24152,7 +24152,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3661612EGN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24174,7 +24174,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3683084YBI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24196,7 +24196,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '677664PAQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24218,7 +24218,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1247626BMB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24240,7 +24240,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1244005MPF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24262,7 +24262,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1394630JRA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24284,7 +24284,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1324829GMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24306,7 +24306,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3969493ACZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24328,7 +24328,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5076948SIL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24350,7 +24350,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4903342DJH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24372,7 +24372,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3660880CGL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24394,7 +24394,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008894CFP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24416,7 +24416,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1417607RCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24438,7 +24438,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3965816CSG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24460,7 +24460,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4019323MMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24482,7 +24482,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712304MCH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24504,7 +24504,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1425275MAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24526,7 +24526,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5721108JFZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24570,7 +24570,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3989326CMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24614,7 +24614,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4007373LCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24636,7 +24636,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1230268CSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24658,7 +24658,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6600465JVF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24680,7 +24680,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3693489EMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24702,7 +24702,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1335352GEQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24724,7 +24724,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3328698OPM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24746,7 +24746,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2759663EAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24768,7 +24768,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702837GUV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24790,7 +24790,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703204NVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24812,7 +24812,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4005445ALR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24834,7 +24834,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3971713RCP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24856,7 +24856,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712928AFT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24878,7 +24878,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5086005ETV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24900,7 +24900,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5086313JFD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24922,7 +24922,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3053055MCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24944,7 +24944,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5079268GSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24966,7 +24966,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070251JEN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -24988,7 +24988,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3668465-1SGSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25010,7 +25010,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3664817FCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25032,7 +25032,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3527484MGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25054,7 +25054,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698127NSG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25076,7 +25076,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1259100AMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25098,7 +25098,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009181IMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25120,7 +25120,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017688YCT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25142,7 +25142,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3683223NSP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25164,7 +25164,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977330JRL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25186,7 +25186,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5088263MTL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25208,7 +25208,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3713183SPR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25230,7 +25230,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3675490MRC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25252,7 +25252,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3715408TLO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25274,7 +25274,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702726CBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25296,7 +25296,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4016521MSU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25318,7 +25318,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5111006AEU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25340,7 +25340,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4006168MOR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25362,7 +25362,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3966256HCJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25384,7 +25384,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1305925MLA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25406,7 +25406,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5078708PIM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25428,7 +25428,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3687404WRN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25450,7 +25450,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5115481RML',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25472,7 +25472,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5089963DFR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25494,7 +25494,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3711151FCB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25516,7 +25516,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1385344CSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25538,7 +25538,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3394838JSA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25560,7 +25560,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1309206MAI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25582,7 +25582,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4010385ABR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25604,7 +25604,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1879716FER',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25626,7 +25626,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1408811JCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25670,7 +25670,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3708997MMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25692,7 +25692,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3981402PFM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25714,7 +25714,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5072863ELP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25736,7 +25736,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '632559AAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25758,7 +25758,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4014985MEC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25780,7 +25780,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1288555NSA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25802,7 +25802,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1387428ANL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25824,7 +25824,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008150ACT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25846,7 +25846,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3699447ECQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25890,7 +25890,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3697650JRR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25912,7 +25912,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1433044PRD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25934,7 +25934,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710642SVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25956,7 +25956,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3657687JFG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -25978,7 +25978,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071344HAD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26000,7 +26000,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017638ALZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26022,7 +26022,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009964GCP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26044,7 +26044,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3580824JRN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26066,7 +26066,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3674835JVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26088,7 +26088,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3963378NCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26110,7 +26110,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5116715AVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26132,7 +26132,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5115548JVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26154,7 +26154,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4003007RPN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26176,7 +26176,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3970845JBR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26198,7 +26198,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1424404MRE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26220,7 +26220,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1378566FBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26242,7 +26242,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5111254RPY',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26264,7 +26264,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702780NCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26286,7 +26286,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4005513AGR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26308,7 +26308,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3704960MGV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26330,7 +26330,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3675014AJS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26352,7 +26352,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017913MGA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26374,7 +26374,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712042SVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26396,7 +26396,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710272JER',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26418,7 +26418,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5117426JBA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26440,7 +26440,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698364LEH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26462,7 +26462,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1281018HUF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26484,7 +26484,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071714RRM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26506,7 +26506,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712518PSR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26528,7 +26528,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3695276JVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26550,7 +26550,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070048EOE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26572,7 +26572,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1338745RCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26616,7 +26616,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1368315EOA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26638,7 +26638,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5088401DTH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26660,7 +26660,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3987633JAB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26682,7 +26682,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5109806KRG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26704,7 +26704,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3975400EAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26726,7 +26726,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3992741GMG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26748,7 +26748,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716868ARF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26770,7 +26770,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008245MCF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26792,7 +26792,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698534IHL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26814,7 +26814,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5085172EEM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26836,7 +26836,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3980704ZUS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26858,7 +26858,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3662864ACC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26880,7 +26880,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1381933CCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26902,7 +26902,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3689121MTQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26924,7 +26924,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3979757MCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26946,7 +26946,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2764205HNM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26968,7 +26968,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3690416EEC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -26990,7 +26990,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3966623VNF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27012,7 +27012,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3551825NMJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27034,7 +27034,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3991032OHC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27056,7 +27056,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5106544SOR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27078,7 +27078,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4010553RCZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27100,7 +27100,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5078007EGQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27122,7 +27122,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017098AMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27144,7 +27144,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4002655CBE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27166,7 +27166,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3693684JPG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27188,7 +27188,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5108384YCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27210,7 +27210,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5086185VAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27232,7 +27232,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017185CNA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27254,7 +27254,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3704889GOR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27276,7 +27276,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1281100BCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27298,7 +27298,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1387573LVA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27364,7 +27364,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1305404SMB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27386,7 +27386,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3719378LCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27408,7 +27408,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1334149BSE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27430,7 +27430,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5078061LCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27452,7 +27452,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6600740MCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27474,7 +27474,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071684GSV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27496,7 +27496,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4007877CAW',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27518,7 +27518,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3674724MMT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27540,7 +27540,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3717964FSS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27562,7 +27562,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2340878FVJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27584,7 +27584,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5085069SCF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27606,7 +27606,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1312120MDC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27628,7 +27628,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3660895EDS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27650,7 +27650,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008892GUM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27672,7 +27672,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5125570JMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27694,7 +27694,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710554AMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27716,7 +27716,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009910RFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27738,7 +27738,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4001824DPP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27760,7 +27760,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5086233JML',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27782,7 +27782,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5117274JFG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27804,7 +27804,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3685460SGN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27826,7 +27826,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1112619RRR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27848,7 +27848,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3690398JAT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27870,7 +27870,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1280904ARN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27892,7 +27892,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1335912GGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27914,7 +27914,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5118224VMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27958,7 +27958,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4010324HBA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -27980,7 +27980,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5095312GVB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28002,7 +28002,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5114736JKV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28024,7 +28024,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5077980RRB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28046,7 +28046,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5072786MCI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28090,7 +28090,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1363872CFH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28112,7 +28112,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070636JMH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28156,7 +28156,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3967345TQC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28200,7 +28200,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070313TPI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28222,7 +28222,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1411686MCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28244,7 +28244,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1422398ZTT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28266,7 +28266,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1379580MCT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28288,7 +28288,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008117RDA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28332,7 +28332,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5085411GAS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28354,7 +28354,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3704844PMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28376,7 +28376,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5095073GQL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28398,7 +28398,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '39800312RBM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28420,7 +28420,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1373739ASS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28442,7 +28442,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4015974SSV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28464,7 +28464,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5110253CTS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28486,7 +28486,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3695666LMJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28508,7 +28508,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3114951NMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28530,7 +28530,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1307798JQV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28552,7 +28552,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710675MSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28574,7 +28574,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1392785LMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28596,7 +28596,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1315417PVA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28640,7 +28640,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1369936RDH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28662,7 +28662,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3684066MCN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28684,7 +28684,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3704410VPR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28706,7 +28706,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3966475FCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28728,7 +28728,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070673LPA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28750,7 +28750,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5126851MCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28772,7 +28772,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070359PPJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28794,7 +28794,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071601ABQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28816,7 +28816,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3674962GSV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28838,7 +28838,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710013JVV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28860,7 +28860,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3965180AUC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28882,7 +28882,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1309321FCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28904,7 +28904,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3691176WEZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28926,7 +28926,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4005270FVP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28948,7 +28948,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3674220JCQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28970,7 +28970,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698421JTA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -28992,7 +28992,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1386871JBG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29014,7 +29014,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3704937JSR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29036,7 +29036,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1252745JLA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29058,7 +29058,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5039113RAS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29080,7 +29080,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3107768JSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29102,7 +29102,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1275907MAQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29124,7 +29124,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4016667RCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29168,7 +29168,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008485JRF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29190,7 +29190,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3966019JAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29256,7 +29256,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2520623PPC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29278,7 +29278,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3999059MTM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29300,7 +29300,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1392911SGQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29322,7 +29322,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1310629GSG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29344,7 +29344,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ELIMINAR',
         'enrollment_RPA' => 'nanNNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29356,9 +29356,9 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => '',
         'place' => 'Eliminar',
-        'date' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'number' => '',
-        'created_at' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'user_id' => '1334',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -29366,7 +29366,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3688913MMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29388,7 +29388,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3696695LCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29410,7 +29410,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3626458FRL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29432,7 +29432,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3704337MVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29454,7 +29454,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070817GMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29476,7 +29476,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694771EEF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29498,7 +29498,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ELIMINAR',
         'enrollment_RPA' => 'nanNNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29510,9 +29510,9 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => '',
         'place' => 'Eliminar',
-        'date' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'number' => '',
-        'created_at' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'user_id' => '1341',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -29520,7 +29520,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1437180EGA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29542,7 +29542,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977157JFR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29564,7 +29564,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3685984RRP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29586,7 +29586,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712280JCJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29608,7 +29608,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698834LMG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29630,7 +29630,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1425234VCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29652,7 +29652,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3695637RFR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29696,7 +29696,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4015496MGR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29718,7 +29718,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3689156VAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29784,7 +29784,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3665915PTN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29806,7 +29806,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5074677NMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29850,7 +29850,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070446SOB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29872,7 +29872,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6589823TJF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29894,7 +29894,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3672637CCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29916,7 +29916,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5117243IMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -29982,7 +29982,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1386725ECM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30026,7 +30026,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071009RDJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30048,7 +30048,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3436109VCN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30070,7 +30070,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2875023JSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30114,7 +30114,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1386774TGD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30136,7 +30136,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3481871JRC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30158,7 +30158,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4012404MBA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30180,7 +30180,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3693220CUM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30202,7 +30202,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5078010MCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30224,7 +30224,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5111067TND',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30246,7 +30246,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017964NGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30268,7 +30268,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5126699AMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30290,7 +30290,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5130032RCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30312,7 +30312,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5114577YZJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30334,7 +30334,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5092904VLM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30378,7 +30378,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3706725ATR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30400,7 +30400,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2520122RCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30422,7 +30422,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5136389SES',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30444,7 +30444,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071669VTS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30466,7 +30466,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1349829LGE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30488,7 +30488,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5520611ICV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30510,7 +30510,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702768MZQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30532,7 +30532,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5126767ABA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30554,7 +30554,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4014753NCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30576,7 +30576,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1265962MFR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30598,7 +30598,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070571AMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30620,7 +30620,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3989169RAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30642,7 +30642,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5114415BBL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30664,7 +30664,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017276JVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30686,7 +30686,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008829CVA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30708,7 +30708,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5126415OAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30730,7 +30730,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4010819MCB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30774,7 +30774,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5130020CGA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30796,7 +30796,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3968187ACN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30818,7 +30818,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1250094PMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30862,7 +30862,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5115037BGH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30906,7 +30906,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5086596MMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30928,7 +30928,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4010766HMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30950,7 +30950,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716414SZG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30972,7 +30972,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977537JRR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -30994,7 +30994,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070689LAD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31016,7 +31016,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008799MAS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31038,7 +31038,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5075672RFP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31060,7 +31060,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5118089ECM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31082,7 +31082,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5109453IHC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31104,7 +31104,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3682375BAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31126,7 +31126,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009005SZP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31148,7 +31148,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5117661MRM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31170,7 +31170,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4005010KGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31214,7 +31214,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1241984JCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31236,7 +31236,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3669867FMI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31258,7 +31258,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2758324ARB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31280,7 +31280,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1306616VOG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31302,7 +31302,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3713280MLM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31324,7 +31324,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3978178EMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31346,7 +31346,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3978974GDR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31390,7 +31390,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3964482NLF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31412,7 +31412,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3700945VAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31434,7 +31434,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5116983CLN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31478,7 +31478,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5537259LGR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31500,7 +31500,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5130966GCP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31522,7 +31522,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3981629ROC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31544,7 +31544,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3652401MRT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31566,7 +31566,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698746MMG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31610,7 +31610,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5117153PCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31632,7 +31632,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5089990JPV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31654,7 +31654,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4002053WMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31676,7 +31676,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4016793LHM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31698,7 +31698,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5062668MPM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31720,7 +31720,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3690703MSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31742,7 +31742,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698800KVP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31786,7 +31786,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5116777BVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31808,7 +31808,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3972206JAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31852,7 +31852,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5126780MCN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31874,7 +31874,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4004125EMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31896,7 +31896,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070459EPG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31940,7 +31940,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4021065EHC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -31962,7 +31962,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1387181REL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32028,7 +32028,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3968959JAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32050,7 +32050,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1392645LOG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32072,7 +32072,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5086533MMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32094,7 +32094,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1422027EVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32116,7 +32116,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1243858SJO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32138,7 +32138,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009137JPR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32160,7 +32160,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5521942EUF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32182,7 +32182,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3303996AGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32204,7 +32204,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3978128IRB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32226,7 +32226,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5111922PVQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32248,7 +32248,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6571207GMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32270,7 +32270,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3676248WFY',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32292,7 +32292,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3973393EPS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32314,7 +32314,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5107663EIP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32336,7 +32336,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5130579NCT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32358,7 +32358,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5126877CFL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32380,7 +32380,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5506608RPM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32402,7 +32402,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5078355REM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32424,7 +32424,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3975220JNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32445,8 +32445,8 @@ class AffiliateSeeder extends Seeder
     ],
     [
         'enrollment_conalab' => 'ninguno',
-        'enrollment_RPA' => '11551587RMS',
-        'sede' => 'Potosí',
+        'enrollment_RPA' => '10504272RMS',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32468,7 +32468,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5126957AAF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32512,7 +32512,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3502611ECC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32524,7 +32524,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2004-12-21 00:00:00',
         'user_id' => '1478',
@@ -32534,7 +32534,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5115046BND',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32556,7 +32556,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4001586JRN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32578,7 +32578,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5090738WMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32600,7 +32600,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5115389AAP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32622,7 +32622,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3967441MRO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32644,7 +32644,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1259170JEQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32666,7 +32666,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1424634MLF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32710,7 +32710,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5078738JUF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32732,7 +32732,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3999082KAG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32754,7 +32754,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716184JGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32776,7 +32776,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '351144MEM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32798,7 +32798,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5136186PPL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32820,7 +32820,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5119914MSL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32842,7 +32842,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1273444RSB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32864,7 +32864,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5077094TBI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32886,7 +32886,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3975812MLL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32908,7 +32908,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6581750GCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32952,7 +32952,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4093060JSS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32974,7 +32974,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4002209TAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -32996,7 +32996,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5076900JTF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33040,7 +33040,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3963506ALA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33062,7 +33062,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3965972PGT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33084,7 +33084,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3691254JQA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33106,7 +33106,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1258980CSR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33128,7 +33128,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3688181FCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33150,7 +33150,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4007936DAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33194,7 +33194,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3711305JAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33216,7 +33216,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3697056SAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33238,7 +33238,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009362GSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33260,7 +33260,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1302150TBR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33282,7 +33282,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3689061MCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33304,7 +33304,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3992898GFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33326,7 +33326,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017346ELM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33348,7 +33348,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716958RBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33370,7 +33370,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008185MVE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33392,7 +33392,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3971874WBO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33414,7 +33414,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5089843WPP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33436,7 +33436,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3650948MMB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33458,7 +33458,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3679714JCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33480,7 +33480,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4005972HAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33502,7 +33502,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4006855YBA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33524,7 +33524,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008037EAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33546,7 +33546,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3971363MRC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33568,7 +33568,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008905HDF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33612,7 +33612,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4759734PPQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33634,7 +33634,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5114724CAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33656,7 +33656,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1386698JMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33678,7 +33678,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4010598LVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33700,7 +33700,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3968811OAH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33722,7 +33722,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5116651JMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33788,7 +33788,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1434975KLB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33810,7 +33810,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5129748JMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33832,7 +33832,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698173LEB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33854,7 +33854,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5073183ICA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33876,7 +33876,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1414123HCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33898,7 +33898,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716560ESG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33942,7 +33942,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5137492MEA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33964,7 +33964,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4036278MCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -33986,7 +33986,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694534CGG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34008,7 +34008,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070309LTF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34030,7 +34030,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5088382LQH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34052,7 +34052,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3665881RFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34074,7 +34074,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5115094RAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34096,7 +34096,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5131036JFF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34118,7 +34118,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3663730JMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34162,7 +34162,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4002157JLF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34184,7 +34184,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5088493EMF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34228,7 +34228,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1387806MSS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34250,7 +34250,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1436684BQM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34272,7 +34272,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6651191MCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34316,7 +34316,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5551149RAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34338,7 +34338,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4091155EFO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34360,7 +34360,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3708998RMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34382,7 +34382,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5545986ECQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34404,7 +34404,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071998JBQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34426,7 +34426,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698155GCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34448,7 +34448,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1204302RCN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34470,7 +34470,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4016519FGL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34492,7 +34492,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071179JCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34514,7 +34514,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5117183MEC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34536,7 +34536,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3970532OTT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34558,7 +34558,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3537299MPQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34580,7 +34580,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3656666IHA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34602,7 +34602,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3062021MSD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34624,7 +34624,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4007325JMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34646,7 +34646,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5114622GPC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34663,12 +34663,12 @@ class AffiliateSeeder extends Seeder
         'created_at' => '2005-08-02 00:00:00',
         'user_id' => '1575',
         'university_id' => '1',
-        'status' => 'Inactivo'
+        'status' => 'Activo'
     ],
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071008LRB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34690,7 +34690,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3671281DEL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34712,7 +34712,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4004055SCP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34734,7 +34734,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3964748STL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34756,7 +34756,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3664643HFR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34778,7 +34778,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4000918MMT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34800,7 +34800,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3699561AMP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34822,7 +34822,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3964151WRL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34844,7 +34844,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5110841EGS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34866,7 +34866,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5136568ECZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34888,7 +34888,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5121311PGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34910,7 +34910,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3706120EML',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34932,7 +34932,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5137557NSS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34954,7 +34954,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4014502LBS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34976,7 +34976,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1415752JGM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -34998,7 +34998,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3558803OAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35020,7 +35020,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3693113ILC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35042,7 +35042,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977343LHF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35086,7 +35086,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5086814CGM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35108,7 +35108,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5550344SQO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35130,7 +35130,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1422687ASG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35152,7 +35152,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3707210GAD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35174,7 +35174,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4015996RAL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35196,7 +35196,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3672794FRT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35218,7 +35218,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3661575MRG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35240,7 +35240,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2494179GJL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35262,7 +35262,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5085503ICE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35284,7 +35284,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3685730WCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35306,7 +35306,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008319AMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35328,7 +35328,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3709986MZC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35350,7 +35350,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5506907NMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35372,7 +35372,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1280867CCI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35394,7 +35394,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4011449GVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35416,7 +35416,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5075075LVP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35438,7 +35438,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008881MAP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35460,7 +35460,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5505971ACF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35482,7 +35482,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5126716MVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35504,7 +35504,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5073260DAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35526,7 +35526,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3711524LVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35548,7 +35548,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5136933LVV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35570,7 +35570,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008863LVL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35592,7 +35592,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5073243GEH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35614,7 +35614,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4001135POP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35636,7 +35636,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5092822MCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35658,7 +35658,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3711110JHS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35680,7 +35680,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1392507JOB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35702,7 +35702,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4002378EZV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35724,7 +35724,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017447CAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35746,7 +35746,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5120137EGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35768,7 +35768,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3699606EJB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35790,7 +35790,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5125621ACM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35856,7 +35856,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4081368RCE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35900,7 +35900,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5537384MQN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35922,7 +35922,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698434GBE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35944,7 +35944,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3715287YFF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35966,7 +35966,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5106293MBP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -35988,7 +35988,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1387739FAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36010,7 +36010,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5120878CSD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36032,7 +36032,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3678070JGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36054,7 +36054,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3972215ZRV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36076,7 +36076,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702842MTT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36098,7 +36098,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2020858CVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36120,7 +36120,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070531ZRL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36142,7 +36142,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3685878MVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36164,7 +36164,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3680842VMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36186,7 +36186,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5085899GHH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36208,7 +36208,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3679767SRF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36230,7 +36230,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3577446VCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36252,7 +36252,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3693945MFT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36274,7 +36274,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5500366FMU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36296,7 +36296,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5077101MAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36340,7 +36340,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5118396ITT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36362,7 +36362,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5537960JTF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36384,7 +36384,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3660708GQP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36428,7 +36428,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3537024LFV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36450,7 +36450,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5114544IFV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36472,7 +36472,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5136725JGG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36494,7 +36494,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5072684OLA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36516,7 +36516,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3986722GDO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36538,7 +36538,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070945ZMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36560,7 +36560,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5114900APL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36604,7 +36604,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3690277MCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36626,7 +36626,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4012809PFZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36648,7 +36648,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3660359JVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36670,7 +36670,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977456JVF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36692,7 +36692,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4383264IJL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36714,7 +36714,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5115806NCO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36736,7 +36736,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3700947JPC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36802,7 +36802,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5136506ACM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36824,7 +36824,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5002910MOT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36846,7 +36846,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1255859PMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36868,7 +36868,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4002231RVP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36890,7 +36890,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008874JMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36912,7 +36912,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5137556OCJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36934,7 +36934,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1389512WAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36956,7 +36956,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3975102GVP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -36978,7 +36978,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5087716MJV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37000,7 +37000,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3684047DRF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37022,7 +37022,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071243MVA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37044,7 +37044,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712422JCH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37066,7 +37066,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3114304EAT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37110,7 +37110,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3971991ATC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37132,7 +37132,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5538217RHG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37154,7 +37154,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5118969BCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37176,7 +37176,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3112775JST',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37198,7 +37198,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6671640MPM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37220,7 +37220,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009722ACC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37242,7 +37242,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5115261JCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37264,7 +37264,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6668775SSR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37286,7 +37286,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5072697AZT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37330,7 +37330,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3699148HBF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37352,7 +37352,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5137172LPC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37374,7 +37374,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3979006PTN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37396,7 +37396,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5088151AAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37418,7 +37418,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3999494YCF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37440,7 +37440,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703843LCT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37462,7 +37462,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5115482FTQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37484,7 +37484,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1379552RFS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37506,7 +37506,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5117050PBP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37528,7 +37528,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3671212MAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37550,7 +37550,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1074696AAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37572,7 +37572,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3963262SRM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37594,7 +37594,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5118221MTC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37616,7 +37616,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5541927JVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37638,7 +37638,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712547BME',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37660,7 +37660,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5116216MMN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37682,7 +37682,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1373727JQP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37704,7 +37704,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3978118GCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37726,7 +37726,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4001208TMJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37748,7 +37748,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4092834JCB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37770,7 +37770,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4095141JTC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37792,7 +37792,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5130062EOV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37836,7 +37836,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710388PDA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37858,7 +37858,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4011936EML',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37880,7 +37880,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5550515JCQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37902,7 +37902,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1319431MRR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37924,7 +37924,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3974163JLC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37946,7 +37946,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3968596ACM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37968,7 +37968,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4630656HEC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -37990,7 +37990,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1319869AGS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38012,7 +38012,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3701790XCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38034,7 +38034,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5094388PTB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38056,7 +38056,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5570902IFA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38078,7 +38078,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3075806JMJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38100,7 +38100,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5090394JLP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38122,7 +38122,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3528279ECL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38144,7 +38144,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1880170MSV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38166,7 +38166,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5526288SQN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38188,7 +38188,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3717004ECE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38210,7 +38210,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '679422CFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38232,7 +38232,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716245VMP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38254,7 +38254,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4007336WRV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38276,7 +38276,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3668426HEM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38298,7 +38298,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4095819MBR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38320,7 +38320,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5137406RLE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38342,7 +38342,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5085773GPF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38364,7 +38364,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710958LAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38386,7 +38386,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5506937VFV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38408,7 +38408,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712661VCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38430,7 +38430,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4014592GMP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38452,7 +38452,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3685606JRM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38474,7 +38474,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6699591RBL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38496,7 +38496,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5115375OCF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38518,7 +38518,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5075505MBS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38540,7 +38540,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5556610JMZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38562,7 +38562,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017460OOC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38584,7 +38584,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3689166ESC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38606,7 +38606,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5137130VQF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38628,7 +38628,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716553CMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38650,7 +38650,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5119455MIY',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38672,7 +38672,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1415783JTA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38694,7 +38694,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1386775SFG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38716,7 +38716,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5544746ACS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38738,7 +38738,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070970MRO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38760,7 +38760,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3688801BCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38782,7 +38782,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977171HMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38804,7 +38804,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5505092CCF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38826,7 +38826,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5530656HMP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38848,7 +38848,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5076211MLR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38870,7 +38870,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6606674EOC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38892,7 +38892,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5137339BSA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38914,7 +38914,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5551889PGO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38936,7 +38936,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5088179MZT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38958,7 +38958,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5501445EMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -38980,7 +38980,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5077350AAS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39024,7 +39024,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4003725APS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39046,7 +39046,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3070374LVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39068,7 +39068,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3672442WVD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39090,7 +39090,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4383845PAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39112,7 +39112,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4380027RQD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39134,7 +39134,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5120231NFV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39156,7 +39156,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3713069VCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39200,7 +39200,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5545922CGE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39222,7 +39222,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3506982JSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39244,7 +39244,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5115390PSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39266,7 +39266,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3707322MBL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39288,7 +39288,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4014156RSB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39310,7 +39310,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4013820JMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39332,7 +39332,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008307JMP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39354,7 +39354,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2453244UQS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39420,7 +39420,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5114053LCT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39442,7 +39442,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3682554DAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39464,7 +39464,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3715577YCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39486,7 +39486,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3708277ACC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39530,7 +39530,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071800CSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39552,7 +39552,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694510ACM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39574,7 +39574,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070607EFA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39596,7 +39596,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3965586JAG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39640,7 +39640,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4007921FAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39662,7 +39662,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3478150SAG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39684,7 +39684,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8553110CEA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39706,7 +39706,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4001668JHO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39728,7 +39728,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3700956GGR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39750,7 +39750,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4011363TAP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39772,7 +39772,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5098246VMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39794,7 +39794,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '607085ESC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39816,7 +39816,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3103836FER',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39860,7 +39860,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5089234LSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39882,7 +39882,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3698592BRL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39926,7 +39926,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5126536ANC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39948,7 +39948,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3987101RSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39970,7 +39970,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5489475DBB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -39992,7 +39992,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3627460SSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40014,7 +40014,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4015027SMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40036,7 +40036,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3683243WTT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40058,7 +40058,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5529852RPL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40102,7 +40102,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1281359PDV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40146,7 +40146,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4089452LPA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40168,7 +40168,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1284107RPC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40190,7 +40190,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3969986MQC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40234,7 +40234,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3717075EPT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40256,7 +40256,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5108231SAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40300,7 +40300,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6628938ACC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40322,7 +40322,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1373846JMP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40366,7 +40366,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5520817LLA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40388,7 +40388,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3674984FMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40410,7 +40410,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3678567MYF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40432,7 +40432,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3102975NCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40454,7 +40454,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3966100WVA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40498,7 +40498,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3517372FCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40520,7 +40520,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071378JVF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40542,7 +40542,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5130488EGN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40564,7 +40564,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3966376SBL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40586,7 +40586,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5136054GFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40630,7 +40630,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3709982JCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40652,7 +40652,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5073839NAS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40674,7 +40674,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3989454YHH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40696,7 +40696,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4005286GMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40740,7 +40740,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5119210CSB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40784,7 +40784,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5507231HMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40806,7 +40806,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5077381FSV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40828,7 +40828,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5088112VZC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40850,7 +40850,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5571101DVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40872,7 +40872,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5117671TMO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40916,7 +40916,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5077145JAG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40960,7 +40960,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5089857MLG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -40982,7 +40982,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4037258MAS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41004,7 +41004,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5568045MVL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41026,7 +41026,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6589540SUT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41048,7 +41048,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5073593EAB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41070,7 +41070,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5078847ERA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41092,7 +41092,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5525298CEB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41114,7 +41114,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5126280MAO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41136,7 +41136,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5549312YAF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41158,7 +41158,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3707249CSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41180,7 +41180,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5570880VAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41202,7 +41202,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6560108EAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41224,7 +41224,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702809MCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41246,7 +41246,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1435569JMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41268,7 +41268,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017344MVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41290,7 +41290,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5097359EAF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41312,7 +41312,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4037062JZH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41356,7 +41356,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2041084HSQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41400,7 +41400,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5085472NIA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41422,7 +41422,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8595146MMI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41444,7 +41444,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1298700JBA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41488,7 +41488,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694757JPR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41510,7 +41510,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5076099GVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41532,7 +41532,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4311384LAL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41554,7 +41554,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5094055ISC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41576,7 +41576,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '14155050ALF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41598,7 +41598,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5120995LQP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41620,7 +41620,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3108588ZPA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41642,7 +41642,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5551786JMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41664,7 +41664,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5548510EAH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41686,7 +41686,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3699187GCQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41708,7 +41708,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712055EJC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41730,7 +41730,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '7553768ACG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41752,7 +41752,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '7528653ATR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41774,7 +41774,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4002248AMG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41796,7 +41796,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2751887JSB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41818,7 +41818,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5506396PMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41840,7 +41840,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4013888LCT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41862,7 +41862,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4014513MGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41884,7 +41884,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5094173LGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41906,7 +41906,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3970829GRM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41950,7 +41950,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6572337MDS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41972,7 +41972,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1285768FMB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -41994,7 +41994,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3962185JTS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42016,7 +42016,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6640991RAI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42082,7 +42082,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3701770GLB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42104,7 +42104,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5090642PUA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42148,7 +42148,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5525968JEM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42170,7 +42170,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5554077CLF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42192,7 +42192,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5103437SCB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42236,7 +42236,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5072612DHM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42280,7 +42280,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5545847RGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42302,7 +42302,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1437672ADP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42324,7 +42324,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5079427JCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42346,7 +42346,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5087577WOV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42368,7 +42368,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '979213MEA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42412,7 +42412,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3986473CDQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42456,7 +42456,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5078919WCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42478,7 +42478,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5537406GCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42500,7 +42500,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5555454MBR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42522,7 +42522,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5129852LAT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42544,7 +42544,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071278APG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42566,7 +42566,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6591596SFM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42610,7 +42610,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5089878DMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42632,7 +42632,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5108148MMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42654,7 +42654,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1259876VOA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42676,7 +42676,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5568851CES',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42698,7 +42698,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4016770FGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42720,7 +42720,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3711777JBB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42764,7 +42764,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5073181ABC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42786,7 +42786,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977092ZPV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42808,7 +42808,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3076245FMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42830,7 +42830,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5126431FRV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42852,7 +42852,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5114517JCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42874,7 +42874,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070774RCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42896,7 +42896,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5103426LBA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42918,7 +42918,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5131145RDB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42962,7 +42962,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1230030JBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -42984,7 +42984,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3691589CRR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43006,7 +43006,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5077654MLM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43028,7 +43028,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4005592INH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43050,7 +43050,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4009246CEA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43072,7 +43072,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5549957SSV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43094,7 +43094,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070591JZC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43116,7 +43116,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5505717GNP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43138,7 +43138,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5086779GVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43160,7 +43160,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1385099JCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43182,7 +43182,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5135375WAD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43204,7 +43204,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1812810BTA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43226,7 +43226,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5520556JSF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43248,7 +43248,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071538ATG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43270,7 +43270,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071270JGH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43292,7 +43292,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6590986CCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43336,7 +43336,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5501420VLZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43358,7 +43358,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6589694FRC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43380,7 +43380,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6572796LSL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43424,7 +43424,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3666249GTS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43446,7 +43446,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5507472LSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43468,7 +43468,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3715289DLG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43490,7 +43490,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6610081DHA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43512,7 +43512,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5542608JDG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43534,7 +43534,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6582566MMJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43556,7 +43556,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3668465-0RCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43578,7 +43578,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1305802-0EIM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43600,7 +43600,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5089876ASP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43622,7 +43622,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2741179JAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43644,7 +43644,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5570857YIC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43666,7 +43666,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5113825AAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43688,7 +43688,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5119237NMF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43732,7 +43732,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5561392ACA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43754,7 +43754,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5090099JCD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43776,7 +43776,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6595071SMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43798,7 +43798,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6582695AVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43820,7 +43820,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6582006MDG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43842,7 +43842,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5090658JCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43864,7 +43864,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5075409SMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43886,7 +43886,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5076847SHZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43908,7 +43908,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5130152JLM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43930,7 +43930,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6590837ZCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43952,7 +43952,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3046920AGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43974,7 +43974,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5550023GMZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -43996,7 +43996,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5133193RVP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44018,7 +44018,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716008LMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44040,7 +44040,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5540859MTB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44062,7 +44062,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5550843OTM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44084,7 +44084,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5085237MCH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44106,7 +44106,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5136893BCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44128,7 +44128,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3972468JMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44150,7 +44150,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716346MMN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44216,7 +44216,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3118648LCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44238,7 +44238,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5551297ENJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44260,7 +44260,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5501439WCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44282,7 +44282,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694666JBA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44304,7 +44304,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6658952JOA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44326,7 +44326,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6560581ARM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44348,7 +44348,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6640240MSA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44392,7 +44392,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6590036VMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44414,7 +44414,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5543214MTB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44431,12 +44431,12 @@ class AffiliateSeeder extends Seeder
         'created_at' => '2010-04-15 00:00:00',
         'user_id' => '2019',
         'university_id' => '1',
-        'status' => 'Inactivo'
+        'status' => 'Activo'
     ],
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5116481WZE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44458,7 +44458,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071355ANA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44480,7 +44480,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6628931GCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44502,7 +44502,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3981707MBB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44524,7 +44524,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3083622JGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44546,7 +44546,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3970726DAB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44568,7 +44568,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4002206MCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44590,7 +44590,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5137178MMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44612,7 +44612,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710318RBS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44634,7 +44634,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5116154EGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44656,7 +44656,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3978240MVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44678,7 +44678,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6589590MBP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44700,7 +44700,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2018377RGM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44722,7 +44722,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6612112WTV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44788,7 +44788,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5079084JVV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44810,7 +44810,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6590960HAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44832,7 +44832,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1313659AGG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44854,7 +44854,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5108253SVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44876,7 +44876,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5541314LLE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44898,7 +44898,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5070360MTM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44920,7 +44920,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5666570IQG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44942,7 +44942,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5501164AMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44964,7 +44964,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5116667NRR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -44986,7 +44986,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6653791LMN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45008,7 +45008,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3971646SAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45030,7 +45030,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4010396GMO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45052,7 +45052,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5135067RGA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45074,7 +45074,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5548625SCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45096,7 +45096,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1425126MCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45118,7 +45118,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4005859JEG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45140,7 +45140,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3689448EFA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45162,7 +45162,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6662858JSG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45184,7 +45184,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3965375SCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45206,7 +45206,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3259223MOM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45228,7 +45228,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977242MVF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45272,7 +45272,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6661735DLB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45294,7 +45294,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3702966PBG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45316,7 +45316,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5525349MVP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45338,7 +45338,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6628516ACL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45360,7 +45360,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071390ATS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45382,7 +45382,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5562017CPM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45404,7 +45404,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1215444VQP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45426,7 +45426,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6600940PCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45448,7 +45448,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5117301RVN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45470,7 +45470,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6706582MGT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45492,7 +45492,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6609154ZPG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45514,7 +45514,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6603989OGN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45536,7 +45536,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5086850XSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45558,7 +45558,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1211293FFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45580,7 +45580,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6628140JGP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45602,7 +45602,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6672787JFY',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45624,7 +45624,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8542784RMQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45646,7 +45646,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '722222PMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45668,7 +45668,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3992821RRN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45690,7 +45690,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6641019CCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45712,7 +45712,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6639472EQM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45734,7 +45734,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3703736TEC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45756,7 +45756,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716901FLC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45778,7 +45778,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3664623GGQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45800,7 +45800,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3602104GEV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45822,7 +45822,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3692093GOB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45844,7 +45844,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008195CCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45910,7 +45910,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6603301ADN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45932,7 +45932,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3697703SVN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45976,7 +45976,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977169ERP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -45998,7 +45998,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6591921ORF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46020,7 +46020,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6707166HFZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46042,7 +46042,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6702276JCH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46064,7 +46064,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6610008JVM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46086,7 +46086,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5570320PEB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46108,7 +46108,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1075915OBG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46130,7 +46130,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6561092AOL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46152,7 +46152,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712731OSV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46174,7 +46174,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6561163JOM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46196,7 +46196,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5077267JCP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46240,7 +46240,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6696015JMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46262,7 +46262,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071668DVP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46284,7 +46284,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4000292SRF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46306,7 +46306,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '662088MMH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46350,7 +46350,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6703263MCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46372,7 +46372,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5136277ACC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46394,7 +46394,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6591340DSV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46416,7 +46416,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6672261MCD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46438,7 +46438,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5126263JJZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46460,7 +46460,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ELIMINAR',
         'enrollment_RPA' => 'nanNNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46472,9 +46472,9 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => '',
         'place' => 'Eliminar',
-        'date' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'number' => '',
-        'created_at' => '2025-10-11',
+        'date' => '1966-05-24 00:00:00',
         'user_id' => '2112',
         'university_id' => '1',
         'status' => 'Inactivo'
@@ -46482,7 +46482,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5116705SVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46504,7 +46504,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6696858MVQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46526,7 +46526,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5543731LBM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46548,7 +46548,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8647089NCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46570,7 +46570,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4011159JCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46592,7 +46592,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8513123FSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46614,7 +46614,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5554217SSH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46636,7 +46636,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5554408HCF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46658,7 +46658,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8575066VAS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46680,7 +46680,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6644826NRH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46724,7 +46724,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6669492CBH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46746,7 +46746,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5520402JMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46768,7 +46768,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5551396MCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46790,7 +46790,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5121282ABC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46812,7 +46812,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6704763MTB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46834,7 +46834,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4006632EGR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46856,7 +46856,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6707693AMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46878,7 +46878,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6591523ACJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46900,7 +46900,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6612172JVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46922,7 +46922,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8633871SFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46944,7 +46944,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5137692SNC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46966,7 +46966,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5546088MAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -46988,7 +46988,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6640555SEC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47010,7 +47010,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8554776SPM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47032,7 +47032,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3988863MTO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47054,7 +47054,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3672227AFM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47076,7 +47076,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '7971621JMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47098,7 +47098,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8650690GPC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47120,7 +47120,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1401620GFA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47142,7 +47142,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8525409MPP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47164,7 +47164,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8608550VBB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47186,7 +47186,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5556286TCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47208,7 +47208,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6571914LVI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47230,7 +47230,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6679218SBG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47252,7 +47252,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8508185CAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47296,7 +47296,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5129779RMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47340,7 +47340,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716365LLR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47362,7 +47362,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8511458DPB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47384,7 +47384,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1809119EAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47406,7 +47406,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6668352NCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47428,7 +47428,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8500119AOC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47450,7 +47450,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3965398JFR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47472,7 +47472,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1277618JPG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47494,7 +47494,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8542704RAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47516,7 +47516,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5506634WCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47538,7 +47538,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10531737EBR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47560,7 +47560,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '7170073HLC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47582,7 +47582,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5645081WCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47604,7 +47604,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6623092CDA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47648,7 +47648,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6612371ECC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47670,7 +47670,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8636052JUG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47692,7 +47692,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5136717JJH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47714,7 +47714,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6659038VMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47736,7 +47736,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6707070DAQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47758,7 +47758,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10539823SSE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47802,7 +47802,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6692609RSA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47824,7 +47824,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716718JSA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47846,7 +47846,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5505297DSA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47868,7 +47868,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5526031GAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47890,7 +47890,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5557015NSA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47912,7 +47912,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6706274VMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47934,7 +47934,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5545133LCB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47956,7 +47956,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6659189SFP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47978,7 +47978,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5545472JAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -47990,7 +47990,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2018-10-10 00:00:00',
         'user_id' => '2181',
@@ -48000,7 +48000,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5551687NRR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48022,7 +48022,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6705641XFA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48044,7 +48044,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3711070LPB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48066,7 +48066,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8544765NFR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48088,7 +48088,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10531341JAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48110,7 +48110,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6590725AGZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48132,7 +48132,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6695757JFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48154,7 +48154,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8511149KRB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48176,7 +48176,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8602717-1JLJS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48198,7 +48198,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6629771ECM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48220,7 +48220,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5506547PFQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48242,7 +48242,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8637020JCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48264,7 +48264,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8522800NLJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48286,7 +48286,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3987323AFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48308,7 +48308,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6684177MGS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48330,7 +48330,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3712168OCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48374,7 +48374,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3966591MHC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48396,7 +48396,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6582051GCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48418,7 +48418,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6602921MVO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48440,7 +48440,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5571824FCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48484,7 +48484,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5551832AMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48506,7 +48506,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10536121VTC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48528,7 +48528,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5530889MCO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48572,7 +48572,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3699384TRG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48594,7 +48594,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3974164AVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48616,7 +48616,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1386617JLR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48638,7 +48638,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12782809MTM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48660,7 +48660,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12623035TIL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48682,7 +48682,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5549740NMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48704,7 +48704,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5500681ELM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48748,7 +48748,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5077321VCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48770,7 +48770,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5561234ELZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48792,7 +48792,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10503964MSZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48814,7 +48814,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008202MUS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48836,7 +48836,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8574510BCZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48858,7 +48858,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8622763JMH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48880,7 +48880,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5561654MFF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48902,7 +48902,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6695137ILM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48924,7 +48924,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6707198NAB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48946,7 +48946,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8505288HET',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48968,7 +48968,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1423759JYF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -48990,7 +48990,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6650301AMO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49012,7 +49012,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6590806LLE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49034,7 +49034,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008782MMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49078,7 +49078,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4007304MCF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49100,7 +49100,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6629679RSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49122,7 +49122,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8599929NAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49144,7 +49144,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5542706JOT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49166,7 +49166,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8576225MMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49188,7 +49188,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8515430JCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49210,7 +49210,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3686488ECM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49232,7 +49232,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8553281JFF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49254,7 +49254,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '76160712FAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49276,7 +49276,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5078019IMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49298,7 +49298,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6570301JMG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49320,7 +49320,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8637845LCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49342,7 +49342,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8573257EJZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49364,7 +49364,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6652262SOR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49386,7 +49386,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977068MZQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49408,7 +49408,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5550570VCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49430,7 +49430,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6612687SRV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49452,7 +49452,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6660277MSA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49474,7 +49474,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6674892OAF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49496,7 +49496,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6591775PGF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49540,7 +49540,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12974107NTL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49562,7 +49562,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1259132-1DFRD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49584,7 +49584,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6651759EJA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49606,7 +49606,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8636899CFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49628,7 +49628,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6691288JMO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49650,7 +49650,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '14399192MTL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49672,7 +49672,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3664437RHG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49694,7 +49694,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10574520LRD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49716,7 +49716,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5091012ORE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49738,7 +49738,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10542794HBA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49760,7 +49760,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3964853RCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49782,7 +49782,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8350268JCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49804,7 +49804,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6686574PVV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49826,7 +49826,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8575005IMG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49848,7 +49848,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8544955HCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49860,7 +49860,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2023-03-25 00:00:00',
         'user_id' => '2266',
@@ -49870,7 +49870,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3700884APR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49882,7 +49882,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2023-03-27 00:00:00',
         'user_id' => '2267',
@@ -49892,7 +49892,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '7342077GMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49904,7 +49904,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2023-03-27 00:00:00',
         'user_id' => '2268',
@@ -49914,7 +49914,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6706021GAP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49926,7 +49926,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2023-03-27 00:00:00',
         'user_id' => '2269',
@@ -49936,7 +49936,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6709417GUA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49948,7 +49948,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2023-03-27 00:00:00',
         'user_id' => '2270',
@@ -49958,7 +49958,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10503871JRS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49970,7 +49970,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2023-03-27 00:00:00',
         'user_id' => '2271',
@@ -49980,7 +49980,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8646780AGT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -49992,7 +49992,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2023-03-27 00:00:00',
         'user_id' => '2272',
@@ -50002,7 +50002,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5543810PMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50014,7 +50014,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2023-03-27 00:00:00',
         'user_id' => '2273',
@@ -50024,7 +50024,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5109033RGG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50036,7 +50036,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2023-03-27 00:00:00',
         'user_id' => '2274',
@@ -50046,7 +50046,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6628632JTV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50068,7 +50068,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5116772JRT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50080,7 +50080,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2023-03-28 00:00:00',
         'user_id' => '2276',
@@ -50090,7 +50090,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3660193OYO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50112,7 +50112,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8595205EGT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50124,7 +50124,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => 'ninguno',
         'created_at' => '2023-03-29 00:00:00',
         'user_id' => '2278',
@@ -50134,7 +50134,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8506572ERM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50156,7 +50156,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8656032CGL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50178,7 +50178,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10504631ACC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50200,7 +50200,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8511172MFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50222,7 +50222,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5506717JPM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50244,7 +50244,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6675386AQL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50266,7 +50266,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6692631JMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50288,7 +50288,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8595662OVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50310,7 +50310,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8623887LFF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50332,7 +50332,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4008170RAP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50354,7 +50354,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8648039BCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50376,7 +50376,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10522271PHC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50398,7 +50398,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8648816ATM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50420,7 +50420,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8578959MCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50442,7 +50442,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10578097MJJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50464,7 +50464,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5089066LAO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50486,7 +50486,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5540159AMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50508,7 +50508,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5137056YGV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50530,7 +50530,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6653037MCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50552,7 +50552,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6653036MCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50574,7 +50574,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4004095JCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50596,7 +50596,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8598991SLZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50618,7 +50618,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8649803RAG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50640,7 +50640,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8621951JMU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50662,7 +50662,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8554705HMO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50684,7 +50684,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6593626RLV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50706,7 +50706,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10470316MCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50728,7 +50728,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6663668CMO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50750,7 +50750,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1291738-1RLCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50772,7 +50772,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1406988RAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50794,7 +50794,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8648157LLF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50816,7 +50816,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6582011CCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50838,7 +50838,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1339850MRP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50860,7 +50860,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8600399RCD',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50904,7 +50904,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10504372NZC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50926,7 +50926,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8616096LVA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50948,7 +50948,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '13354017IRV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50970,7 +50970,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8620352YCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -50992,7 +50992,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5571107IAG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51014,7 +51014,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6653814XMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51036,7 +51036,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6589729JCL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51058,7 +51058,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '13326879SAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51080,7 +51080,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8511394ETG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51102,7 +51102,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6662938ARS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51124,7 +51124,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6668179ECS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51146,7 +51146,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5551722MCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51168,7 +51168,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6668178ICS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51190,7 +51190,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6675776MCM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51212,7 +51212,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6600671MVA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51234,7 +51234,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8599463JTV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51256,7 +51256,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8552221-1FDOR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51278,7 +51278,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6706012KLV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51300,7 +51300,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6612526MTR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51322,7 +51322,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8511217NQB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51344,7 +51344,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8657399MQB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51366,7 +51366,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10564246ICB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51388,7 +51388,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3977070VZE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51410,7 +51410,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10539769MMF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51432,7 +51432,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '14023696CCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51454,7 +51454,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4010151CVO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51476,7 +51476,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5137982FVO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51498,7 +51498,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8500267LGF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51520,7 +51520,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12346449DMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51542,7 +51542,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8526145MIA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51564,7 +51564,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12466445MAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51586,7 +51586,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1385160MCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51630,7 +51630,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3694372SHM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51652,7 +51652,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6695167TAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51674,7 +51674,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8512151RME',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51696,7 +51696,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10556795BTC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51718,7 +51718,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6590772NCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51740,7 +51740,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8507374RBP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51762,7 +51762,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '2787488SSL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51784,7 +51784,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6659579RMB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51828,7 +51828,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8523247LPE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51850,7 +51850,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5501150JSF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51872,7 +51872,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4017820MRA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51894,7 +51894,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5556640PRM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51916,7 +51916,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10574830KAS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51938,7 +51938,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4015247CRM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51960,7 +51960,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6589605RME',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -51982,7 +51982,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8579282GTF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52004,7 +52004,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10509230MTF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52026,7 +52026,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6706332MCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52048,7 +52048,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5104898JGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52070,7 +52070,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1381926BGB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52092,7 +52092,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8654914RCN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52114,7 +52114,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8544948DMA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52136,7 +52136,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6581619PFQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52158,7 +52158,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10521023VGL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52202,7 +52202,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8514986JET',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52224,7 +52224,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8523489JCT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52246,7 +52246,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '13231376NSF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52268,7 +52268,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6581109NCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52290,7 +52290,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6560404MMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52312,7 +52312,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12814985WTR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52334,7 +52334,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6561310ILC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52356,7 +52356,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071485HTF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52378,7 +52378,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5111807LCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52400,7 +52400,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8623904AFC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52422,7 +52422,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8648632CCS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52444,7 +52444,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12975339JFZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52466,7 +52466,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8572540WVR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52488,7 +52488,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6701807MZM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52510,7 +52510,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8554545VLC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52532,7 +52532,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1421923MGC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52554,7 +52554,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1393648ZFM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52576,7 +52576,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1427999NMB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52598,7 +52598,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8655192AFN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52620,7 +52620,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8963210RMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52642,7 +52642,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5088039MLC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52664,7 +52664,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5119476KTA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52686,7 +52686,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6651930OCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52708,7 +52708,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8574944ISF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52730,7 +52730,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8545950MRQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52752,7 +52752,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6707162XSF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52774,7 +52774,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10536001DHC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52796,7 +52796,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10503791EML',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52818,7 +52818,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6672031AAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52840,7 +52840,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10532436YMQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52862,7 +52862,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8525393JLL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52884,7 +52884,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8505230-1SMSB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52906,7 +52906,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12496529KGG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52928,7 +52928,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5102455MMV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52950,7 +52950,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5500081MTC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52972,7 +52972,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8508684JMS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -52994,7 +52994,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8523908JMR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53016,7 +53016,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8522828MMI',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53038,7 +53038,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8535573LSO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53060,7 +53060,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6656927JVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53082,7 +53082,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4002979ACV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53104,7 +53104,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5137733GMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53126,7 +53126,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8634140JAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53148,7 +53148,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8553356SAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53170,7 +53170,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '4809958JYG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53192,7 +53192,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6590256JAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53214,7 +53214,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10556787GRR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53236,7 +53236,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8574470DSF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53258,7 +53258,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6651550VRT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53280,7 +53280,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6679878JQS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53302,7 +53302,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8522978KAV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53324,7 +53324,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6582466GGG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53346,7 +53346,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6629271LJZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53368,7 +53368,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3967876-1TJAM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53390,7 +53390,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8579974JMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53412,7 +53412,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8545041GMQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53434,7 +53434,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8616456AAO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53456,7 +53456,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '13037431AOS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53478,7 +53478,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3678974MLJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53500,7 +53500,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8577802RDU',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53522,7 +53522,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10509202MCP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53544,7 +53544,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8601200MML',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53566,7 +53566,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6612041ADM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53588,7 +53588,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5101806MRH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53610,7 +53610,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5086627ZJT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53632,7 +53632,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6676157MTG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53654,7 +53654,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8532046AAA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53698,7 +53698,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8521233IGR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53720,7 +53720,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10472596YMZ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53742,7 +53742,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3716174MCG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53764,7 +53764,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8552144MCV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53786,7 +53786,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8615625MRM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53830,7 +53830,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6674452CPF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53852,7 +53852,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6672591MAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53874,7 +53874,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8585229CHF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53896,7 +53896,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3986310-26LCH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53918,7 +53918,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8557418MDV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53940,7 +53940,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8577050PQH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53962,7 +53962,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5493268MRP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -53984,7 +53984,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1368003MRC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54006,7 +54006,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1385154RTM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54028,7 +54028,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6649181CMT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54050,7 +54050,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6641409GCA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54072,7 +54072,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5125399OBA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54094,7 +54094,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8620199LUR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54116,7 +54116,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5137399EVG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54138,7 +54138,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6686569JSP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54160,7 +54160,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8545998MRG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54182,7 +54182,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6661867MVJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54204,7 +54204,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8602202CMG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54226,7 +54226,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6675838CVC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54248,7 +54248,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10532263JGL',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54270,7 +54270,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6590888KEP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54292,7 +54292,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5676783XMM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54314,7 +54314,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8558864GSB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54336,7 +54336,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8654105MCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54358,7 +54358,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6701809KCR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54380,7 +54380,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5085771AFM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54402,7 +54402,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6706154CTC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54424,7 +54424,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6700478MSC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54446,7 +54446,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6599852JYC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54458,7 +54458,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Futsal',
         'place' => 'Potosi',
-        'date' => '2025-11-13 00:00:00',
+        'date' => '2026-04-02 00:00:00',
         'number' => '73900',
         'created_at' => '2024-05-10 00:00:00',
         'user_id' => '2475',
@@ -54468,7 +54468,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6702706CNJ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54490,7 +54490,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8595329FAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54512,7 +54512,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8525946EGB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54534,7 +54534,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3663576GMP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54556,7 +54556,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10504372KAC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54578,7 +54578,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6719848GSA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54600,7 +54600,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5118859KRA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54622,7 +54622,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6600254TRA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54644,7 +54644,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8508704MOM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54666,7 +54666,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8509196JLC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54688,7 +54688,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8573311RFM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54710,7 +54710,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8523709JBR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54732,7 +54732,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6611016SUS',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54754,7 +54754,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5075104JSM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54776,7 +54776,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3965104MTC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54798,7 +54798,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6612039CFT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54820,7 +54820,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5072474RZA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54842,7 +54842,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6707060RMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54864,7 +54864,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6635512ALV',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54886,7 +54886,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6707060NNN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54930,7 +54930,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10471650MLB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54952,7 +54952,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8518091RLM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54974,7 +54974,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6600780MTC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -54996,7 +54996,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8512131MNE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55018,7 +55018,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8512498LRP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55040,7 +55040,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6707060RVQ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55062,7 +55062,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8616082LQN',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55084,7 +55084,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8552336RCF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55106,7 +55106,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '3710316 SB',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55128,7 +55128,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10529831A  ',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55150,7 +55150,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8552334OCF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55172,7 +55172,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6653493ACM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55194,7 +55194,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12717518JBE',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55216,7 +55216,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8534458CRM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55260,7 +55260,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10505048EVO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55282,7 +55282,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8638208AHF',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55304,7 +55304,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6603779MHC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55326,7 +55326,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5546952CBM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55392,7 +55392,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8572974EVT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55414,7 +55414,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '14501259IFA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55458,7 +55458,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12814740BMC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55480,7 +55480,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5570309EFP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55502,7 +55502,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '12590223NPT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55524,7 +55524,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8572161JVP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55546,7 +55546,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8650840JBC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55590,7 +55590,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6591548IFT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55602,7 +55602,7 @@ class AffiliateSeeder extends Seeder
         'zone_home' => 'ninguno',
         'sport' => 'Ninguno',
         'place' => 'Potosi',
-        'date' => '2017-09-03',
+        'date' => '2017-09-30',
         'number' => '19873',
         'created_at' => '2025-07-15 00:00:00',
         'user_id' => '2527',
@@ -55612,7 +55612,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8522597ASG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55634,7 +55634,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '13898080CCP',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55656,7 +55656,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5071643JGA',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55678,7 +55678,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8575494FVH',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55700,7 +55700,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8532211ISC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55722,7 +55722,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6680608KCC',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55744,7 +55744,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '5550280APO',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55766,7 +55766,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10475989VQG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55788,7 +55788,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10475982PQG',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55810,7 +55810,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '6579541NAR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55832,7 +55832,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '1392804ERM',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55854,7 +55854,7 @@ class AffiliateSeeder extends Seeder
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '8522457BNR',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55875,30 +55875,30 @@ class AffiliateSeeder extends Seeder
     ],
     [
         'enrollment_conalab' => 'ninguno',
-        'enrollment_RPA' => '6707060NNN',
-        'sede' => 'Potosí',
+        'enrollment_RPA' => '6659323LCL',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
-        'address_office' => 'C/ Hoyos Esq. Boulevard S/n, Zona Central',
+        'address_office' => 'C/ H. Vasquez Nro. 562',
         'address_number' => 'ninguno',
         'zone' => 'ninguno',
-        'address_home' => 'C/ H. Vargas, Nº 12619, Zona Calvario',
+        'address_home' => 'C/ H. Vasquez Nro. 562',
         'address_number_home' => 'ninguno',
         'zone_home' => 'ninguno',
-        'sport' => 'Futbol',
+        'sport' => 'Futsal',
         'place' => 'Potosi',
-        'date' => '2018-01-17 00:00:00',
-        'number' => '19873',
-        'created_at' => '2024-10-23 00:00:00',
+        'date' => '2023-09-20 00:00:00',
+        'number' => '1177',
+        'created_at' => '2025-07-31 00:00:00',
         'user_id' => '2540',
-        'university_id' => '19',
+        'university_id' => '1',
         'status' => 'Activo'
     ],
     [
         'enrollment_conalab' => 'ninguno',
         'enrollment_RPA' => '10470540GVT',
-        'sede' => 'Potosí',
+        'sede' => 'Potosi',
         'profession' => 'Abogado',
         'profession_status' => 'Libre',
         'institution' => 'No definido',
@@ -55917,6 +55917,138 @@ class AffiliateSeeder extends Seeder
         'university_id' => '1',
         'status' => 'Activo'
     ],
+    [
+        'enrollment_conalab' => 'ninguno',
+        'enrollment_RPA' => '6695395RVR',
+        'sede' => 'Potosi',
+        'profession' => 'Abogado',
+        'profession_status' => 'Libre',
+        'institution' => 'No definido',
+        'address_office' => 'C/ San Alberto Nº 763- B, Zna. Ferroviaria.',
+        'address_number' => 'ninguno',
+        'zone' => 'ninguno',
+        'address_home' => 'C/ 1ro De Abril No 230, Zna. San Roque.',
+        'address_number_home' => 'ninguno',
+        'zone_home' => 'ninguno',
+        'sport' => 'Futbol',
+        'place' => 'Potosi',
+        'date' => '2017-11-27 00:00:00',
+        'number' => '1335',
+        'created_at' => '2025-09-24 00:00:00',
+        'user_id' => '2542',
+        'university_id' => '1',
+        'status' => 'Activo'
+    ],
+    [
+        'enrollment_conalab' => 'ninguno',
+        'enrollment_RPA' => '6702308JMM',
+        'sede' => 'Cochabamba',
+        'profession' => 'Abogado',
+        'profession_status' => 'Libre',
+        'institution' => 'No definido',
+        'address_office' => 'C/ Villamontes Nº 4, Zna. Delicias.',
+        'address_number' => 'ninguno',
+        'zone' => 'ninguno',
+        'address_home' => 'C/ Villamontes Nº 4, Zna. Delicias.',
+        'address_number_home' => 'ninguno',
+        'zone_home' => 'ninguno',
+        'sport' => 'Futbol',
+        'place' => 'Cochabamba',
+        'date' => '2024-11-29 00:00:00',
+        'number' => '123179',
+        'created_at' => '2025-10-06 00:00:00',
+        'user_id' => '2543',
+        'university_id' => '19',
+        'status' => 'Activo'
+    ],
+    [
+        'enrollment_conalab' => 'ninguno',
+        'enrollment_RPA' => '56334BCV',
+        'sede' => 'Potosi',
+        'profession' => 'Abogado',
+        'profession_status' => 'Libre',
+        'institution' => 'No definido',
+        'address_office' => 'C/ Hoyos Esq. Boulevard S/n, Zona Central',
+        'address_number' => 'ninguno',
+        'zone' => 'ninguno',
+        'address_home' => 'C/ H. Vargas, Nº 12619, Zona Calvario',
+        'address_number_home' => 'ninguno',
+        'zone_home' => 'ninguno',
+        'sport' => 'Ninguno',
+        'place' => 'Potosi',
+        'date' => '2018-01-17 00:00:00',
+        'number' => '19873',
+        'created_at' => '2025-10-13 00:00:00',
+        'user_id' => '2544',
+        'university_id' => '19',
+        'status' => 'Activo'
+    ],
+    [
+        'enrollment_conalab' => 'ninguno',
+        'enrollment_RPA' => '31234GVV',
+        'sede' => 'Potosi',
+        'profession' => 'Abogado',
+        'profession_status' => 'Libre',
+        'institution' => 'No definido',
+        'address_office' => 'Ninguno',
+        'address_number' => 'ninguno',
+        'zone' => 'ninguno',
+        'address_home' => 'Ninguno',
+        'address_number_home' => 'ninguno',
+        'zone_home' => 'ninguno',
+        'sport' => 'Ninguno',
+        'place' => 'Potosi',
+        'date' => '2018-01-17 00:00:00',
+        'number' => '19873',
+        'created_at' => '2025-11-21 00:00:00',
+        'user_id' => '2545',
+        'university_id' => '19',
+        'status' => 'Activo'
+    ],
+    [
+        'enrollment_conalab' => 'ninguno',
+        'enrollment_RPA' => '12406566MCS',
+        'sede' => 'Potosi',
+        'profession' => 'Abogado',
+        'profession_status' => 'Libre',
+        'institution' => 'No definido',
+        'address_office' => 'Ninguno',
+        'address_number' => 'ninguno',
+        'zone' => 'ninguno',
+        'address_home' => 'Calle Mendez-tarija Nº1124 Z. San Roque',
+        'address_number_home' => 'ninguno',
+        'zone_home' => 'ninguno',
+        'sport' => 'Natación',
+        'place' => 'Argentina-buenos Aires',
+        'date' => '2018-04-17 00:00:00',
+        'number' => '26.464',
+        'created_at' => '2025-12-12 00:00:00',
+        'user_id' => '2546',
+        'university_id' => '1',
+        'status' => 'Activo'
+    ],
+    [
+        'enrollment_conalab' => 'ninguno',
+        'enrollment_RPA' => '6691242SCC',
+        'sede' => 'Potosi',
+        'profession' => 'Abogado',
+        'profession_status' => 'Libre',
+        'institution' => 'No definido',
+        'address_office' => 'Ninguno',
+        'address_number' => 'ninguno',
+        'zone' => 'ninguno',
+        'address_home' => 'C/ Calama, Nº 188, Zona Central',
+        'address_number_home' => 'ninguno',
+        'zone_home' => 'ninguno',
+        'sport' => 'Ninguno',
+        'place' => 'Potosi',
+        'date' => '2025-09-30 00:00:00',
+        'number' => '144292',
+        'created_at' => '2026-03-10 00:00:00',
+        'user_id' => '2547',
+        'university_id' => '14',
+        'status' => 'Activo'
+    ],
 ];
 
         
@@ -55926,8 +56058,18 @@ class AffiliateSeeder extends Seeder
         // foreach ($data as $key => $d) {
         //     $data[$key]['university_id'] = fake()->randomElement($universityIds);
         // }
+foreach ($data as $index => $item) {
+    try {
+        Affiliate::insert($item);
+       // Model::create($item);
+    } catch (\Exception $e) {
+        dd([
+            'index' => $index,
+            'registro' => $item,
+            'error' => $e->getMessage()
+        ]);
+    }
+}
 
-
-        Affiliate::insert($data);
     }
 }
