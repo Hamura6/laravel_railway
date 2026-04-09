@@ -4,8 +4,8 @@
 $blue: #887316 !default;
 // Paleta elegante y moderna
 
-/* $primary: #001c40 !default;
- */$primary: #001c40 !default;
+ $primary: #001c40 !default;
+//$primary: #001c40 !default;
 $secondary: #3d3d3d !default;
 $success: #0e723b !default;
 $info: #0f517c !default;
@@ -13,8 +13,8 @@ $warning: #e4af1f !default;
 $danger: #a01c0e !default;
 $light: #fafafa !default;
 /* $dark: #01132b !default; */
-/* $dark: #001c40 !default;
- */$dark: #1f1f1f !default;
+//$dark: #001c40 !default;
+ $dark: #1f1f1f !default;
 
 $theme-colors: (
   "primary": $primary,
@@ -57,9 +57,9 @@ $font-main: "Poppins", sans-serif;
 
 // =========== START VARIABLES LADING =========== //
 
-/* $color-primary-lading-bg: #1f1f1f;
- */
-$color-primary-lading-bg: #001c40;
+ $color-primary-lading-bg: #1f1f1f;
+
+//$color-primary-lading-bg: #001c40;
 $color-primary-lading-text: #f1f1f1;
 
 $color-accent-lading: #927700;

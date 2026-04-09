@@ -55,16 +55,27 @@ class DatabaseSeeder extends Seeder
         $role = Role::find(2);
         $role->syncPermissions($permissionsAll);
         $userMaster = User::create([
-            'name' => 'Madara',
-            'last_name' => 'Uchiha',
-            'birthdate' => '2005-10-10',
-            'gender' => 'Masculino',
-            'martial_status' => 'Divorciado',
-            'ci' => '14482907',
-            'email' => 'deidaramen3@gmail.com',
-            'password' => Hash::make('madaradelos7')
+            'name' => 'Fabiola',
+            'last_name' => 'Arequipa',
+            'birthdate' => '1998-03-09',
+            'gender' => 'Femenino',
+            'martial_status' => 'Soltero',
+            'ci' => '9203123',
+            'email' => 'fabiola@gmail.com',
+            'password' => Hash::make('9203123')
         ]);
         $userMaster->assignRole('Contadora');
+        $userMaster = User::create([
+            'name' => 'Luz Maria Bolivia',
+            'last_name' => 'Condori Villanueva',
+            'birthdate' => '1998-12-18',
+            'gender' => 'Femenino',
+            'martial_status' => 'Soltero',
+            'ci' => '13456789',
+            'email' => 'luzmaria@gmail.com',
+            'password' => Hash::make('13456789')
+        ]);
+        $userMaster->assignRole('Secretaria');
 
 
         $specialities = [

@@ -48,7 +48,7 @@ class CrearteContribution extends Command
                     'date'       => $paymentDate,
                     'fee_id'     => $fee->id,
                     'type'       => 'cash',
-                    'user_id'    => auth()->id()
+                    'user_id'    => null
                 ]);
             }
             $pendientes = $affiliate->payments()

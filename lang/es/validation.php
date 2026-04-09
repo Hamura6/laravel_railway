@@ -213,6 +213,7 @@ return [
         'mausoleum'               => 'mausoleo',
         'university_id'               => 'universidad',
         'number'               => 'número',
+        'password'               => 'contraseña',
         'specialtiesArray.*.date'               => 'fecha de especialidad',
         'specialtiesArray.*.specialty_id'               => 'especialidad',
         'specialtiesArray.*.area'               => 'área de especialidad',

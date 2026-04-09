@@ -33,7 +33,12 @@ class ResetPassword extends Component
 
         $this->email = request()->string('email')->value();
     }
-
+    public function render(){
+         return view('livewire.auth.reset-password');
+    }
+    public function view(){
+        dd("asdfasdf");
+    }
     /**
      * Reset the password for the given user.
      */
@@ -69,7 +74,7 @@ class ResetPassword extends Component
             return;
         }
 
-        Session::flash('status', __($status));
+          session()->flash('status', __('La contraseña fue restablecida correctamente'));
 
         $this->redirectRoute('login', navigate: true);
     }

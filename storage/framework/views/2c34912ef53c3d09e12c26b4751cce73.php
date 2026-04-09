@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
-        <?php echo e($institution->initials ? $institution->initials . ' | '.  $institution->name : 'ICAP | Ilustre Colegio de Abogados'); ?>
+        <?php echo e($institution->initials . ' | Ilustre Colegio de Abogados de Potosí'); ?>
 
     </title>
 
@@ -94,6 +94,12 @@
 
                         </div>
                     <?php endif; ?>
+                     <?php if(session('status')): ?>
+                        <div class="alert alert-success text-center">
+                            <?php echo e(session('status')); ?>
+
+                        </div>
+                    <?php endif; ?>
 
                     <div style="display: flex; justify-content: center;">
                         <form style="min-width: 100%;" method="POST" action="<?php echo e(route('login')); ?>">
@@ -101,7 +107,7 @@
                             <div class="row g-3">
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control <?php $__errorArgs = ['email'];
+                                        <input type="email" class="form-control <?php $__errorArgs = ['email'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
@@ -112,7 +118,7 @@ unset($__errorArgs, $__bag); ?>"
                                             name="email" id="email" value="<?php echo e(old('email')); ?>"
                                             required autofocus autocomplete="email">
                                         <label for="email"><i class="fas fa-envelope"></i> Correo
-                                            electronico o C.I.</label>
+                                            electrónico o C.I.</label>
                                         <?php $__errorArgs = ['email'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :

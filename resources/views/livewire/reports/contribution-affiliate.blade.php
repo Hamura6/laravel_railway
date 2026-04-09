@@ -50,7 +50,7 @@
                                 {{ $pago->updated_at }}
                             </td>
                             <td class="text-center">
-                                {{ $pago->user->full_name }}
+                                {{ $pago->user->full_name??'No registrado' }}
                             </td>
                             <td class="text-center">
                                 {{ $pago->fecha_display }}

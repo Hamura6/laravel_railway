@@ -16,7 +16,7 @@ class FeeSeeder extends Seeder
         $fees = [
             [
                 'name' => 'Aportes',
-                'amount' => 20,
+                'amount' => 30,
                 'type' => 'single_payment'
             ],
             [

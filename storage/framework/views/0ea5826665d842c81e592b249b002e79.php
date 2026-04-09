@@ -1,34 +1,73 @@
 <!doctype html>
 <html lang="es">
 
+
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>
-        <?php echo e($institution->initials ? $institution->initials . ' | ' . $institution->name : 'ICAP | Ilustre Colegio de Abogados'); ?>
+    <title><?php echo e($institution->initials); ?> | Ilustre Colegio de Abogados de Potosí</title>
 
-    </title>
-
-    <meta name="description" content=" <?php echo e($institution->name ?? 'Ilustre Colegio de Abogados ICAP.'); ?>">
+    <meta name="description"
+        content="El Ilustre Colegio de Abogados de Potosí (ICAP) es la institución que agremia y regula el ejercicio de la abogacía en el departamento de Potosí, Bolivia.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="<?php echo e(url()->current()); ?>">
+    <link rel="canonical" href="https://www.icappotosi.com">
 
-    <meta property="og:title" content="<?php echo e($institution->initials ?? 'ICAP'); ?>">
-    <meta property="og:description" content="<?php echo e($institution->name ?? 'Ilustre Colegio de Abogados ICAP.'); ?>">
-    <meta property="og:image" content="<?php echo e($institution->image); ?> ">
-    <meta property="og:url" content="<?php echo e(url()->current()); ?>">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ilustre Colegio de Abogados de Potosí">
+    <meta property="og:description"
+        content="El Ilustre Colegio de Abogados de Potosí (ICAP) agremia y regula el ejercicio de la abogacía en Potosí, Bolivia.">
+    <meta property="og:image" content="<?php echo e($institution->image); ?>">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://www.icappotosi.com">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_BO">
+    <meta property="og:site_name" content="ICAP - Ilustre Colegio de Abogados de Potosí">
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="<?php echo e($institution->initials ?? 'ICAP'); ?>">
-    <meta name="twitter:description" content="<?php echo e($institution->name ?? 'Ilustre Colegio de Abogados ICAP.'); ?>">
-    <meta name="twitter:image" content="<?php echo e($institution->image); ?>">
+    <meta name="twitter:title" content="Ilustre Colegio de Abogados de Potosí">
+    <meta name="twitter:description"
+        content="El Ilustre Colegio de Abogados de Potosí (ICAP) agremia y regula el ejercicio de la abogacía en Potosí, Bolivia.">
+    <meta name="twitter:image" content="https://www.icappotosi.com/images/og-image.jpg">
 
-    <link rel="icon" type="image/png" href="<?php echo e($institution->image); ?>">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo e($institution->image); ?>">
+    <link rel="icon" type="image/png" sizes="64x64" href="<?php echo e($institution->image); ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <?php
+        $jsonLd = [
+            '@context' => 'https://schema.org',
+            '@type' => 'LegalService',
+            'name' => $institution->name ?? 'Ilustre Colegio de Abogados de Potosí',
+            'alternateName' => $institution->initials ?? 'ICAP',
+            'description' => 'Institución que agremia y regula el ejercicio de la abogacía en Potosí, Bolivia.',
+            'url' => url('/'),
+            'logo' => trim($institution->image ?? ''),
+            'telephone' => '+591' . ($institution->phone ?? ''),
+            'email' => $institution->email ?? '',
+            'address' => [
+                '@type' => 'PostalAddress',
+                'streetAddress' => $institution->address ?? '',
+                'addressLocality' => 'Potosí',
+                'addressRegion' => 'Potosí',
+                'addressCountry' => 'BO',
+            ],
+            'areaServed' => 'Potosí, Bolivia',
+        ];
+    ?>
+
+    <script type="application/ld+json">
+    <?php echo json_encode($jsonLd, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES); ?>
+
+</script>
 
     <?php echo app('Illuminate\Foundation\Vite')(['resources/sass/landing-pages.scss', 'resources/js/app.js']); ?>
 </head>
+
 
 <body>
 
@@ -228,21 +267,18 @@
     <a class="back-to-top" href="#start">
         <i class="fa fa-chevron-up"></i>
     </a>
-    <div id="cookie-banner"
-        style="position:fixed;bottom:0;background:#222;color:#fff;padding:10px;width:100%;text-align:center;">
-        Usamos cookies para mejorar tu experiencia.
-        <button onclick="aceptarCookies()">Aceptar</button>
+    <div id="session-notice" role="status" aria-live="polite">
+        <span>Este sitio usa una cookie técnica de sesión, necesaria para tu acceso.</span>
+        <button type="button"
+            onclick="
+    document.getElementById('session-notice').hidden = true;
+    localStorage.setItem('session_noticed', '1');
+  ">Entendido</button>
     </div>
 
     <script>
-        function aceptarCookies() {
-            document.getElementById("cookie-banner").style.display = "none";
-            document.cookie = "cookies_aceptadas=true; path=/";
-        }
-    </script>
-    <script>
-        if (document.cookie.includes("cookies_aceptadas=true")) {
-            document.getElementById("cookie-banner").style.display = "none";
+        if (localStorage.getItem('session_noticed')) {
+            document.getElementById('session-notice').hidden = true;
         }
     </script>
 </body>

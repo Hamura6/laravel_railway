@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
-        {{ $institution->initials ? $institution->initials . ' | '.  $institution->name : 'ICAP | Ilustre Colegio de Abogados' }}
+        {{  $institution->initials . ' | Ilustre Colegio de Abogados de Potosí' }}
     </title>
 
     <meta name="description" content=" {{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
@@ -90,6 +90,11 @@
                             {{ session('error') }}
                         </div>
                     @endif
+                     @if (session('status'))
+                        <div class="alert alert-success text-center">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
                     <div style="display: flex; justify-content: center;">
                         <form style="min-width: 100%;" method="POST" action="{{ route('login') }}">
@@ -97,11 +102,11 @@
                             <div class="row g-3">
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control @error('email') is-invalid @enderror"
+                                        <input type="email" class="form-control @error('email') is-invalid @enderror"
                                             name="email" id="email" value="{{ old('email') }}"
                                             required autofocus autocomplete="email">
                                         <label for="email"><i class="fas fa-envelope"></i> Correo
-                                            electronico o C.I.</label>
+                                            electrónico o C.I.</label>
                                         @error('email')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>

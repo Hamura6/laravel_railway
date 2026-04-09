@@ -1,3 +1,147 @@
-<x-layouts.auth.simple :title="$title ?? null">
+
+
+
+    <!doctype html>
+    <html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>
+            {{ $institution->initials . ' | Ilustre Colegio de Abogados de Potosí' }}
+        </title>
+
+        <meta name="description" content=" {{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="{{ url()->current() }}">
+
+        <meta property="og:title" content="{{ $institution->initials ?? 'ICAP' }}">
+        <meta property="og:description" content="{{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
+        <meta property="og:image" content="{{ $institution->image }} ">
+        <meta property="og:url" content="{{ url()->current() }}">
+        <meta property="og:type" content="website">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ $institution->initials ?? 'ICAP' }}">
+        <meta name="twitter:description" content="{{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
+        <meta name="twitter:image" content="{{ $institution->image }}">
+
+        <link rel="icon" type="image/png" href="{{ $institution->image }}">
+
+        @vite(['resources/sass/landing-pages.scss', 'resources/js/app.js'])
+    </head>
+
+
+    <body>
+
+        <header class="site-header" id="start">
+            <div class="header-wrapper">
+                <!-- LOGO -->
+                <a class="header-logo" href="{{ route('home') }}">
+                    <img alt="Logo ICAP" src="{{ $institution->image ?? 'logo' }}">
+                    <div class="header-title">
+                        {{ $institution->initials ?? 'ICAP' }}
+                        <div class="slogan">{{ $institution->name ?? 'ILUSTRE COLEGIO DE ABOGADOS' }}</div>
+                    </div>
+                </a>
+
+                <!-- CONTACTO + LOGIN -->
+                <div class="header-info">
+                    <div class="header-contacts">
+                        <a href="#"><i class="fas fa-phone"></i> (+591) {{ $institution->phone ?? '0000' }}</a>
+                        <a href="#"><i class="fas fa-at"></i> {{ $institution->email ?? 'icap@gmail.com' }}</a>
+                    </div>
+
+                    @auth
+                        <div class="header-login">
+                            <a class="login-button" href="{{ route('settings.profile') }}">
+                                Acceder
+                            </a>
+                        </div>
+                    @else
+                        <div class="header-login">
+                            @if (!Route::is('login'))
+                                <a class="login-button" href="{{ route('login') }}">
+                                    Iniciar sesión
+                                </a>
+                            @endif
+                        </div>
+                    @endauth
+
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
     {{ $slot }}
-</x-layouts.auth.simple>
+    @fluxScripts
+      </div>
+        <footer class="site-footer">
+            <div class="footer-wrapper">
+                <!-- Acerca de -->
+                <section class="footer-info">
+                    <h2 class="footer-title">Acerca de</h2>
+                    <p class="footer-text">
+                        El Ilustre Colegio de Abogados de Potosí (ICAP) ofrece servicios especializados en derecho y
+                        asesoría legal. Organizamos talleres y seminarios sobre temas legales actuales. Puede
+                        contactarnos para el desarrollo de cualquier proyecto legal, ya sea académico o comercial.
+                    </p>
+                </section>
+
+                <!-- Enlaces -->
+                <section class="footer-sections">
+                    <div class="footer-block">
+                        <h2 class="footer-title">Áreas de servicio</h2>
+                        <ul class="footer-list">
+                            <li><a href="{{ route('site.courses') }}">Educación</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-block">
+                        <h2 class="footer-title">Páginas útiles</h2>
+                        <ul class="footer-list">
+                            <li><a href="{{ route('site.about') }}">Acerca de</a></li>
+                            <li><a href="{{ route('site.news') }}">Noticias</a></li>
+                            <li><a href="{{ route('site.courses') }}">Cursos</a></li>
+                            <li><a href="{{ route('site.events') }}">Eventos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h2 class="footer-title">Contáctanos</h2>
+                        <ul class="footer-contact-list">
+                            <li><i class="fa fa-map-marker-alt"></i> {{ $institution->address ?? 'city' }}</li>
+                            <li><i class="fa fa-phone-alt"></i> (+591){{ $institution->phone ?? 'mercurio' }}</li>
+                            <li><i class="fa fa-envelope"></i> {{ $institution->email ?? 'susano' }}</li>
+                        </ul>
+
+                        <div class="footer-socials">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#">Términos de uso</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Cookies</a>
+                <a href="#">Ayuda</a>
+            </nav>
+
+            <div class="footer-credits">
+                <p>&copy; <span id="year"></span> ICAP Potosi. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+        <a class="back-to-top" href="#start">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+
+    </body>
+
+    </html>

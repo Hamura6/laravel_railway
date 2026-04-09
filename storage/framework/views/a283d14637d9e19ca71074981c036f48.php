@@ -163,10 +163,10 @@
         }
     </style>
     <div class="row g-3">
-        {{--  <input type="text" wire:model.live.debounce="date"> --}}
-        {{--   {{ $this->date }} --}}
+        
+        
         <h2 class="py-3">¡Bienvenido al Panel Administrativo!</h2>
-        <h2 class="py-3">Información correspondiente de la gestión {{ $this->date }}</h2>
+        <h2 class="py-3">Información correspondiente de la gestión <?php echo e($this->date); ?></h2>
         <div class="col-md-6">
             <div class="neo-card">
                 <div class="neo-title">
@@ -184,16 +184,16 @@
                             <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" />
                         </svg>
-                        {{ $result['porcentaje_aportes'] }}%
+                        <?php echo e($result['porcentaje_aportes']); ?>%
                     </div>
                 </div>
 
                 <div class="neo-data">
-                    <p class="neo-data-value">{{ $result['aportes'] }} Bs</p>
+                    <p class="neo-data-value"><?php echo e($result['aportes']); ?> Bs</p>
                     <p class="neo-data-label my-0">Total adeudado</p>
 
                     <div class="neo-progress-container">
-                        <div class="neo-progress-fill" style="width: {{ $result['porcentaje_aportes'] }}%"></div>
+                        <div class="neo-progress-fill" style="width: <?php echo e($result['porcentaje_aportes']); ?>%"></div>
                     </div>
 
                     <div class="neo-progress-label">
@@ -221,16 +221,16 @@
                             <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" />
                         </svg>
-                        {{ $result['porcentaje_restante'] }}%
+                        <?php echo e($result['porcentaje_restante']); ?>%
                     </div>
                 </div>
 
                 <div class="neo-data">
-                    <p class="neo-data-value">{{ $result['total_tramites'] }} Bs</p>
+                    <p class="neo-data-value"><?php echo e($result['total_tramites']); ?> Bs</p>
                     <p class="neo-data-label my-0">Total adeudado</p>
 
                     <div class="neo-progress-container">
-                        <div class="neo-progress-fill" style="width: {{ $result['porcentaje_restante'] }}%"></div>
+                        <div class="neo-progress-fill" style="width: <?php echo e($result['porcentaje_restante']); ?>%"></div>
                     </div>
 
                     <div class="neo-progress-label">
@@ -280,7 +280,7 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script>
         // feesJson ya es JSON, podemos usarlo directamente
-        var feesData = {!! $feesJson !!};
+        var feesData = <?php echo $feesJson; ?>;
 
         var categories = feesData.map(f => f.name);
         var saldoFinales = feesData.map(f => f.saldo_final);
@@ -306,7 +306,7 @@
 
 
         // Datos de estatus desde Laravel
-        var estatusData = {!! $estatusJson !!};
+        var estatusData = <?php echo $estatusJson; ?>;
 
         // Labels y valores
         var categories = estatusData.map(e => e.status);
@@ -400,7 +400,7 @@
 
 
 
-        var feesData = @js($dataMonths);
+        var feesData = <?php echo \Illuminate\Support\Js::from($dataMonths)->toHtml() ?>;
 
         // Extraer categorías y valores
         var categories = feesData.map(f => f.mes); // ["Enero", "Febrero", ...]
@@ -504,249 +504,6 @@
 
 
 
-    {{--   <div class="d-grid d-md-flex gap-1">
-    <button class="btn btn-secondary"
-            data-bs-custom-class="custom-tooltip"
-            data-bs-placement="top"
-            data-bs-title="This top tooltip is themed via CSS variables."
-            data-bs-toggle="tooltip"
-            type="button">
-      Custom tooltip
-    </button>
-    <button class="btn btn-secondary"
-            data-bs-placement="top"
-            data-bs-title="Tooltip on top"
-            data-bs-toggle="tooltip"
-            type="button">
-      Tooltip on top
-    </button>
-    <button class="btn btn-secondary"
-            data-bs-placement="right"
-            data-bs-title="Tooltip on right"
-            data-bs-toggle="tooltip"
-            type="button">
-      Tooltip on right
-    </button>
-    <button class="btn btn-secondary"
-            data-bs-placement="bottom"
-            data-bs-title="Tooltip on bottom"
-            data-bs-toggle="tooltip"
-            type="button">
-      Tooltip on bottom
-    </button>
-    <button class="btn btn-secondary"
-            data-bs-placement="left"
-            data-bs-title="Tooltip on left"
-            data-bs-toggle="tooltip"
-            type="button">
-      Tooltip on left
-    </button>
-  </div>
-
-  <br>
-
-  <button class="btn btn-primary"
-          id="liveToastBtn"
-          type="button">Show live toast</button>
-
-  <br>
-
-  <div class="toast-container position-fixed bottom-0 end-0 p-3">
-    <div aria-atomic="true"
-         aria-live="assertive"
-         class="toast"
-         id="liveToast"
-         role="alert">
-      <div class="toast-header">
-        <img alt="..."
-             class="me-2 rounded"
-             src="...">
-        <strong class="me-auto">Bootstrap</strong>
-        <small>11 mins ago</small>
-        <button aria-label="Close"
-                class="btn-close"
-                data-bs-dismiss="toast"
-                type="button"></button>
-      </div>
-      <div class="toast-body">
-        Hello, world! This is a toast message.
-      </div>
-    </div>
-  </div>
-
-  <br>
-
-  <button class="btn btn-primary"
-          data-bs-target="#exampleModal"
-          data-bs-toggle="modal"
-          type="button">
-    Launch demo modal
-  </button>
-
-  <div class="d-grid d-sm-flex my-2 gap-1">
-    <button class="btn btn-primary btn-sm"
-            onclick="exampleSwalToastSuccess()"
-            type="button">exampleSwalToastSuccess</button>
-    <button class="btn btn-primary btn-sm"
-            onclick="exampleSwalToastError()"
-            type="button">exampleSwalToastError</button>
-    <button class="btn btn-primary btn-sm"
-            onclick="exampleSwalToastWarning()"
-            type="button">exampleSwalToastWarning</button>
-    <button class="btn btn-primary btn-sm"
-            onclick="exampleSwalToastInfo()"
-            type="button">exampleSwalToastInfo</button>
-    <button class="btn btn-primary btn-sm"
-            onclick="exampleSwalToastQuestion()"
-            type="button">exampleSwalToastQuestion</button>
-  </div>
-
-  <button onclick="exampleSwalConfirmSuccess()"
-          type="button">exampleSwalConfirmSuccess</button>
-  <button onclick="exampleSwalConfirmError()"
-          type="button">exampleSwalConfirmError</button>
-
-  <div aria-hidden="true"
-       aria-labelledby="exampleModalLabel"
-       class="modal fade"
-       id="exampleModal"
-       tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5"
-              id="exampleModalLabel">Modal title</h1>
-          <button aria-label="Close"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  type="button"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                  type="button">Close</button>
-          <button class="btn btn-primary"
-                  type="button">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br>
-  <br>
-
-  <h2>¡Bienvenido al Panel Administrativo!</h2>
-  <p>Ahora tu menú lateral tiene submenús desplegables con animación suave y diseño profesional.
-  </p>
-
-  <div class="row g-2">
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h3><i class="fa fa-users"></i> Usuarios Activos</h3>
-          <span>1,234</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h3><i class="fa fa-shopping-cart"></i> Ventas Hoy</h3>
-          <span>$5,678</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h3><i class="fa fa-chart-line"></i> Crecimiento</h3>
-          <span>+12%</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h3><i class="fa fa-box"></i> Productos</h3>
-          <span>892</span>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-    function exampleSwalToastSuccess() {
-      SwalToastSuccess.fire({});
-    }
-
-    function exampleSwalToastError() {
-      SwalToastError.fire({});
-    }
-
-    function exampleSwalToastWarning() {
-      SwalToastWarning.fire({});
-    }
-
-    function exampleSwalToastInfo() {
-      SwalToastInfo.fire({});
-    }
-
-    function exampleSwalToastQuestion() {
-      SwalToastQuestion.fire({});
-    }
-
-
-
-    function exampleSwalConfirmSuccess() {
-      SwalConfirm.fire({
-        icon: 'success',
-
-      });
-    }
-
-    function exampleSwalConfirmError() {
-      SwalConfirm.fire({
-        icon: 'error',
-      });
-    }
-
-    function exampleSwalConfirmWarning() {
-      SwalConfirm.fire({
-        icon: 'warning',
-      });
-    }
-
-    function exampleSwalConfirmInfo() {
-      SwalConfirm.fire({
-        icon: 'info',
-      });
-    }
-
-    function exampleSwalConfirmQuestion() {
-      SwalConfirm.fire({
-        icon: 'question',
-      });
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-
-      window.SwalConfirm = SwalConfirm.mixin({
-        confirmButtonText: `<i class='fas fa-check'></i> Confirmar`,
-        cancelButtonText: `<i class='fas fa-times'></i> Cancelar`,
-      })
-
-      const toastTrigger = document.getElementById('liveToastBtn')
-      const toastLiveExample = document.getElementById('liveToast')
-
-      if (toastTrigger) {
-        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-        toastTrigger.addEventListener('click', () => {
-          toastBootstrap.show()
-        })
-      }
-    });
-  </script> --}}
+    
 </div>
+<?php /**PATH D:\ICAPV4\ICAP\resources\views/livewire/dashboard/index.blade.php ENDPATH**/ ?>

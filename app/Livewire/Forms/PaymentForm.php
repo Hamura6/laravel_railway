@@ -33,7 +33,7 @@ class PaymentForm extends Form
             throw new \Exception("El afiliado no existe.");
         }
         $this->date = now();
-        $this->user_id=auth()->user()->id;
+        $this->user_id = auth()->user()->id;
 
         if ($fee->type == 'single_payment' || $discountAmount > 0) {
             if ($discountAmount > 0 && !empty($discountAmount)) {
@@ -44,12 +44,12 @@ class PaymentForm extends Form
         } else if ($payAmount != $this->amount) {
             $this->status = 'Por pagar';
             $payment = Payment::create($this->all());
-            if($payAmount!=0){
+
+            if ($payAmount != 0) {
                 $payment->plans()->create([
-                'amount' => $payAmount,
-            ]);
+                    'amount' => $payAmount,
+                ]);
             }
-            
         } else {
             $this->status = 'Pagado';
             $payment = Payment::create($this->all());
@@ -67,9 +67,11 @@ class PaymentForm extends Form
             $this->status = "Pagado";
         } else if ($payAmount != $this->amount) {
             $this->status = 'Por pagar';
-            $this->payment->plans()->create([
-                'amount' => $payAmount,
-            ]);
+            if ($payAmount != 0) {
+                $this->payment->plans()->create([
+                    'amount' => $payAmount,
+                ]);
+            }
         } else {
             $this->status = 'Pagado';
         }
@@ -97,8 +99,8 @@ class PaymentForm extends Form
             ->where('fee_id', 1)
             ->where('status', 'Por pagar')
             ->count();
-        if($total<24 && $affiliate->status!='Fallecido'){
-            $affiliate->status='Activo';
+        if ($total < 24 && $affiliate->status != 'Fallecido') {
+            $affiliate->status = 'Activo';
             $affiliate->save();
         }
     }
@@ -199,10 +201,10 @@ class PaymentForm extends Form
     public function storeAport($pendingPayments, $paymentDate, $quantity, $affiliate, $discountAmount)
     {
         $total = 0;
-        
+
         $date_intial =  $pendingPayments->first()->date ?? Carbon::parse($paymentDate)->addMonth(1)->firstOfMonth();
-       
-        
+
+
         $quantity = (int)$quantity;
         foreach ($pendingPayments as $payment) {
             if ($discountAmount > 0) {
@@ -232,7 +234,7 @@ class PaymentForm extends Form
         if ($quantity > 0) {
             $paymentDate = Carbon::parse($paymentDate)->addMonth($quantity);
             $total += ($this->amount * $quantity);
-            $view=$affiliate->payments()->create([
+            $view = $affiliate->payments()->create([
                 'amount' => $total,
                 'status' => 'Pagado',
                 'date'   => $paymentDate,

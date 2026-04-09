@@ -41,7 +41,7 @@
                         <td>
                             {{ __($fee->type) }}
                         </td>
-                        <td align="center">
+                        <td class="d-flex flex-row justify-content-center align-items-center gap-1">
                             @can('Editar tarifas')
                                 <x-btn-edit id="{{ $fee->id }}" />
                             @endcan

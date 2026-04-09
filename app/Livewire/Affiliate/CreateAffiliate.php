@@ -5,6 +5,7 @@ namespace App\Livewire\Affiliate;
 use App\Livewire\Forms\AffiliateForm;
 use App\Livewire\Forms\UserForm;
 use App\Models\Affiliate;
+use App\Models\Discount;
 use App\Models\Fee;
 use App\Models\Specialty;
 use App\Models\University;
@@ -105,12 +106,18 @@ class CreateAffiliate extends Component
                 ]);
             }
             $fees = [2, 1];
+            /* $this->discountAmount = Discount::whereDate('start_date', '<=', now())
+            ->whereDate('end_date', '>=', now())
+            ->whereHas('fees', fn($q) => $q->where('fees.id', 1))
+            ->orderBy('id', 'desc')
+            ->value('discount_value') ?? 0; */
             foreach ($fees as $fee_id) {
                 $user->affiliate->payments()->create([
                     'fee_id' => $fee_id,
                     'date' => now(),
                     'amount' => Fee::find($fee_id)->amount,
-                    'status' => 'Por pagar'
+                    'status' => 'Por pagar',
+                    'user_id'=> auth()->user()->id
                 ]);
             }
             return redirect()->route('form.affiliate', $user->affiliate->id);

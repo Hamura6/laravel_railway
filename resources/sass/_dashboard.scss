@@ -34,7 +34,7 @@ body {
   flex-direction: column;
 }
 .layout-wrapper {
-    /* display: flex; */
+    display: flex; 
     min-height: 100vh;
 }
 
@@ -214,7 +214,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    width: calc(100vw-#{$sidebar-width});
+    width: 100%;
 }
 
 // =================================== TOPBAR ===================================
@@ -454,8 +454,8 @@ body {
 // =================================== FOOTER ===================================
 
 .dashboard-footer {
-    /* background-color: darken($color-primary-dashboard-bg, 5%); */
-    background: $color-body-bg;
+    background-color: $color-primary-dashboard-bg; 
+    //background: $color-body-bg;
     color: $color-primary-dashboard-text;
 
     a {
@@ -463,11 +463,11 @@ body {
         color: $color-primary-dashboard-text;
     }
 
-    // .footer-content {
-    // }
+    /*  .footer-content {
+     } */
 
     .footer-bottom {
-        text-align: end;
+        text-align: center;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding-top: 1rem;
         font-size: 0.85rem;
@@ -484,7 +484,7 @@ body {
         }
 
         p {
-            color: $secondary;
+            color: darken($light, 50%); 
             margin: 0.3rem 0;
         }
     }

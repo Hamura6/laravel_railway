@@ -176,8 +176,10 @@ class DashboardComponent extends Component
         ];
 
         foreach ($dataMonths as $mothIndex => $value)
-            $dataMonths[$mothIndex + 1]['total'] = $pagos[$mothIndex + 1]->total ?? 0;
-
+         {
+             $dataMonths[$mothIndex ]['total'] = $pagos[$mothIndex + 1]->total ?? 0;
+             
+             }   
         $estatus = Affiliate::selectRaw('status, COUNT(*) as subtotal')
             ->groupBy('status')
             ->get();

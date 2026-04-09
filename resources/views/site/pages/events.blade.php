@@ -43,7 +43,7 @@
 
                             <div class="timeline-content shadow-lg">
                                 {{--  @if ($post->image_path) --}}
-                                <img src="{{ asset('storage/event_photos/' . $event->firstPhoto->name) }}" alt="1212sd"
+                                <img src="{{ asset('storage/event_photos/' . $event->firstPhoto->name) }}.webp" alt="1212sd"
                                     class="timeline-img" loading="lazy">
                                 {{--  @endif --}}
 

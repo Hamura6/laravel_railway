@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
-        {{ $institution->initials ? $institution->initials . ' | ' . $institution->name : 'ICAP | Ilustre Colegio de Abogados' }}
+        {{ $institution->initials . ' | Ilustre Colegio de Abogados de Potosí' }}
     </title>
 
     <meta name="description" content=" {{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
