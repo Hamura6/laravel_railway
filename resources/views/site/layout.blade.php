@@ -1,34 +1,6 @@
 <!doctype html>
 <html lang="es">
 
-{{-- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>
-        {{ $institution->initials ? $institution->initials . ' | ' . $institution->name : 'ICAP | Ilustre Colegio de Abogados' }}
-    </title>
-
-    <meta name="description" content=" {{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="{{ url()->current() }}">
-
-    <meta property="og:title" content="{{ $institution->initials ?? 'ICAP' }}">
-    <meta property="og:description" content="{{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
-    <meta property="og:image" content="{{ $institution->image }} ">
-    <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:type" content="website">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ $institution->initials ?? 'ICAP' }}">
-    <meta name="twitter:description" content="{{ $institution->name ?? 'Ilustre Colegio de Abogados ICAP.' }}">
-    <meta name="twitter:image" content="{{ $institution->image }}">
-
-    <link rel="icon" type="image/png" href="{{ $institution->image }}">
-
-    @vite(['resources/sass/landing-pages.scss', 'resources/js/app.js'])
-</head> --}}
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,32 +8,38 @@
     <title>{{ $institution->initials }} | Ilustre Colegio de Abogados de Potosí</title>
 
     <meta name="description"
-        content="El Ilustre Colegio de Abogados de Potosí (ICAP) es la institución que agremia y regula el ejercicio de la abogacía en el departamento de Potosí, Bolivia.">
+        content="ICAP - Ilustre Colegio de Abogados de Potosí. Institución oficial que agremia abogados en Potosí, Bolivia. Afiliaciones, certificaciones y trámites legales en icapotosi.com">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.icappotosi.com">
+    <link rel="canonical" href="https://www.icapotosi.com">
+    <meta name="keywords"
+        content="ICAP, icapotosi, icap potosi, colegio de abogados Potosí, 
+abogados Potosí, abogados Bolivia, abogacía Potosí, ilustre colegio abogados">
+    <meta name="geo.region" content="BO-P">
+    <meta name="geo.placename" content="Potosí, Bolivia">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Ilustre Colegio de Abogados de Potosí">
+    <meta property="og:title" content="ICAP | Ilustre Colegio de Abogados de Potosí">
     <meta property="og:description"
         content="El Ilustre Colegio de Abogados de Potosí (ICAP) agremia y regula el ejercicio de la abogacía en Potosí, Bolivia.">
-    <meta property="og:image" content="{{ $institution->image }}">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://www.icappotosi.com">
+    <meta property="og:image" content="{{ asset('apple-touch-icon.png') }}">
+    <meta property="og:image:width" content="180">
+    <meta property="og:image:height" content="180">
+    <meta property="og:url" content="https://www.icapotosi.com">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_BO">
     <meta property="og:site_name" content="ICAP - Ilustre Colegio de Abogados de Potosí">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ilustre Colegio de Abogados de Potosí">
+    <meta name="twitter:title" content="ICAP | Ilustre Colegio de Abogados de Potosí">
     <meta name="twitter:description"
         content="El Ilustre Colegio de Abogados de Potosí (ICAP) agremia y regula el ejercicio de la abogacía en Potosí, Bolivia.">
-    <meta name="twitter:image" content="https://www.icappotosi.com/images/og-image.jpg">
+    <meta name="twitter:image" content="{{ asset('apple-touch-icon.png') }}">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ $institution->image }}">
-    <link rel="icon" type="image/png" sizes="64x64" href="{{ $institution->image }}">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     @php
@@ -69,10 +47,19 @@
             '@context' => 'https://schema.org',
             '@type' => 'LegalService',
             'name' => $institution->name ?? 'Ilustre Colegio de Abogados de Potosí',
-            'alternateName' => $institution->initials ?? 'ICAP',
-            'description' => 'Institución que agremia y regula el ejercicio de la abogacía en Potosí, Bolivia.',
+            'alternateName' => [
+                'ICAP',
+                'ICAP Potosí',
+                'icapotosi',
+                $institution->initials ?? 'ICAP',
+                'icap',
+                'abogados potosi',
+            ],
+            'description' =>
+                'El Ilustre Colegio de Abogados de Potosí (ICAP) es la institución oficial que agremia y regula el ejercicio de la abogacía en el departamento de Potosí, Bolivia.',
             'url' => url('/'),
-            'logo' => trim($institution->image ?? ''),
+            'logo' => asset('apple-touch-icon.png'),
+            'image' => asset('apple-touch-icon.png'),
             'telephone' => '+591' . ($institution->phone ?? ''),
             'email' => $institution->email ?? '',
             'address' => [
@@ -80,19 +67,36 @@
                 'streetAddress' => $institution->address ?? '',
                 'addressLocality' => 'Potosí',
                 'addressRegion' => 'Potosí',
+                'postalCode' => 'BO-P',
                 'addressCountry' => 'BO',
             ],
-            'areaServed' => 'Potosí, Bolivia',
+            'geo' => [
+                '@type' => 'GeoCoordinates',
+                'latitude' => '-19.5836',
+                'longitude' => '-65.7531',
+            ],
+            'openingHoursSpecification' => [
+                [
+                    '@type' => 'OpeningHoursSpecification',
+                    'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                    'opens' => '08:30',
+                    'closes' => '18:30',
+                ],
+            ],
+            'areaServed' => [
+                '@type' => 'AdministrativeArea',
+                'name' => 'Potosí, Bolivia',
+            ],
+            'sameAs' => ['https://www.icapotosi.com'],
         ];
     @endphp
 
     <script type="application/ld+json">
     {!! json_encode($jsonLd, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) !!}
-</script>
+    </script>
 
     @vite(['resources/sass/landing-pages.scss', 'resources/js/app.js'])
 </head>
-
 
 <body>
 
@@ -283,6 +287,9 @@
 
         <div class="footer-credits">
             <p>&copy; <span id="year"></span> ICAP Potosi. Todos los derechos reservados.</p>
+            <script>
+                document.getElementById('year').textContent = new Date().getFullYear();
+            </script>
             {{--             <p>Diseño y desarrollo web por <a href="#" target="_blank">Hamura Código</a></p>
  --}}
         </div>

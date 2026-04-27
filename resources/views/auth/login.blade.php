@@ -102,7 +102,7 @@
                             <div class="row g-3">
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control @error('email') is-invalid @enderror"
+                                        <input type="text" class="form-control @error('email') is-invalid @enderror"
                                             name="email" id="email" value="{{ old('email') }}"
                                             required autofocus autocomplete="email">
                                         <label for="email"><i class="fas fa-envelope"></i> Correo

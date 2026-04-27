@@ -20,7 +20,8 @@
         "maatwebsite/excel": "^3.1",
         "mpdf/mpdf": "^8.2",
         "setasign/fpdf": "^1.8",
-        "spatie/laravel-permission": "^6.21"
+        "spatie/laravel-permission": "^6.21",
+        "spatie/laravel-sitemap": "^8.1"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.6",

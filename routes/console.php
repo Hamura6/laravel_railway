@@ -9,3 +9,7 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote');
 Schedule::command('check:crearte-contribution')
     ->monthly();
+Schedule::call(function () {
+    $directory = storage_path('app/public/livewire-tmp');
+    if (is_dir($directory)) {
+        collect(glob($directory . '/*'))->filter(fn($file) => filemtime($file) < now()->subHours(24)->timestamp)->each(fn($file) => unlink($file));}})->daily()->name('clean-livewire-tmp');

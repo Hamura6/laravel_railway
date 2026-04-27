@@ -132,18 +132,21 @@ class PdfController extends Controller
         ])->findOrFail($id);
         $disk = User::storageDisk();
         if (!empty($affiliate->user->photo) && $disk->exists($affiliate->user->photo)) {
-            $imagePath = $affiliate->user->image;
-            $soloRuta = str_replace(url('/') . '/', '', $imagePath);
-            $logoPath = public_path($soloRuta);
-            $imageUser = Image::read($logoPath)->resize(70, 70)->toJpeg();
-            $imageUser = base64_encode($imageUser);
-            $imageUser = "data:image/jpeg;base64," . $imageUser;
-        } else {
-            $logoPath = public_path('image/user.png');
-            $imageUser = Image::read($logoPath)->resize(50, 50)->toJpeg();
-            $imageUser = base64_encode($imageUser);
-            $imageUser = "data:image/jpeg;base64," . $imageUser;
-        }
+    $logoPath = storage_path('app/disk-users/' . $affiliate->user->photo);
+
+    if (file_exists($logoPath)) {
+        $imageUser = Image::read($logoPath)->resize(70, 70)->toJpeg();
+        $imageUser = "data:image/jpeg;base64," . base64_encode($imageUser);
+    } else {
+        $logoPath  = public_path('image/user.png');
+        $imageUser = Image::read($logoPath)->resize(50, 50)->toJpeg();
+        $imageUser = "data:image/jpeg;base64," . base64_encode($imageUser);
+    }
+} else {
+    $logoPath  = public_path('image/user.png');
+    $imageUser = Image::read($logoPath)->resize(50, 50)->toJpeg();
+    $imageUser = "data:image/jpeg;base64," . base64_encode($imageUser);
+}
 
         $html = view('pdf.form', compact('affiliate', 'institutionLogo', 'imageUser'))->render();
 

@@ -202,14 +202,14 @@
                             Desarrollo innovador en el ejercicio del Derecho
                         </h3>
                         <p class="lead mb-5 opacity-90 text-black">
-                            El ICAP es una entidad de alcance internacional dedicada al perfeccionamiento permanente y la
-                            capacitación especializada de profesionales del Derecho, fundamentada en principios como la
-                            calidad académica, la ética, la creatividad y el trabajo conjunto. Fomenta una formación
-                            integral, inclusiva y alineada con las exigencias contemporáneas, a través de una plataforma
-                            digital innovadora, convenios estratégicos a nivel global y programas destinados al desarrollo y
-                            posicionamiento profesional. Del mismo modo, se distingue por ser el primer colegio de abogados
-                            boliviano en promover de forma continua y decidida la internacionalización de su gestión
-                            académica.
+                            El ICAP es la institución oficial de Potosí, Bolivia, dedicada al perfeccionamiento
+                            permanente y la capacitación especializada de profesionales del Derecho, fundamentada
+                            en principios como la calidad académica, la ética, la creatividad y el trabajo conjunto.
+                            Fomenta una formación integral, inclusiva y alineada con las exigencias contemporáneas,
+                            a través de una plataforma digital innovadora, convenios estratégicos a nivel global y
+                            programas destinados al desarrollo y posicionamiento profesional. Se distingue por ser
+                            el primer colegio de abogados boliviano en promover de forma continua y decidida la
+                            internacionalización de su gestión académica.
                         </p>
 
                         <a href="{{ route('site.about') }}"
