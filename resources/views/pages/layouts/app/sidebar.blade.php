@@ -295,7 +295,7 @@
             <a class="menu-item {{ Route::is('institution.configuration') ? 'active' : '' }}"
                 href="{{ route('institution.configuration') }}">
                 <div class="menu-label">
-                    <i class="fas fa-chart-bar"></i> Configuración
+                    <i class="fas fa-cogs"></i> Configuración
                 </div>
             </a>
         @endcan

@@ -1,6 +1,6 @@
 <div>
     <div class="col-12">
-        <x-card-header title="Gestion de directorio" name="Directorio" />
+        <x-card-header title="Gestión de directorio" name="Directorio" />
 
 
         <style>

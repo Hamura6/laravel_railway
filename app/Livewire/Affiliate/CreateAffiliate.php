@@ -83,7 +83,7 @@ class CreateAffiliate extends Component
                 $disk = User::storageDisk();
                 $custome_name = $this->photo->hashName();
                 $avatarPath = $disk->path($custome_name);
-                Image::read($this->photo)->resize(250, 250)->toJpeg()->save($avatarPath);
+                Image::read($this->photo)->resize(300, 300)->toJpeg()->save($avatarPath);
                 $this->userForm->photo = $custome_name;
             }
             $user = $this->userForm->store();
@@ -133,7 +133,7 @@ class CreateAffiliate extends Component
             $avatarPath = $disk->path($custome_name);
             $pass = true;
             try {
-                Image::read($this->photo)->resize(250, 250)->toJpeg()->save($avatarPath);
+                Image::read($this->photo)->resize(300, 300)->toJpeg()->save($avatarPath);
             } catch (\Throwable $th) {
                 $pass = false;
             }

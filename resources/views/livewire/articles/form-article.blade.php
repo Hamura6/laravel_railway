@@ -26,7 +26,7 @@
             is-invalid @enderror"
                                     wire:model="description" id="floatingInput" placeholder="Description" style="height: 150px" cols="30"
                                     rows="20"></textarea>
-                                <label for="floatingInput">Descripcion</label>
+                                <label for="floatingInput">Descripción</label>
                             </div>
                             @error('description')
                                 <span class="text-danger"> {{ $message }}</span>

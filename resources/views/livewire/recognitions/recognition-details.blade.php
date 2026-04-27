@@ -1,11 +1,13 @@
 <div>
-    <x-card-header title="Condecoracion" name="Pagos" />
+    <x-card-header title="Condecoración" name="Pagos" />
     <div class="row g-1">
 
         <div class="col-md-8">
             <x-card-body>
                 <x-slot name="header">
-                    <h6 class="text-secondary">Datos del evento </h6>
+                    <div class="col-6">
+                        <h6 class="text-secondary">Datos del evento </h6>
+                    </div>
                 </x-slot>
 
                 <table class="table  table-bordered border-light table-striped">
@@ -106,10 +108,20 @@
                 </div>
             </x-card-body>
         </div>
-        <div class="col-md-4" style="max-height: 140vh; overflow-y: auto;">
+        <div class="col-md-4" style="max-height: 100%; overflow-y: auto;">
             <x-card-body>
                 <x-slot name="header">
-                    <h6 class="text-secondary">Lista de afiliados habilidatos</h6>
+                    <div class="col-9">
+                        <h6 class="text-secondary">Lista de afiliados habilidatos</h6>
+
+                    </div>
+                       <div class="col-3">
+                        <div class="d-grid gap-2 d-flex justify-content-end">
+                            <a href="{{ route('reporte.listAffiliatesCondecoration-excel', $this->recognition->id) }}"
+                                class="btn btn-sm btn-outline-success mb-1 " type="button">
+                                <i class="far fa-file-excel fs-6"></i></a>
+                        </div>
+                    </div>
                     <div class="input-group input-group-sm ms-auto me-2">
                         <span class="input-group-text text-body">
                             <i class="fas fa-search"></i>
@@ -168,7 +180,7 @@
                         <span class="visually-hidden ">Loading...</span>
                     </div>
                 </div>
-                <div class="border-top py-3 px-3 d-flex align-items-center">
+                <div class="border-top py-2 px-3 d-flex justify-content-end">
                     {{ $affiliates->links() }}
                 </div>
             </x-card-body>

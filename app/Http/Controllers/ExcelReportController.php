@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Exports\AffiliatesBySpecialityExcel;
 use App\Exports\AgeAffiliateExport;
 use App\Exports\ContributionExport;
+use App\Exports\ListAffiliatesCondecoration;
 use App\Exports\listAffiliatesExport;
 use App\Exports\StatusAffiliatesExport;
 use App\Models\Affiliate;
@@ -48,6 +49,11 @@ class ExcelReportController extends Controller
     {
         return Excel::download(new listAffiliatesExport($id), 'reconocimiento_' . $id . '.xlsx');
     }
+    public function listAffiliatesCondecoration($id)
+    {
+        
+        return Excel::download(new ListAffiliatesCondecoration($id), 'lista_condecorados' . $id . '.xlsx');
+    }
     public function exportarAffiliatesSpecialityExcel(Request $request)
     {
         $specialities = $request->input('specialities', []);
@@ -65,14 +71,16 @@ class ExcelReportController extends Controller
             'Reporte_Afiliados.xlsx'
         );
     }
-    public function exportContributionAffiliateExcel($id, $from, $to){
+    public function exportContributionAffiliateExcel($id, $from, $to)
+    {
         return \Maatwebsite\Excel\Facades\Excel::download(
-            new \App\Exports\ContributionAffiliateExport($id,$from, $to),
+            new \App\Exports\ContributionAffiliateExport($id, $from, $to),
             'Reporte_cuotas_afiliados.xlsx'
         );
     }
-    public function exportDeceasedExcel(){
-         return \Maatwebsite\Excel\Facades\Excel::download(
+    public function exportDeceasedExcel()
+    {
+        return \Maatwebsite\Excel\Facades\Excel::download(
             new \App\Exports\DeceasedExport(),
             'Deceased_afiliados.xlsx'
         );

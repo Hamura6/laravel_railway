@@ -16,7 +16,7 @@ class UserForm extends Form
         return [
             'birthdate' => ['required', 'date', 'before:' . now()->subYears(18)->toDateString(),],
             'ci' => ['required', 'string', 'min:6','max:15', Rule::unique('users', 'ci')->ignore($this->id)],
-            'email' => ['required', 'max:210', 'email:rfc,dns', Rule::unique('users', 'email')->ignore($this->id)],
+            'email' => ['required', 'max:210', Rule::unique('users', 'email')->ignore($this->id)],
         ];
     }
 

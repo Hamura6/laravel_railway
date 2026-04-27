@@ -68,7 +68,7 @@ class PdfController extends Controller
         $pdf->Ln(5);
 
 
-        $w = [10, 50, 15, 55, 20, 40];
+        $w = [10, 150, 15, 55, 20, 40];
         $header = ['#', 'Nombre Completo', 'Edad', 'Correo', 'Género', 'Teléfonos'];
 
         $pdf->SetFont('Arial', 'B', 8);
@@ -113,15 +113,15 @@ class PdfController extends Controller
         if (file_exists($logoPath)) {
             try {
                 /* $manager = new ImageManager(new Driver());
-                $image = $manager->read($logoPath)->resize(50, 50);
+                $image = $manager->read($logoPath)->resize(150, 150);
                 $institutionLogo = base64_encode($image->toJpeg()); */
-                $institutionLogo = Image::read($logoPath)->resize(50, 50)->toJpeg();
+                $institutionLogo = Image::read($logoPath)->resize(150, 150)->toJpeg();
             } catch (\Exception $e) {
                 \Log::error('Error procesando el logo: ' . $e->getMessage());
             }
         } else {
             $logoPath = public_path('image/logo.png');
-            $institutionLogo = Image::read($logoPath)->resize(50, 50)->toJpeg();
+            $institutionLogo = Image::read($logoPath)->resize(150, 150)->toJpeg();
         }
         $institutionLogo = base64_encode($institutionLogo);
         $affiliate = Affiliate::with([
@@ -135,16 +135,16 @@ class PdfController extends Controller
     $logoPath = storage_path('app/disk-users/' . $affiliate->user->photo);
 
     if (file_exists($logoPath)) {
-        $imageUser = Image::read($logoPath)->resize(70, 70)->toJpeg();
+        $imageUser = Image::read($logoPath)->resize(400, 400)->toJpeg();
         $imageUser = "data:image/jpeg;base64," . base64_encode($imageUser);
     } else {
         $logoPath  = public_path('image/user.png');
-        $imageUser = Image::read($logoPath)->resize(50, 50)->toJpeg();
+        $imageUser = Image::read($logoPath)->resize(400, 400)->toJpeg();
         $imageUser = "data:image/jpeg;base64," . base64_encode($imageUser);
     }
 } else {
     $logoPath  = public_path('image/user.png');
-    $imageUser = Image::read($logoPath)->resize(50, 50)->toJpeg();
+    $imageUser = Image::read($logoPath)->resize(400, 400)->toJpeg();
     $imageUser = "data:image/jpeg;base64," . base64_encode($imageUser);
 }
 
@@ -186,15 +186,15 @@ class PdfController extends Controller
         if (file_exists($logoPath)) {
             try {
                 /* $manager = new ImageManager(new Driver());
-                $image = $manager->read($logoPath)->resize(50, 50);
+                $image = $manager->read($logoPath)->resize(150, 150);
                 $institutionLogo = base64_encode($image->toJpeg()); */
-                $institutionLogo = Image::read($logoPath)->resize(50, 50)->toJpeg();
+                $institutionLogo = Image::read($logoPath)->resize(150, 150)->toJpeg();
             } catch (\Exception $e) {
                 \Log::error('Error procesando el logo: ' . $e->getMessage());
             }
         } else {
             $logoPath = public_path('image/logo.png');
-            $institutionLogo = Image::read($logoPath)->resize(50, 50)->toJpeg();
+            $institutionLogo = Image::read($logoPath)->resize(150, 150)->toJpeg();
         }
         $institutionLogo = base64_encode($institutionLogo);
         // Obtener datos
@@ -432,15 +432,15 @@ class PdfController extends Controller
         if (file_exists($logoPath)) {
             try {
                 /* $manager = new ImageManager(new Driver());
-                $image = $manager->read($logoPath)->resize(50, 50);
+                $image = $manager->read($logoPath)->resize(150, 150);
                 $institutionLogo = base64_encode($image->toJpeg()); */
-                $institutionLogo = Image::read($logoPath)->resize(50, 50)->toJpeg();
+                $institutionLogo = Image::read($logoPath)->resize(150, 150)->toJpeg();
             } catch (\Exception $e) {
                 \Log::error('Error procesando el logo: ' . $e->getMessage());
             }
         } else {
             $logoPath = public_path('image/logo.png');
-            $institutionLogo = Image::read($logoPath)->resize(50, 50)->toJpeg();
+            $institutionLogo = Image::read($logoPath)->resize(150, 150)->toJpeg();
         }
         $institutionLogo = base64_encode($institutionLogo);
         $recognition = Recognition::select('id', 'date', 'type', 'name')

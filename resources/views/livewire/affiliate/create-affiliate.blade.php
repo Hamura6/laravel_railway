@@ -98,7 +98,7 @@
                     <x-input-label title="Domicilio" name='form.address_home' />
                 </div>
                 <div class="col-md-2">
-                    <x-input-label title="No." type='number' name='form.address_number_home' />
+                    <x-input-label title="No." type='text' name='form.address_number_home' />
                 </div>
                 <div class="col-md-5">
                     <x-input-label title="Zona" name='form.zone_home' />
@@ -163,7 +163,7 @@
                     <x-input-label title="Domicilio Procesal" name='form.address_office' />
                 </div>
                 <div class="col-md-2">
-                    <x-input-label title="No." type='number' name='form.address_number' />
+                    <x-input-label title="No." type='text' name='form.address_number' />
                 </div>
                 <div class="col-md-5">
                     <x-input-label title="Zona" name='form.zone' />

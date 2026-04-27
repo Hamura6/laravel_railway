@@ -76,48 +76,48 @@ class RecognitionDetails extends Component
 
 
 
-          $affiliates = Affiliate::query()
-    ->select('id', 'user_id', 'created_at', 'status')
-    ->where(function ($query) use ($toSearch) {
-        $query->where('id', 'like', "%$toSearch%")
-            ->orWhereHas('user', function ($q) use ($toSearch) {
-                $q->where(DB::raw("CONCAT(name, ' ', last_name)"), 'like', "%$toSearch%")
-                    ->orWhere('ci', 'like', "%$toSearch%");
-            });
-    })
-    ->with([
-        'user:id,name,last_name,gender',
-        'user.phones:id,user_id,number',
-    ])
-    ->whereHas('user.roles', fn($q) => $q->where('name', 'Afiliado'))
-    ->whereDate('created_at', '<=', $fechaLimite)
+        $affiliates = Affiliate::query()
+            ->select('id', 'user_id', 'created_at', 'status')
+            ->where(function ($query) use ($toSearch) {
+                $query->where('id', 'like', "%$toSearch%")
+                    ->orWhereHas('user', function ($q) use ($toSearch) {
+                        $q->where(DB::raw("CONCAT(name, ' ', last_name)"), 'like', "%$toSearch%")
+                            ->orWhere('ci', 'like', "%$toSearch%");
+                    });
+            })
+            ->with([
+                'user:id,name,last_name,gender',
+                'user.phones:id,user_id,number',
+            ])
+            ->whereHas('user.roles', fn($q) => $q->where('name', 'Afiliado'))
+            ->whereDate('created_at', '<=', $fechaLimite)
             ->whereNotIn('id', $confirmedIds)
 
-    ->when($this->recognition->type == 'Canaston', function ($query) {
-        // Para Canastón: excluir afiliados que deben POR LO MENOS 1 cuota del año pasado
-        $query->whereDoesntHave('payments', function ($q) {
-            $q->where('fee_id', 1)
-                ->where('status', 'Por pagar')
-                // Deudas del año pasado
-                ->whereYear('date', now()->subYear()->year); 
-        });
-    }, function ($query) {
-        // Para otros tipos solo afiliados activos o inactivos
-        $query->whereIn('status', ['Activo', 'Inactivo'])
-            ->whereDoesntHave('recognitions', function ($q) {
-                $q->where('type', $this->recognition->type);
-            });
-    })
-    
-    ->withCount([
-        'payments as pending_payments_count' => function ($q) {
-            $q->where('fee_id', 1)
-                ->where('status', 'Por pagar');
-        },
-    ])
-    ->withCasts(['created_at' => 'date:Y-m-d'])
-    ->orderBy('id', 'desc')
-    ->simplePaginate(4);
+            ->when($this->recognition->type == 'Canaston', function ($query) {
+                // Para Canastón: excluir afiliados que deben POR LO MENOS 1 cuota del año pasado
+                $query->whereDoesntHave('payments', function ($q) {
+                    $q->where('fee_id', 1)
+                        ->where('status', 'Por pagar')
+                        // Deudas del año pasado
+                        ->whereYear('date', now()->subYear()->year);
+                });
+            }, function ($query) {
+                // Para otros tipos solo afiliados activos o inactivos
+                $query->whereIn('status', ['Activo', 'Inactivo'])
+                    ->whereDoesntHave('recognitions', function ($q) {
+                        $q->where('type', $this->recognition->type);
+                    });
+            })
+
+            ->withCount([
+                'payments as pending_payments_count' => function ($q) {
+                    $q->where('fee_id', 1)
+                        ->where('status', 'Por pagar');
+                },
+            ])
+            ->withCasts(['created_at' => 'date:Y-m-d'])
+            ->orderBy('id', 'desc')
+            ->simplePaginate(4);
         return view('livewire.recognitions.recognition-details', compact('affiliates', 'affiliatesConfirm'));
     }
     #[On('AddAffiliate')]
@@ -125,11 +125,13 @@ class RecognitionDetails extends Component
     {
         $this->authorize('Editar reconocimientos');
         $this->recognition->affiliates()->syncWithoutDetaching([$id]);
+        $this->dispatch('notify', text: 'Se agrego a la lista de condecoración a un afiliado', icon: 'success', title: 'Un afiliado fue agregado');
     }
     #[On('removeAffiliate')]
     public function removeAffiliate($id)
     {
         $this->authorize('Editar reconocimientos');
         $this->recognition->affiliates()->detach($id);
+        $this->dispatch('notify', text: 'Se descarto de la lista de condecoración a un afiliado', icon: 'success', title: 'Un afiliado fue descartado');
     }
 }

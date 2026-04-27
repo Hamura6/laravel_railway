@@ -1,5 +1,5 @@
 <div>
-    <x-card-header title="Articulos" name="Articulo" />
+    <x-card-header title="Artículos" name="Articulo" />
     <x-card-body>
         <x-slot name="header">
             <div class="col-sm-12 col-md-6 order-2 order-md-1">
@@ -23,8 +23,8 @@
 
                 <th>#</th>
                 <th>Portada</th>
-                <th>Titulo</th>
-                <th>Descripcion</th>
+                <th>Título</th>
+                <th>Descripción</th>
                 <th>Opciones</th>
             </x-slot>
             <tbody wire:target='search' wire:loading.remove>

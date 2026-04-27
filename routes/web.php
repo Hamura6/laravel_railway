@@ -146,7 +146,8 @@ Route::middleware(['auth', 'banned'])->group(function () {
     Route::get('pdf/report/contribution/affiliate/{id}/{from}/{to}', [PdfReportController::class, 'contributionAffiliate'])->name('pdf.report.contribution.affiliate');
 
 
-    Route::get('/reporte/list-afiliados-excel/{id}', [ExcelReportController::class, 'listAffiliates'])->name('reporte.listAffiliates-excel');
+    Route::get('/reporte/list-affiliates-excel/{id}', [ExcelReportController::class, 'listAffiliates'])->name('reporte.listAffiliates-excel');
+    Route::get('/reporte/list-affiliatess-excel-complet/{id}', [ExcelReportController::class, 'listAffiliatesCondecoration'])->name('reporte.listAffiliatesCondecoration-excel');
     Route::get('/reporte/status/afiliados-excel', [ExcelReportController::class, 'exportarAfiliadosExcel'])->name('reporte.afiliados-excel');
     Route::get('/reporte/speciality/afiliados-excel', [ExcelReportController::class, 'exportarAffiliatesSpecialityExcel'])->name('reporte.speciality.afiliados-excel');
     Route::get('/reporte/age/afiliados-excel/{minor}/{max}/{status?}', [ExcelReportController::class, 'exportAgeAffiliateToExcel'])->name('reporte.age.afiliados-excel');

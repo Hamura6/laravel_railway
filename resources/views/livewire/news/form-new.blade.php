@@ -14,7 +14,7 @@
                                     class="form-control @error('title')
             is-invalid @enderror"
                                     wire:model="title" id="floatingInput" placeholder="Matricula">
-                                <label for="floatingInput">Titulo</label>
+                                <label for="floatingInput">Título</label>
                             </div>
                             @error('title')
                                 <span class="text-danger"> {{ $message }}</span>
@@ -26,7 +26,7 @@
             is-invalid @enderror"
                                     wire:model="description" id="floatingInput" placeholder="Description" style="height: 230px" cols="30"
                                     rows="20"></textarea>
-                                <label for="floatingInput">Descripcion</label>
+                                <label for="floatingInput">Descripción</label>
                             </div>
                             @error('description')
                                 <span class="text-danger"> {{ $message }}</span>

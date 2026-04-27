@@ -12,7 +12,7 @@ class FeeForm extends Form
     public function rules()
     {
         return [
-            'name' => ['required', 'min:3', 'max:100', 'string', Rule::unique('fees', 'name')->ignore($this->id)],
+            'name' => ['required', 'min:3', 'max:30', 'string', Rule::unique('fees', 'name')->ignore($this->id)],
             'amount' => ['required', 'decimal:0,2', 'gte:1.00', 'lte:99999.99'],
             'type' => ['required', 'not_in:Elegir'],
         ];
