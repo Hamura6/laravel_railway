@@ -47,12 +47,15 @@ unset($__errorArgs, $__bag); ?> " wire:model="type" id="floatingSelect"
                 <option value="Elegir" disabled>Seleccion</option>
                 <option value="Inscripcion">Condecoración de Ingreso</option>
                 <option value="Canaston">Canastón navideño</option>
+                <option value="professional_career">Trayectoria profesional</option>
                 <option value="15 years">Reconocimiento por 15 años</option>
-                <option value="20 years">Premio a la trayectoria de 20 años</option>
-                <option value="25 years">Distintivo por 25 años de trayectoria</option>
-                <option value="30 years">Condecoración por 30 años</option>
-                <option value="35 years">Reconocimiento especial por 35 años</option>
-                <option value="40 years">Medalla al mérito por 40 años</option>
+                <option value="20 years">Reconocimiento por 20 años</option>
+                <option value="25 years">Reconocimiento por 25 años</option>
+                <option value="30 years">Reconocimiento por 30 años</option>
+                <option value="35 years">Reconocimiento por 35 años</option>
+                <option value="40 years">Reconocimiento por 40 años</option>
+                <option value="45 years">Reconocimiento por 45 años</option>
+                <option value="50 years">Reconocimiento por 50 años</option>
             </select>
             <label for="floatingSelect">Seleccione una opcion</label>
         </div>

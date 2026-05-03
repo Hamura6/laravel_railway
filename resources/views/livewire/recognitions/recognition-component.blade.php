@@ -57,7 +57,8 @@
                                 <li
                                     class="list-group-item py-0 pb-1 border-0 text-center {{ $recognition->is_date ? 'text-success' : 'text-danger' }}">
                                     <strong><i class="fas fa-clock"></i> {{ $recognition->remaining_days }}
-                                    </strong> </li>
+                                    </strong>
+                                </li>
                             </ul>
                         </div>
                         <div class="card-footer py-1 d-flex gap-1 justify-content-center">

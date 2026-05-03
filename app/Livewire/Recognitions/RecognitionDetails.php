@@ -8,118 +8,158 @@ use Livewire\Component;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Livewire\Attributes\On;
+use Illuminate\Database\Eloquent\Builder;
+use Livewire\WithPagination;
 
 class RecognitionDetails extends Component
 {
+    use WithPagination;
     public $recognition, $toSearch = '';
     public function mount($id)
     {
         $this->authorize('ver reconocimientos');
-        $this->recognition = Recognition::find($id);
+        $this->recognition = Recognition::findOrFail($id);
+    }
+    public function updatedToSearch(){
+        $this->resetPage();
     }
     public function render()
     {
-        $toSearch = $this->toSearch;
 
-        $fechaLimite = Carbon::parse($this->recognition->date)
-            ->subYears(intval($this->recognition->type));
-
-
-        $affiliatesConfirm = $this->recognition
-            ->affiliates()
-            ->with(['user:id,name,last_name,gender', 'user.phones:id,user_id,number'])
-            ->simplePaginate(10, pageName: 'confirm');
-
-
-        $confirmedIds = $this->recognition->affiliates()->pluck('affiliates.id')->toArray();
-
-        /* $affiliates = Affiliate::query()
-            ->select('id', 'user_id', 'created_at', 'status')
-            ->where(function ($query) use ($toSearch) {
-                $query->where('id', 'like', "%$toSearch%")
-                    ->orWhereHas('user', function ($q) use ($toSearch) {
-                        $q->where(DB::raw("CONCAT(name, ' ', last_name)"), 'like', "%$toSearch%")
-                            ->orWhere('ci', 'like', "%$toSearch%");
-                    });
-            })
-            ->with([
-                'user:id,name,last_name,gender',
-                'user.phones:id,user_id,number',
-            ])
-            ->whereHas('user.roles', fn($q) => $q->where('name', 'Afiliado'))
-            ->where('status', 'Activo')
-            ->whereDate('created_at', '<=', $fechaLimite)
-            ->whereNotIn('id', $confirmedIds)
-
-            ->when($this->recognition->type != 'Canaston', function ($query) {
-                $query->whereDoesntHave('recognitions', function ($q) {
-                    $q->where('type', $this->recognition->type);
-                });
-            })
-            ->when($this->recognition->type == 'Canaston', function ($query) {
-                $query->whereDoesntHave('payments', function ($q) {
-                    $q->where('fee_id', 1)
-                        ->where('status', 'Por pagar');
-                });
-            })
-            ->withCount([
-                'payments as pending_payments_count' => function ($q) {
-                    $q->where('fee_id', 1)
-                        ->where('status', 'Por pagar');
-                },
-            ])
-            ->withCasts(['created_at' => 'date:Y-m-d'])
-            ->orderBy('created_at', 'asc')
-            ->simplePaginate(4);
- */
-
-
-
-
-        $affiliates = Affiliate::query()
-            ->select('id', 'user_id', 'created_at', 'status')
-            ->where(function ($query) use ($toSearch) {
-                $query->where('id', 'like', "%$toSearch%")
-                    ->orWhereHas('user', function ($q) use ($toSearch) {
-                        $q->where(DB::raw("CONCAT(name, ' ', last_name)"), 'like', "%$toSearch%")
-                            ->orWhere('ci', 'like', "%$toSearch%");
-                    });
-            })
-            ->with([
-                'user:id,name,last_name,gender',
-                'user.phones:id,user_id,number',
-            ])
-            ->whereHas('user.roles', fn($q) => $q->where('name', 'Afiliado'))
-            ->whereDate('created_at', '<=', $fechaLimite)
-            ->whereNotIn('id', $confirmedIds)
-
-            ->when($this->recognition->type == 'Canaston', function ($query) {
-                // Para Canastón: excluir afiliados que deben POR LO MENOS 1 cuota del año pasado
-                $query->whereDoesntHave('payments', function ($q) {
-                    $q->where('fee_id', 1)
-                        ->where('status', 'Por pagar')
-                        // Deudas del año pasado
-                        ->whereYear('date', now()->subYear()->year);
-                });
-            }, function ($query) {
-                // Para otros tipos solo afiliados activos o inactivos
-                $query->whereIn('status', ['Activo', 'Inactivo'])
-                    ->whereDoesntHave('recognitions', function ($q) {
-                        $q->where('type', $this->recognition->type);
-                    });
-            })
-
-            ->withCount([
-                'payments as pending_payments_count' => function ($q) {
-                    $q->where('fee_id', 1)
-                        ->where('status', 'Por pagar');
-                },
-            ])
-            ->withCasts(['created_at' => 'date:Y-m-d'])
-            ->orderBy('id', 'desc')
-            ->simplePaginate(4);
-        return view('livewire.recognitions.recognition-details', compact('affiliates', 'affiliatesConfirm'));
+        return view('livewire.recognitions.recognition-details',  [
+            'affiliatesConfirm' => $this->getConfirmedAffiliates(),
+            'affiliates'        => $this->getEligibleAffiliates(),
+        ]);
     }
+    private function getConfirmedAffiliates()
+    {
+        return $this->recognition
+            ->affiliates()
+            ->with([
+                'user:id,name,last_name,gender',
+                'user.phones:id,user_id,number',
+            ])
+            ->simplePaginate(10, pageName: 'confirm');
+    }
+
+    private function getEligibleAffiliates()
+    {
+        $confirmedIds = $this->getConfirmedIds();
+
+        return Affiliate::query()
+            ->select('id', 'user_id', 'created_at', 'status')
+            ->with([
+                'user:id,name,last_name,gender',
+                'user.phones:id,user_id,number',
+            ])
+            ->tap(fn(Builder $q) => $this->applySearchFilter($q))
+            ->whereHas('user.roles', fn(Builder $q) => $q->where('name', 'Afiliado'))
+            ->whereNotIn('id', $confirmedIds)
+            ->tap(fn(Builder $q) => $this->applyTypeFilter($q))
+            ->withCount([
+                'payments as pending_payments_count' => fn(Builder $q) => $q
+                    ->where('fee_id', 1)
+                    ->where('status', 'Por pagar'),
+            ])
+            ->withCasts(['created_at' => 'date:Y-m-d'])
+            ->orderByDesc('id')
+            ->simplePaginate(4);
+    }
+
+   
+    private function applySearchFilter(Builder $query): void
+    {
+        $search = $this->toSearch;
+
+        $query->where(
+            fn(Builder $q) => $q
+                ->where('id', 'like', "%{$search}%")
+                ->orWhereHas(
+                    'user',
+                    fn(Builder $q) => $q
+                        ->where(DB::raw("CONCAT(name, ' ', last_name)"), 'like', "%{$search}%")
+                        ->orWhere('ci', 'like', "%{$search}%")
+                )
+        );
+    }
+
+    private function applyTypeFilter(Builder $query): void
+    {
+        match ($this->recognition->type) {
+            'Canaston'            => $this->applyCanastonFilter($query),
+            'professional_career' => $this->applyProfessionalCareerFilter($query),
+            'Inscripcion'         => $this->applyInscripcionFilter($query),
+            default               => $this->applyDefaultFilter($query),
+        };
+    }
+
+
+    private function applyCanastonFilter(Builder $query): void
+    {
+        $query->whereDoesntHave(
+            'payments',
+            fn(Builder $q) => $q
+                ->where('fee_id', 1)
+                ->where('status', 'Por pagar')
+                ->whereYear('date', now()->subYear()->year)
+        );
+    }
+
+    
+    private function applyProfessionalCareerFilter(Builder $query): void
+    {
+        $query->whereDate('affiliates.created_at', '<=', now()->subYears(15));
+    }
+
+  
+    private function applyInscripcionFilter(Builder $query): void
+    {
+        ['limit' => $fechaLimite] = $this->getDateBoundaries();
+        $query
+            ->whereIn('status', ['Activo', 'Inactivo'])
+            ->whereDate('affiliates.created_at', '>=', $fechaLimite->copy()->subYear()->addDay())
+            ->whereDate('affiliates.created_at', '<=', $fechaLimite->copy()->addYear()->subDay())
+            ->whereDoesntHave(
+                'recognitions',
+                fn(Builder $q) => $q->where('type', $this->recognition->type)
+            );
+    }
+
+  
+    private function applyDefaultFilter(Builder $query): void
+    {
+        ['limit' => $fechaLimite, 'from' => $fechaHasta] = $this->getDateBoundaries();
+
+        $query
+            ->whereIn('status', ['Activo', 'Inactivo'])
+            ->whereDate('affiliates.created_at', '<=', $fechaLimite)
+            ->whereDate('affiliates.created_at', '>=', $fechaHasta)
+            ->whereDoesntHave(
+                'recognitions',
+                fn(Builder $q) => $q->where('type', $this->recognition->type)
+            );
+    }
+
+    private function getConfirmedIds(): \Illuminate\Support\Collection
+    {
+        return $this->recognition
+            ->affiliates()
+            ->pluck('affiliates.id');
+    }
+
+    
+    private function getDateBoundaries(): array
+    {
+        $limit = Carbon::parse($this->recognition->date)
+            ->subYears((int) $this->recognition->type)
+            ->startOfDay();
+
+        return [
+            'limit' => $limit,
+            'from'  => $limit->copy()->subYears(2)->addDay(),
+        ];
+    }
+
     #[On('AddAffiliate')]
     public function AddAffiliate($id)
     {

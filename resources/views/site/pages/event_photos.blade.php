@@ -14,8 +14,9 @@
                 <div class="polaroid-card" data-bs-toggle="tooltip" title="{{ $photo->title ?? '' }}">
                     <div class="polaroid">
                         <div class="photo">
+                            <a href="{{ $photo->image }}" target="_blank" class="news-img-wrapper d-block">
                             <img src="{{ $photo->image }}" class="w-100 h-100 object-fit-cover" alt="Imagen" loading="lazy">
-
+                            </a>
                             <!-- Efectos vintage (super ligeros) -->
                             <div class="dust"></div>
                             <div class="scratches"></div>

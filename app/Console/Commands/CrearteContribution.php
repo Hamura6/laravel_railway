@@ -28,19 +28,15 @@ class CrearteContribution extends Command
      */
     public function handle()
     {
-        $paymentDate = Carbon::now();
+        $paymentDate = Carbon::now()->startOfMonth();
         $fee = Fee::find(1);
         $affiliates = Affiliate::whereIn('status', ['Activo', 'Inactivo'])->get();
-        $limite = Carbon::now()->subMonths(24);
-
-
         foreach ($affiliates as $affiliate) {
 
             $exists = $affiliate->payments()
-                ->whereYear('date', $paymentDate->year)
-                ->whereMonth('date', $paymentDate->month)
+                ->whereYear('date', '>=', $paymentDate->year)
+                ->whereMonth('date', '>=', $paymentDate->month)
                 ->exists();
-
             if (!$exists) {
                 $affiliate->payments()->create([
                     'amount'     => $fee->amount,
@@ -53,11 +49,13 @@ class CrearteContribution extends Command
             }
             $pendientes = $affiliate->payments()
                 ->where('status', 'Por pagar')
-                ->where('date', '<=', $limite)
+                ->where('fee_id', 1)
                 ->count();
-            if ($pendientes > 0) {
+            if ($pendientes >= 24) {
                 $affiliate->update(['status' => 'Inactivo']);
-            }   
+            } else {
+                $affiliate->update(['status' => 'Activo']);
+            }
         }
     }
 }

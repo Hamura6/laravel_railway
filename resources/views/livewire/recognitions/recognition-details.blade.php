@@ -112,10 +112,10 @@
             <x-card-body>
                 <x-slot name="header">
                     <div class="col-9">
-                        <h6 class="text-secondary">Lista de afiliados habilidatos</h6>
+                        <h6 class="text-secondary"> Lista de afiliados habilidatos</h6>
 
                     </div>
-                       <div class="col-3">
+                    <div class="col-3">
                         <div class="d-grid gap-2 d-flex justify-content-end">
                             <a href="{{ route('reporte.listAffiliatesCondecoration-excel', $this->recognition->id) }}"
                                 class="btn btn-sm btn-outline-success mb-1 " type="button">
@@ -131,8 +131,9 @@
                     </div>
 
                 </x-slot>
+
                 @forelse ($affiliates as $affiliate)
-                    <div class="card shadow-md mb-2">
+                    <div class="card shadow-md mb-2" >
                         <div class="card-body p-2">
 
                             <div class="d-flex align-items-center mb-1">
@@ -163,8 +164,6 @@
                                     @endcan
                                 </li>
                             </ul>
-
-
                         </div>
                     </div>
                 @empty
@@ -174,12 +173,6 @@
                         </div>
                     </div>
                 @endforelse
-                <div class="text-center py-4 color-dark justify-content-center w-100" wire:loading
-                    wire:target="toSearch">
-                    <div class="spinner-border " style="width: 4rem; height: 4rem;" role="status">
-                        <span class="visually-hidden ">Loading...</span>
-                    </div>
-                </div>
                 <div class="border-top py-2 px-3 d-flex justify-content-end">
                     {{ $affiliates->links() }}
                 </div>

@@ -23,7 +23,7 @@ class EventComponent extends Component
             'description' => 'nullable|min:5|max:250',
             'date' => 'required|date|before_or_equal:today',
             'photos' => 'required',
-            'photos.*' => 'image|mimes:png,jpg,jpeg|max:2048',
+            'photos.*' => 'image|mimes:png,jpg,jpeg,webp',
         ];
     }
     public function render()

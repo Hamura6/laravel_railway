@@ -79,7 +79,7 @@
 
                 <th>#</th>
                 <th>Portada</th>
-                <th>Titulo</th>
+                <th>Título</th>
                 <th>Descripción</th>
                 <th>Opciones</th>
              <?php $__env->endSlot(); ?>

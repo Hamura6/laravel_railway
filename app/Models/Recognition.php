@@ -37,13 +37,16 @@ class Recognition extends Model
     protected $guarded = ['id'];
     protected   $iconosReconocimientos = [
         'Inscripcion' => 'fas fa-user-plus text-danger',
-        'Canaston' => 'fas fa-shopping-basket',
-        '15 years' => 'fas fa-medal text-primary',
+        'Canaston' => 'fas fa-shopping-basket text-success',
+        '15 years' => 'fas fa-medal text-info',
         '20 years' => 'fas fa-trophy text-secondary',
         '25 years' => 'fas fa-award text-info',
         '30 years' => 'fas fa-star text-warning',
         '35 years' => 'fas fa-certificate text-success',
         '40 years' => 'fas fa-medal text-dark',
+        '45 years' => 'fas fa-medal text-seconfary',
+        '50 years' => 'fas fa-medal text-warning',
+        'professional_career' => 'fas fa-trophy text-warning',
     ];
 
     public function affiliates(): BelongsToMany

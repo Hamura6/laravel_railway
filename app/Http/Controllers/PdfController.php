@@ -105,8 +105,6 @@ class PdfController extends Controller
             ->header('Content-Type', 'application/pdf');
     }
 
-
-
     public function form($id)
     {
         $logoPath = public_path('storage/institution/logo.png');
@@ -132,21 +130,21 @@ class PdfController extends Controller
         ])->findOrFail($id);
         $disk = User::storageDisk();
         if (!empty($affiliate->user->photo) && $disk->exists($affiliate->user->photo)) {
-    $logoPath = storage_path('app/disk-users/' . $affiliate->user->photo);
+            $logoPath = storage_path('app/disk-users/' . $affiliate->user->photo);
 
-    if (file_exists($logoPath)) {
-        $imageUser = Image::read($logoPath)->resize(400, 400)->toJpeg();
-        $imageUser = "data:image/jpeg;base64," . base64_encode($imageUser);
-    } else {
-        $logoPath  = public_path('image/user.png');
-        $imageUser = Image::read($logoPath)->resize(400, 400)->toJpeg();
-        $imageUser = "data:image/jpeg;base64," . base64_encode($imageUser);
-    }
-} else {
-    $logoPath  = public_path('image/user.png');
-    $imageUser = Image::read($logoPath)->resize(400, 400)->toJpeg();
-    $imageUser = "data:image/jpeg;base64," . base64_encode($imageUser);
-}
+            if (file_exists($logoPath)) {
+                $imageUser = Image::read($logoPath)->resize(400, 400)->toJpeg();
+                $imageUser = "data:image/jpeg;base64," . base64_encode($imageUser);
+            } else {
+                $logoPath  = public_path('image/user.png');
+                $imageUser = Image::read($logoPath)->resize(400, 400)->toJpeg();
+                $imageUser = "data:image/jpeg;base64," . base64_encode($imageUser);
+            }
+        } else {
+            $logoPath  = public_path('image/user.png');
+            $imageUser = Image::read($logoPath)->resize(400, 400)->toJpeg();
+            $imageUser = "data:image/jpeg;base64," . base64_encode($imageUser);
+        }
 
         $html = view('pdf.form', compact('affiliate', 'institutionLogo', 'imageUser'))->render();
 

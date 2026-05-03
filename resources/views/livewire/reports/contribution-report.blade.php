@@ -102,26 +102,24 @@
     </x-card-body>
     <x-question-offcanvas>
         <div class="col-md-12">
-            <strong class="text-dark">Edad minima</strong>
+            <strong class="text-dark">Fecha de</strong>
             <div class="form-floating ">
                 <input type="date" class="form-control" wire:model="from" id="floatingInput"
                     placeholder="name@example.com">
                 <label for="floatingInput">Desde</label>
             </div>
             <span style="font-size: 0.90rem; display: inline-block;
-                            line-height: 1;">Filtra
-                los resultados que tienes mayor o igual a la edad ingresada</span>
+                            line-height: 1;">Filtrar los resultados desde la fecha pagada</span>
         </div>
         <div class="col-md-12">
-            <strong class="text-dark"> Edad maxima</strong>
+            <strong class="text-dark"> Fecha hasta</strong>
             <div class="form-floating">
                 <input type="date" class="form-control" wire:model="to" id="floatingInput"
                     placeholder="name@example.com">
                 <label for="floatingInput">Hasta</label>
             </div>
             <span style="font-size: 0.90rem; display: inline-block;
-                            line-height: 1;">Filtra
-                los resultados que tenga menor o igual a la edad ingresada</span>
+                            line-height: 1;">Filtrar los resultados hasta la fecha pagada</span>
         </div>
 
     </x-question-offcanvas>

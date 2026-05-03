@@ -49,7 +49,7 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>"
                                     wire:model="title" id="floatingInput" placeholder="Matricula">
-                                <label for="floatingInput">Titulo</label>
+                                <label for="floatingInput">Título</label>
                             </div>
                             <!--[if BLOCK]><![endif]--><?php $__errorArgs = ['title'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -75,7 +75,7 @@ endif;
 unset($__errorArgs, $__bag); ?>"
                                     wire:model="description" id="floatingInput" placeholder="Description" style="height: 230px" cols="30"
                                     rows="20"></textarea>
-                                <label for="floatingInput">Descripcion</label>
+                                <label for="floatingInput">Descripción</label>
                             </div>
                             <!--[if BLOCK]><![endif]--><?php $__errorArgs = ['description'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');

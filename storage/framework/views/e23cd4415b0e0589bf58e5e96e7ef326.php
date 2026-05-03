@@ -180,10 +180,10 @@
 <?php $component->withAttributes([]); ?>
                  <?php $__env->slot('header', null, []); ?> 
                     <div class="col-9">
-                        <h6 class="text-secondary">Lista de afiliados habilidatos</h6>
+                        <h6 class="text-secondary"> Lista de afiliados habilidatos</h6>
 
                     </div>
-                       <div class="col-3">
+                    <div class="col-3">
                         <div class="d-grid gap-2 d-flex justify-content-end">
                             <a href="<?php echo e(route('reporte.listAffiliatesCondecoration-excel', $this->recognition->id)); ?>"
                                 class="btn btn-sm btn-outline-success mb-1 " type="button">
@@ -199,8 +199,9 @@
                     </div>
 
                  <?php $__env->endSlot(); ?>
+
                 <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $affiliates; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $affiliate): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-                    <div class="card shadow-md mb-2">
+                    <div class="card shadow-md mb-2" >
                         <div class="card-body p-2">
 
                             <div class="d-flex align-items-center mb-1">
@@ -234,8 +235,6 @@
                                     <?php endif; ?>
                                 </li>
                             </ul>
-
-
                         </div>
                     </div>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
@@ -245,12 +244,6 @@
                         </div>
                     </div>
                 <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
-                <div class="text-center py-4 color-dark justify-content-center w-100" wire:loading
-                    wire:target="toSearch">
-                    <div class="spinner-border " style="width: 4rem; height: 4rem;" role="status">
-                        <span class="visually-hidden ">Loading...</span>
-                    </div>
-                </div>
                 <div class="border-top py-2 px-3 d-flex justify-content-end">
                     <?php echo e($affiliates->links()); ?>
 

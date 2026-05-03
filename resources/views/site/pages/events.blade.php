@@ -93,3 +93,20 @@
         </div>
     </section>
 @endsection
+DELETE FROM payments
+WHERE id = (
+    SELECT id FROM (
+        SELECT p1.id
+        FROM payments p1
+        WHERE p1.date = '2026-05-01' AND p1.status='Por pagar'
+          AND EXISTS (
+              SELECT 1
+              FROM payments p2
+              WHERE p2.date = '2026-05-01'
+                AND p2.affiliate_id = p1.affiliate_id
+              GROUP BY p2.affiliate_id
+              HAVING COUNT(*) > 1
+          )
+        LIMIT 1
+    ) AS tmp
+);

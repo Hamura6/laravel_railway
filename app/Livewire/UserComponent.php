@@ -2,7 +2,10 @@
 
 namespace App\Livewire;
 
+use App\Models\Affiliate;
+use App\Models\Fee;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Attributes\On;
@@ -22,7 +25,6 @@ class UserComponent extends Component
     {
         $this->resetPage();
     }
-
     public function render()
     {
         $users = User::select('users.id', 'users.ci', 'users.email', 'users.status')
@@ -61,8 +63,8 @@ class UserComponent extends Component
     public function delete($id)
     {
         $this->authorize('Eliminar usuarios');
-        $user=User::find($id);
-         if ($user->name_role === 'Administrador') {
+        $user = User::find($id);
+        if ($user->name_role === 'Administrador') {
             return $this->dispatch('notify', title: 'Error de acceso', icon: 'error', text: 'Acción no autorizada');
         }
         $user->delete();
@@ -74,7 +76,7 @@ class UserComponent extends Component
         $this->authorize('Restablecer usuarios.password');
         $user = User::find($id);
         if ($user->name_role === 'Administrador') {
-           return $this->dispatch('notify', title: 'Error de acceso', icon: 'error', text: 'Acción no autorizada');
+            return $this->dispatch('notify', title: 'Error de acceso', icon: 'error', text: 'Acción no autorizada');
         }
         $user->password = Hash::make($user->ci);
         $user->save();

@@ -92,7 +92,7 @@
                     </div>
                     <div class="resource-card-body">
                         <div class="resource-icon mb-3"></div>
-                        <h3 class="resource-title h4 fw-bold">Requisitos de inscripción</h3>
+                        <h3 class="resource-title h4 fw-bold">REQUISITOS DE INSCRIPCIÓN</h3>
                         <span class="resource-link text-warning fw-semibold">
                             Ver más <i class="fas fa-arrow-right ms-2"></i>
                         </span>

@@ -47,7 +47,6 @@ class SitePagesController extends Controller
         $courses = Course::paginate(6);
         return view('site.pages.courses', compact('courses'));
     }
-
     public function news()
     {
         $informations = Information::paginate(6);

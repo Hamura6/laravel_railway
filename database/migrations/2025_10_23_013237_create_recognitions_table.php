@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name',150);
             $table->date('date');
-            $table->enum('type',['Inscripcion','Canaston','15 years','20 years','25 years','30 years','35 years','40 years']);
+            $table->enum('type',['Inscripcion','Canaston','professional_career','15 years','20 years','25 years','30 years','35 years','40 years','45 years','50 years']);
             $table->timestamps();
         });
     }

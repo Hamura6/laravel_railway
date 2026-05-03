@@ -85,7 +85,8 @@
                                     class="list-group-item py-0 pb-1 border-0 text-center <?php echo e($recognition->is_date ? 'text-success' : 'text-danger'); ?>">
                                     <strong><i class="fas fa-clock"></i> <?php echo e($recognition->remaining_days); ?>
 
-                                    </strong> </li>
+                                    </strong>
+                                </li>
                             </ul>
                         </div>
                         <div class="card-footer py-1 d-flex gap-1 justify-content-center">
