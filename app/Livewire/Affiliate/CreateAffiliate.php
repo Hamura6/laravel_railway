@@ -171,7 +171,7 @@ class CreateAffiliate extends Component
     public function rules()
     {
         return [
-            'photo' => $this->photoName ? 'nullable|image|mimes:jpg,jpeg,png' : 'required|image|mimes:jpg,jpeg,png',
+            'photo' => $this->photoName ? 'nullable|image|mimes:jpg,jpeg,png' : 'nullable|image|mimes:jpg,jpeg,png',
             'phones' => 'required|array|min:1',
             'phones.1' => 'nullable|numeric|digits:7|min:6000000|max:6999999',
             'phones.0' => 'required|numeric|digits:8|min:60000000|max:79999999',
