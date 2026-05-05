@@ -167,7 +167,7 @@ class Profile extends Component
                 'address_number_home' => ['required','string','min:1','max:20'],
                 'zone_home' => ['required','string','min:1','max:100'],
                 'phones' => ['required','array','min:1'],
-                'phones.1' => ['nullable','numeric','digits:7','min:2000000','max:2999999'],
+                'phones.1' => ['nullable','numeric','digits:7','min:6000000','max:6999999'],
                 'phones.0' => ['required','numeric','digits:8','min:60000000','max:79999999'],
             ]);
             $affiliate = Auth::user()->affiliate;
