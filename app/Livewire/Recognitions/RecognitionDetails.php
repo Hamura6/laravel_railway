@@ -132,7 +132,7 @@ class RecognitionDetails extends Component
         $query
             ->whereIn('status', ['Activo', 'Inactivo'])
             ->whereDate('affiliates.created_at', '<=', $fechaLimite->endOfYear())
-            ->whereDate('affiliates.created_at', '>=', $fechaHasta->startOfYear())
+            ->whereDate('affiliates.created_at', '>=', $fechaHasta->addYear()->startOfYear())
             ->whereDoesntHave(
                 'recognitions',
                 fn(Builder $q) => $q->where('type', $this->recognition->type)
