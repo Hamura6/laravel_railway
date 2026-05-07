@@ -31,11 +31,6 @@ class ListAffiliatesCondecoration implements
         $this->recognition = Recognition::findOrFail($recognitionId);
         $this->affiliates  = $this->buildQuery()->get();
     }
-
-    // =========================================================
-    // MAATWEBSITE CONTRACTS
-    // =========================================================
-
     public function collection(): Collection
     {
         return $this->affiliates;
@@ -72,7 +67,6 @@ class ListAffiliatesCondecoration implements
 
     public function styles(Worksheet $sheet): void
     {
-        // ── Título principal ──────────────────────────────────
         $sheet->mergeCells('A1:E1');
         $sheet->setCellValue('A1', 'REPORTE DE ' . strtoupper(trans($this->recognition->type)));
         $sheet->getStyle('A1')->applyFromArray([
@@ -81,7 +75,6 @@ class ListAffiliatesCondecoration implements
             'alignment' => ['horizontal' => 'center', 'vertical' => 'center'],
         ]);
 
-        // ── Metadata del reconocimiento ───────────────────────
         $sheet->setCellValue('A2', 'Fecha: '  . $this->recognition->date);
         $sheet->setCellValue('B2', 'Tipo: '   . trans($this->recognition->type));
         $sheet->setCellValue('C2', 'Nombre: ' . $this->recognition->name);
@@ -93,23 +86,16 @@ class ListAffiliatesCondecoration implements
             'fill' => ['fillType' => 'solid', 'startColor' => ['argb' => 'FFF5F5F5']],
         ]);
 
-        // ── Encabezados (fila 4) ──────────────────────────────
         $sheet->getStyle('A4:E4')->applyFromArray([
             'font'      => ['bold' => true, 'color' => ['argb' => 'FFFFFFFF']],
             'fill'      => ['fillType' => 'solid', 'startColor' => ['argb' => 'FF4CAF50']],
             'alignment' => ['horizontal' => 'center'],
         ]);
 
-        // ── Ancho automático ──────────────────────────────────
         foreach (range('A', 'E') as $col) {
             $sheet->getColumnDimension($col)->setAutoSize(true);
         }
     }
-
-    // =========================================================
-    // QUERY BUILDER
-    // =========================================================
-
     private function buildQuery(): Builder
     {
         return Affiliate::query()
@@ -128,11 +114,6 @@ class ListAffiliatesCondecoration implements
             ->withCasts(['created_at' => 'date:Y-m-d'])
             ->orderByDesc('id');
     }
-
-    // =========================================================
-    // FILTROS POR TIPO
-    // =========================================================
-
     private function applyTypeFilter(Builder $query): void
     {
         match ($this->recognition->type) {
@@ -142,11 +123,6 @@ class ListAffiliatesCondecoration implements
             default               => $this->applyDefaultFilter($query),
         };
     }
-
-    /**
-     * Sin filtro de fecha ni status.
-     * Excluye afiliados con cuota 1 pendiente del año anterior.
-     */
     private function applyCanastonFilter(Builder $query): void
     {
         $query->whereDoesntHave(
@@ -158,18 +134,10 @@ class ListAffiliatesCondecoration implements
         );
     }
 
-    /**
-     * Solo afiliados con al menos 15 años de antigüedad.
-     */
     private function applyProfessionalCareerFilter(Builder $query): void
     {
         $query->whereDate('affiliates.created_at', '<=', now()->subYears(15));
     }
-
-    /**
-     * Afiliados inscritos en la ventana de un año alrededor de la fecha límite.
-     * Sin reconocimiento previo del mismo tipo.
-     */
     private function applyInscripcionFilter(Builder $query): void
     {
         ['limit' => $fechaLimite] = $this->getDateBoundaries();
@@ -184,34 +152,19 @@ class ListAffiliatesCondecoration implements
             );
     }
 
-    /**
-     * Afiliados dentro de la ventana de antigüedad calculada según el tipo.
-     * Sin reconocimiento previo del mismo tipo.
-     */
     private function applyDefaultFilter(Builder $query): void
     {
         ['limit' => $fechaLimite, 'from' => $fechaHasta] = $this->getDateBoundaries();
-
+        
         $query
             ->whereIn('status', ['Activo', 'Inactivo'])
-            ->whereDate('affiliates.created_at', '<=', $fechaLimite)
-            ->whereDate('affiliates.created_at', '>=', $fechaHasta)
+            ->whereDate('affiliates.created_at', '<=', $fechaLimite->endOfYear())
+            ->whereDate('affiliates.created_at', '>=', $fechaHasta->addYear()->startOfYear())
             ->whereDoesntHave(
                 'recognitions',
                 fn (Builder $q) => $q->where('type', $this->recognition->type)
             );
     }
-
-    // =========================================================
-    // HELPERS
-    // =========================================================
-
-    /**
-     * Calcula las fechas límite una sola vez.
-     * Siempre usar copy() antes de operar para evitar mutación de Carbon.
-     *
-     * @return array{ limit: Carbon, from: Carbon }
-     */
     private function getDateBoundaries(): array
     {
         $limit = Carbon::parse($this->recognition->date)

@@ -129,11 +129,10 @@ class RecognitionDetails extends Component
     private function applyDefaultFilter(Builder $query): void
     {
         ['limit' => $fechaLimite, 'from' => $fechaHasta] = $this->getDateBoundaries();
-
         $query
             ->whereIn('status', ['Activo', 'Inactivo'])
-            ->whereDate('affiliates.created_at', '<=', $fechaLimite)
-            ->whereDate('affiliates.created_at', '>=', $fechaHasta)
+            ->whereDate('affiliates.created_at', '<=', $fechaLimite->endOfYear())
+            ->whereDate('affiliates.created_at', '>=', $fechaHasta->startOfYear())
             ->whereDoesntHave(
                 'recognitions',
                 fn(Builder $q) => $q->where('type', $this->recognition->type)
