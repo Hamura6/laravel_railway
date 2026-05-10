@@ -158,13 +158,25 @@ class User extends Authenticatable
             );
         }
     }  */
-    protected function Image(): Attribute
+    /* protected function Image(): Attribute
     {
         $disk = User::storageDisk();
         $data = null;
 
         if (!empty($this->photo) && $disk->exists($this->photo))
             $data = route('user.file', ['filename' => $this->photo]);
+        else
+            $data = Avatar::create($this->full_name)->toBase64();
+
+        return Attribute::make(get: fn() => $data);
+    } */
+   protected function Image(): Attribute
+    {
+        $disk = User::storageDisk();
+        $data = null;
+
+        if (!empty($this->photo) && $disk->exists($this->photo))
+            $data = $disk->url($this->photo);
         else
             $data = Avatar::create($this->full_name)->toBase64();
 
