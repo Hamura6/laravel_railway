@@ -69,6 +69,8 @@ Route::get('convenios', [App\Http\Controllers\SitePagesController::class, 'agree
 Route::get('privacidad', [App\Http\Controllers\SitePagesController::class, 'privacy'])->name('site.privacy');
 Route::get('requisitos', [App\Http\Controllers\SitePagesController::class, 'requirement'])->name('site.requirement');
 Route::get('facebook-site', [App\Http\Controllers\SitePagesController::class, 'facebookSite'])->name('site.facebook');
+Route::get('files/{filename}', [LandingPages::class, 'show'])->name('user.file');
+
 Route::get('loginICAP', [LoginController::class, 'showLoginForm'])->name('site.login');
 Route::post('/login', [LoginController::class, 'login']);
 

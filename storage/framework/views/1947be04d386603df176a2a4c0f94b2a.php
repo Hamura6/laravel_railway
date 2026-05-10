@@ -23,42 +23,71 @@
         <div class="col-md-12">
             <div class="card border shadow-xs mb-4">
                 <div class="card-header border-bottom pb-0">
-                    <table class="table  table-bordered border-light table-striped  stacked-table">
-                        <tbody>
-                            <tr>
-                                <th scope="col" class="text-dark text-xs font-weight-bold ">Nombre Completo:</th>
-                                <td class="text-sm text-secondary mb-0"><?php echo e($affiliate->user->name); ?> </td>
-                                <th scope="col" class="text-dark text-xs font-weight-bold ">Matricula:</th>
-                                <td class="text-sm text-secondary mb-0"><?php echo e($affiliate->id); ?></td>
-                                <th scope="col" class="text-dark text-xs font-weight-bold ">C.I:</th>
-                                <td class="text-sm text-secondary mb-0"><?php echo e($affiliate->user->ci); ?></td>
-                            </tr>
-                            <tr>
-                                <th scope="col" class="text-dark text-xs font-weight-bold ">Telefonos:</th>
-                                <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $affiliate->user->phones; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $phone): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                    <td class="text-sm text-secondary mb-0"><?php echo e($phone->number); ?> </td>
-                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
-                                <th scope="col" class="text-dark text-xs font-weight-bold ">Correo electronico:</th>
-                                <td class="text-sm text-secondary mb-0" colspan="3"><?php echo e($affiliate->user->email); ?>
+<div class="table-responsive">
+    <table class="table table-bordered border-light table-striped stacked-table">
+        <tbody>
+            <tr>
+                <th class="text-dark text-xs font-weight-bold">Nombre Completo:</th>
+                <td class="text-sm text-secondary"><?php echo e($affiliate->user->name); ?></td>
+                <th class="text-dark text-xs font-weight-bold">Matrícula:</th>
+                <td class="text-sm text-secondary"><?php echo e($affiliate->id); ?></td>
+                <th class="text-dark text-xs font-weight-bold">C.I:</th>
+                <td class="text-sm text-secondary"><?php echo e($affiliate->user->ci); ?></td>
+            </tr>
+            <tr>
+                <th class="text-dark text-xs font-weight-bold">Teléfonos:</th>
+                <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $affiliate->user->phones; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $phone): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <td class="text-sm text-secondary"><?php echo e($phone->number); ?></td>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
+                <th class="text-dark text-xs font-weight-bold">Correo electrónico:</th>
+                <td class="text-sm text-secondary" colspan="3"><?php echo e($affiliate->user->email); ?></td>
+            </tr>
+            <tr>
+                <th class="text-dark text-xs font-weight-bold">Total:</th>
+                <td class="text-sm text-secondary"><?php echo e($affiliate->totalSum); ?> Bs.</td>
+                <th class="text-dark text-xs font-weight-bold">Pagado:</th>
+                <td class="text-sm text-secondary"><?php echo e($affiliate->total_pagado + $affiliate->planes); ?> Bs.</td>
+                <th class="text-dark text-xs font-weight-bold">Deuda:</th>
+                <td class="text-sm text-secondary"><?php echo e($affiliate->prest - $affiliate->planes); ?> Bs.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-                                </td>
+<style>
+    @media (max-width: 768px) {
+        .stacked-table,
+        .stacked-table tbody,
+        .stacked-table tr,
+        .stacked-table th,
+        .stacked-table td {
+            display: block;
+            width: 100%;
+        }
 
-                            </tr>
-                            <tr>
-                                <th scope="col" class="text-dark text-xs font-weight-bold "> total:</th>
-                                <td class="text-sm text-secondary mb-0">
-                                    <?php echo e($affiliate->totalSum); ?> Bs.
-                                </td>
-                                <th scope="col" class="text-dark text-xs font-weight-bold "> Pagado:</th>
-                                <td class="text-sm text-secondary mb-0">
-                                    <?php echo e($affiliate->total_pagado + $affiliate->planes); ?> Bs.
-                                </td>
-                                <th scope="col" class="text-dark text-xs font-weight-bold "> Deuda:</th>
-                                <td class="text-sm text-secondary mb-0">
-                                    <?php echo e($affiliate->prest - $affiliate->planes); ?> Bs.
-                                </td>
-                            </tr>
-                    </table>
+        .stacked-table tr {
+            margin-bottom: 1rem;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .stacked-table th {
+            background: rgba(0, 0, 0, 0.04);
+            padding: 6px 12px;
+            border-bottom: none;
+        }
+
+        .stacked-table td {
+            padding: 6px 12px 10px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .stacked-table td:last-child {
+            border-bottom: none;
+        }
+    }
+</style>
                     <hr class="my-0">
                     <div class="row mb-2">
                         <div class="col-md-4">
@@ -68,7 +97,7 @@
                                 <label for="floatingInput">Desde</label>
                             </div>
                         </div>
-                        
+
                         <div class="col-md-4">
                             <div class="form-floating">
                                 <select class="form-select" wire:model="type" id="floatingSelect"

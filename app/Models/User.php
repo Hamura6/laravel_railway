@@ -134,7 +134,7 @@ class User extends Authenticatable
     protected function FullName(): Attribute
     {
         return Attribute::make(
-            get: fn() =>ucwords("{$this->name} {$this->last_name}"),
+            get: fn() => ucwords("{$this->name} {$this->last_name}"),
         );
     }
     protected function Age(): Attribute
@@ -158,25 +158,25 @@ class User extends Authenticatable
             );
         }
     }  */
-     protected function Image(): Attribute
+    protected function Image(): Attribute
     {
         $disk = User::storageDisk();
         $data = null;
 
         if (!empty($this->photo) && $disk->exists($this->photo))
-            $data = $disk->url($this->photo);
+            $data = route('user.file', ['filename' => $this->photo]);
         else
             $data = Avatar::create($this->full_name)->toBase64();
 
         return Attribute::make(get: fn() => $data);
-    } 
+    }
 
-     protected function NameRole(): Attribute
+    protected function NameRole(): Attribute
     {
         return Attribute::make(
             get: fn() => $this->roles()->first()->name,
         );
-    } 
+    }
     public function Title(): Attribute
     {
 

@@ -4,41 +4,71 @@
         <div class="col-md-12">
             <div class="card border shadow-xs mb-4">
                 <div class="card-header border-bottom pb-0">
-                    <table class="table  table-bordered border-light table-striped  stacked-table">
-                        <tbody>
-                            <tr>
-                                <th scope="col" class="text-dark text-xs font-weight-bold ">Nombre Completo:</th>
-                                <td class="text-sm text-secondary mb-0">{{ $affiliate->user->name }} </td>
-                                <th scope="col" class="text-dark text-xs font-weight-bold ">Matricula:</th>
-                                <td class="text-sm text-secondary mb-0">{{ $affiliate->id }}</td>
-                                <th scope="col" class="text-dark text-xs font-weight-bold ">C.I:</th>
-                                <td class="text-sm text-secondary mb-0">{{ $affiliate->user->ci }}</td>
-                            </tr>
-                            <tr>
-                                <th scope="col" class="text-dark text-xs font-weight-bold ">Telefonos:</th>
-                                @foreach ($affiliate->user->phones as $phone)
-                                    <td class="text-sm text-secondary mb-0">{{ $phone->number }} </td>
-                                @endforeach
-                                <th scope="col" class="text-dark text-xs font-weight-bold ">Correo electronico:</th>
-                                <td class="text-sm text-secondary mb-0" colspan="3">{{ $affiliate->user->email }}
-                                </td>
+<div class="table-responsive">
+    <table class="table table-bordered border-light table-striped stacked-table">
+        <tbody>
+            <tr>
+                <th class="text-dark text-xs font-weight-bold">Nombre Completo:</th>
+                <td class="text-sm text-secondary">{{ $affiliate->user->name }}</td>
+                <th class="text-dark text-xs font-weight-bold">Matrícula:</th>
+                <td class="text-sm text-secondary">{{ $affiliate->id }}</td>
+                <th class="text-dark text-xs font-weight-bold">C.I:</th>
+                <td class="text-sm text-secondary">{{ $affiliate->user->ci }}</td>
+            </tr>
+            <tr>
+                <th class="text-dark text-xs font-weight-bold">Teléfonos:</th>
+                @foreach ($affiliate->user->phones as $phone)
+                    <td class="text-sm text-secondary">{{ $phone->number }}</td>
+                @endforeach
+                <th class="text-dark text-xs font-weight-bold">Correo electrónico:</th>
+                <td class="text-sm text-secondary" colspan="3">{{ $affiliate->user->email }}</td>
+            </tr>
+            <tr>
+                <th class="text-dark text-xs font-weight-bold">Total:</th>
+                <td class="text-sm text-secondary">{{ $affiliate->totalSum }} Bs.</td>
+                <th class="text-dark text-xs font-weight-bold">Pagado:</th>
+                <td class="text-sm text-secondary">{{ $affiliate->total_pagado + $affiliate->planes }} Bs.</td>
+                <th class="text-dark text-xs font-weight-bold">Deuda:</th>
+                <td class="text-sm text-secondary">{{ $affiliate->prest - $affiliate->planes }} Bs.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-                            </tr>
-                            <tr>
-                                <th scope="col" class="text-dark text-xs font-weight-bold "> total:</th>
-                                <td class="text-sm text-secondary mb-0">
-                                    {{ $affiliate->totalSum }} Bs.
-                                </td>
-                                <th scope="col" class="text-dark text-xs font-weight-bold "> Pagado:</th>
-                                <td class="text-sm text-secondary mb-0">
-                                    {{ $affiliate->total_pagado + $affiliate->planes }} Bs.
-                                </td>
-                                <th scope="col" class="text-dark text-xs font-weight-bold "> Deuda:</th>
-                                <td class="text-sm text-secondary mb-0">
-                                    {{ $affiliate->prest - $affiliate->planes }} Bs.
-                                </td>
-                            </tr>
-                    </table>
+<style>
+    @media (max-width: 768px) {
+        .stacked-table,
+        .stacked-table tbody,
+        .stacked-table tr,
+        .stacked-table th,
+        .stacked-table td {
+            display: block;
+            width: 100%;
+        }
+
+        .stacked-table tr {
+            margin-bottom: 1rem;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .stacked-table th {
+            background: rgba(0, 0, 0, 0.04);
+            padding: 6px 12px;
+            border-bottom: none;
+        }
+
+        .stacked-table td {
+            padding: 6px 12px 10px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .stacked-table td:last-child {
+            border-bottom: none;
+        }
+    }
+</style>
                     <hr class="my-0">
                     <div class="row mb-2">
                         <div class="col-md-4">
@@ -48,13 +78,7 @@
                                 <label for="floatingInput">Desde</label>
                             </div>
                         </div>
-                        {{--         <div class="col-md-4">
-            <div class="form-floating mb-3">
-                <input type="date" class="form-control" wire:model="to" id="floatingInput"
-                    placeholder="name@example.com">
-                    <label for="floatingInput">Hasta</label>
-                </div>
-        </div> --}}
+
                         <div class="col-md-4">
                             <div class="form-floating">
                                 <select class="form-select" wire:model="type" id="floatingSelect"

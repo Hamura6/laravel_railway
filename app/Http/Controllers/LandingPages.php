@@ -9,6 +9,7 @@ use App\Models\University;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Storage;
 
 class LandingPages extends Controller
 {
@@ -29,6 +30,14 @@ class LandingPages extends Controller
             'id' => $u->id,
             'name' => $u->name . ($u->entity ? " ({$u->entity})" : ''),
         ]);
+    }
+     public function show(string $filename)
+    {
+        abort_unless(Storage::disk('disk-users')->exists($filename), 404);
+
+        return response()->file(
+            Storage::disk('disk-users')->path($filename)
+        );
     }
     public function course(){
         /* $users = User::all();
