@@ -1,8 +1,7 @@
-@extends('site.layout')
-@section('content')
+<?php $__env->startSection('content'); ?>
 
     <div class="banner">
-        <img class="img-banner" src="{{ asset('image/news.jpg') }}" alt="Requisitos">
+        <img class="img-banner" src="<?php echo e(asset('image/news.jpg')); ?>" alt="Requisitos">
         <div class="banner-content">
             <span class="banner-eyebrow">Admisiones</span>
             <h2 class="title-banner">Requisitos de inscripción</h2>
@@ -20,10 +19,13 @@
             </div>
 
             <div class="req-body">
-                {!! $institution->requirement !!}
+                <?php echo $institution->requirement; ?>
+
             </div>
 
         </div>
     </section>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('site.layout', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH D:\ICAPV4\ICAP\resources\views/site/pages/requirement.blade.php ENDPATH**/ ?>

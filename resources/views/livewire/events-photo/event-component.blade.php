@@ -129,13 +129,12 @@
                                 @can('Eliminar eventos')
                                     <x-btn-delete id="{{ $event->id }}" />
                                 @endcan
-                                @can('Editar eventos')
                                     <a href="{{ route('event.photos', $event->id) }}" class="btn-purple-circle"
-                                        data-bs-toggle="tooltip" data-bs-title="Photos">
+                                        data-bs-toggle="tooltip" data-bs-title="fotos">
                                         <i class="fas fa-eye"></i>
 
                                     </a>
-                                @endcan
+
                             </div>
                         </div>
                     </div>

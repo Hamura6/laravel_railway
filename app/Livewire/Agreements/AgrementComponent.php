@@ -15,7 +15,7 @@ class AgrementComponent extends Component
     public function render()
     {
         $agreements = Agreement::with('socials:type,url,sociable_id,sociable_type,id')
-        ->where('name', 'like', "%$this->search%")->paginate(10);
+        ->where('name', 'like', "%$this->search%")->paginate(9);
         return view('livewire.agreements.agrement-component', compact('agreements'));
     }
     #[On('delete')]

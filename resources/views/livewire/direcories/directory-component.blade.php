@@ -49,7 +49,7 @@
 
 
         <div class="row g-1">
-            <div class="col-md-8">
+            <div class="@cannot('Asignar cargo en el directorio') col-md-12 @else col-md-8 @endcannot">
                 <x-card-body>
                     <x-slot name="header">
 
@@ -57,8 +57,7 @@
                         <div class="col-12 col-md-12 d-flex justify-content-end">
                             <div class="input-group">
                                 <label class="input-group-text" for="inputGroupSelect01">Seleccione un opcion</label>
-                                <select class="form-select" id="inputGroupSelect01"
-                                    wire:model.live="type">
+                                <select class="form-select" id="inputGroupSelect01" wire:model.live="type">
                                     <option value="" disabled>Seleccione</option>
                                     <option value="1">Directorio</option>
                                     <option value="0">Tribunal de Honor</option>
@@ -92,16 +91,17 @@
 
 
                                     <td>
-                                         {{$directory->affiliate->user->title .' '. $directory->affiliate->user->full_name }} 
+                                        {{ $directory->affiliate->user->title . ' ' . $directory->affiliate->user->full_name }}
                                     </td>
                                     <td class="text-center">
                                         <span
                                             class="badge bg-transparent text-dark border border-dark border-1">{{ $directory->name }}</span>
                                     </td>
-
-                                    <td class="text-center">
-                                        <x-btn-delete id="{{ $directory->id }}" />
-                                    </td>
+                                    @can('Asignar cargo en el directorio')
+                                        <td class="text-center">
+                                            <x-btn-delete id="{{ $directory->id }}" />
+                                        </td>
+                                    @endcan
                                 </tr>
                             @empty
                                 <tr>
@@ -120,46 +120,49 @@
                 </x-card-body>
 
             </div>
-            <div class="col-md-4">
-                <x-card-body>
-                    <x-slot name="header">
-                        <div class="col-sm-12 ">
-                            <div class="input-group input-group-sm ">
-                                <span class="input-group-text text-body">
-                                    <i class="fas fa-search"></i>
-                                </span>
-                                <input type="text" wire:model.live.debounce.1000ms="toSearch"
-                                    class="form-control form-control-sm" placeholder="Buscar">
+            @can('Asignar cargo en el directorio')
+                <div class="col-md-4">
+                    <x-card-body>
+                        <x-slot name="header">
+                            <div class="col-sm-12 ">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text text-body">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                    <input type="text" wire:model.live.debounce.1000ms="toSearch"
+                                        class="form-control form-control-sm" placeholder="Buscar">
+                                </div>
+
                             </div>
 
+                        </x-slot>
+
+                        <div class="cards w-100">
+                            @forelse ($affiliates as $affiliate)
+                                <div class="card-container border border-2 rounded-3 border-dark text-dark"
+                                    wire:click="selected({{ $affiliate->id }})"
+                                    style="                background: white !important
+">
+                                    <p class="mb-0"><strong>Matricula:</strong>{{ $affiliate->id }}</p>
+                                    <p class="mb-0"><strong>Nombre:</strong> {{ $affiliate->user->full_name }}</p>
+                                </div>
+                            @empty
+
+                                <h5>
+                                    <i class="far fa-sad-tear"></i>
+
+                                    No se encontraron registros...
+                                </h5>
+                            @endforelse
                         </div>
 
-                    </x-slot>
 
-                    <div class="cards w-100">
-                        @forelse ($affiliates as $affiliate)
-                            <div class="card-container border border-2 rounded-3 border-dark text-dark"
-                                wire:click="selected({{ $affiliate->id }})" style="                background: white !important
-">
-                                <p class="mb-0"><strong>Matricula:</strong>{{ $affiliate->id }}</p>
-                                <p class="mb-0"><strong>Nombre:</strong> {{ $affiliate->user->full_name }}</p>
-                            </div>
-                        @empty
-
-                            <h5>
-                                <i class="far fa-sad-tear"></i>
-
-                                No se encontraron registros...
-                            </h5>
-                        @endforelse
-                    </div>
-
-
-                    <div class="border-top py-3 px-3 d-flex align-items-center">
-                        {{ $affiliates->links() }}
-                    </div>
-                </x-card-body>
-            </div>
+                        <div class="border-top py-3 px-3 d-flex align-items-center">
+                            {{ $affiliates->links() }}
+                        </div>
+                    </x-card-body>
+                </div>
+            @endcan
         </div>
     </div>
     @include('livewire.direcories.form')

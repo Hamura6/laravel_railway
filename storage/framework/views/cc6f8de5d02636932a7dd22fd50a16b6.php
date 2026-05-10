@@ -27,7 +27,9 @@
         <?php endif; ?>
 
         <!-- Usuarios + Submenú -->
-        <?php if(auth()->user()->can('Ver usuarios') || auth()->user()->can('Ver roles') || auth()->user()->can('Asignación de permisos')): ?>
+        <?php if(auth()->user()->can('Ver usuarios') ||
+                auth()->user()->can('Ver roles') ||
+                auth()->user()->can('Asignación de permisos')): ?>
             <div
                 class="menu-item has-submenu toggle-submenu <?php echo e(Route::is(['users', 'roles', 'permissions']) ? 'active' : ''); ?>">
                 <div class="menu-label">
@@ -191,25 +193,37 @@
         <?php endif; ?>
         <div
             class="sidebar-submenu <?php echo e(Route::is(['news', 'courses', 'articles', 'agreements', 'directories', 'events']) ? 'show' : ''); ?>">
-            <a class="<?php echo e(Route::is('news') ? 'active' : ''); ?>" href="<?php echo e(route('news')); ?>" wire:navigate>
-                <i class="fas fa-bullhorn"></i> Comunicados / Noticias
-            </a>
-            <a class="<?php echo e(Route::is('courses') ? 'active' : ''); ?>" href="<?php echo e(route('courses')); ?>" wire:navigate>
-                <i class="fas fa-graduation-cap"></i> Oferta Académica
-            </a>
-            <a class="<?php echo e(Route::is('articles') ? 'active' : ''); ?>" href="<?php echo e(route('articles')); ?>" wire:navigate>
-                <i class="fas fa-pen-nib"></i> Colaboraciones Académicas
-            </a>
-            <a class="<?php echo e(Route::is('agreements') ? 'active' : ''); ?>" href="<?php echo e(route('agreements')); ?>" wire:navigate>
-                <i class="fas fa-handshake"></i> Convenios Institucionales
-            </a>
-            <a class="<?php echo e(Route::is('directories') ? 'active' : ''); ?>" href="<?php echo e(route('directories')); ?>"
-                wire:navigate>
-                <i class="fas fa-user-tie"></i> Directorio
-            </a>
-            <a class="<?php echo e(Route::is('events') ? 'active' : ''); ?>" href="<?php echo e(route('events')); ?>" wire:navigate>
-                <i class="fas fa-calendar-alt"></i> Eventos
-            </a>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Ver noticias')): ?>
+                <a class="<?php echo e(Route::is('news') ? 'active' : ''); ?>" href="<?php echo e(route('news')); ?>" wire:navigate>
+                    <i class="fas fa-bullhorn"></i> Comunicados / Noticias
+                </a>
+            <?php endif; ?>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Ver cursos')): ?>
+                <a class="<?php echo e(Route::is('courses') ? 'active' : ''); ?>" href="<?php echo e(route('courses')); ?>" wire:navigate>
+                    <i class="fas fa-graduation-cap"></i> Oferta Académica
+                </a>
+            <?php endif; ?>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Ver artículos')): ?>
+                <a class="<?php echo e(Route::is('articles') ? 'active' : ''); ?>" href="<?php echo e(route('articles')); ?>" wire:navigate>
+                    <i class="fas fa-pen-nib"></i> Colaboraciones Académicas
+                </a>
+            <?php endif; ?>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Ver convenios')): ?>
+                <a class="<?php echo e(Route::is('agreements') ? 'active' : ''); ?>" href="<?php echo e(route('agreements')); ?>" wire:navigate>
+                    <i class="fas fa-handshake"></i> Convenios Institucionales
+                </a>
+            <?php endif; ?>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Ver directorio actual de la organización')): ?>
+                <a class="<?php echo e(Route::is('directories') ? 'active' : ''); ?>" href="<?php echo e(route('directories')); ?>"
+                    wire:navigate>
+                    <i class="fas fa-user-tie"></i> Directorio
+                </a>
+            <?php endif; ?>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Ver eventos')): ?>
+                <a class="<?php echo e(Route::is('events') ? 'active' : ''); ?>" href="<?php echo e(route('events')); ?>" wire:navigate>
+                    <i class="fas fa-calendar-alt"></i> Eventos
+                </a>
+            <?php endif; ?>
         </div>
 
 

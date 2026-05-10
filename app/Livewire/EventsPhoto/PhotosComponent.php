@@ -23,7 +23,7 @@ class PhotosComponent extends Component
     }
     public function render()
     {
-        $photos = EventPhoto::where('event_id', $this->id)->paginate(9);
+        $photos = EventPhoto::where('event_id', $this->id)->orderBy('id','desc')->paginate(9);
         return view('livewire.events-photo.photos-component', compact('photos'));
     }
     #[On('delete')]

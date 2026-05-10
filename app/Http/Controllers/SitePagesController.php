@@ -63,7 +63,7 @@ class SitePagesController extends Controller
         $event=Event::find($event);
         $title=$event->title;
         $date=$event->date;
-        $photos = EventPhoto::where('event_id', $event->id)->paginate(5);
+        $photos = EventPhoto::where('event_id', $event->id)->orderBy('id','desc')->paginate(10);
         return view('site.pages.event_photos',compact('title','date','photos'));
     }
 

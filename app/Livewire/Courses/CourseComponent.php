@@ -14,7 +14,7 @@ class CourseComponent extends Component
     public function render()
     {
         $this->authorize('Ver cursos');
-        $courses = Course::where('title', 'like', "%$this->search%")->paginate(10);
+        $courses = Course::where('title', 'like', "%$this->search%")->paginate(9);
         return view('livewire.courses.course-component', compact('courses'));
     }
     #[On('delete')]

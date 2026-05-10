@@ -97,5 +97,21 @@
         </div>
     </section>
 <?php $__env->stopSection(); ?>
-
+DELETE FROM payments
+WHERE id = (
+    SELECT id FROM (
+        SELECT p1.id
+        FROM payments p1
+        WHERE p1.date = '2026-05-01' AND p1.status='Por pagar'
+          AND EXISTS (
+              SELECT 1
+              FROM payments p2
+              WHERE p2.date = '2026-05-01'
+                AND p2.affiliate_id = p1.affiliate_id
+              GROUP BY p2.affiliate_id
+              HAVING COUNT(*) > 1
+          )
+        LIMIT 1
+    ) AS tmp
+);
 <?php echo $__env->make('site.layout', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH D:\ICAPV4\ICAP\resources\views/site/pages/events.blade.php ENDPATH**/ ?>

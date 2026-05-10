@@ -1,32 +1,43 @@
 @extends('site.layout')
 @section('content')
     <div class="banner">
-        <img class="img-banner" src="{{ asset('images/single.jpg') }}" alt="Cursos">
+        <img class="img-banner" src="{{ asset('image/single.jpg') }}" alt="Galería">
         <div class="banner-content">
-            <h2 class="title-banner">Imagenes </h2>
-            <p class="desc-banner">Bienvenidos a nuestra galeria de imagenes</p>
+            <span class="banner-eyebrow">Galería oficial</span>
+            <h2 class="title-banner">Imágenes</h2>
+            <p class="desc-banner">Bienvenidos a nuestra galería de imágenes</p>
         </div>
     </div>
-    <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-2 g-xl-5 justify-content-center py-5">
-        @foreach ($photos as $photo)
-            <div class="col">
-                <div class="polaroid-card" data-bs-toggle="tooltip" title="{{ $photo->title ?? '' }}">
-                    <div class="polaroid">
-                        <div class="photo">
-                            <a href="{{ $photo->image }}" target="_blank" class="news-img-wrapper d-block">
-                            <img src="{{ $photo->image }}" class="w-100 h-100 object-fit-cover" alt="Imagen" loading="lazy">
-                            </a>
-                            <!-- Efectos vintage (super ligeros) -->
-                            <div class="dust"></div>
-                            <div class="scratches"></div>
-                        </div>
-                    </div>
+
+    <div class="gallery-toolbar">
+        <span class="gallery-count">{{ $photos->total() }} imágenes · página {{ $photos->currentPage() }} de
+            {{ $photos->lastPage() }}</span>
+    </div>
+
+    <div class="gallery-grid">
+        @forelse ($photos as $index => $photo)
+            <div class="gallery-item {{ $loop->iteration === 7 ? 'gallery-item--wide' : '' }}">
+                <span class="gallery-item-num">{{ str_pad($loop->iteration, 2, '0', STR_PAD_LEFT) }}</span>
+                <img src="{{ $photo->image }}" alt="Fotografía {{ $loop->iteration }}" loading="lazy">
+                <div class="gallery-item-overlay">
+                    <a href="{{ $photo->image }}" target="_blank" rel="noopener" class="gallery-item-btn"
+                        title="Ver imagen">
+                        <i class="fas fa-eye"></i>
+                    </a>
                 </div>
             </div>
-        @endforeach
+        @empty
+            <div class="gallery-empty">
+                <i class="far fa-images"></i>
+                <p>No hay fotografías disponibles.</p>
+            </div>
+        @endforelse
     </div>
-    <div class="border-top py-3 px-3 d-flex align-items-center">
+
+    <div class="gallery-footer">
+        <span class="gallery-footer-info">
+            Mostrando {{ $photos->firstItem() }}–{{ $photos->lastItem() }} de {{ $photos->total() }} imágenes
+        </span>
         {{ $photos->links() }}
     </div>
 @endsection

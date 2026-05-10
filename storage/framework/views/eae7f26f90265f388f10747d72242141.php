@@ -186,13 +186,12 @@
 <?php unset($__componentOriginal3fa869ab4147c9277d9fa157f1637985); ?>
 <?php endif; ?>
                                 <?php endif; ?>
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar eventos')): ?>
                                     <a href="<?php echo e(route('event.photos', $event->id)); ?>" class="btn-purple-circle"
-                                        data-bs-toggle="tooltip" data-bs-title="Photos">
+                                        data-bs-toggle="tooltip" data-bs-title="fotos">
                                         <i class="fas fa-eye"></i>
 
                                     </a>
-                                <?php endif; ?>
+
                             </div>
                         </div>
                     </div>

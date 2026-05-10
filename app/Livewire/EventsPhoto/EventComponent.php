@@ -13,7 +13,8 @@ class EventComponent extends Component
 {
     use WithFileUploads, WithPagination;
     public $id, $title, $description, $photos = [], $date;
-    public function mount(){
+    public function mount()
+    {
         $this->authorize('Ver eventos');
     }
     public function rules()
@@ -36,22 +37,31 @@ class EventComponent extends Component
     {
         $this->authorize('Crear eventos');
         $this->validate();
+
         $event = Event::create([
-            'title' => $this->title,
+            'title'       => $this->title,
             'description' => $this->description,
-            'date' => $this->date,
+            'date'        => $this->date,
         ]);
+
+        $dir = storage_path('app/public/event_photos');
+        if (!file_exists($dir)) {
+            mkdir($dir, 0775, true);
+        }
+
+        ini_set('memory_limit', '512M');
+
         foreach ($this->photos as $photo) {
             $filename = uniqid();
-            $photo->storeAs('event_photos', $filename.'.jpg', 'public');
-            $storagePath  = storage_path('app/public/event_photos/' . $filename.'.webp');
-            Image::read($photo->getRealPath())
-                ->toWebp(quality: 60)
-                ->save($storagePath);
-            $event->photos()->create([
-                'name' => $filename,
-            ]);
+
+            $image = Image::read($photo->getRealPath())->scaleDown(width: 1920);
+
+            $image->toWebp(quality: 75)->save("{$dir}/{$filename}.webp");
+            $image->toJpeg(quality: 90)->save("{$dir}/{$filename}.jpg");
+
+            $event->photos()->create(['name' => $filename]);
         }
+
         $this->clear();
         $this->dispatch('notify', text: 'Se registro el evento correctamente', title: 'Evento registrado', icon: 'success');
     }
@@ -62,23 +72,23 @@ class EventComponent extends Component
         $event = Event::with(['photos'])->find($id);
         foreach ($event->photos as $photo) {
             if ($photo->name) {
-                if (file_exists(public_path('storage/event_photos/' . $photo->name.'.web'))) {
-                    unlink(public_path('storage/event_photos/' . $photo->name.'.web'));
-                    unlink(public_path('storage/event_photos/' . $photo->name.'jpg'));
+                if (file_exists(public_path('storage/event_photos/' . $photo->name . '.webp'))) {
+                    unlink(public_path('storage/event_photos/' . $photo->name . '.webp'));
+                    unlink(public_path('storage/event_photos/' . $photo->name . '.jpg'));
                 }
             }
         }
         $event->delete();
-        $this->dispatch('notify',text:'Se pudo eliminar correctamente el evento y las fotografias',title:'Registro eliminado',icon:'success');
+        $this->dispatch('notify', text: 'Se pudo eliminar correctamente el evento y las fotografias', title: 'Registro eliminado', icon: 'success');
     }
     public function clear()
     {
         $this->resetValidation();
-        $this->id=0; 
-        $this->title=''; 
-        $this->description=''; 
-        $this->photos = []; 
-        $this->date='';
+        $this->id = 0;
+        $this->title = '';
+        $this->description = '';
+        $this->photos = [];
+        $this->date = '';
         $this->dispatch('close-modal');
     }
 }

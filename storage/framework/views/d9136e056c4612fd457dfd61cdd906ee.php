@@ -3,44 +3,29 @@
     <style>
         .my-card {
             position: relative;
-            height: 254px;
+            aspect-ratio: 4/3;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
             border-radius: 12px;
-        }
-
-        .my-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(315deg, #03a8f456, #ff0058);
-            opacity: 0;
-            transition: opacity 0.2s ease;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .my-card:hover::before {
-            opacity: 1;
+            border: 0.5px solid rgba(0,0,0,0.1);
+            background: #f1f1f0;
         }
 
         .my-card img {
             position: absolute;
-            z-index: 3;
-            scale: 0.9;
-            opacity: 0.9;
-            transition: 0.5s;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            transition: transform 0.5s cubic-bezier(0.4,0,0.2,1), filter 0.4s ease;
         }
 
         .my-card:hover img {
-            scale: 0.5;
-            opacity: 0.5;
-            transform: translateY(-70px);
+            transform: scale(1.06);
+            filter: brightness(0.4);
         }
 
         .my-card .content-my {
@@ -97,24 +82,29 @@
         <div class="row g-2">
             <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $photos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $photo): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                 <div class="col-md-4">
-                    <div class="my-card w-100 position-relative">
-                            <img src="<?php echo e($photo->image); ?>"  alt="image" loading="lazy">
+                    <div class="my-card w-100">
+                        <img src="<?php echo e($photo->image); ?>" alt="image" loading="lazy">
                         <div class="content-my">
+                            <div class="position-absolute bottom-0 d-flex gap-2 justify-content-center">
 
-                            <div class="position-absolute bottom-0  d-flex gap-2  justify-content-center  ">
+                                <a class="btn-info-circle outlined" href="<?php echo e($photo->image); ?>" target="_blank" rel="noopener" title="Ver imagen">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar eventos')): ?>
+
                                 <button type="button" wire:target="changeStatus, delete, edit"
                                     wire:loading.attr="disabled" onclick="Confirm(<?php echo e($photo->id); ?>)"
-                                    class="btn-dc-circle">
-                                    <i class="fas fa-trash "></i>
+                                    class="btn-dc-circle" title="Eliminar">
+                                    <i class="fas fa-trash"></i>
                                 </button>
-
-                                <a class="btn-success-circle outlined" href="<?php echo e($photo->image_download); ?>" download>
+<?php endif; ?>
+                                <a class="btn-success-circle outlined" href="<?php echo e($photo->image_download); ?>" download title="Descargar">
                                     <i class="fas fa-download"></i>
                                 </a>
+
                             </div>
                         </div>
                     </div>
-
                 </div>
 
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
@@ -139,5 +129,4 @@
 <?php $component = $__componentOriginal715227d04bfdbc5a76353a8876a0c5ef; ?>
 <?php unset($__componentOriginal715227d04bfdbc5a76353a8876a0c5ef); ?>
 <?php endif; ?>
-</div>
-<?php /**PATH D:\ICAPV4\ICAP\resources\views/livewire/events-photo/photos-component.blade.php ENDPATH**/ ?>
+</div><?php /**PATH D:\ICAPV4\ICAP\resources\views/livewire/events-photo/photos-component.blade.php ENDPATH**/ ?>

@@ -68,7 +68,7 @@
 
 
         <div class="row g-1">
-            <div class="col-md-8">
+            <div class="<?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->denies('Asignar cargo en el directorio')): ?> col-md-12 <?php else: ?> col-md-8 <?php endif; ?>">
                 <?php if (isset($component)) { $__componentOriginal715227d04bfdbc5a76353a8876a0c5ef = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal715227d04bfdbc5a76353a8876a0c5ef = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.card-body','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -85,8 +85,7 @@
                         <div class="col-12 col-md-12 d-flex justify-content-end">
                             <div class="input-group">
                                 <label class="input-group-text" for="inputGroupSelect01">Seleccione un opcion</label>
-                                <select class="form-select" id="inputGroupSelect01"
-                                    wire:model.live="type">
+                                <select class="form-select" id="inputGroupSelect01" wire:model.live="type">
                                     <option value="" disabled>Seleccione</option>
                                     <option value="1">Directorio</option>
                                     <option value="0">Tribunal de Honor</option>
@@ -131,15 +130,16 @@
 
 
                                     <td>
-                                         <?php echo e($directory->affiliate->user->title .' '. $directory->affiliate->user->full_name); ?> 
+                                        <?php echo e($directory->affiliate->user->title . ' ' . $directory->affiliate->user->full_name); ?>
+
                                     </td>
                                     <td class="text-center">
                                         <span
                                             class="badge bg-transparent text-dark border border-dark border-1"><?php echo e($directory->name); ?></span>
                                     </td>
-
-                                    <td class="text-center">
-                                        <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
+                                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Asignar cargo en el directorio')): ?>
+                                        <td class="text-center">
+                                            <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($directory->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('btn-delete'); ?>
@@ -159,7 +159,8 @@
 <?php $component = $__componentOriginal3fa869ab4147c9277d9fa157f1637985; ?>
 <?php unset($__componentOriginal3fa869ab4147c9277d9fa157f1637985); ?>
 <?php endif; ?>
-                                    </td>
+                                        </td>
+                                    <?php endif; ?>
                                 </tr>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
                                 <tr>
@@ -196,8 +197,9 @@
 <?php endif; ?>
 
             </div>
-            <div class="col-md-4">
-                <?php if (isset($component)) { $__componentOriginal715227d04bfdbc5a76353a8876a0c5ef = $component; } ?>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Asignar cargo en el directorio')): ?>
+                <div class="col-md-4">
+                    <?php if (isset($component)) { $__componentOriginal715227d04bfdbc5a76353a8876a0c5ef = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal715227d04bfdbc5a76353a8876a0c5ef = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.card-body','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('card-body'); ?>
@@ -207,44 +209,45 @@
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
-                     <?php $__env->slot('header', null, []); ?> 
-                        <div class="col-sm-12 ">
-                            <div class="input-group input-group-sm ">
-                                <span class="input-group-text text-body">
-                                    <i class="fas fa-search"></i>
-                                </span>
-                                <input type="text" wire:model.live.debounce.1000ms="toSearch"
-                                    class="form-control form-control-sm" placeholder="Buscar">
+                         <?php $__env->slot('header', null, []); ?> 
+                            <div class="col-sm-12 ">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text text-body">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                    <input type="text" wire:model.live.debounce.1000ms="toSearch"
+                                        class="form-control form-control-sm" placeholder="Buscar">
+                                </div>
+
                             </div>
 
+                         <?php $__env->endSlot(); ?>
+
+                        <div class="cards w-100">
+                            <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $affiliates; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $affiliate): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
+                                <div class="card-container border border-2 rounded-3 border-dark text-dark"
+                                    wire:click="selected(<?php echo e($affiliate->id); ?>)"
+                                    style="                background: white !important
+">
+                                    <p class="mb-0"><strong>Matricula:</strong><?php echo e($affiliate->id); ?></p>
+                                    <p class="mb-0"><strong>Nombre:</strong> <?php echo e($affiliate->user->full_name); ?></p>
+                                </div>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
+
+                                <h5>
+                                    <i class="far fa-sad-tear"></i>
+
+                                    No se encontraron registros...
+                                </h5>
+                            <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
                         </div>
 
-                     <?php $__env->endSlot(); ?>
 
-                    <div class="cards w-100">
-                        <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $affiliates; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $affiliate): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-                            <div class="card-container border border-2 rounded-3 border-dark text-dark"
-                                wire:click="selected(<?php echo e($affiliate->id); ?>)" style="                background: white !important
-">
-                                <p class="mb-0"><strong>Matricula:</strong><?php echo e($affiliate->id); ?></p>
-                                <p class="mb-0"><strong>Nombre:</strong> <?php echo e($affiliate->user->full_name); ?></p>
-                            </div>
-                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
+                        <div class="border-top py-3 px-3 d-flex align-items-center">
+                            <?php echo e($affiliates->links()); ?>
 
-                            <h5>
-                                <i class="far fa-sad-tear"></i>
-
-                                No se encontraron registros...
-                            </h5>
-                        <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
-                    </div>
-
-
-                    <div class="border-top py-3 px-3 d-flex align-items-center">
-                        <?php echo e($affiliates->links()); ?>
-
-                    </div>
-                 <?php echo $__env->renderComponent(); ?>
+                        </div>
+                     <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginal715227d04bfdbc5a76353a8876a0c5ef)): ?>
 <?php $attributes = $__attributesOriginal715227d04bfdbc5a76353a8876a0c5ef; ?>
@@ -254,7 +257,8 @@
 <?php $component = $__componentOriginal715227d04bfdbc5a76353a8876a0c5ef; ?>
 <?php unset($__componentOriginal715227d04bfdbc5a76353a8876a0c5ef); ?>
 <?php endif; ?>
-            </div>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
     <?php echo $__env->make('livewire.direcories.form', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>

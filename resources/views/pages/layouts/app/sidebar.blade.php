@@ -26,7 +26,9 @@
         @endrole
 
         <!-- Usuarios + Submenú -->
-        @if (auth()->user()->can('Ver usuarios') || auth()->user()->can('Ver roles') || auth()->user()->can('Asignación de permisos'))
+        @if (auth()->user()->can('Ver usuarios') ||
+                auth()->user()->can('Ver roles') ||
+                auth()->user()->can('Asignación de permisos'))
             <div
                 class="menu-item has-submenu toggle-submenu {{ Route::is(['users', 'roles', 'permissions']) ? 'active' : '' }}">
                 <div class="menu-label">
@@ -190,25 +192,37 @@
         @endif
         <div
             class="sidebar-submenu {{ Route::is(['news', 'courses', 'articles', 'agreements', 'directories', 'events']) ? 'show' : '' }}">
-            <a class="{{ Route::is('news') ? 'active' : '' }}" href="{{ route('news') }}" wire:navigate>
-                <i class="fas fa-bullhorn"></i> Comunicados / Noticias
-            </a>
-            <a class="{{ Route::is('courses') ? 'active' : '' }}" href="{{ route('courses') }}" wire:navigate>
-                <i class="fas fa-graduation-cap"></i> Oferta Académica
-            </a>
-            <a class="{{ Route::is('articles') ? 'active' : '' }}" href="{{ route('articles') }}" wire:navigate>
-                <i class="fas fa-pen-nib"></i> Colaboraciones Académicas
-            </a>
-            <a class="{{ Route::is('agreements') ? 'active' : '' }}" href="{{ route('agreements') }}" wire:navigate>
-                <i class="fas fa-handshake"></i> Convenios Institucionales
-            </a>
-            <a class="{{ Route::is('directories') ? 'active' : '' }}" href="{{ route('directories') }}"
-                wire:navigate>
-                <i class="fas fa-user-tie"></i> Directorio
-            </a>
-            <a class="{{ Route::is('events') ? 'active' : '' }}" href="{{ route('events') }}" wire:navigate>
-                <i class="fas fa-calendar-alt"></i> Eventos
-            </a>
+            @can('Ver noticias')
+                <a class="{{ Route::is('news') ? 'active' : '' }}" href="{{ route('news') }}" wire:navigate>
+                    <i class="fas fa-bullhorn"></i> Comunicados / Noticias
+                </a>
+            @endcan
+            @can('Ver cursos')
+                <a class="{{ Route::is('courses') ? 'active' : '' }}" href="{{ route('courses') }}" wire:navigate>
+                    <i class="fas fa-graduation-cap"></i> Oferta Académica
+                </a>
+            @endcan
+            @can('Ver artículos')
+                <a class="{{ Route::is('articles') ? 'active' : '' }}" href="{{ route('articles') }}" wire:navigate>
+                    <i class="fas fa-pen-nib"></i> Colaboraciones Académicas
+                </a>
+            @endcan
+            @can('Ver convenios')
+                <a class="{{ Route::is('agreements') ? 'active' : '' }}" href="{{ route('agreements') }}" wire:navigate>
+                    <i class="fas fa-handshake"></i> Convenios Institucionales
+                </a>
+            @endcan
+            @can('Ver directorio actual de la organización')
+                <a class="{{ Route::is('directories') ? 'active' : '' }}" href="{{ route('directories') }}"
+                    wire:navigate>
+                    <i class="fas fa-user-tie"></i> Directorio
+                </a>
+            @endcan
+            @can('Ver eventos')
+                <a class="{{ Route::is('events') ? 'active' : '' }}" href="{{ route('events') }}" wire:navigate>
+                    <i class="fas fa-calendar-alt"></i> Eventos
+                </a>
+            @endcan
         </div>
 
 
