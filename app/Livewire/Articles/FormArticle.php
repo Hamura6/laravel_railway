@@ -33,10 +33,9 @@ class FormArticle extends Component
     public function rules()
     {
         return [
-            'title' => 'required|string|min:5|max:100',
+            'title' => 'required|string|min:5|max:255',
             'description' => 'required|string|min:10|max:255',
-            'photo' => $this->id ? 'nullable|image|mimes:jpg,jpeg,png|max:2048'
-                : 'required|image|mimes:jpg,jpeg,png|max:2048',
+            'photo' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
             'file' => $this->id ? 'nullable|file|mimes:pdf,doc,docx'
                 : 'required|file|mimes:pdf,doc,docx',
         ];

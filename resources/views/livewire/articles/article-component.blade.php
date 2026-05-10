@@ -43,7 +43,7 @@
                         <td class="text-secondary ">
                             {{ $article->description }}
                         </td>
-                        <td class="text-center" align="center">
+                        <td class="d-flex flex-row justify-content-center align-items-center gap-1">
                             @can('Eliminar artículos')
                                 <x-btn-delete id="{{ $article->id }}" />
                             @endcan

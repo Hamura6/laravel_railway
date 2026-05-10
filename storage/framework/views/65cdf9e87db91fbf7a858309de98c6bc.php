@@ -102,7 +102,7 @@
                             <?php echo e($article->description); ?>
 
                         </td>
-                        <td class="text-center" align="center">
+                        <td class="d-flex flex-row justify-content-center align-items-center gap-1">
                             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar artículos')): ?>
                                 <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>

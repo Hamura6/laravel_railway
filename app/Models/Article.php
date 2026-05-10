@@ -33,7 +33,7 @@ class Article extends Model
     protected function ImageView(): Attribute
     {
         return Attribute::make(
-            get: fn() =>   Storage::disk('public')->url('articles/images/' . $this->preview)
+            get: fn() => $this->preview?  Storage::disk('public')->url('articles/images/' . $this->preview): asset('image/libro.png')
         );
     }
 }

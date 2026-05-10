@@ -115,7 +115,7 @@
                 <p class="section-subtitle">
                     Para ejercer estos derechos, puede escribir a:
                     <a href="{{ $institution->email }}">{{ $institution->email }}</a>
-                    o visitar <a href="https://srv1518912.hstgr.cloud" target="_blank">https://srv1518912.hstgr.cloud</a>
+                    o visitar <a href="https://icapotosi.com" target="_blank">https://icapotosi.com</a>
                 </p>
             </div>
         </div>
