@@ -28,23 +28,8 @@ class SitePagesController extends Controller
 
     public function courses()
     {
-        /* $users = User::all();
-
-        foreach ($users as $user) {
-            $user->assignRole('Afiliado');
-        }
-       $user=User::create([
-            'name'=>'Hamura',
-            'last_name'=>'Otsutsuki',
-            'birthdate'=>'2005-10-10',
-            'gender'=>'Masculino',
-            'martial_status'=>'Divorciado',
-            'ci'=>'14482906',
-            'email'=>'deidaramen2@gmail.com',
-            'password'=>Hash::make('madaradelos6')
-        ]);
-        $user->assignRole('Administrador'); */
-        $courses = Course::paginate(6);
+        
+        $courses = Course::orderBy('id','desc')->paginate(6);
         return view('site.pages.courses', compact('courses'));
     }
     public function news()

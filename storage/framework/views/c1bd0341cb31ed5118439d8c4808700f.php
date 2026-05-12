@@ -21,7 +21,7 @@
             <div class="row g-3 g-xl-4 justify-content-center">
                 <?php $__empty_1 = true; $__currentLoopData = $courses; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $index => $course): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                     <div class="col-12 col-md-6">
-                        <div class="cw2-card">
+                        <div class="cw2-card h-100">
 
                             <div class="cw2-img">
                                 <img src="<?php echo e($course->image_view); ?>" alt="<?php echo e($course->title); ?>" loading="lazy">
@@ -34,7 +34,7 @@
 
                             <div class="cw2-body">
                                 <h3 class="cw2-title"><?php echo e($course->title); ?></h3>
-                                <p class="cw2-desc"><?php echo e(Str::limit($course->description, 120)); ?></p>
+                                <p class="cw2-desc"><?php echo e($course->description); ?></p>
                                 <div class="cw2-meta">
                                     <div class="cw2-meta-item">
                                         <i class="far fa-calendar-alt"></i>
@@ -67,6 +67,7 @@
                         </div>
                     </div>
                 <?php endif; ?>
+                
             </div>
 
         </div>

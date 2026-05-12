@@ -22,7 +22,7 @@
             <div class="row g-3 g-xl-4 justify-content-center">
                 @forelse ($courses as $index => $course)
                     <div class="col-12 col-md-6">
-                        <div class="cw2-card">
+                        <div class="cw2-card h-100">
 
                             <div class="cw2-img">
                                 <img src="{{ $course->image_view }}" alt="{{ $course->title }}" loading="lazy">
@@ -35,7 +35,7 @@
 
                             <div class="cw2-body">
                                 <h3 class="cw2-title">{{ $course->title }}</h3>
-                                <p class="cw2-desc">{{ Str::limit($course->description, 120) }}</p>
+                                <p class="cw2-desc">{{ $course->description}}</p>
                                 <div class="cw2-meta">
                                     <div class="cw2-meta-item">
                                         <i class="far fa-calendar-alt"></i>
@@ -68,6 +68,7 @@
                         </div>
                     </div>
                 @endforelse
+                
             </div>
 
         </div>
