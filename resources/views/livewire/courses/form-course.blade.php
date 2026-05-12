@@ -38,7 +38,7 @@
                                     class="form-control @error('date')
             is-invalid @enderror"
                                     wire:model="date" id="floatingInput" placeholder="Costo">
-                                <label for="floatingInput">Feche de inicio</label>
+                                <label for="floatingInput">Fecha de inicio</label>
                             </div>
                             @error('date')
                                 <span class="text-danger"> {{ $message }}</span>

@@ -34,7 +34,7 @@ class FormCourse extends Component
     public function rules()
     {
         return [
-            'title' => 'required|string|min:5|max:100',
+            'title' => 'required|string|min:5|max:255',
             'description' => 'required|string|min:10|max:255',
             'price' => 'required|numeric|gte:0',
             'date' => 'required|date|after_or_equal:today',
