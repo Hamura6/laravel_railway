@@ -62,13 +62,13 @@ class SitePagesController extends Controller
     public function directory()
     {
         $directory=BoardMember::
-        with(['affiliate:id,user_id', 'affiliate.user:name,last_name,id,gender,photo'])
+        with(['affiliate:id,user_id', 'affiliate.user:name,last_name,id,gender,photo,email','affiliate.user.phones:number,user_id'])
         ->where('affiliate_id', '!=', null)
         ->where('is_directory', 1)
         ->orderBy('level', 'asc')
         ->get();
         $th_directory=BoardMember::
-        with(['affiliate:id,user_id', 'affiliate.user:name,last_name,id,gender,photo'])
+        with(['affiliate:id,user_id', 'affiliate.user:name,last_name,id,gender,photo,email','affiliate.user.phones:number'])
         ->where('affiliate_id', '!=', null)
         ->where('is_directory', 0)
         ->orderBy('level', 'asc')

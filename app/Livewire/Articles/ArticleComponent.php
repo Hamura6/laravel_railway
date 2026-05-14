@@ -16,7 +16,9 @@ class ArticleComponent extends Component
     }
     public function render()
     {
-        $articles = Article::where('title', 'like', "%$this->search%")->paginate(10);
+        $articles = Article::where('title', 'like', "%$this->search%")
+        ->orderBy('id','desc')
+        ->paginate(10);
         return view('livewire.articles.article-component', compact('articles'));
     }
     #[On('delete')]

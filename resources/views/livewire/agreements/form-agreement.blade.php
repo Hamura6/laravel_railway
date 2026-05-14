@@ -33,6 +33,7 @@
                                         <div class="input-group">
                                             <input type="file" wire:model="photo" wire:target="photo"
                                                 wire:loading.attr="disabled"
+                                                accept=".png,.jpg,.jpeg"
                                                 class="form-control @error('photo')
                                 is-invalid
                             @enderror"
@@ -44,9 +45,23 @@
                                             @enderror
                                         </div>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="formFileSm" class="form-label">Subir convenio</label>
+                                            <input
+                                                class="form-control form-control-sm @error('file')
+                                    is-invalid @enderror"
+                                                id="formFileSm" type="file" wire:model="file"
+                                                accept=".pdf,.doc,.docx">
+                                            @error('file')
+                                                <span class="text-danger"> {{ $message }}</span>
+                                            @enderror
+                                        </div>
+                                    </div>
                         <div class="col-md-12">
                             <div class="form-floating">
                                 <input type="text"
@@ -117,7 +132,8 @@
                     @else
                         @can('Crear convenios')
                             <button class="btn btn-sm btn-dark m-0" wire:target="add,update,store,photo"
-                                wire:loading.attr="disabled" wire:click.prevent="store()"> <i class="fas fa-save fs-6"></i>
+                                wire:loading.attr="disabled" wire:click.prevent="store()"> <i
+                                    class="fas fa-save fs-6"></i>
                                 Guardar</button>
                         @endcan
                     @endif

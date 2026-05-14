@@ -40,16 +40,23 @@
                     <td>{{ $affiliate->user->ci }}</td>
                     <td class="text-secondary">{{ $affiliate->antique }}
                     </td>
-                    <td class="text-secondary">
+                    <td class="text-secondary" align="center">
+                        @if ( $affiliate->ultimoPago> now())
+                        <span class="badge rounded-pill bg-success-subtle text-success">
+                            {{ \Carbon\Carbon::parse($affiliate->ultimoPago)->locale('es')->isoFormat('MMMM YYYY') }}
+                        </span>
+                        @else
                         {{ \Carbon\Carbon::parse($affiliate->ultimoPago)->locale('es')->isoFormat('MMMM YYYY') }}
-                    </td>
-                    <td class="text-secondary">{{ number_format($affiliate->aportes, 2) }} Bs. =>
-                        {{ $affiliate->aportes_cant }}</td>
-                    <td class="text-secondary">{{ $affiliate->prest - $affiliate->planes }}
+                        @endif
+                   </td>
+                    <td class="text-secondary" align="center">{{ number_format($affiliate->aportes, 2) }} Bs. <br>
+                        Cant.   {{ $affiliate->aportes_cant }}</td>
+                    <td class="text-secondary" align="center">{{ $affiliate->prest - $affiliate->planes }}
                         Bs.</td>
 
 
                     <td align="center">
+                        
                         <span class="badge rounded-pill text-dark  border border-dark border-1">
                             {{ $affiliate->status }}
                         </span>

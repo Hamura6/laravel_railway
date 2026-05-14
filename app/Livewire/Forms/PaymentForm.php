@@ -81,7 +81,7 @@ class PaymentForm extends Form
 
 
 
-    public function store($quantity, $discountAmount)
+    public function store($quantity, $discountAmount, $categoria)
     {
         $affiliate = Affiliate::find($this->affiliate_id);
         if (!$affiliate) {
@@ -94,7 +94,11 @@ class PaymentForm extends Form
             ->get();
         /* dd($pendingPayments); */
         $paymentDate = $this->dateFirst($affiliate);
-        $this->storeAport($pendingPayments, $paymentDate, $quantity, $affiliate, $discountAmount);
+        if ($categoria == 'Q') {
+            $this->storeAport($pendingPayments, $paymentDate, $quantity, $affiliate, $discountAmount);
+        } else {
+            $this->storeAportAmount($pendingPayments, $paymentDate, $quantity, $affiliate, $discountAmount);
+        }
         $total = $affiliate->payments()
             ->where('fee_id', 1)
             ->where('status', 'Por pagar')
@@ -200,6 +204,8 @@ class PaymentForm extends Form
 
     public function storeAport($pendingPayments, $paymentDate, $quantity, $affiliate, $discountAmount)
     {
+
+
         $total = 0;
 
         $date_intial =  $pendingPayments->first()->date ?? Carbon::parse($paymentDate)->addMonth(1)->firstOfMonth();
@@ -234,7 +240,7 @@ class PaymentForm extends Form
         if ($quantity > 0) {
             $paymentDate = Carbon::parse($paymentDate)->addMonth($quantity);
             $total += ($this->amount * $quantity);
-            $view = $affiliate->payments()->create([
+            $affiliate->payments()->create([
                 'amount' => $total,
                 'status' => 'Pagado',
                 'date'   => $paymentDate,
@@ -243,6 +249,89 @@ class PaymentForm extends Form
                 'created_at' => $date_intial,
                 'user_id' => auth()->user()->id
             ]);
+        }
+    }
+    public function storeAportAmount($pendingPayments, $paymentDate, $amount, $affiliate, $discountAmount)
+    {
+        $quantity = 0;
+        $remainder = 0;
+        $total = $amount;
+        $date_intial =  $pendingPayments->first()->date ?? Carbon::parse($paymentDate)->addMonth(1)->firstOfMonth();
+        foreach ($pendingPayments as $payment) {
+            if ($discountAmount > 0) {
+                $pay = ($payment->amount - ($payment->amount * $discountAmount / 100));
+            } else {
+                $pay = $payment->amount;
+            }
+            if ($amount >= $pay) {
+                $amount -= $pay;
+                $quantity++;
+            } else {
+                $remainder = $payment->amount - $amount;
+                $amount -= $payment->amount;
+            }
+            if ($amount <= 0 && $remainder <= 0) {
+                $payment->update([
+                    'status' => 'Pagado',
+                    'created_at' => $date_intial,
+                    'amount' => $total,
+                    'type' => $this->type,
+                    'user_id' => auth()->user()->id
+                ]);
+                break;
+            } else if ($amount <= 0 && $remainder > 0) {
+                $date = Carbon::parse($payment->date);
+                $payment->update([
+                    'status' => 'Pagado',
+                    'created_at' => $date_intial,
+                    'date' => $date,
+                    'amount' => $total,
+                    'type' => $this->type,
+                    'user_id' => auth()->user()->id
+                ]);
+                $affiliate->payments()->create([
+                    'amount' => $remainder,
+                    'status' => 'Por pagar',
+                    'date'   => $date,
+                    'fee_id' => 1,
+                    'type' => 'cash',
+                    'created_at' => $date,
+                    'user_id' => auth()->user()->id
+                ]);
+                break;
+            } else {
+                $payment->delete();
+                $paymentDate = $payment->date;
+            }
+        }
+        if ($discountAmount > 0) {
+            $this->amount = $this->amount - $this->amount * $discountAmount / 100;
+        }
+        if ($amount > 0) {
+            $paymentDate = Carbon::parse($paymentDate)->addMonth($amount / $this->amount);
+            $date = $paymentDate->copy();
+              $affiliate->payments()->create([
+                'amount' => $total,
+                'status' => 'Pagado',
+                'date'   => $paymentDate->addMonth(1),
+                'fee_id' => $this->fee_id,
+                'type' => $this->type,
+                'created_at' => $date_intial,
+                'user_id' => auth()->user()->id
+            ]);
+            if ($amount % $this->amount != 0) {
+
+                $date = $date->addMonth(1);
+                $view = $affiliate->payments()->create([
+                    'amount' => Fee::find(1)->amount - fmod($amount, $this->amount),
+                    'status' => 'Por pagar',
+                    'date'   => $date,
+                    'fee_id' => $this->fee_id,
+                    'type' => 'cash',
+                    'created_at' => $date,
+                    'user_id' => auth()->user()->id
+                ]);
+            }
         }
     }
 }

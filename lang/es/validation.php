@@ -213,6 +213,8 @@ return [
         'mausoleum'               => 'mausoleo',
         'university_id'               => 'universidad',
         'number'               => 'número',
+        'cant'               => 'cantidad de pagos',
+        'inputCant'               => 'Monto de pago',
         'password'               => 'contraseña',
         'specialtiesArray.*.date'               => 'fecha de especialidad',
         'specialtiesArray.*.specialty_id'               => 'especialidad',

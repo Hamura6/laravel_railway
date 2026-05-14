@@ -22,10 +22,34 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-floating">
+                                <input type="text"
+                                    class="form-control @error('author')
+            is-invalid @enderror"
+                                    wire:model="author" id="author" placeholder="Autor">
+                                <label for="floatingInput">Autor</label>
+                            </div>
+                            @error('author')
+                                <span class="text-danger"> {{ $message }}</span>
+                            @enderror
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <input type="date"
+                                    class="form-control @error('date')
+            is-invalid @enderror"
+                                    wire:model="date" id="date" placeholder="Fecha">
+                                <label for="floatingInput">Fecha</label>
+                            </div>
+                            @error('date')
+                                <span class="text-danger"> {{ $message }}</span>
+                            @enderror
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-floating">
                                 <textarea type="date" class="form-control @error('description')
             is-invalid @enderror"
-                                    wire:model="description" id="floatingInput" placeholder="Description" style="height: 150px" cols="30"
-                                    rows="20"></textarea>
+                                    wire:model="description" id="description" placeholder="Description" style="height: 150px" cols="30"
+                                    rows="10"></textarea>
                                 <label for="floatingInput">Descripción</label>
                             </div>
                             @error('description')

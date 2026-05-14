@@ -49,7 +49,17 @@
 
     <x-card-body>
         <x-slot name="header">
-            <h4><strong>{{ $this->title }} | {{ $this->date }}</strong></h4>
+            <div class="col-9">
+
+                <h4><strong>{{ $this->title }} | {{ $this->date }}</strong></h4>
+            </div>
+            <div class="col-3">
+                <div class="d-grid gap-2 d-flex justify-content-end">
+                    <button wire:loading.attr="disabled" data-bs-toggle="modal" data-bs-target="#myModal"
+                        class="btn btn-sm btn-outline-success mb-1 " type="button">
+                        <i class="fas fa-plus fs-6"></i></button>
+                </div>
+            </div>
         </x-slot>
         <div class="row g-2">
             @forelse ($photos as $photo)
@@ -92,4 +102,5 @@
             {{ $photos->links() }}
         </div>
     </x-card-body>
+    @include('livewire.events-photo.formPlusPhotos')
 </div>

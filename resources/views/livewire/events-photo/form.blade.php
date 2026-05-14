@@ -37,6 +37,7 @@
             <label for="formFile" class="form-label">Seleccione las imágenes</label>
             <input id="formFile" type="file" class="form-control @error('photos') is-invalid @enderror"
                 wire:model="photos" multiple x-on:livewire-upload-start="uploading = true"
+                accept=".png,.jpg,.jpeg"
                 x-on:livewire-upload-finish="uploading = false" x-on:livewire-upload-error="uploading = false"
                 x-on:livewire-upload-progress="progress = $event.detail.progress">
 

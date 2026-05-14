@@ -11,7 +11,7 @@ use Intervention\Image\Laravel\Facades\Image;
 class FormArticle extends Component
 {
     use WithFileUploads;
-    public $id, $title, $description, $image, $photo, $file, $filePreview;
+    public $id, $title, $description, $image, $photo, $file,$author,$date, $filePreview;
     public function mount($id = 0)
     {
         if (! (Auth::user()->can('Crear artículos') || Auth::user()->can('Editar artículos'))) {
@@ -26,6 +26,8 @@ class FormArticle extends Component
         $article = Article::find($id);
         if (!$article) return;
         $this->title = $article->title;
+        $this->author = $article->author;
+        $this->date = $article->date;
         $this->description = $article->description;
         $this->image = $article->image_view;
         $this->filePreview = $article->file;
@@ -34,6 +36,8 @@ class FormArticle extends Component
     {
         return [
             'title' => 'required|string|min:5|max:255',
+            'author' => 'required|string|min:5|max:180',
+            'date' => 'required|date|before_or_equal:today',
             'description' => 'required|string|min:10|max:255',
             'photo' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
             'file' => $this->id ? 'nullable|file|mimes:pdf,doc,docx'
@@ -66,6 +70,8 @@ class FormArticle extends Component
         Article::create([
             'title' => $this->title,
             'description' => $this->description,
+            'author' => $this->author,
+            'date' => $this->date,
             'preview' => $this->image,
             'file' => $this->filePreview,
         ]);
@@ -108,6 +114,8 @@ class FormArticle extends Component
         }
         $article->update([
             'title' => $this->title,
+            'date' => $this->date,
+            'author' => $this->author,
             'description' => $this->description,
             'preview' => $this->image,
             'file' => $this->filePreview,

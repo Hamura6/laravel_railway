@@ -36,7 +36,6 @@
                 width: 100%
             }
 
-            /*Image*/
             .custom-imgbox {
                 position: absolute;
                 top: 10px;
@@ -48,14 +47,11 @@
             }
 
             .custom-img {
-                background: #4158D0;
-                background-image: linear-gradient(45deg, #4158D0, #C850C0);
                 border-radius: 15px;
                 width: 100%;
                 height: 100%;
             }
 
-            /*Text*/
             .custom-title {
                 font-weight: 600;
                 font-size: 16px;
@@ -70,7 +66,6 @@
                 margin-left: 2px;
             }
 
-            /*Hover*/
             .custom-card:hover .custom-imgbox {
                 bottom: 180px;
             }

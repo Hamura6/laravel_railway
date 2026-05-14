@@ -4,6 +4,20 @@
     </div>
     <div class="col-md-12">
         <div class="form-floating">
+            <select class="form-select @error('category') is-invalid @enderror " wire:model.live="category" id="category"
+                aria-label="Floating label select example">
+                <option value="Q">Cantidad</option>
+                <option value="A">Monto</option>
+            </select>
+            <label for="category">Modo de pago</label>
+        </div>
+        @error('category')
+            <span class="text-danger"> {{ $message }}</span>
+        @enderror
+    </div>
+
+    <div class="col-md-12">
+        <div class="form-floating">
             <select class="form-select @error('form.type') is-invalid @enderror " wire:model="form.type" id="form.type"
                 aria-label="Floating label select example">
                 <option value="cash">Efectivo</option>
@@ -15,6 +29,7 @@
             <span class="text-danger"> {{ $message }}</span>
         @enderror
     </div>
+
     <div class="col-md-12">
         <label for="discountAmount">Descuento en %</label>
         <div class="input-group ">
@@ -26,17 +41,34 @@
             <span class="text-danger"> {{ $message }}</span>
         @enderror
     </div>
-    <div class="col-md-12">
-        <label for="cant">Cantidad de Aportes</label>
-        <div class="input-group ">
-            <input type="number" wire:model.live="cant" id="cant"
-                class="form-control @error('cant') is-invalid  @enderror" placeholder="Cantidad de Aportes"
-                aria-label="'cant'" aria-describedby="name-addon">
+    @if ($category == 'Q')
+        <div class="col-md-12">
+            <label for="cant"> Cantidad de Aportes </label>
+            <div class="input-group ">
+                <input type="number" wire:model.live="cant" id="cant"
+                    class="form-control @error('cant') is-invalid  @enderror"
+                    placeholder="Cantidad de Aportes"  aria-label="'cant'"
+                    aria-describedby="name-addon">
+            </div>
+            @error('cant')
+                <span class="text-danger"> {{ $message }}</span>
+            @enderror
         </div>
-        @error('cant')
-            <span class="text-danger"> {{ $message }}</span>
-        @enderror
-    </div>
+    @else
+        <div class="col-md-12">
+            <label for="inputCant"> Monto a pagar </label>
+            <div class="input-group ">
+                <input type="number" wire:model.defer="inputCant" id="inputCant"
+                    class="form-control @error('inputCant') is-invalid  @enderror"
+                    placeholder="Monto a pagar" aria-label="'inputCant'"
+                    aria-describedby="name-addon">
+            </div>
+            @error('inputCant')
+                <span class="text-danger"> {{ $message }}</span>
+            @enderror
+        </div>
+    @endif
+
     <div class="col-md-12">
         <label for="amount">Total a pagar </label>
         <div class="input-group ">

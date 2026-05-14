@@ -69,7 +69,6 @@
                         <x-slot name="header">
 
                             <th>#</th>
-                            <th>Matricula</th>
                             <th>Afiliado</th>
                             <th>Rol</th>
                             <th>Opciones
@@ -82,14 +81,6 @@
                                     <td class="font-weight-normal">
                                         {{ $loop->iteration }}
                                     </td>
-
-
-                                    <td>
-                                        {{ $directory->affiliate_id }}
-                                    </td>
-
-
-
                                     <td>
                                         {{ $directory->affiliate->user->title . ' ' . $directory->affiliate->user->full_name }}
                                     </td>

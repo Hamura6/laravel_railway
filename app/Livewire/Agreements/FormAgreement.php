@@ -13,7 +13,7 @@ use function Laravel\Prompts\text;
 class FormAgreement extends Component
 {
     use WithFileUploads;
-    public $id, $name, $photo, $image, $social = [];
+    public $id, $name, $photo, $image, $social = [],$file, $filePreview;
     public function mount($id = 0)
     {
         if (! (Auth::user()->can('Crear convenios') || Auth::user()->can('Editar convenios'))) {
@@ -29,6 +29,7 @@ class FormAgreement extends Component
         if (!$agreement) return;
         $this->name = $agreement->name;
         $this->image = $agreement->image_view;
+        $this->filePreview = $agreement->file;
         $this->social = $agreement->socials->map(function ($s) {
             return ['type' => $s->type, 'url' => $s->url];
         })->toArray();
@@ -41,8 +42,9 @@ class FormAgreement extends Component
     {
         return [
             'name' => 'required|string|max:100',
-            'photo' => $this->id ? 'nullable|image|mimes:jpg,jpeg,png|max:2048'
-                : 'required|image|mimes:jpg,jpeg,png|max:2048',
+            'file' => 'nullable|file|mimes:pdf,doc,docx',
+            'photo' => $this->id ? 'nullable|image|mimes:jpg,jpeg,png|max:4000'
+                : 'required|image|mimes:jpg,jpeg,png|max:4000',
             'social' => 'array',
             'social.*.type' => 'required|string',
             'social.*.url' => 'required|url',
@@ -53,7 +55,7 @@ class FormAgreement extends Component
         $this->authorize('Crear convenios');
         $this->validate();
         if ($this->photo) {
-            $this->image = uniqid() . '.webp' ;
+            $this->image = uniqid() . '.webp';
             $storagePath  = storage_path('app/public/agreements/' . $this->image);
             if (!file_exists(dirname($storagePath))) {
                 mkdir(dirname($storagePath), 0755, true);
@@ -63,8 +65,13 @@ class FormAgreement extends Component
                 ->save($storagePath);
             //$this->photo->storeAs('agreements', $this->image, 'public');
         }
+        if ($this->file) {
+            $this->filePreview = uniqid() . '.' . $this->file->extension();
+            $this->file->storeAs('agreements/files', $this->filePreview, 'public');
+        }
         $agreement = Agreement::create([
             'name' => $this->name,
+            'file' => $this->filePreview,
             'images' => $this->image,
         ]);
         foreach ($this->social as $s) {
@@ -93,8 +100,21 @@ class FormAgreement extends Component
         } else {
             $this->image = $agreement->images;
         }
+         if ($this->file) {
+            $fileName = uniqid() . '.' . $this->file->extension();
+            $this->file->storeAs('agreements/files', $fileName, 'public');
+
+            if ($agreement->file && file_exists(public_path('storage/agreements/files/' . $agreement->file))) {
+                unlink(public_path('storage/agreements/files/' . $agreement->file));
+            }
+
+            $this->filePreview = $fileName;
+        } else {
+            $this->filePreview = $agreement->file;
+        }
         $agreement->update([
             'name' => $this->name,
+            'file' => $this->filePreview,
             'images' => $this->image,
         ]);
         $agreement->socials()->delete();
