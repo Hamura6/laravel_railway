@@ -5,9 +5,11 @@ namespace App\Livewire\Agreements;
 use App\Models\Agreement;
 use Livewire\Attributes\On;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class AgrementComponent extends Component
 {
+    use WithPagination;
     public $search;
     public function mount(){
         $this->authorize('Ver convenios');
@@ -31,5 +33,9 @@ class AgrementComponent extends Component
         $agreement->socials()->delete();
         $agreement->delete();
         $this->dispatch('notify', text: 'El registro fue eliminado correctamente', title: 'Registro eliminado', icon: 'success');
+    }
+    public function updatedSearch()
+    {
+        $this->resetPage();
     }
 }

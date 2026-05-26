@@ -1,14 +1,14 @@
 <div>
     <?php if (isset($component)) { $__componentOriginalf8fdb5e325b86ec4fcbd12174b8a2d26 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.card-header','data' => ['title' => 'Noticias y comunicados','name' => 'Noticias']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.card-header','data' => ['title' => 'Cursos','name' => 'Cursos']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('card-header'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['title' => 'Noticias y comunicados','name' => 'Noticias']); ?>
+<?php $component->withAttributes(['title' => 'Cursos','name' => 'Cursos']); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26)): ?>
@@ -52,12 +52,12 @@
 <?php unset($__componentOriginal9b33c063a2222f59546ad2a2a9a94bc6); ?>
 <?php endif; ?>
             </div>
-            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear noticias')): ?>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear cursos')): ?>
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="<?php echo e(route('news.form')); ?>" wire:navigate
+                        <a href="<?php echo e(route('courses.form')); ?>" wire:navigate
                             wire:loading.class="disabled pointer-events-none opacity-50" type="button"
-                            class="btn btn-sm  btn-success">
+                            class="btn btn-sm  btn-success  mb-0">
                             <i class="far fa-file-alt fs-6"></i> Nuevo
                         </a>
                     </div>
@@ -66,51 +66,107 @@
 
          <?php $__env->endSlot(); ?>
         <style>
-        </style>
+            .course-card {
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
 
+            .course-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+            }
+
+            .course-card:hover .course-img {
+                transform: scale(1.05);
+            }
+
+            .course-img {
+                height: 180px;
+                transition: transform 0.4s ease;
+            }
+
+            .price-badge {
+                font-size: 0.875rem;
+                animation: pulse 2s infinite;
+                z-index: 2;
+            }
+
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.05);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            .transition-all {
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        </style>
         <div class="row g-2">
-            <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $news; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $new): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-                <div class="col-md-4 py-2 px-3">
-                    <div class="card h-100 news-card"
-                        style="border-radius: 1.5rem; overflow: hidden;   box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.1);">
-                        <div class="position-relative">
-                            <img src="<?php echo e($new->image_view); ?>" class="card-img-top" alt="..."
-                                style="height: 200px; object-fit: cover;">
-                            <div class="position-absolute top-0 end-0 text-white p-3"
-                                style="font-size: 15px;font-weight: 700;line-height: 30px; z-index: 10;">
-                                <i class="far fa-calendar-alt me-1"></i>
-                                <?php echo e($new->created_at->format('d M, Y')); ?>
+
+            <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $courses; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $course): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
+                <div class="col-md-4 mb-2">
+                    <div
+                        class="card h-100 border-0 shadow-sm course-card position-relative overflow-hidden rounded-3 transition-all">
+                        <!-- Imagen con overlay y efecto zoom -->
+                        <div class="position-relative overflow-hidden">
+                            <img src="<?php echo e($course->image_view); ?>" alt="<?php echo e($course->title); ?>"
+                                class="w-100 course-img object-fit-cover">
+
+                            <!-- Badge de precio con animación -->
+                            <div
+                                class="badge bg-primary text-white fw-bold position-absolute top-0 end-0 mt-3 me-3 px-3 py-2 rounded-pill shadow-sm price-badge">
+                                Bs. <?php echo e(number_format($course->price, 2)); ?>
 
                             </div>
                         </div>
+
+                        <!-- Cuerpo de la tarjeta -->
                         <div class="card-body p-2">
-                            <h5 class="card-title mb-1"><?php echo e($new->title); ?></h5>
-                            <p class="card-text text-muted ">
-                                <?php echo e(Str::limit($new->description, 130)); ?>
+                            <h3 class="h5 fw-bold mb-1 text-dark ">
+                                <?php echo e($course->title); ?>
+
+                            </h3>
+
+                            <p class="small text-muted mb-2 ">
+                                <?php echo e(Str::limit($course->description, 130)); ?>
 
                             </p>
+
+                            <!-- Fechas con iconos -->
+                            <div class="small text-secondary px-4">
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="far fa-calendar-alt me-2 text-info"></i>
+                                    <span>Registro: <?php echo e($course->created_at->format('d M, Y')); ?></span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-play-circle me-2 text-success"></i>
+                                    <span>Inicio: <?php echo e($course->date_start); ?></span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-footer m-0">
-                            <div class="gap-2 d-md-flex justify-content-md-end">
-                                <!--[if BLOCK]><![endif]--><?php if($new->file): ?>
-                                    
-                                <a href="<?php echo e(Storage::url('news/files/' . $new->file)); ?>" target="_black"
-                                    class="btn btn-sm btn-outline-purple rounded-pill" data-bs-toggle="tooltip"
-                                    data-bs-title="Descargar archivo">
-                                    <i class="fas fa-eye"></i> Ver archivo
-                                </a>
-                                <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar noticias')): ?>
+
+                        <!-- Footer con botones -->
+                        <div class="card-footer bg-dark border-0 py-2 px-2">
+                            <div class="d-flex gap-2 justify-content-end">
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar cursos')): ?>
                                     <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($new->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($course->id).'','class' => 'btn btn-sm btn-outline-danger']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('btn-delete'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['id' => ''.e($new->id).'']); ?>
+<?php $component->withAttributes(['id' => ''.e($course->id).'','class' => 'btn btn-sm btn-outline-danger']); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginal3fa869ab4147c9277d9fa157f1637985)): ?>
@@ -122,12 +178,12 @@
 <?php unset($__componentOriginal3fa869ab4147c9277d9fa157f1637985); ?>
 <?php endif; ?>
                                 <?php endif; ?>
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar noticias')): ?>
-                                    <a wire:target="changeStatus, delete"
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar cursos')): ?>
+                                    <a href="<?php echo e(route('courses.form', $course->id)); ?>" wire:target="changeStatus, delete"
                                         wire:loading.class="disabled pointer-events-none opacity-50"
-                                        href="<?php echo e(route('news.form', $new->id)); ?>" type="button" class="btn-uc-circle"
+                                        class="btn btn-sm btn-outline-primary btn-uc-circle d-flex align-items-center justify-content-center"
                                         data-bs-toggle="tooltip" data-bs-title="Editar">
-                                        <i class="fas fa-edit fs-6"></i>
+                                        <i class="fas fa-edit"></i>
                                     </a>
                                 <?php endif; ?>
                             </div>
@@ -143,7 +199,7 @@
             <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
         </div>
         <div class="border-top py-3 px-3 d-flex align-items-center">
-            <?php echo e($news->links()); ?>
+            <?php echo e($courses->links()); ?>
 
         </div>
      <?php echo $__env->renderComponent(); ?>
@@ -157,4 +213,4 @@
 <?php unset($__componentOriginal715227d04bfdbc5a76353a8876a0c5ef); ?>
 <?php endif; ?>
 </div>
-<?php /**PATH D:\ICAPV4\ICAP\resources\views/livewire/news/new-component.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\ICAPV4\ICAP\resources\views/livewire/courses/course-component.blade.php ENDPATH**/ ?>

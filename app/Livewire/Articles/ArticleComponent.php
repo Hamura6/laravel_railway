@@ -5,9 +5,11 @@ namespace App\Livewire\Articles;
 use App\Models\Article;
 use Livewire\Attributes\On;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class ArticleComponent extends Component
 {
+    use WithPagination;
     public $search;
     public function mount()
     {
@@ -38,5 +40,9 @@ class ArticleComponent extends Component
         }
         $article->delete();
         $this->dispatch('notify', text: 'El registro fue eliminado correctamente', title: 'Registro eliminado', icon: 'success');
+    }
+    public function updatedSearch()
+    {
+        $this->resetPage();
     }
 }

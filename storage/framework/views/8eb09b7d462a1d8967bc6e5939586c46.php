@@ -1,14 +1,14 @@
 <div>
     <?php if (isset($component)) { $__componentOriginalf8fdb5e325b86ec4fcbd12174b8a2d26 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.card-header','data' => ['title' => 'Noticias y comunicados','name' => 'Noticias']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.card-header','data' => ['title' => 'Convenios','name' => 'Convenios']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('card-header'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['title' => 'Noticias y comunicados','name' => 'Noticias']); ?>
+<?php $component->withAttributes(['title' => 'Convenios','name' => 'Convenios']); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26)): ?>
@@ -52,12 +52,12 @@
 <?php unset($__componentOriginal9b33c063a2222f59546ad2a2a9a94bc6); ?>
 <?php endif; ?>
             </div>
-            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear noticias')): ?>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear convenios')): ?>
                 <div class="col-md-6 order-1 order-md-2 col-ms-12">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="<?php echo e(route('news.form')); ?>" wire:navigate
+                        <a href="<?php echo e(route('agreement.form')); ?>" wire:navigate
                             wire:loading.class="disabled pointer-events-none opacity-50" type="button"
-                            class="btn btn-sm  btn-success">
+                            class="btn btn-sm  btn-success  mb-0">
                             <i class="far fa-file-alt fs-6"></i> Nuevo
                         </a>
                     </div>
@@ -65,52 +65,41 @@
             <?php endif; ?>
 
          <?php $__env->endSlot(); ?>
-        <style>
-        </style>
-
-        <div class="row g-2">
-            <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $news; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $new): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-                <div class="col-md-4 py-2 px-3">
-                    <div class="card h-100 news-card"
-                        style="border-radius: 1.5rem; overflow: hidden;   box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.1);">
-                        <div class="position-relative">
-                            <img src="<?php echo e($new->image_view); ?>" class="card-img-top" alt="..."
-                                style="height: 200px; object-fit: cover;">
-                            <div class="position-absolute top-0 end-0 text-white p-3"
-                                style="font-size: 15px;font-weight: 700;line-height: 30px; z-index: 10;">
-                                <i class="far fa-calendar-alt me-1"></i>
-                                <?php echo e($new->created_at->format('d M, Y')); ?>
-
+        <div class="row g-1">
+            <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $agreements; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $agreement): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
+                <div class="col-md-4 p-3">
+                    <div class="my-card-agrement  card w-100 h-100 ">
+                        <div class="top-section" style="background-image: url('<?php echo e($agreement->image_view); ?>');">
+                            <div class="border border-0"></div>
+                            <div class="icons">
+                                <div class="logo text-white">ICAP</div>
+                                <div class="social-media ">
+                                    <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $agreement->socials; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $social): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                        <a href="<?php echo e($social->url); ?>" data-bs-toggle="tooltip"
+                                            data-bs-title="<?php echo e($social->type); ?>">
+                                            <i class="<?php echo e($social->icon); ?> text-white "></i>
+                                        </a>
+                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-body p-2">
-                            <h5 class="card-title mb-1"><?php echo e($new->title); ?></h5>
-                            <p class="card-text text-muted ">
-                                <?php echo e(Str::limit($new->description, 130)); ?>
 
-                            </p>
                         </div>
-                        <div class="card-footer m-0">
-                            <div class="gap-2 d-md-flex justify-content-md-end">
-                                <!--[if BLOCK]><![endif]--><?php if($new->file): ?>
-                                    
-                                <a href="<?php echo e(Storage::url('news/files/' . $new->file)); ?>" target="_black"
-                                    class="btn btn-sm btn-outline-purple rounded-pill" data-bs-toggle="tooltip"
-                                    data-bs-title="Descargar archivo">
-                                    <i class="fas fa-eye"></i> Ver archivo
-                                </a>
-                                <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar noticias')): ?>
+                        <div class="card-body ">
+                            <h5 class="card-title text-white m-0"><?php echo e($agreement->name); ?></h5>
+                        </div>
+                        <div class="card-footer ">
+                            <div class=" gap-2 d-md-flex justify-content-md-end">
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar convenios')): ?>
                                     <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($new->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($agreement->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('btn-delete'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['id' => ''.e($new->id).'']); ?>
+<?php $component->withAttributes(['id' => ''.e($agreement->id).'']); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginal3fa869ab4147c9277d9fa157f1637985)): ?>
@@ -122,14 +111,22 @@
 <?php unset($__componentOriginal3fa869ab4147c9277d9fa157f1637985); ?>
 <?php endif; ?>
                                 <?php endif; ?>
-                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar noticias')): ?>
+                                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar convenios')): ?>
                                     <a wire:target="changeStatus, delete"
                                         wire:loading.class="disabled pointer-events-none opacity-50"
-                                        href="<?php echo e(route('news.form', $new->id)); ?>" type="button" class="btn-uc-circle"
-                                        data-bs-toggle="tooltip" data-bs-title="Editar">
+                                        href="<?php echo e(route('agreement.form', $agreement->id)); ?>" type="button"
+                                        class="btn-purple-circle outlined" data-bs-toggle="tooltip" data-bs-title="Editar">
                                         <i class="fas fa-edit fs-6"></i>
                                     </a>
                                 <?php endif; ?>
+                              <!--[if BLOCK]><![endif]--><?php if($agreement->file): ?>
+                                  
+                              <a href="<?php echo e(Storage::url('agreements/files/' . $agreement->file)); ?>" target="_blank"
+                                class="btn-purple-circle" data-bs-toggle="tooltip"
+                                data-bs-title="Descargar archivo">
+                                <i class="fas fa-file fs-6"></i>
+                            </a>
+                            <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
                             </div>
                         </div>
                     </div>
@@ -143,7 +140,7 @@
             <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
         </div>
         <div class="border-top py-3 px-3 d-flex align-items-center">
-            <?php echo e($news->links()); ?>
+            <?php echo e($agreements->links()); ?>
 
         </div>
      <?php echo $__env->renderComponent(); ?>
@@ -157,4 +154,4 @@
 <?php unset($__componentOriginal715227d04bfdbc5a76353a8876a0c5ef); ?>
 <?php endif; ?>
 </div>
-<?php /**PATH D:\ICAPV4\ICAP\resources\views/livewire/news/new-component.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\ICAPV4\ICAP\resources\views/livewire/agreements/agrement-component.blade.php ENDPATH**/ ?>

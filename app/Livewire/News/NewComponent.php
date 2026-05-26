@@ -35,4 +35,8 @@ class NewComponent extends Component
         $new->delete();
         $this->dispatch('notify',text:'El registro fue eliminado correctamente',title:'Registro eliminado',icon:'success');
     }
+    public function updatedSearch()
+    {
+        $this->resetPage();
+    }
 }
