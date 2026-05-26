@@ -43,7 +43,6 @@
                         </div>
                         <div class="card-footer m-0">
                             <div class="gap-2 d-md-flex justify-content-md-end">
-                                {{ $new->file }}
                                 <a href="{{ Storage::url('news/files/' . $new->file) }}" target="_black"
                                     class="btn btn-sm btn-outline-purple rounded-pill" data-bs-toggle="tooltip"
                                     data-bs-title="Descargar archivo">
