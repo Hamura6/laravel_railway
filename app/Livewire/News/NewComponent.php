@@ -27,6 +27,11 @@ class NewComponent extends Component
                     unlink(public_path('storage/news/' . $new->image.'.jpg'));
                 }
             }
+        if ($new->file) {
+            if (file_exists(public_path('storage/news/files/' . $new->file))) {
+                unlink(public_path('storage/news/files/' . $new->file));
+            }
+        }
         $new->delete();
         $this->dispatch('notify',text:'El registro fue eliminado correctamente',title:'Registro eliminado',icon:'success');
     }

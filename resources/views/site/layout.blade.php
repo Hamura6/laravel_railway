@@ -286,10 +286,7 @@ abogados Potosí, abogados Bolivia, abogacía Potosí, ilustre colegio abogados"
         </nav>
 
         <div class="footer-credits">
-            <p>&copy; <span id="year"></span> ICAP Potosi. Todos los derechos reservados.</p>
-            <script>
-                document.getElementById('year').textContent = new Date().getFullYear();
-            </script>
+            <p>&copy; <?php echo date('Y'); ?> ICAP Potosi. Todos los derechos reservados.</p>
             {{--             <p>Diseño y desarrollo web por <a href="#" target="_blank">Hamura Código</a></p>
  --}}
         </div>

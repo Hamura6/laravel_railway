@@ -92,6 +92,13 @@
                         </div>
                         <div class="card-footer m-0">
                             <div class="gap-2 d-md-flex justify-content-md-end">
+                                <?php echo e($new->file); ?>
+
+                                <a href="<?php echo e(Storage::url('news/files/' . $new->file)); ?>" target="_black"
+                                    class="btn btn-sm btn-outline-purple rounded-pill" data-bs-toggle="tooltip"
+                                    data-bs-title="Descargar archivo">
+                                    <i class="fas fa-eye"></i> Ver archivo
+                                </a>
                                 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar noticias')): ?>
                                     <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>

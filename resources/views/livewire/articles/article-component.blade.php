@@ -48,7 +48,7 @@
                 style="height: 200px; object-fit: cover; width: 100%; display: block;">
             <div class="position-absolute top-0 start-0 m-2" style="z-index: 3;">
                 <span class="badge bg-white text-dark rounded-pill px-3 py-1 shadow-sm">
-                    <i class="fas fa-file-alt me-1"></i> {{ $article->created_at->format('d/m/Y') }}
+                    <i class="fas fa-file-alt me-1"></i> {{ $article->date ? \Carbon\Carbon::parse($article->date)->format('d/m/Y') : 'Sin fecha' }}
                 </span>
             </div>
         </div>

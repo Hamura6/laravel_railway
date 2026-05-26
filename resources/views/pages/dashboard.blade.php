@@ -29,8 +29,7 @@
                 <div class="footer-content"></div>
                 <div class="footer-bottom">
                     <p>&copy; <span id="year"></span> ICAP Potosi. Todos los derechos reservados.</p>
-                    {{--                     <p>Diseño y desarrollo web por <a href="" target="_blank">J. Carlos & J. Edwin</a></p>
- --}}
+                    {{--<p>Diseño y desarrollo web por <a href="" target="_blank">J. Carlos & J. Edwin</a></p>--}}
                 </div>
             </footer>
 

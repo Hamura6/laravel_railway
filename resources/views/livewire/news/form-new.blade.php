@@ -24,13 +24,25 @@
                             <div class="form-floating">
                                 <textarea type="date" class="form-control @error('description')
             is-invalid @enderror"
-                                    wire:model="description" id="floatingInput" placeholder="Description" style="height: 230px" cols="30"
+                                    wire:model="description" id="floatingInput" placeholder="Description" style="height: 200px" cols="30"
                                     rows="20"></textarea>
                                 <label for="floatingInput">Descripción</label>
                             </div>
                             @error('description')
                                 <span class="text-danger"> {{ $message }}</span>
                             @enderror
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="formFileSm" class="form-label">Subir archivo</label>
+                                <input
+                                    class="form-control form-control-sm @error('file')
+                                    is-invalid @enderror"
+                                    id="formFileSm" type="file" wire:model="file" accept=".pdf,.doc,.docx">
+                                @error('file')
+                                    <span class="text-danger"> {{ $message }}</span>
+                                @enderror
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -47,7 +59,7 @@
                                         wire:target="photo">
                                 @else
                                     <img class="border-radius-lg rounded-circle" width="200" height="200"
-                                        src="{{ $this->image ? $this->image : asset('image/user.png')}}"
+                                        src="{{ $this->image ? $this->image : asset('image/user.png') }}"
                                         alt="Image placeholder" wire:loading.remove wire:target="photo">
                                 @endif
 

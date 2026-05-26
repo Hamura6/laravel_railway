@@ -34,4 +34,10 @@ class Information extends Model
             get: fn() =>   Storage::disk('public')->url('news/' . $this->image.'.webp')
         );
     }
+    protected function ImageFormat(): Attribute
+    {
+        return Attribute::make(
+            get: fn() =>   Storage::disk('public')->url('news/' . $this->image.'.jpg')
+        );
+    }
 }
