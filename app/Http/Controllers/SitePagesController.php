@@ -34,7 +34,7 @@ class SitePagesController extends Controller
     }
     public function news()
     {
-        $informations = Information::paginate(6);
+        $informations = Information::orderBy('id','desc')->paginate(6);
         return view('site.pages.news', compact('informations'));
     }
 
