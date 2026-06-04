@@ -151,7 +151,7 @@
                             <tr class="align-middle">
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $payment->fee->name }}</td>
-                                <td class="text-center">{{ $payment->fecha_display }} 
+                                <td class="text-center">{{ $payment->fecha_display }}
 
 
                                 </td>
@@ -162,6 +162,11 @@
                                         class="badge rounded-pill  {{ $payment->status == 'Por pagar' ? 'text-danger  border border-danger ' : 'text-success  border border-success ' }} border-1">{{ $payment->status }}</span>
                                 </td>
                                 <td align="center">
+                                    @if ($dateUltimate === $payment->id)
+                                        @can('Realizar pago')
+                                            <x-btn-delete id="{{ $payment->id }}" />
+                                        @endcan
+                                    @endif
                                     @if ($payment->status == 'Por pagar' && $payment->fee->id != 1)
                                         @can('Realizar pago')
                                             <button wire:target="check, delete, edit" wire:loading.attr="disabled"

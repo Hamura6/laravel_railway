@@ -16,21 +16,26 @@ use function Laravel\Prompts\text;
 class DebtsDetailsComponent extends Component
 {
     use WithPagination;
-    public $type = '', $concept = '', $id, $year = '';
-    
+    public $type = '', $concept = '', $id, $year = '', $dateUltimate;
+
     public function mount($id)
     {
         $this->authorize('Ver pagos realizados');
         $payment = Affiliate::find($id)
-        ->payments()
-        ->where('status', 'Por pagar')
-        ->orderBy('date', 'asc')
-        ->first();
-        $this->year =  $payment?Carbon::parse($payment->date)->year: now()->year;
+            ->payments()
+            ->where('status', 'Por pagar')
+            ->orderBy('date', 'asc')
+            ->first();
+        $this->year =  $payment ? Carbon::parse($payment->date)->year : now()->year;
         $this->id = $id;
+        $this->dateUltimate = Affiliate::find($id)
+            ->payments()
+            ->where('status', 'Pagado')
+            ->where('fee_id', 1)
+            ->orderBy('date', 'desc')
+            ->limit(1)
+            ->first()->id;
     }
-
-
     public function render()
     {
         $fees = Fee::get();
@@ -60,7 +65,7 @@ class DebtsDetailsComponent extends Component
                 'user.phones:number,id,user_id'
             ])
             ->find($this->id);
-        $payments = Payment::select('id', 'affiliate_id', 'date', 'status', 'amount', 'fee_id','updated_at','created_at')
+        $payments = Payment::select('id', 'affiliate_id', 'date', 'status', 'amount', 'fee_id', 'updated_at', 'created_at')
             ->whereYear('date', '>=', $this->year)
             ->where('affiliate_id', $this->id)
             ->when($this->type, fn($q) => $q->where('status', 'like', "%{$this->type}%"))
@@ -88,16 +93,41 @@ class DebtsDetailsComponent extends Component
         $payment = Payment::find($id);
         $debt = $payment->amount - $payment->plans()->sum('amount');
         $payment->status = 'Pagado';
-        if ($payment->fee->type=='installments') {
+        if ($payment->fee->type == 'installments') {
             $payment->plans()->create([
                 'amount' => $debt,
             ]);
         }
         $payment->save();
     }
+    #[On('delete')]
+    public function delete($id)
+    {
+        $affiliate=Affiliate::find($this->id);
+        $payment = Payment::find($id);
+        $initialDate = Carbon::parse($payment->date);
+        $createDate =Carbon::parse($payment->created_at);
+        $diffInMonths = $createDate->diffInMonths($initialDate)+1;
+        $fee=Fee::find(1);
+        for ($i = 0; $i < $diffInMonths; $i++) {
+            $affiliate->payments()->create([
+                'amount' => $fee->amount,
+                'status' => 'Por pagar',
+                'date'   => $createDate,
+                'fee_id' => 1,
+                'type' => 'cash',
+                'created_at' =>$createDate,
+                'user_id' => auth()->user()->id
+            ]);
+            $createDate=$createDate->addMonth(1);
+        }
+        $payment->delete();
+        $this->dispatch('notify', text: 'Los pagos fueron anulados correctamente', title: 'Aportes anulados', icon: 'info');
+
+    }
     public function update()
     {
         $this->resetPage();
-        $this->dispatch('notify',text:'La consulta fue realizada exitosamente',title:'Registros actualizados',icon:'info');
+        $this->dispatch('notify', text: 'La consulta fue realizada exitosamente', title: 'Registros actualizados', icon: 'info');
     }
 }

@@ -77,10 +77,6 @@ class PaymentForm extends Form
         }
         $this->payment->update($this->all());
     }
-
-
-
-
     public function store($quantity, $discountAmount, $categoria)
     {
         $affiliate = Affiliate::find($this->affiliate_id);
@@ -197,11 +193,6 @@ class PaymentForm extends Form
             $quantity--;
         }
     } */
-
-
-
-
-
     public function storeAport($pendingPayments, $paymentDate, $quantity, $affiliate, $discountAmount)
     {
 
@@ -257,7 +248,7 @@ class PaymentForm extends Form
         $remainder = 0;
         $total = $amount;
         $date_intial =  $pendingPayments->first()->date ?? Carbon::parse($paymentDate)->addMonth(1)->firstOfMonth();
-        foreach ($pendingPayments as $payment) {
+         foreach ($pendingPayments as $payment) {
             if ($discountAmount > 0) {
                 $pay = ($payment->amount - ($payment->amount * $discountAmount / 100));
             } else {
@@ -300,10 +291,10 @@ class PaymentForm extends Form
                 ]);
                 break;
             } else {
-                $payment->delete();
                 $paymentDate = $payment->date;
+                $payment->delete();
             }
-        }
+        } 
         if ($discountAmount > 0) {
             $this->amount = $this->amount - $this->amount * $discountAmount / 100;
         }
@@ -313,7 +304,7 @@ class PaymentForm extends Form
               $affiliate->payments()->create([
                 'amount' => $total,
                 'status' => 'Pagado',
-                'date'   => $paymentDate->addMonth(1),
+                'date'   => $paymentDate,
                 'fee_id' => $this->fee_id,
                 'type' => $this->type,
                 'created_at' => $date_intial,
