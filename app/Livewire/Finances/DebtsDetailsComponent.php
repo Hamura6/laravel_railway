@@ -34,7 +34,7 @@ class DebtsDetailsComponent extends Component
             ->where('fee_id', 1)
             ->orderBy('date', 'desc')
             ->limit(1)
-            ->first()->id;
+            ->first()->id??0;
     }
     public function render()
     {
