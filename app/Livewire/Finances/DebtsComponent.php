@@ -15,11 +15,12 @@ use Livewire\WithPagination;
 class DebtsComponent extends Component
 {
     use WithPagination;
-    public $search, $selected, $amount, $cant,$inputCant, $name, $affiliate_id, $discountAmount = 0,$category='A';
+    public $search, $selected, $amount, $cant,$inputCant, $name, $affiliate_id, $discountAmount = 0,$category='E';
     public PaymentForm $form;
     public function rules()
     {
         return [
+            'category'=>'not_in:E',
             'cant'      => $this->category === 'Q' 
             ? 'required|integer|gte:1|lte:99999' 
             : 'nullable',
@@ -217,7 +218,7 @@ class DebtsComponent extends Component
         $this->name = $affiliate->user->full_name;
         $this->affiliate_id = $affiliate->id;
         $this->form->affiliate_id=$this->affiliate_id;
-         $this->form->fee_id = 1;
+        $this->form->fee_id = 1;
         $this->form->amount = Fee::find(1)->amount;
         if ($quantity > 0) {
             $this->amount = $amount;
@@ -267,6 +268,7 @@ class DebtsComponent extends Component
     {
         $this->form->reset();
         $this->inputCant=0;
+        $this->category='E';
         $this->discountAmount = Discount::whereDate('start_date', '<=', now())
             ->whereDate('end_date', '>=', now())
             ->whereHas('fees', fn($q) => $q->where('fees.id', 1))

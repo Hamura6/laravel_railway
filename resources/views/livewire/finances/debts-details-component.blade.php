@@ -112,7 +112,7 @@
                                 <i class="far fa-file-pdf fs-6"></i>
                                 Descargar PDF
                             </a>
-                            <button class="btn btn-sm btn-info mb-1 " wire:click.prevent='update()' type="button">
+                            <button class="btn btn-sm btn-info mb-1 " wire:click.prevent='updateQuery()' type="button">
                                 <i class="far fa-question-circle fs-6"></i>
                                 Realizar consulta</button>
 
@@ -137,6 +137,9 @@
                             Monto
                         </th>
                         <th>
+                            Descuento
+                        </th>
+                        <th>
                             Deuda
                         </th>
                         <th>
@@ -157,6 +160,15 @@
                                 </td>
                                 <td>{{ $payment->updated_at }}</td>
                                 <td>{{ $payment->amount }}</td>
+                                <td class="text-center">
+                                    @if ($payment->discount > 0)
+                                        <span class="badge rounded-pill bg-success-subtle text-success">
+                                            {{ $payment->discount }}%
+                                        </span>
+                                    @else
+                                        {{ $payment->discount }}
+                                    @endif
+                                </td>
                                 <td>{{ $payment->debt }}</td>
                                 <td class="text-center"><span
                                         class="badge rounded-pill  {{ $payment->status == 'Por pagar' ? 'text-danger  border border-danger ' : 'text-success  border border-success ' }} border-1">{{ $payment->status }}</span>
@@ -165,6 +177,12 @@
                                     @if ($dateUltimate === $payment->id)
                                         @can('Realizar pago')
                                             <x-btn-delete id="{{ $payment->id }}" />
+                                            <button class="btn-uc-circle" wire:loading.attr="disabled"
+                                                data-bs-toggle="tooltip" data-bs-title="Pagar Aporte"
+                                                wire:click="edit({{ $payment->id }})">
+                                                <i class="fas fa-edit fs-6"></i>
+
+                                            </button>
                                         @endcan
                                     @endif
                                     @if ($payment->status == 'Por pagar' && $payment->fee->id != 1)
@@ -198,4 +216,5 @@
             </x-card-body>
         </div>
     </div>
+    @include('livewire.finances.formEdit')
 </div>

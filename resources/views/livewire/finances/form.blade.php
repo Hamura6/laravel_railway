@@ -6,6 +6,7 @@
         <div class="form-floating">
             <select class="form-select @error('category') is-invalid @enderror " wire:model.live="category" id="category"
                 aria-label="Floating label select example">
+                <option value="E" selected>Elegir</option>
                 <option value="Q">Cantidad</option>
                 <option value="A">Monto</option>
             </select>
@@ -29,7 +30,8 @@
             <span class="text-danger"> {{ $message }}</span>
         @enderror
     </div>
-
+@if ($category!='E')
+    
     <div class="col-md-12">
         <label for="discountAmount">Descuento en %</label>
         <div class="input-group ">
@@ -68,6 +70,7 @@
             @enderror
         </div>
     @endif
+@endif
 
     <div class="col-md-12">
         <label for="amount">Total a pagar </label>

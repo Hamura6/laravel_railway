@@ -135,7 +135,7 @@
                                 <i class="far fa-file-pdf fs-6"></i>
                                 Descargar PDF
                             </a>
-                            <button class="btn btn-sm btn-info mb-1 " wire:click.prevent='update()' type="button">
+                            <button class="btn btn-sm btn-info mb-1 " wire:click.prevent='updateQuery()' type="button">
                                 <i class="far fa-question-circle fs-6"></i>
                                 Realizar consulta</button>
 
@@ -169,6 +169,9 @@
                             Monto
                         </th>
                         <th>
+                            Descuento
+                        </th>
+                        <th>
                             Deuda
                         </th>
                         <th>
@@ -190,6 +193,16 @@
                                 </td>
                                 <td><?php echo e($payment->updated_at); ?></td>
                                 <td><?php echo e($payment->amount); ?></td>
+                                <td class="text-center">
+                                    <!--[if BLOCK]><![endif]--><?php if($payment->discount > 0): ?>
+                                        <span class="badge rounded-pill bg-success-subtle text-success">
+                                            <?php echo e($payment->discount); ?>%
+                                        </span>
+                                    <?php else: ?>
+                                        <?php echo e($payment->discount); ?>
+
+                                    <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
+                                </td>
                                 <td><?php echo e($payment->debt); ?></td>
                                 <td class="text-center"><span
                                         class="badge rounded-pill  <?php echo e($payment->status == 'Por pagar' ? 'text-danger  border border-danger ' : 'text-success  border border-success '); ?> border-1"><?php echo e($payment->status); ?></span>
@@ -217,6 +230,12 @@
 <?php $component = $__componentOriginal3fa869ab4147c9277d9fa157f1637985; ?>
 <?php unset($__componentOriginal3fa869ab4147c9277d9fa157f1637985); ?>
 <?php endif; ?>
+                                            <button class="btn-uc-circle" wire:loading.attr="disabled"
+                                                data-bs-toggle="tooltip" data-bs-title="Pagar Aporte"
+                                                wire:click="edit(<?php echo e($payment->id); ?>)">
+                                                <i class="fas fa-edit fs-6"></i>
+
+                                            </button>
                                         <?php endif; ?>
                                     <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
                                     <!--[if BLOCK]><![endif]--><?php if($payment->status == 'Por pagar' && $payment->fee->id != 1): ?>
@@ -269,5 +288,6 @@
 <?php endif; ?>
         </div>
     </div>
+    <?php echo $__env->make('livewire.finances.formEdit', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 </div>
 <?php /**PATH D:\ICAPV4\ICAP\resources\views/livewire/finances/debts-details-component.blade.php ENDPATH**/ ?>

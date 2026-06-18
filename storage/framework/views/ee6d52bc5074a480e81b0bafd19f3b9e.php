@@ -41,6 +41,7 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?> " wire:model.live="category" id="category"
                 aria-label="Floating label select example">
+                <option value="E" selected>Elegir</option>
                 <option value="Q">Cantidad</option>
                 <option value="A">Monto</option>
             </select>
@@ -85,7 +86,8 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
     </div>
-
+<!--[if BLOCK]><![endif]--><?php if($category!='E'): ?>
+    
     <div class="col-md-12">
         <label for="discountAmount">Descuento en %</label>
         <div class="input-group ">
@@ -166,6 +168,7 @@ endif;
 unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
         </div>
     <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
+<?php endif; ?><!--[if ENDBLOCK]><![endif]-->
 
     <div class="col-md-12">
         <label for="amount">Total a pagar </label>

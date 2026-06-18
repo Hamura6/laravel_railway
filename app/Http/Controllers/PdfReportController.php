@@ -431,7 +431,7 @@ class PdfReportController extends Controller
         $pdf->SetFont('Arial', 'B', 9);
         $pdf->SetFillColor(200, 200, 200);
         $headers = ['#', 'Tipo', 'Fecha', 'Fecha Registro', 'Monto', 'Deuda', 'Estado'];
-        $widths = [10, 35, 30, 30, 30, 30, 25];
+        $widths = [10, 35, 35, 30, 30, 25, 25];
 
         foreach ($headers as $i => $header) {
             $pdf->Cell($widths[$i], 7, utf8_decode($header), 1, 0, 'C', true);

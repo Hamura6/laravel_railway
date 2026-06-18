@@ -216,6 +216,7 @@ class PaymentForm extends Form
                     'created_at' => $date_intial,
                     'amount' => $total,
                     'type' => $this->type,
+                    'discount'=>is_numeric($discountAmount) ? (float)$discountAmount : 0,
                     'user_id' => auth()->user()->id
                 ]);
                 break;
@@ -237,6 +238,7 @@ class PaymentForm extends Form
                 'date'   => $paymentDate,
                 'fee_id' => $this->fee_id,
                 'type' => $this->type,
+                'discount'=>is_numeric($discountAmount) ? (float)$discountAmount : 0,
                 'created_at' => $date_intial,
                 'user_id' => auth()->user()->id
             ]);
@@ -267,6 +269,7 @@ class PaymentForm extends Form
                     'created_at' => $date_intial,
                     'amount' => $total,
                     'type' => $this->type,
+                    'discount'=>is_numeric($discountAmount) ? (float)$discountAmount : 0,
                     'user_id' => auth()->user()->id
                 ]);
                 break;
@@ -277,6 +280,7 @@ class PaymentForm extends Form
                     'created_at' => $date_intial,
                     'date' => $date,
                     'amount' => $total,
+                    'discount'=>is_numeric($discountAmount) ? (float)$discountAmount : 0,
                     'type' => $this->type,
                     'user_id' => auth()->user()->id
                 ]);
@@ -305,6 +309,7 @@ class PaymentForm extends Form
                 'amount' => $total,
                 'status' => 'Pagado',
                 'date'   => $paymentDate,
+                'discount'=>is_numeric($discountAmount) ? (float)$discountAmount : 0,
                 'fee_id' => $this->fee_id,
                 'type' => $this->type,
                 'created_at' => $date_intial,

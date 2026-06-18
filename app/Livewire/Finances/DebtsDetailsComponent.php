@@ -17,6 +17,7 @@ class DebtsDetailsComponent extends Component
 {
     use WithPagination;
     public $type = '', $concept = '', $id, $year = '', $dateUltimate;
+    public $types, $discountAmount, $cant, $dateTo, $dateFor,$payment_id;
 
     public function mount($id)
     {
@@ -28,13 +29,14 @@ class DebtsDetailsComponent extends Component
             ->first();
         $this->year =  $payment ? Carbon::parse($payment->date)->year : now()->year;
         $this->id = $id;
+
         $this->dateUltimate = Affiliate::find($id)
             ->payments()
             ->where('status', 'Pagado')
             ->where('fee_id', 1)
             ->orderBy('date', 'desc')
             ->limit(1)
-            ->first()->id??0;
+            ->first()->id ?? 0;
     }
     public function render()
     {
@@ -65,7 +67,7 @@ class DebtsDetailsComponent extends Component
                 'user.phones:number,id,user_id'
             ])
             ->find($this->id);
-        $payments = Payment::select('id', 'affiliate_id', 'date', 'status', 'amount', 'fee_id', 'updated_at', 'created_at')
+        $payments = Payment::select('id', 'affiliate_id', 'date', 'status', 'discount', 'amount', 'fee_id', 'updated_at', 'created_at')
             ->whereYear('date', '>=', $this->year)
             ->where('affiliate_id', $this->id)
             ->when($this->type, fn($q) => $q->where('status', 'like', "%{$this->type}%"))
@@ -103,31 +105,91 @@ class DebtsDetailsComponent extends Component
     #[On('delete')]
     public function delete($id)
     {
-        $affiliate=Affiliate::find($this->id);
+        $affiliate = Affiliate::find($this->id);
         $payment = Payment::find($id);
         $initialDate = Carbon::parse($payment->date);
-        $createDate =Carbon::parse($payment->created_at);
-        $diffInMonths = $createDate->diffInMonths($initialDate)+1;
-        $fee=Fee::find(1);
+        $createDate = Carbon::parse($payment->created_at);
+        $diffInMonths = $createDate->diffInMonths($initialDate) + 1;
+        if ($payment->discount > 0) {
+            $amount = ($payment->amount / $diffInMonths) / (1 - ($payment->discount / 100));
+        } else {
+
+            $amount = $payment->amount / $diffInMonths;
+        }
+        $currentDate = Carbon::parse(now())->firstOfMonth();
         for ($i = 0; $i < $diffInMonths; $i++) {
+            if ($createDate > $currentDate) {
+                break;
+            }
+            $paymentSame = Payment::whereMonth('date', $createDate->month)
+                ->whereYear('date', $createDate->year)
+                ->where('affiliate_id', $this->id)
+                ->where('status', 'Por pagar')
+                ->where('fee_id',1)
+                ->get();
+            $total = $paymentSame->sum('amount');
+            Payment::whereMonth('date', $createDate->month)
+                ->whereYear('date', $createDate->year)
+                ->where('affiliate_id', $this->id)
+                ->where('fee_id',1)
+                ->where('status', 'Por pagar')->delete();
+
             $affiliate->payments()->create([
-                'amount' => $fee->amount,
+                'amount' => $amount + $total,
                 'status' => 'Por pagar',
                 'date'   => $createDate,
                 'fee_id' => 1,
                 'type' => 'cash',
-                'created_at' =>$createDate,
+                'created_at' => $createDate,
                 'user_id' => auth()->user()->id
             ]);
-            $createDate=$createDate->addMonth(1);
+            $createDate = $createDate->addMonth(1);
         }
         $payment->delete();
         $this->dispatch('notify', text: 'Los pagos fueron anulados correctamente', title: 'Aportes anulados', icon: 'info');
-
+        $this->dateUltimate = Affiliate::find($this->id)
+            ->payments()
+            ->where('status', 'Pagado')
+            ->where('fee_id', 1)
+            ->orderBy('date', 'desc')
+            ->limit(1)
+            ->first()->id ?? 0;
     }
-    public function update()
+    public function rules()
+    {
+        return [
+            'cant'      => 'required|integer|gte:1|lte:99999',
+            'discountAmount' => 'decimal:0,2|gte:0|lte:99|max:99',
+        ];
+    }
+    #[On('')]
+    public function edit(Payment $payment)
+    {
+        $this->cant = $payment->amount;
+        $this->types = $payment->type;
+        $this->payment_id=$payment->id;
+        $this->discountAmount = $payment->discount;
+        $this->dateTo = Carbon::parse($payment->created_at)->format('Y-m-d');
+        $this->dateFor = $payment->date;
+        $this->dispatch('show-modal');
+    }
+    public function update() {
+        $payment=Payment::find($this->payment_id);
+        $payment->update([
+            'discount'=>$this->discountAmount,
+            'amount'=>$this->cant
+        ]);
+        $this->clear();
+    }
+    public function updateQuery()
     {
         $this->resetPage();
         $this->dispatch('notify', text: 'La consulta fue realizada exitosamente', title: 'Registros actualizados', icon: 'info');
+    }
+    public function clear()
+    {
+        $this->category = 'E';
+        $this->resetValidation();
+        $this->dispatch('close-modal');
     }
 }
