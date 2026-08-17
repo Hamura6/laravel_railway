@@ -14,7 +14,7 @@ class SitePagesController extends Controller
 {
     public function index()
     {
-        return view('site.pages.index');
+        return view('site.pages.index1');
     }
 
     public function about()

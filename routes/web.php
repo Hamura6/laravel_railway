@@ -54,7 +54,7 @@ use App\Models\University;
 use Faker\Guesser\Name;
 
 Route::get('/', function () {
-    return view('site.pages.index1');
+    return view('site.pages.index');
 })->name('home');
 
 Route::get('/',      [App\Http\Controllers\SitePagesController::class, 'index'])->name('home');
