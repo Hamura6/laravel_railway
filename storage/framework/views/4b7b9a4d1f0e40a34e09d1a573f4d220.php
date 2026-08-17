@@ -1,14 +1,14 @@
 <div>
     <?php if (isset($component)) { $__componentOriginalf8fdb5e325b86ec4fcbd12174b8a2d26 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.card-header','data' => ['title' => 'Universidades','name' => 'Universidades']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.card-header','data' => ['title' => 'Control de Licencias','name' => 'Licencia']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('card-header'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['title' => 'Universidades','name' => 'Universidades']); ?>
+<?php $component->withAttributes(['title' => 'Control de Licencias','name' => 'Licencia']); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginalf8fdb5e325b86ec4fcbd12174b8a2d26)): ?>
@@ -30,42 +30,7 @@
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
          <?php $__env->slot('header', null, []); ?> 
-            <div class="col-12 col-md-6 order-1 order-md-2">
-                <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear universidades')): ?>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button type="button" class="btn btn-sm  btn-success" data-bs-toggle="modal"
-                            data-bs-target="#myModal">
-                            <i class="far fa-file-alt fs-6"></i> Nuevo
-                        </button>
-                    </div>
-                <?php endif; ?>
-            </div>
-            <div class="col-12 col-md-6 order-2  order-md-1">
-                <?php if (isset($component)) { $__componentOriginal22b5b970271de63f2ab96f835624c6eb = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginal22b5b970271de63f2ab96f835624c6eb = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.selected-live','data' => ['name' => 'selected','title' => 'Tipo de universidad']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('selected-live'); ?>
-<?php if ($component->shouldRender()): ?>
-<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
-<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
-<?php endif; ?>
-<?php $component->withAttributes(['name' => 'selected','title' => 'Tipo de universidad']); ?>
-                    <option value="">Todas</option>
-                    <option value="Publica">Publica</option>
-                    <option value="Privada">Privada</option>
-                 <?php echo $__env->renderComponent(); ?>
-<?php endif; ?>
-<?php if (isset($__attributesOriginal22b5b970271de63f2ab96f835624c6eb)): ?>
-<?php $attributes = $__attributesOriginal22b5b970271de63f2ab96f835624c6eb; ?>
-<?php unset($__attributesOriginal22b5b970271de63f2ab96f835624c6eb); ?>
-<?php endif; ?>
-<?php if (isset($__componentOriginal22b5b970271de63f2ab96f835624c6eb)): ?>
-<?php $component = $__componentOriginal22b5b970271de63f2ab96f835624c6eb; ?>
-<?php unset($__componentOriginal22b5b970271de63f2ab96f835624c6eb); ?>
-<?php endif; ?>
-            </div>
-            <div class="col-12 col-md-6  order-3">
+            <div class="col-sm-12 col-md-6 order-2 order-md-1">
                 <?php if (isset($component)) { $__componentOriginal9b33c063a2222f59546ad2a2a9a94bc6 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal9b33c063a2222f59546ad2a2a9a94bc6 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.search','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -87,6 +52,18 @@
 <?php unset($__componentOriginal9b33c063a2222f59546ad2a2a9a94bc6); ?>
 <?php endif; ?>
             </div>
+            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Crear licencias')): ?>
+                <div class="col-md-6 order-1 order-md-2 col-ms-12">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button type="button" wire:target="search" wire:loading.attr="disabled" class="btn btn-sm btn-success"
+                            data-bs-toggle="modal" data-bs-target="#myModal">
+                            <i class="far fa-file-alt fs-6"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+            <?php endif; ?>
+            
+
          <?php $__env->endSlot(); ?>
         <?php if (isset($component)) { $__componentOriginal230577b50e69c5450bcc4895115fe6d2 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal230577b50e69c5450bcc4895115fe6d2 = $attributes; } ?>
@@ -99,61 +76,56 @@
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
              <?php $__env->slot('header', null, []); ?> 
-
-                <th>#</th>
-                <th>Nombres</th>
-                <th>Entidad</th>
+                <th>Matrícula</th>
+                <th>Nombre Completo</th>
+                <th>C.I.</th>
+                <th>Fecha de registro</th>
+                <th>Descripción</th>
+                <th>Fecha de licencia</th>
                 <th>Opciones</th>
              <?php $__env->endSlot(); ?>
-            <tbody wire:loading.remove wire:target="search">
-                <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $universities; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $university): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
+            <tbody wire:target="search" wire:loading.remove>
+                <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $licenses; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $license): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                     <tr class="align-middle">
                         <td>
-                            <?php echo e($loop->iteration); ?>
+                            <?php echo e($license->affiliate->id); ?>
 
                         </td>
                         <td>
-                            <?php echo e($university->name); ?>
+                            <?php echo e($license->affiliate->user->full_name); ?>
 
                         </td>
                         <td>
-                            <?php echo e($university->entity); ?>
+                            <?php echo e($license->affiliate->user->ci); ?>
 
                         </td>
-                        <td class="d-flex flex-row justify-content-center align-items-center gap-1">
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Editar universidades')): ?>
-                                <?php if (isset($component)) { $__componentOriginale9f0fcc686d5ab9265b8e88cbb55bbb0 = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginale9f0fcc686d5ab9265b8e88cbb55bbb0 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-edit','data' => ['id' => ''.e($university->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('btn-edit'); ?>
-<?php if ($component->shouldRender()): ?>
-<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
-<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
-<?php endif; ?>
-<?php $component->withAttributes(['id' => ''.e($university->id).'']); ?>
-<?php echo $__env->renderComponent(); ?>
-<?php endif; ?>
-<?php if (isset($__attributesOriginale9f0fcc686d5ab9265b8e88cbb55bbb0)): ?>
-<?php $attributes = $__attributesOriginale9f0fcc686d5ab9265b8e88cbb55bbb0; ?>
-<?php unset($__attributesOriginale9f0fcc686d5ab9265b8e88cbb55bbb0); ?>
-<?php endif; ?>
-<?php if (isset($__componentOriginale9f0fcc686d5ab9265b8e88cbb55bbb0)): ?>
-<?php $component = $__componentOriginale9f0fcc686d5ab9265b8e88cbb55bbb0; ?>
-<?php unset($__componentOriginale9f0fcc686d5ab9265b8e88cbb55bbb0); ?>
-<?php endif; ?>
-                            <?php endif; ?>
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar universidades')): ?>
+
+                        <td class="text-secondary">
+                            <?php echo e($license->affiliate->created_at); ?>
+
+
+                        </td>
+
+                        <td class="text-secondary">
+                            <?php echo e($license->description); ?>
+
+                        </td>
+                        <td class="text-secondary">
+                            <?php echo e($license->date); ?>
+
+                        </td>
+                        <td class="text-center">
+                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Eliminar licencias')): ?>
                                 <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($university->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.btn-delete','data' => ['id' => ''.e($license->id).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('btn-delete'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['id' => ''.e($university->id).'']); ?>
+<?php $component->withAttributes(['id' => ''.e($license->id).'']); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginal3fa869ab4147c9277d9fa157f1637985)): ?>
@@ -169,7 +141,7 @@
                     </tr>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
                     <tr>
-                        <td colspan="4" align="center">
+                        <td colspan="11" align="center">
                             <h5>
                                 <i class="far fa-sad-tear"></i>
 
@@ -191,7 +163,7 @@
 <?php unset($__componentOriginal230577b50e69c5450bcc4895115fe6d2); ?>
 <?php endif; ?>
         <div class="border-top py-3 px-3 d-flex align-items-center">
-            <?php echo e($universities->links()); ?>
+            <?php echo e($licenses->links()); ?>
 
         </div>
      <?php echo $__env->renderComponent(); ?>
@@ -204,7 +176,6 @@
 <?php $component = $__componentOriginal715227d04bfdbc5a76353a8876a0c5ef; ?>
 <?php unset($__componentOriginal715227d04bfdbc5a76353a8876a0c5ef); ?>
 <?php endif; ?>
-    <?php echo $__env->make('livewire.universities.form', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
-
+    <?php echo $__env->make('livewire.licenses.form', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 </div>
-<?php /**PATH D:\ICAPV4\ICAP\resources\views/livewire/universities/university-component.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\ICAPV4\ICAP\resources\views/livewire/licenses/license-component.blade.php ENDPATH**/ ?>

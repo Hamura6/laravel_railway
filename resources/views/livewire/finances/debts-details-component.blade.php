@@ -174,18 +174,17 @@
                                         class="badge rounded-pill  {{ $payment->status == 'Por pagar' ? 'text-danger  border border-danger ' : 'text-success  border border-success ' }} border-1">{{ $payment->status }}</span>
                                 </td>
                                 <td align="center">
-                                    @if ($dateUltimate === $payment->id)
+                                    @can('Realizar pago')
+                                        <button class="btn-uc-circle" wire:loading.attr="disabled" data-bs-toggle="tooltip"
+                                            data-bs-title="Editar" wire:click="edit({{ $payment->id }})">
+                                            <i class="fas fa-edit fs-6"></i>
+
+                                        </button>
+                                    @endcan
                                         @can('Realizar pago')
                                             <x-btn-delete id="{{ $payment->id }}" />
-                                            <button class="btn-uc-circle" wire:loading.attr="disabled"
-                                                data-bs-toggle="tooltip" data-bs-title="Pagar Aporte"
-                                                wire:click="edit({{ $payment->id }})">
-                                                <i class="fas fa-edit fs-6"></i>
-
-                                            </button>
                                         @endcan
-                                    @endif
-                                    @if ($payment->status == 'Por pagar' && $payment->fee->id != 1)
+                                    @if ($payment->status == 'Por pagar' )
                                         @can('Realizar pago')
                                             <button wire:target="check, delete, edit" wire:loading.attr="disabled"
                                                 class="btn-cc-circle outlined"

@@ -17,7 +17,7 @@ class DebtsDetailsComponent extends Component
 {
     use WithPagination;
     public $type = '', $concept = '', $id, $year = '', $dateUltimate;
-    public $types, $discountAmount, $cant, $dateTo, $dateFor,$payment_id;
+    public $types, $discountAmount, $cant, $dateTo, $dateFor, $payment_id;
 
     public function mount($id)
     {
@@ -29,14 +29,6 @@ class DebtsDetailsComponent extends Component
             ->first();
         $this->year =  $payment ? Carbon::parse($payment->date)->year : now()->year;
         $this->id = $id;
-
-        $this->dateUltimate = Affiliate::find($id)
-            ->payments()
-            ->where('status', 'Pagado')
-            ->where('fee_id', 1)
-            ->orderBy('date', 'desc')
-            ->limit(1)
-            ->first()->id ?? 0;
     }
     public function render()
     {
@@ -105,55 +97,89 @@ class DebtsDetailsComponent extends Component
     #[On('delete')]
     public function delete($id)
     {
-        $affiliate = Affiliate::find($this->id);
+        
         $payment = Payment::find($id);
-        $initialDate = Carbon::parse($payment->date);
-        $createDate = Carbon::parse($payment->created_at);
-        $diffInMonths = $createDate->diffInMonths($initialDate) + 1;
+
+        if (!$payment) {
+            return;
+        }
+        if ($payment->fee_id !== 1) {
+            $payment->delete();
+            $this->dispatch('notify', text: 'El pago fue eliminado correctamente', title: 'Registro anulado', icon: 'info');
+            $this->dateUltimate = Affiliate::find($this->id)
+                ->payments()
+                ->where('status', 'Pagado')
+                ->where('fee_id', 1)
+                ->orderBy('date', 'desc')
+                ->limit(1)
+                ->first()->id ?? 0;
+            return;
+        }
+        if($payment->status=='Por pagar'){
+            $payment->delete();
+            $this->dispatch('notify', text: 'El registro fue eliminado correctamente', title: 'Eliminar registro', icon: 'info');
+            return;
+
+        }
+
+        $affiliate = Affiliate::find($this->id);
+        $startDate = Carbon::parse($payment->created_at)->startOfMonth();
+        $endDate = Carbon::parse($payment->date)->startOfMonth();
+        $diffInMonths = $startDate->diffInMonths($endDate) + 1;
+        $currentDate = Carbon::now()->startOfMonth();
+
+        $paymentAmount = $payment->amount;
+
+        $paymentSame = Payment::whereMonth('date', $endDate->month)
+            ->whereYear('date', $endDate->year)
+            ->where('affiliate_id', $this->id)
+            ->where('status', 'Por pagar')
+            ->where('fee_id', 1)
+            ->where('discount', 0)
+            ->first();
+
+        if ($paymentSame && Carbon::parse($paymentSame->date)->format('Y-m-d') === Carbon::parse($payment->date)->format('Y-m-d')) {
+            $paymentAmount += $paymentSame->amount;
+            $paymentSame->delete();
+        }
+
         if ($payment->discount > 0) {
-            $amount = ($payment->amount / $diffInMonths) / (1 - ($payment->discount / 100));
+            $amount = ($paymentAmount / $diffInMonths) / (1 - ($payment->discount / 100));
         } else {
-
-            $amount = $payment->amount / $diffInMonths;
+            $amount = $paymentAmount / $diffInMonths;
         }
-        $currentDate = Carbon::parse(now())->firstOfMonth();
-        for ($i = 0; $i < $diffInMonths; $i++) {
-            if ($createDate > $currentDate) {
-                break;
-            }
-            $paymentSame = Payment::whereMonth('date', $createDate->month)
-                ->whereYear('date', $createDate->year)
-                ->where('affiliate_id', $this->id)
+
+        $date = $startDate->copy();
+        while ($date <= $endDate && $date <= $currentDate) {
+            $existing = Payment::where('affiliate_id', $this->id)
+                ->where('fee_id', 1)
                 ->where('status', 'Por pagar')
-                ->where('fee_id',1)
-                ->get();
-            $total = $paymentSame->sum('amount');
-            Payment::whereMonth('date', $createDate->month)
-                ->whereYear('date', $createDate->year)
-                ->where('affiliate_id', $this->id)
-                ->where('fee_id',1)
-                ->where('status', 'Por pagar')->delete();
+                ->whereYear('date', $date->year)
+                ->whereMonth('date', $date->month)
+                ->where('discount', 0)
+                ->first();
 
-            $affiliate->payments()->create([
-                'amount' => $amount + $total,
-                'status' => 'Por pagar',
-                'date'   => $createDate,
-                'fee_id' => 1,
-                'type' => 'cash',
-                'created_at' => $createDate,
-                'user_id' => auth()->user()->id
-            ]);
-            $createDate = $createDate->addMonth(1);
+            if ($existing) {
+                if ($existing->amount < $amount) {
+                    $existing->update(['amount' => $amount, 'created_at' => $date]);
+                }
+            } else {
+                $affiliate->payments()->create([
+                    'amount' => $amount,
+                    'status' => 'Por pagar',
+                    'date'   => $date,
+                    'fee_id' => 1,
+                    'type' => 'cash',
+                    'created_at' => $date,
+                    'user_id' => auth()->user()->id,
+                ]);
+            }
+
+            $date->addMonth();
         }
+
         $payment->delete();
         $this->dispatch('notify', text: 'Los pagos fueron anulados correctamente', title: 'Aportes anulados', icon: 'info');
-        $this->dateUltimate = Affiliate::find($this->id)
-            ->payments()
-            ->where('status', 'Pagado')
-            ->where('fee_id', 1)
-            ->orderBy('date', 'desc')
-            ->limit(1)
-            ->first()->id ?? 0;
     }
     public function rules()
     {
@@ -167,17 +193,18 @@ class DebtsDetailsComponent extends Component
     {
         $this->cant = $payment->amount;
         $this->types = $payment->type;
-        $this->payment_id=$payment->id;
+        $this->payment_id = $payment->id;
         $this->discountAmount = $payment->discount;
         $this->dateTo = Carbon::parse($payment->created_at)->format('Y-m-d');
         $this->dateFor = $payment->date;
         $this->dispatch('show-modal');
     }
-    public function update() {
-        $payment=Payment::find($this->payment_id);
+    public function update()
+    {
+        $payment = Payment::find($this->payment_id);
         $payment->update([
-            'discount'=>$this->discountAmount,
-            'amount'=>$this->cant
+            'discount' => $this->discountAmount,
+            'amount' => $this->cant
         ]);
         $this->clear();
     }

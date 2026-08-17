@@ -208,7 +208,13 @@
                                         class="badge rounded-pill  <?php echo e($payment->status == 'Por pagar' ? 'text-danger  border border-danger ' : 'text-success  border border-success '); ?> border-1"><?php echo e($payment->status); ?></span>
                                 </td>
                                 <td align="center">
-                                    <!--[if BLOCK]><![endif]--><?php if($dateUltimate === $payment->id): ?>
+                                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Realizar pago')): ?>
+                                        <button class="btn-uc-circle" wire:loading.attr="disabled" data-bs-toggle="tooltip"
+                                            data-bs-title="Editar" wire:click="edit(<?php echo e($payment->id); ?>)">
+                                            <i class="fas fa-edit fs-6"></i>
+
+                                        </button>
+                                    <?php endif; ?>
                                         <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Realizar pago')): ?>
                                             <?php if (isset($component)) { $__componentOriginal3fa869ab4147c9277d9fa157f1637985 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3fa869ab4147c9277d9fa157f1637985 = $attributes; } ?>
@@ -230,15 +236,8 @@
 <?php $component = $__componentOriginal3fa869ab4147c9277d9fa157f1637985; ?>
 <?php unset($__componentOriginal3fa869ab4147c9277d9fa157f1637985); ?>
 <?php endif; ?>
-                                            <button class="btn-uc-circle" wire:loading.attr="disabled"
-                                                data-bs-toggle="tooltip" data-bs-title="Pagar Aporte"
-                                                wire:click="edit(<?php echo e($payment->id); ?>)">
-                                                <i class="fas fa-edit fs-6"></i>
-
-                                            </button>
                                         <?php endif; ?>
-                                    <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
-                                    <!--[if BLOCK]><![endif]--><?php if($payment->status == 'Por pagar' && $payment->fee->id != 1): ?>
+                                    <!--[if BLOCK]><![endif]--><?php if($payment->status == 'Por pagar' ): ?>
                                         <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('Realizar pago')): ?>
                                             <button wire:target="check, delete, edit" wire:loading.attr="disabled"
                                                 class="btn-cc-circle outlined"

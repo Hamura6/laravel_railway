@@ -200,7 +200,7 @@
             </div>
 
             <div class="col-md-12 ">
-                <x-input-label title="Número de Título" type="number" name='form.number' />
+                <x-input-label title="Número de Título" type="text" name='form.number' />
             </div>
         </x-card-body>
     </div>

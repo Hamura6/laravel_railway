@@ -9,7 +9,7 @@
 
     <title><?php echo e($institution->initials ?? config('app.name')); ?></title>
     
-    <?php echo app('Illuminate\Foundation\Vite')(['resources/sass/app.scss', 'resources/js/app.js']); ?>
+    <?php echo app('Illuminate\Foundation\Vite')(['resources/js/app.js']); ?>
     <?php echo \Livewire\Mechanisms\FrontendAssets\FrontendAssets::styles(); ?>
 
 </head>

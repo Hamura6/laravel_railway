@@ -1,4 +1,4 @@
-<x-modal title="Aporte">
+<x-modal title="Pago">
     <div class="col-md-12">
         <div class="form-floating">
             <select class="form-select @error('types') is-invalid @enderror " wire:model="types" id="types"

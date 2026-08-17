@@ -9,7 +9,7 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote');
 Schedule::command('check:crearte-contribution')
     ->monthly()
-    ->withoutOverlapping();;
+    ->withoutOverlapping(); 
 Schedule::call(function () {
     $directory = storage_path('app/public/livewire-tmp');
     if (is_dir($directory)) {
